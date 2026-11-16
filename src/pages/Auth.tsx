@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/input-otp";
 
 import { useAuth } from "@/hooks/use-auth";
-import { snapshot } from "@/lib/dvp";
+import { fallbackSnapshot } from "@/lib/dvp";
 import { ArrowRight, Loader2, Mail, UserX } from "lucide-react";
 import { Suspense, useEffect, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router";
@@ -284,7 +284,7 @@ function Auth({ redirectAfterAuth }: AuthProps = {}) {
             )}
 
             <div className="rounded-b-[3px] border-t bg-muted px-6 py-4 text-center text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
-              Defense vs position · Season {snapshot.meta.season}
+              Defense vs position · Season {fallbackSnapshot.meta.season}
             </div>
           </Card>
         </div>

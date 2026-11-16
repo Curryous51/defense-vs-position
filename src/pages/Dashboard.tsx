@@ -12,14 +12,15 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useAuth } from "@/hooks/use-auth";
+import { useDvpSnapshot, useNow } from "@/hooks/use-dvp-snapshot";
 import {
   dataThroughLabel,
   gameLongDate,
   gameTime,
   groupedMatchups,
   matchupShort,
-  snapshot,
   teamById,
+  upcomingMatchups,
 } from "@/lib/dvp";
 import { LogOut } from "lucide-react";
 import { useMemo, useState } from "react";
@@ -36,12 +37,14 @@ const LEGEND = [
 export default function Dashboard() {
   const { user, signOut } = useAuth();
   const navigate = useNavigate();
-  const groups = useMemo(() => groupedMatchups(), []);
-  const [gameId, setGameId] = useState(snapshot.matchups[0]?.id ?? "");
+  const { data } = useDvpSnapshot();
+  const now = useNow();
+  const matchups = useMemo(() => upcomingMatchups(data, now), [data, now]);
+  const groups = useMemo(() => groupedMatchups(matchups), [matchups]);
+  const [gameId, setGameId] = useState<string | null>(null);
   const game = useMemo(
-    () =>
-      snapshot.matchups.find((g) => g.id === gameId) ?? snapshot.matchups[0],
-    [gameId],
+    () => matchups.find((g) => g.id === gameId) ?? matchups[0],
+    [matchups, gameId],
   );
 
   const handleSignOut = async () => {
@@ -51,14 +54,23 @@ export default function Dashboard() {
 
   if (!game) {
     return (
-      <main className="flex min-h-screen items-center justify-center text-sm text-muted-foreground">
-        No scheduled games found.
+      <main className="flex min-h-screen flex-col items-center justify-center gap-3 bg-background px-6 text-center">
+        <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+          Season {data.meta.season}
+        </p>
+        <h1 className="text-xl font-medium tracking-[-0.01em]">
+          No games left on the board
+        </h1>
+        <p className="max-w-sm text-sm leading-6 text-muted-foreground">
+          Finished games drop off automatically. The next slate appears after
+          the daily sync.
+        </p>
       </main>
     );
   }
 
-  const away = teamById(game.away);
-  const home = teamById(game.home);
+  const away = teamById(data, game.away);
+  const home = teamById(data, game.home);
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -67,7 +79,7 @@ export default function Dashboard() {
           <Wordmark />
           <div className="flex items-center gap-4">
             <span className="hidden text-[10px] uppercase tracking-[0.18em] text-muted-foreground sm:inline">
-              Season {snapshot.meta.season}
+              Season {data.meta.season}
             </span>
             <Button
               type="button"
@@ -93,8 +105,8 @@ export default function Dashboard() {
               Matchup board
             </h1>
             <p className="mt-3 max-w-xl text-sm leading-6 text-muted-foreground">
-              Each cell is a starter&apos;s season average. The rank beneath it
-              is where the opposing defense sits in that category against his
+              Each cell is a starter&apos;s season average. The rank beneath it is
+              where the opposing defense sits in that category against his
               position.
             </p>
           </div>
@@ -113,15 +125,15 @@ export default function Dashboard() {
                   {gameLongDate(game.date)}
                 </p>
                 <p className="mt-1 text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
-                  {gameTime(game.date)} · {snapshot.meta.gamesSampled} games
-                  read
+                  {gameTime(game.date)} · {data.meta.gamesSampled} games read ·
+                  synced daily
                 </p>
               </div>
             </div>
 
             <label className="flex w-full flex-col gap-1.5 sm:w-[19rem]">
               <span className="text-[9px] uppercase tracking-[0.18em] text-muted-foreground">
-                Game
+                Upcoming games
               </span>
               <Select value={game.id} onValueChange={setGameId}>
                 <SelectTrigger className="h-9 w-full rounded-[3px] border-border bg-background text-[13px] shadow-none focus-visible:ring-1">
@@ -143,7 +155,7 @@ export default function Dashboard() {
                           value={option.id}
                           className="text-[13px]"
                         >
-                          {matchupShort(option)} · {gameTime(option.date)}
+                          {matchupShort(data, option)} · {gameTime(option.date)}
                         </SelectItem>
                       ))}
                     </SelectGroup>
@@ -153,14 +165,14 @@ export default function Dashboard() {
             </label>
           </div>
 
-          <MatchupBoard game={game} />
+          <MatchupBoard game={game} data={data} />
 
           <div className="flex flex-col gap-6 border-t border-border pt-6 sm:flex-row sm:items-start sm:justify-between">
             <div className="max-w-md text-[11px] leading-5 text-muted-foreground">
-              Values are per-game averages for each team&apos;s most-used
-              starter at the position. Ranks are 1–30 among defenses: 1st allows
-              the fewest, 30th the most. Data through {dataThroughLabel()} (
-              {snapshot.meta.gamesSampled} completed games).
+              Values are per-game averages for each team&apos;s most-used starter
+              at the position. Ranks are 1–30 among defenses: 1st allows the
+              fewest, 30th the most. Data through {dataThroughLabel(data)} (
+              {data.meta.gamesSampled} completed games).
             </div>
             <div className="flex items-center gap-3">
               <div className="flex items-center gap-1">
@@ -182,11 +194,11 @@ export default function Dashboard() {
 
       <footer className="border-t border-border">
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-2 px-5 py-6 text-[10px] uppercase tracking-[0.14em] text-muted-foreground sm:flex-row sm:items-center sm:justify-between sm:px-8">
-          <span>Source · {snapshot.meta.source}</span>
+          <span>Source · {data.meta.source}</span>
           <span>
             {user?.email
               ? `Signed in as ${user.email}`
-              : "Season " + snapshot.meta.season}
+              : `Season ${data.meta.season}`}
           </span>
         </div>
       </footer>

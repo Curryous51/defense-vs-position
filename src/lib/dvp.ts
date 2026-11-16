@@ -13,6 +13,9 @@ export const STAT_LABELS: Record<StatKey, string> = {
   tpm: "3PM",
 };
 
+/** Keep in sync with LIVE_WINDOW_MS in convex/nbaBuilder.ts. */
+export const GAME_WINDOW_MS = 3.5 * 60 * 60 * 1000;
+
 export interface TeamSeasonRow extends Record<StatKey, number> {
   ranks: Record<StatKey, number>;
 }
@@ -48,7 +51,7 @@ export interface Matchup {
   away: string;
 }
 
-interface Snapshot {
+export interface Snapshot {
   meta: {
     season: string;
     source: string;
@@ -62,16 +65,16 @@ interface Snapshot {
   matchups: Matchup[];
 }
 
-export const snapshot = raw as unknown as Snapshot;
+/** Checked-in snapshot, used until the first Convex sync lands. */
+export const fallbackSnapshot = raw as unknown as Snapshot;
 
-const teamIndex = new Map(snapshot.teams.map((team) => [team.id, team]));
-
-export function teamById(id: string | undefined): Team | undefined {
-  return id ? teamIndex.get(id) : undefined;
+export function teamById(data: Snapshot, id: string | undefined): Team | undefined {
+  if (!id) return undefined;
+  return data.teams.find((team) => team.id === id);
 }
 
-export function startersFor(teamId: string): Starter[] {
-  return snapshot.lineups[teamId] ?? [];
+export function startersFor(data: Snapshot, teamId: string): Starter[] {
+  return data.lineups[teamId] ?? [];
 }
 
 export function ordinal(value: number): string {
@@ -134,34 +137,47 @@ export function gameLongDate(iso: string): string {
   }).format(new Date(iso));
 }
 
-export function dataThroughLabel(): string {
-  if (!snapshot.meta.throughDate) return "season to date";
+export function dataThroughLabel(data: Snapshot): string {
+  if (!data.meta.throughDate) return "season to date";
   return new Intl.DateTimeFormat("en-US", {
     month: "short",
     day: "numeric",
     year: "numeric",
     timeZone: EASTERN,
-  }).format(new Date(snapshot.meta.throughDate));
+  }).format(new Date(data.meta.throughDate));
 }
 
-export function matchupTitle(game: Matchup): string {
-  const away = teamById(game.away);
-  const home = teamById(game.home);
+export function matchupTitle(data: Snapshot, game: Matchup): string {
+  const away = teamById(data, game.away);
+  const home = teamById(data, game.home);
   if (!away || !home) return "Matchup";
   return `${away.location} at ${home.location}`;
 }
 
-export function matchupShort(game: Matchup): string {
-  const away = teamById(game.away);
-  const home = teamById(game.home);
+export function matchupShort(data: Snapshot, game: Matchup): string {
+  const away = teamById(data, game.away);
+  const home = teamById(data, game.home);
   if (!away || !home) return "Matchup";
   return `${away.abbr} @ ${home.abbr}`;
 }
 
+/**
+ * Drops games that have finished. Tip-off plus a 3.5h window is the cutoff, so a
+ * game stays listed while it is being played and disappears shortly after the
+ * final whistle, without waiting for the next daily sync.
+ */
+export function upcomingMatchups(data: Snapshot, now: number): Matchup[] {
+  return data.matchups
+    .filter((game) => new Date(game.date).getTime() + GAME_WINDOW_MS > now)
+    .sort((a, b) => a.date.localeCompare(b.date));
+}
+
 /** Upcoming matchups grouped by calendar day, in Eastern time. */
-export function groupedMatchups(): Array<{ day: string; games: Matchup[] }> {
+export function groupedMatchups(
+  matchups: Matchup[],
+): Array<{ day: string; games: Matchup[] }> {
   const groups = new Map<string, Matchup[]>();
-  for (const game of snapshot.matchups) {
+  for (const game of matchups) {
     const key = gameDay(game.date);
     const list = groups.get(key) ?? [];
     list.push(game);

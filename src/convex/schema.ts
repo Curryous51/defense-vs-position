@@ -32,6 +32,13 @@ const schema = defineSchema(
       role: v.optional(roleValidator), // role of the user. do not remove
     }).index("email", ["email"]), // index for the email. do not remove or modify
 
+    // Defense-vs-position snapshots rebuilt by the daily cron.
+    dvpSnapshots: defineTable({
+      key: v.string(),
+      generatedAt: v.number(),
+      payload: v.any(),
+    }).index("by_key", ["key"]),
+
     // add other tables here
 
     // tableName: defineTable({

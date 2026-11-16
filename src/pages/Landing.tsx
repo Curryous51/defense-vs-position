@@ -1,24 +1,25 @@
 import { MatchupBoard } from "@/components/MatchupBoard";
 import { Wordmark } from "@/components/Wordmark";
 import { Button } from "@/components/ui/button";
+import { useDvpSnapshot, useNow } from "@/hooks/use-dvp-snapshot";
 import {
   dataThroughLabel,
   gameDay,
   gameTime,
   matchupTitle,
-  snapshot,
+  upcomingMatchups,
 } from "@/lib/dvp";
 import { motion } from "framer-motion";
+import { useMemo } from "react";
 import { Link } from "react-router";
 
 const ENTRY = "/auth?returnTo=/dashboard";
-const featured = snapshot.matchups[0];
 
 const PRINCIPLES = [
   {
     number: "01",
     title: "Built from box scores",
-    body: "Every completed game this season is parsed and credited to the defense and position that allowed the line — no manual rankings, no stale cheat sheets.",
+    body: "Every completed game this season is parsed and credited to the defense and position that allowed the line. The whole board rebuilds every morning.",
   },
   {
     number: "02",
@@ -41,6 +42,13 @@ const LEGEND = [
 ];
 
 export default function Landing() {
+  const { data } = useDvpSnapshot();
+  const now = useNow();
+  const featured = useMemo(
+    () => upcomingMatchups(data, now)[0],
+    [data, now],
+  );
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <header className="border-b border-border">
@@ -48,7 +56,7 @@ export default function Landing() {
           <Wordmark />
           <div className="flex items-center gap-3 sm:gap-5">
             <span className="hidden text-[10px] uppercase tracking-[0.18em] text-muted-foreground sm:inline">
-              Season {snapshot.meta.season}
+              Season {data.meta.season}
             </span>
             <Button
               asChild
@@ -112,7 +120,7 @@ export default function Landing() {
         <section className="border-y border-border">
           <dl className="mx-auto grid w-full max-w-6xl grid-cols-2 gap-px bg-border sm:grid-cols-4">
             {[
-              { value: snapshot.meta.gamesSampled, label: "Games read" },
+              { value: data.meta.gamesSampled, label: "Games read" },
               { value: 30, label: "Defenses" },
               { value: 5, label: "Positions" },
               { value: 4, label: "Categories" },
@@ -140,19 +148,20 @@ export default function Landing() {
                   Tonight&apos;s board
                 </p>
                 <h2 className="mt-3 text-xl font-medium tracking-[-0.02em] sm:text-2xl">
-                  {matchupTitle(featured)}
+                  {matchupTitle(data, featured)}
                 </h2>
               </div>
               <p className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">
                 {gameDay(featured.date)} · {gameTime(featured.date)}
               </p>
             </div>
-            <MatchupBoard game={featured} className="mt-8" />
+            <MatchupBoard game={featured} data={data} className="mt-8" />
             <p className="mt-4 max-w-2xl text-[11px] leading-5 text-muted-foreground">
               Each figure is a starter&apos;s season average. The small rank
               beneath it is where the opposing defense sits in that category
               against that position — 1st allows the fewest, 30th the most.
-              Season through {dataThroughLabel()}.
+              Season through {dataThroughLabel(data)}. Finished games leave the
+              picker automatically.
             </p>
           </section>
         ) : null}
@@ -227,7 +236,7 @@ export default function Landing() {
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-3 px-5 py-6 text-[10px] uppercase tracking-[0.14em] text-muted-foreground sm:flex-row sm:items-center sm:justify-between sm:px-8">
           <Wordmark withLabel={false} />
           <span>
-            {snapshot.meta.source} · through {dataThroughLabel()}
+            {data.meta.source} · through {dataThroughLabel(data)}
           </span>
         </div>
       </footer>

@@ -1,17 +1,24 @@
 import { MatchupPanel } from "@/components/MatchupPanel";
-import { startersFor, teamById, type Matchup } from "@/lib/dvp";
+import {
+  startersFor,
+  teamById,
+  type Matchup,
+  type Snapshot,
+} from "@/lib/dvp";
 import { cn } from "@/lib/utils";
 
 /** The two-team board: away starters vs home defense, and the reverse. */
 export function MatchupBoard({
   game,
+  data,
   className,
 }: {
   game: Matchup;
+  data: Snapshot;
   className?: string;
 }) {
-  const away = teamById(game.away);
-  const home = teamById(game.home);
+  const away = teamById(data, game.away);
+  const home = teamById(data, game.home);
 
   if (!away || !home) {
     return (
@@ -31,12 +38,12 @@ export function MatchupBoard({
       <MatchupPanel
         offense={away}
         defense={home}
-        starters={startersFor(away.id)}
+        starters={startersFor(data, away.id)}
       />
       <MatchupPanel
         offense={home}
         defense={away}
-        starters={startersFor(home.id)}
+        starters={startersFor(data, home.id)}
       />
     </div>
   );
