@@ -18,8 +18,8 @@ const ENTRY = "/auth?returnTo=/dashboard";
 const PRINCIPLES = [
   {
     number: "01",
-    title: "Built from box scores",
-    body: "Every completed game this season is parsed and credited to the defense and position that allowed the line. The whole board rebuilds every morning.",
+    title: "Updated every morning",
+    body: "The defense-vs-position table is pulled from FantasyPros and paired with the starters ESPN and Sleeper report, so last night's games are already counted.",
   },
   {
     number: "02",
@@ -159,7 +159,7 @@ export default function Landing() {
             <p className="mt-4 max-w-2xl text-[11px] leading-5 text-muted-foreground">
               Each figure is a starter&apos;s season average. The small rank
               beneath it is where the opposing defense sits in that category
-              against that position — 1st allows the fewest, 30th the most.
+              against that position — 1st allows the most, 30th the fewest.
               Season through {dataThroughLabel(data)}. Finished games leave the
               picker automatically.
             </p>

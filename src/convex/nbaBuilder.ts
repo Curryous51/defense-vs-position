@@ -2,12 +2,14 @@
  * Defense-vs-position builder, shared by the Convex sync action and the offline
  * snapshot script.
  *
- * Sources (both free, no key):
+ * Sources (all free, no key):
+ *  - FantasyPros FanDuel defense-vs-position table: stats allowed and 1-30 ranks
  *  - ESPN public NBA API: season schedule + per-game box scores
  *  - Sleeper public player list: PG/SG/SF/PF/C eligibility (ESPN only exposes G/F/C)
  *
- * Every player line is credited to the opposing defense at that player's
- * position, then averaged over the defense's games and ranked 1-30.
+ * The table comes from FantasyPros as published, so the ranks match the source
+ * (1st allows the most). Lineups and player averages are still built from ESPN
+ * box scores.
  */
 
 export const POSITIONS = ["PG", "SG", "SF", "PF", "C"] as const;
@@ -17,6 +19,8 @@ export type Position = (typeof POSITIONS)[number];
 export type StatKey = (typeof STATS)[number];
 
 const ESPN = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba";
+const FP_TABLE =
+  "https://www.fantasypros.com/daily-fantasy/nba/fanduel-defense-vs-position.php?position=PG";
 // Games are treated as still relevant for this long after tip-off. The picker
 // uses the same window on the client so a finished game disappears right away.
 export const LIVE_WINDOW_MS = 3.5 * 60 * 60 * 1000;
@@ -83,9 +87,7 @@ interface PlayerAggregate {
   starts: number;
   minutes: number;
   totals: PlayerLine;
-  lines: Array<PlayerLine & { against: string }>;
   perGame: PlayerLine;
-  position: Position;
 }
 
 async function getJson<T>(url: string, attempts = 3): Promise<T> {
@@ -101,6 +103,26 @@ async function getJson<T>(url: string, attempts = 3): Promise<T> {
       });
       if (!res.ok) throw new Error(`${res.status} ${url}`);
       return (await res.json()) as T;
+    } catch (err) {
+      if (i === attempts - 1) throw err;
+      await new Promise((r) => setTimeout(r, 500 * (i + 1)));
+    }
+  }
+  throw new Error(`unreachable: ${url}`);
+}
+
+async function getText(url: string, attempts = 3): Promise<string> {
+  for (let i = 0; i < attempts; i++) {
+    try {
+      const res = await fetch(url, {
+        headers: {
+          accept: "text/html",
+          "user-agent":
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+        },
+      });
+      if (!res.ok) throw new Error(`${res.status} ${url}`);
+      return await res.text();
     } catch (err) {
       if (i === attempts - 1) throw err;
       await new Promise((r) => setTimeout(r, 500 * (i + 1)));
@@ -146,34 +168,52 @@ const num = (value: unknown): number => {
 
 const round = (value: number, digits = 1) => Number(value.toFixed(digits));
 
+interface FpRow {
+  abbr: string;
+  name: string;
+  games: number;
+  stats: Record<StatKey, number>;
+}
+
+const nicknameKey = (name: string) =>
+  normalizeName(name.trim().split(/\s+/).slice(-1)[0] ?? name);
+
 /**
- * Collapse a player's eligibility list into the position a defense guards him
- * at. Sleeper lists combo guards as PG/SG and combo forwards as PF/SF, so the
- * coarse ESPN slot plus production decides the tie.
+ * FantasyPros renders every position on one page and hides the ones you did not
+ * select, so a single fetch yields the whole table. Only season-to-date rows
+ * (GC-0) are kept; the page also carries last-7/15/30-day variants.
+ *
+ * Row order: GP, PTS, REB, AST, 3PM, STL, BLK, TO, FD PTS.
  */
-function canonicalPosition(
-  eligibility: string[],
-  coarse: string,
-  perGame: PlayerLine,
-): Position {
-  if (coarse === "C" || (eligibility.includes("C") && eligibility.length === 1)) {
-    return "C";
+function parseFantasyPros(html: string): Map<Position, FpRow[]> {
+  const byPosition = new Map<Position, FpRow[]>();
+  for (const match of html.matchAll(/<tr[^>]*class="([^"]*)"[^>]*>([\s\S]*?)<\/tr>/g)) {
+    const position = match[1].match(/\bGC-0 (PG|SG|SF|PF|C)\b/)?.[1] as
+      | Position
+      | undefined;
+    if (!position) continue;
+    const body = match[2];
+    const abbr = body.match(/<span[^>]*>([^<]+)<\/span>/)?.[1]?.trim() ?? "";
+    const name = body.match(/<\/span>([^<]+)<\/td>/)?.[1]?.trim() ?? "";
+    const nums = [...body.matchAll(/<b>([\d.]+)<\/b>/g)].map((m) => Number(m[1]));
+    if (!abbr || !name || nums.length < 5) continue;
+    const rows = byPosition.get(position) ?? [];
+    rows.push({
+      abbr,
+      name,
+      games: nums[0],
+      stats: { pts: nums[1], reb: nums[2], ast: nums[3], tpm: nums[4] },
+    });
+    byPosition.set(position, rows);
   }
-  if (coarse === "G") {
-    if (eligibility.includes("PG") && (!eligibility.includes("SG") || perGame.ast >= 3.5)) {
-      return "PG";
+
+  for (const position of POSITIONS) {
+    const rows = byPosition.get(position) ?? [];
+    if (rows.length !== 30) {
+      throw new Error(`FantasyPros ${position}: expected 30 teams, found ${rows.length}`);
     }
-    if (eligibility.includes("SG")) return "SG";
-    return (eligibility[0] as Position) ?? "PG";
   }
-  if (coarse === "F") {
-    if (eligibility.includes("PF") && (!eligibility.includes("SF") || perGame.reb >= 5.5)) {
-      return "PF";
-    }
-    if (eligibility.includes("SF")) return "SF";
-    return (eligibility[0] as Position) ?? "SF";
-  }
-  return (eligibility[0] as Position) ?? "SF";
+  return byPosition;
 }
 
 interface RosterPlayer extends PlayerAggregate {
@@ -288,15 +328,18 @@ export async function buildSnapshot(options: BuildOptions = {}): Promise<BuiltSn
   const now = options.now ?? Date.now();
   const log = options.onProgress ?? (() => {});
 
-  log("Fetching teams, schedule, and player positions");
-  const [teamsJson, sleeperJson] = await Promise.all([
+  log("Fetching teams, schedule, positions, and the FantasyPros table");
+  const [teamsJson, sleeperJson, fpHtml] = await Promise.all([
     getJson<{ sports: Array<{ leagues: Array<{ teams: Array<{ team: EspnTeam }> }> }> }>(
       `${ESPN}/teams`,
     ),
     getJson<Record<string, { full_name?: string; fantasy_positions?: string[] }>>(
       "https://api.sleeper.app/v1/players/nba",
     ),
+    getText(FP_TABLE),
   ]);
+  const fp = parseFantasyPros(fpHtml);
+  log("FantasyPros: 30 defenses at 5 positions");
 
   const teams = teamsJson.sports[0].leagues[0].teams.map(({ team }) => ({
     id: String(team.id),
@@ -344,7 +387,6 @@ export async function buildSnapshot(options: BuildOptions = {}): Promise<BuiltSn
   log(`Schedule: ${games.length} games, ${completedGames.length} completed`);
 
   const players = new Map<string, PlayerAggregate>();
-  const teamGames = new Map<string, number>();
 
   let processed = 0;
   await mapLimit(completedGames, 5, async (game) => {
@@ -358,7 +400,6 @@ export async function buildSnapshot(options: BuildOptions = {}): Promise<BuiltSn
     for (const group of summary.boxscore?.players ?? []) {
       const teamId = String(group.team?.id ?? "");
       if (!teamId) continue;
-      teamGames.set(teamId, (teamGames.get(teamId) ?? 0) + 1);
       const block = group.statistics?.[0];
       if (!block?.athletes) continue;
       const keys = block.keys ?? [];
@@ -368,9 +409,6 @@ export async function buildSnapshot(options: BuildOptions = {}): Promise<BuiltSn
       const iTpm = index("threePointFieldGoalsMade-threePointFieldGoalsAttempted");
       const iReb = index("rebounds");
       const iAst = index("assists");
-
-      const opponent = game.teams.find((t) => t.id !== teamId);
-      if (!opponent) continue;
 
       for (const row of block.athletes) {
         const athlete = row.athlete;
@@ -391,9 +429,7 @@ export async function buildSnapshot(options: BuildOptions = {}): Promise<BuiltSn
             starts: 0,
             minutes: 0,
             totals: { pts: 0, reb: 0, ast: 0, tpm: 0 },
-            lines: [],
             perGame: { pts: 0, reb: 0, ast: 0, tpm: 0 },
-            position: "SF",
           };
           players.set(id, entry);
         }
@@ -411,7 +447,6 @@ export async function buildSnapshot(options: BuildOptions = {}): Promise<BuiltSn
           tpm: iTpm >= 0 ? num(row.stats?.[iTpm]) : 0,
         };
         STATS.forEach((stat) => (entry!.totals[stat] += line[stat]));
-        entry.lines.push({ ...line, against: opponent.id });
       }
     }
     processed += 1;
@@ -419,8 +454,7 @@ export async function buildSnapshot(options: BuildOptions = {}): Promise<BuiltSn
   });
   log(`Players with minutes: ${players.size}`);
 
-  // Canonical position per player, then defense-vs-position totals.
-  const defenseTotals = new Map<string, PlayerLine>();
+  // Player season averages for the starters.
   for (const player of players.values()) {
     player.perGame = {
       pts: player.totals.pts / player.games,
@@ -428,29 +462,35 @@ export async function buildSnapshot(options: BuildOptions = {}): Promise<BuiltSn
       ast: player.totals.ast / player.games,
       tpm: player.totals.tpm / player.games,
     };
-    const eligibility = player.eligibility.length
-      ? player.eligibility
-      : [player.coarse === "C" ? "C" : player.coarse === "G" ? "SG" : "SF"];
-    player.eligibility = eligibility;
-    player.position = canonicalPosition(eligibility, player.coarse, player.perGame);
-
-    for (const line of player.lines) {
-      const key = `${line.against}:${player.position}`;
-      const total = defenseTotals.get(key) ?? { pts: 0, reb: 0, ast: 0, tpm: 0 };
-      STATS.forEach((stat) => (total[stat] += line[stat]));
-      defenseTotals.set(key, total);
+    if (!player.eligibility.length) {
+      player.eligibility = [
+        player.coarse === "C" ? "C" : player.coarse === "G" ? "SG" : "SF",
+      ];
     }
   }
 
-  const dvp = new Map<string, Record<Position, PlayerLine>>();
+  // Defense-vs-position values and ranks, straight from FantasyPros. Ranks are
+  // ordered by most allowed, so 1st is the softest matchup (as on their table).
+  const fpRows = new Map<Position, Map<string, FpRow>>();
+  for (const position of POSITIONS) {
+    const index = new Map<string, FpRow>();
+    for (const row of fp.get(position)!) {
+      index.set(nicknameKey(row.name), row);
+    }
+    fpRows.set(position, index);
+  }
+
+  const dvp = new Map<string, Record<Position, Record<StatKey, number>>>();
+  const gamesById = new Map<string, number>();
   for (const team of teams) {
-    const gamesPlayed = Math.max(1, teamGames.get(team.id) ?? 0);
-    const byPosition = {} as Record<Position, PlayerLine>;
+    const byPosition = {} as Record<Position, Record<StatKey, number>>;
     for (const pos of POSITIONS) {
-      const total = defenseTotals.get(`${team.id}:${pos}`) ?? { pts: 0, reb: 0, ast: 0, tpm: 0 };
-      byPosition[pos] = Object.fromEntries(
-        STATS.map((stat) => [stat, total[stat] / gamesPlayed]),
-      ) as unknown as PlayerLine;
+      const row = fpRows.get(pos)!.get(nicknameKey(team.nickname));
+      if (!row) {
+        throw new Error(`FantasyPros ${pos}: no row for ${team.location} ${team.nickname}`);
+      }
+      byPosition[pos] = row.stats;
+      gamesById.set(team.id, row.games);
     }
     dvp.set(team.id, byPosition);
   }
@@ -460,7 +500,7 @@ export async function buildSnapshot(options: BuildOptions = {}): Promise<BuiltSn
     for (const pos of POSITIONS) {
       const ordered = teams
         .map((t) => ({ id: t.id, value: dvp.get(t.id)![pos][stat] }))
-        .sort((a, b) => a.value - b.value);
+        .sort((a, b) => b.value - a.value);
       ordered.forEach((row, i) => {
         const teamRanks = ranks.get(row.id) ?? ({} as Record<Position, Record<StatKey, number>>);
         teamRanks[pos] = { ...(teamRanks[pos] ?? {}), [stat]: i + 1 } as Record<StatKey, number>;
@@ -474,7 +514,10 @@ export async function buildSnapshot(options: BuildOptions = {}): Promise<BuiltSn
     leagueAverage[pos] = {} as Record<StatKey, number>;
     for (const stat of STATS) {
       const values = teams.map((t) => dvp.get(t.id)![pos][stat]);
-      leagueAverage[pos][stat] = round(values.reduce((a, b) => a + b, 0) / values.length);
+      leagueAverage[pos][stat] = round(
+        values.reduce((a, b) => a + b, 0) / values.length,
+        2,
+      );
     }
   }
 
@@ -521,7 +564,7 @@ export async function buildSnapshot(options: BuildOptions = {}): Promise<BuiltSn
   return {
     meta: {
       season: season === 2027 ? "2026-27" : String(season),
-      source: "ESPN public box scores",
+      source: "FantasyPros defense vs position",
       generatedAt: new Date().toISOString(),
       gamesSampled: completedGames.length,
       throughDate: latestGame?.date ?? null,
@@ -531,17 +574,17 @@ export async function buildSnapshot(options: BuildOptions = {}): Promise<BuiltSn
       for (const pos of POSITIONS) {
         const row = dvp.get(t.id)![pos];
         season[pos] = {
-          pts: round(row.pts),
-          reb: round(row.reb),
-          ast: round(row.ast),
-          tpm: round(row.tpm),
+          pts: round(row.pts, 2),
+          reb: round(row.reb, 2),
+          ast: round(row.ast, 2),
+          tpm: round(row.tpm, 2),
           ranks: ranks.get(t.id)![pos],
         };
       }
       return {
         ...t,
         name: `${t.location} ${t.nickname}`,
-        games: teamGames.get(t.id) ?? 0,
+        games: gamesById.get(t.id) ?? 0,
         season,
       };
     }),

@@ -171,7 +171,7 @@ export default function Dashboard() {
             <div className="max-w-md text-[11px] leading-5 text-muted-foreground">
               Values are per-game averages for each team&apos;s most-used starter
               at the position. Ranks are 1–30 among defenses: 1st allows the
-              fewest, 30th the most. Data through {dataThroughLabel(data)} (
+              most, 30th the fewest. Data through {dataThroughLabel(data)} (
               {data.meta.gamesSampled} completed games).
             </div>
             <div className="flex items-center gap-3">
