@@ -69,12 +69,12 @@
   --border: oklch(0.9 0.004 90);
   --input: oklch(0.9 0.004 90);
   --ring: oklch(0.62 0.004 90);
-  /* Matchup tints: clay = defense allows little, sage = defense allows a lot. */
+  /* Matchup tints: clay = defense allows little, dark green = softest. */
   --match-tough-strong: oklch(0.941 0.023 28);
   --match-tough: oklch(0.962 0.013 30);
   --match-neutral: oklch(0.974 0.002 90);
   --match-favorable: oklch(0.957 0.014 155);
-  --match-favorable-strong: oklch(0.928 0.027 155);
+  --match-favorable-strong: oklch(0.4 0.085 155);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);

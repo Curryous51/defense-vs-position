@@ -87,26 +87,41 @@ export function MatchupPanel({
                       {player.name}
                     </span>
                   </td>
-                  {STATS.map((stat) => (
-                    <td
-                      key={stat}
-                      className="border-t border-border/80 py-1.5 pl-1 align-middle"
-                    >
-                      <div
-                        className={cn(
-                          "rounded-[3px] px-1.5 py-1.5 text-right sm:px-2",
-                          rankTone(defenseRow.ranks[stat]),
-                        )}
+                  {STATS.map((stat) => {
+                    const rank = defenseRow.ranks[stat];
+                    // The softest tier is dark green, so it needs light text.
+                    const onDark = rank > 24;
+                    return (
+                      <td
+                        key={stat}
+                        className="border-t border-border/80 py-1.5 pl-1 align-middle"
                       >
-                        <div className="text-[13px] leading-none font-medium tabular-nums text-foreground">
-                          {formatStat(player[stat])}
+                        <div
+                          className={cn(
+                            "rounded-[3px] px-1.5 py-1.5 text-right sm:px-2",
+                            rankTone(rank),
+                          )}
+                        >
+                          <div
+                            className={cn(
+                              "text-[13px] leading-none font-medium tabular-nums",
+                              onDark ? "text-white" : "text-foreground",
+                            )}
+                          >
+                            {formatStat(player[stat])}
+                          </div>
+                          <div
+                            className={cn(
+                              "mt-1 text-[10px] leading-none tabular-nums",
+                              onDark ? "text-white/75" : "text-muted-foreground",
+                            )}
+                          >
+                            {ordinal(rank)}
+                          </div>
                         </div>
-                        <div className="mt-1 text-[10px] leading-none tabular-nums text-muted-foreground">
-                          {ordinal(defenseRow.ranks[stat])}
-                        </div>
-                      </div>
-                    </td>
-                  ))}
+                      </td>
+                    );
+                  })}
                 </tr>
               );
             })}
