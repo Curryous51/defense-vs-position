@@ -1,7 +1,6 @@
 import { MatchupBoard } from "@/components/MatchupBoard";
 import { TeamBadge } from "@/components/TeamBadge";
 import { Wordmark } from "@/components/Wordmark";
-import { Button } from "@/components/ui/button";
 import {
   Select,
   SelectContent,
@@ -11,7 +10,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { useAuth } from "@/hooks/use-auth";
 import { useDvpSnapshot, useNow } from "@/hooks/use-dvp-snapshot";
 import {
   dataThroughLabel,
@@ -22,9 +20,7 @@ import {
   teamById,
   upcomingMatchups,
 } from "@/lib/dvp";
-import { LogOut } from "lucide-react";
 import { useMemo, useState } from "react";
-import { useNavigate } from "react-router";
 
 const LEGEND = [
   { className: "bg-match-tough-strong", label: "Toughest" },
@@ -35,8 +31,6 @@ const LEGEND = [
 ];
 
 export default function Dashboard() {
-  const { user, signOut } = useAuth();
-  const navigate = useNavigate();
   const { data } = useDvpSnapshot();
   const now = useNow();
   const matchups = useMemo(() => upcomingMatchups(data, now), [data, now]);
@@ -46,11 +40,6 @@ export default function Dashboard() {
     () => matchups.find((g) => g.id === gameId) ?? matchups[0],
     [matchups, gameId],
   );
-
-  const handleSignOut = async () => {
-    await signOut();
-    navigate("/");
-  };
 
   if (!game) {
     return (
@@ -77,21 +66,9 @@ export default function Dashboard() {
       <header className="border-b border-border">
         <div className="mx-auto flex h-14 w-full max-w-6xl items-center justify-between px-5 sm:px-8">
           <Wordmark />
-          <div className="flex items-center gap-4">
-            <span className="hidden text-[10px] uppercase tracking-[0.18em] text-muted-foreground sm:inline">
-              Season {data.meta.season}
-            </span>
-            <Button
-              type="button"
-              variant="ghost"
-              size="sm"
-              className="gap-2 rounded-[3px] text-muted-foreground hover:text-foreground"
-              onClick={handleSignOut}
-            >
-              <LogOut className="size-3.5" />
-              Sign out
-            </Button>
-          </div>
+          <span className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
+            Season {data.meta.season}
+          </span>
         </div>
       </header>
 
@@ -171,7 +148,7 @@ export default function Dashboard() {
             <div className="max-w-md text-[11px] leading-5 text-muted-foreground">
               Values are per-game averages for each team&apos;s most-used starter
               at the position. Ranks are 1–30 among defenses: 1st allows the
-              most, 30th the fewest. Data through {dataThroughLabel(data)} (
+              fewest, 30th the most. Data through {dataThroughLabel(data)} (
               {data.meta.gamesSampled} completed games).
             </div>
             <div className="flex items-center gap-3">
@@ -195,11 +172,7 @@ export default function Dashboard() {
       <footer className="border-t border-border">
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-2 px-5 py-6 text-[10px] uppercase tracking-[0.14em] text-muted-foreground sm:flex-row sm:items-center sm:justify-between sm:px-8">
           <span>Source · {data.meta.source}</span>
-          <span>
-            {user?.email
-              ? `Signed in as ${user.email}`
-              : `Season ${data.meta.season}`}
-          </span>
+          <span>Season {data.meta.season}</span>
         </div>
       </footer>
     </div>

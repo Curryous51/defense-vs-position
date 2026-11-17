@@ -2,9 +2,9 @@
   "meta": {
     "season": "2026-27",
     "source": "FantasyPros defense vs position",
-    "generatedAt": "2026-11-16T06:59:36.453Z",
-    "gamesSampled": 197,
-    "throughDate": "2026-11-16T02:00Z"
+    "generatedAt": "2026-11-17T05:16:37.055Z",
+    "gamesSampled": 205,
+    "throughDate": "2026-11-17T02:00Z"
   },
   "teams": [
     {
@@ -16,63 +16,63 @@
       "games": 14,
       "season": {
         "PG": {
-          "pts": 22.19,
-          "reb": 5.52,
-          "ast": 9.12,
-          "tpm": 2.59,
+          "pts": 22.14,
+          "reb": 5.89,
+          "ast": 9,
+          "tpm": 2.62,
           "ranks": {
-            "pts": 26,
-            "reb": 23,
-            "ast": 9,
-            "tpm": 28
+            "pts": 3,
+            "reb": 15,
+            "ast": 23,
+            "tpm": 4
           }
         },
         "SG": {
-          "pts": 22.42,
-          "reb": 7.17,
-          "ast": 4.48,
-          "tpm": 3.03,
+          "pts": 22.99,
+          "reb": 7.15,
+          "ast": 4.56,
+          "tpm": 3.2,
           "ranks": {
-            "pts": 14,
-            "reb": 6,
-            "ast": 19,
+            "pts": 20,
+            "reb": 25,
+            "ast": 12,
             "tpm": 18
           }
         },
         "SF": {
-          "pts": 24.18,
-          "reb": 6.76,
-          "ast": 4.41,
-          "tpm": 2.96,
+          "pts": 23.52,
+          "reb": 6.99,
+          "ast": 4.45,
+          "tpm": 3.08,
           "ranks": {
-            "pts": 3,
-            "reb": 27,
-            "ast": 12,
-            "tpm": 8
+            "pts": 27,
+            "reb": 4,
+            "ast": 19,
+            "tpm": 24
           }
         },
         "PF": {
-          "pts": 23.96,
-          "reb": 11.35,
-          "ast": 4.75,
-          "tpm": 2.37,
+          "pts": 23.87,
+          "reb": 11.31,
+          "ast": 4.68,
+          "tpm": 2.34,
           "ranks": {
-            "pts": 9,
-            "reb": 6,
-            "ast": 10,
-            "tpm": 21
+            "pts": 22,
+            "reb": 25,
+            "ast": 20,
+            "tpm": 10
           }
         },
         "C": {
-          "pts": 22.99,
-          "reb": 15.02,
-          "ast": 5.74,
-          "tpm": 0.74,
+          "pts": 22.4,
+          "reb": 15.27,
+          "ast": 5.51,
+          "tpm": 0.84,
           "ranks": {
-            "pts": 9,
-            "reb": 10,
-            "ast": 2,
-            "tpm": 27
+            "pts": 20,
+            "reb": 20,
+            "ast": 28,
+            "tpm": 6
           }
         }
       }
@@ -83,66 +83,66 @@
       "location": "Boston",
       "nickname": "Celtics",
       "name": "Boston Celtics",
-      "games": 13,
+      "games": 14,
       "season": {
         "PG": {
-          "pts": 21.61,
-          "reb": 6.12,
-          "ast": 7.98,
-          "tpm": 2.82,
+          "pts": 21.77,
+          "reb": 6.04,
+          "ast": 7.71,
+          "tpm": 3.05,
           "ranks": {
-            "pts": 30,
-            "reb": 12,
-            "ast": 18,
-            "tpm": 24
+            "pts": 2,
+            "reb": 19,
+            "ast": 9,
+            "tpm": 8
           }
         },
         "SG": {
-          "pts": 20.61,
-          "reb": 4.89,
-          "ast": 4.15,
-          "tpm": 3.78,
+          "pts": 21,
+          "reb": 4.91,
+          "ast": 4.27,
+          "tpm": 3.77,
           "ranks": {
-            "pts": 24,
-            "reb": 29,
-            "ast": 21,
-            "tpm": 5
+            "pts": 10,
+            "reb": 2,
+            "ast": 9,
+            "tpm": 26
           }
         },
         "SF": {
-          "pts": 20.8,
-          "reb": 9.66,
+          "pts": 20.86,
+          "reb": 9.41,
           "ast": 4.28,
-          "tpm": 2.8,
+          "tpm": 2.88,
           "ranks": {
-            "pts": 14,
-            "reb": 4,
-            "ast": 14,
-            "tpm": 10
+            "pts": 16,
+            "reb": 27,
+            "ast": 17,
+            "tpm": 20
           }
         },
         "PF": {
-          "pts": 20.64,
-          "reb": 11.11,
-          "ast": 4.26,
-          "tpm": 3.17,
+          "pts": 19.62,
+          "reb": 11.06,
+          "ast": 4.47,
+          "tpm": 2.87,
           "ranks": {
-            "pts": 22,
-            "reb": 7,
-            "ast": 18,
-            "tpm": 2
+            "pts": 7,
+            "reb": 23,
+            "ast": 17,
+            "tpm": 25
           }
         },
         "C": {
-          "pts": 18,
-          "reb": 12.2,
-          "ast": 4.06,
-          "tpm": 1.52,
+          "pts": 17.55,
+          "reb": 12.12,
+          "ast": 4.07,
+          "tpm": 1.45,
           "ranks": {
-            "pts": 28,
-            "reb": 28,
-            "ast": 20,
-            "tpm": 4
+            "pts": 3,
+            "reb": 3,
+            "ast": 11,
+            "tpm": 24
           }
         }
       }
@@ -153,7 +153,7 @@
       "location": "Brooklyn",
       "nickname": "Nets",
       "name": "Brooklyn Nets",
-      "games": 12,
+      "games": 13,
       "season": {
         "PG": {
           "pts": 22.21,
@@ -161,10 +161,10 @@
           "ast": 8.28,
           "tpm": 2.89,
           "ranks": {
-            "pts": 25,
-            "reb": 14,
-            "ast": 15,
-            "tpm": 23
+            "pts": 4,
+            "reb": 17,
+            "ast": 16,
+            "tpm": 7
           }
         },
         "SG": {
@@ -173,10 +173,10 @@
           "ast": 4.72,
           "tpm": 4.22,
           "ranks": {
-            "pts": 1,
-            "reb": 22,
-            "ast": 17,
-            "tpm": 1
+            "pts": 30,
+            "reb": 8,
+            "ast": 16,
+            "tpm": 30
           }
         },
         "SF": {
@@ -185,10 +185,10 @@
           "ast": 4.73,
           "tpm": 2.27,
           "ranks": {
-            "pts": 26,
-            "reb": 20,
-            "ast": 9,
-            "tpm": 23
+            "pts": 6,
+            "reb": 10,
+            "ast": 22,
+            "tpm": 8
           }
         },
         "PF": {
@@ -197,10 +197,10 @@
           "ast": 4.87,
           "tpm": 2.94,
           "ranks": {
-            "pts": 2,
-            "reb": 8,
-            "ast": 7,
-            "tpm": 5
+            "pts": 28,
+            "reb": 24,
+            "ast": 24,
+            "tpm": 26
           }
         },
         "C": {
@@ -209,10 +209,10 @@
           "ast": 4.05,
           "tpm": 0.81,
           "ranks": {
-            "pts": 19,
-            "reb": 29,
-            "ast": 21,
-            "tpm": 23
+            "pts": 11,
+            "reb": 2,
+            "ast": 9,
+            "tpm": 5
           }
         }
       }
@@ -226,63 +226,63 @@
       "games": 13,
       "season": {
         "PG": {
-          "pts": 26.06,
-          "reb": 5.75,
-          "ast": 8.17,
-          "tpm": 3.67,
+          "pts": 26.59,
+          "reb": 5.87,
+          "ast": 8.24,
+          "tpm": 3.69,
           "ranks": {
-            "pts": 15,
-            "reb": 18,
-            "ast": 16,
-            "tpm": 11
-          }
-        },
-        "SG": {
-          "pts": 20.79,
-          "reb": 5.55,
-          "ast": 3.63,
-          "tpm": 3.49,
-          "ranks": {
-            "pts": 23,
-            "reb": 26,
-            "ast": 29,
-            "tpm": 6
-          }
-        },
-        "SF": {
-          "pts": 19.09,
-          "reb": 9.04,
-          "ast": 3.28,
-          "tpm": 2.64,
-          "ranks": {
-            "pts": 22,
-            "reb": 10,
-            "ast": 29,
-            "tpm": 15
-          }
-        },
-        "PF": {
-          "pts": 26.38,
-          "reb": 10.66,
-          "ast": 5.61,
-          "tpm": 2.52,
-          "ranks": {
-            "pts": 4,
-            "reb": 12,
-            "ast": 2,
+            "pts": 18,
+            "reb": 14,
+            "ast": 15,
             "tpm": 19
           }
         },
-        "C": {
-          "pts": 15.75,
-          "reb": 10.1,
-          "ast": 4.64,
-          "tpm": 1.41,
+        "SG": {
+          "pts": 20.56,
+          "reb": 5.88,
+          "ast": 3.86,
+          "tpm": 3.35,
           "ranks": {
-            "pts": 29,
-            "reb": 30,
-            "ast": 11,
-            "tpm": 7
+            "pts": 6,
+            "reb": 9,
+            "ast": 6,
+            "tpm": 22
+          }
+        },
+        "SF": {
+          "pts": 19.68,
+          "reb": 8.76,
+          "ast": 3.39,
+          "tpm": 2.97,
+          "ranks": {
+            "pts": 12,
+            "reb": 21,
+            "ast": 4,
+            "tpm": 22
+          }
+        },
+        "PF": {
+          "pts": 25.65,
+          "reb": 10.4,
+          "ast": 5.38,
+          "tpm": 2.42,
+          "ranks": {
+            "pts": 26,
+            "reb": 20,
+            "ast": 28,
+            "tpm": 12
+          }
+        },
+        "C": {
+          "pts": 16.28,
+          "reb": 9.9,
+          "ast": 5.18,
+          "tpm": 1.48,
+          "ranks": {
+            "pts": 2,
+            "reb": 1,
+            "ast": 25,
+            "tpm": 26
           }
         }
       }
@@ -293,7 +293,7 @@
       "location": "Chicago",
       "nickname": "Bulls",
       "name": "Chicago Bulls",
-      "games": 12,
+      "games": 13,
       "season": {
         "PG": {
           "pts": 27.93,
@@ -301,10 +301,10 @@
           "ast": 9.17,
           "tpm": 4.54,
           "ranks": {
-            "pts": 8,
-            "reb": 16,
-            "ast": 8,
-            "tpm": 2
+            "pts": 22,
+            "reb": 13,
+            "ast": 24,
+            "tpm": 29
           }
         },
         "SG": {
@@ -313,10 +313,10 @@
           "ast": 5.03,
           "tpm": 2.81,
           "ranks": {
-            "pts": 6,
-            "reb": 9,
-            "ast": 13,
-            "tpm": 24
+            "pts": 25,
+            "reb": 22,
+            "ast": 18,
+            "tpm": 7
           }
         },
         "SF": {
@@ -325,10 +325,10 @@
           "ast": 5.43,
           "tpm": 2.71,
           "ranks": {
-            "pts": 1,
-            "reb": 1,
-            "ast": 4,
-            "tpm": 14
+            "pts": 30,
+            "reb": 30,
+            "ast": 27,
+            "tpm": 19
           }
         },
         "PF": {
@@ -337,10 +337,10 @@
           "ast": 6.27,
           "tpm": 2.03,
           "ranks": {
-            "pts": 16,
-            "reb": 25,
-            "ast": 1,
-            "tpm": 24
+            "pts": 15,
+            "reb": 7,
+            "ast": 30,
+            "tpm": 7
           }
         },
         "C": {
@@ -349,10 +349,10 @@
           "ast": 2.89,
           "tpm": 1.21,
           "ranks": {
-            "pts": 5,
-            "reb": 14,
-            "ast": 29,
-            "tpm": 14
+            "pts": 26,
+            "reb": 16,
+            "ast": 2,
+            "tpm": 15
           }
         }
       }
@@ -363,7 +363,7 @@
       "location": "Cleveland",
       "nickname": "Cavaliers",
       "name": "Cleveland Cavaliers",
-      "games": 14,
+      "games": 15,
       "season": {
         "PG": {
           "pts": 28.78,
@@ -371,10 +371,10 @@
           "ast": 9.81,
           "tpm": 3.93,
           "ranks": {
-            "pts": 5,
-            "reb": 27,
-            "ast": 4,
-            "tpm": 8
+            "pts": 24,
+            "reb": 4,
+            "ast": 27,
+            "tpm": 22
           }
         },
         "SG": {
@@ -383,10 +383,10 @@
           "ast": 3.8,
           "tpm": 3,
           "ranks": {
-            "pts": 11,
-            "reb": 5,
-            "ast": 26,
-            "tpm": 19
+            "pts": 19,
+            "reb": 26,
+            "ast": 4,
+            "tpm": 14
           }
         },
         "SF": {
@@ -395,10 +395,10 @@
           "ast": 5.18,
           "tpm": 2.15,
           "ranks": {
-            "pts": 27,
-            "reb": 14,
-            "ast": 6,
-            "tpm": 27
+            "pts": 5,
+            "reb": 15,
+            "ast": 26,
+            "tpm": 5
           }
         },
         "PF": {
@@ -407,10 +407,10 @@
           "ast": 4.13,
           "tpm": 2.56,
           "ranks": {
-            "pts": 15,
-            "reb": 18,
-            "ast": 19,
-            "tpm": 17
+            "pts": 16,
+            "reb": 12,
+            "ast": 11,
+            "tpm": 16
           }
         },
         "C": {
@@ -419,10 +419,10 @@
           "ast": 4.27,
           "tpm": 2,
           "ranks": {
-            "pts": 8,
-            "reb": 2,
-            "ast": 18,
-            "tpm": 1
+            "pts": 23,
+            "reb": 30,
+            "ast": 15,
+            "tpm": 30
           }
         }
       }
@@ -436,63 +436,63 @@
       "games": 14,
       "season": {
         "PG": {
-          "pts": 24.58,
-          "reb": 6.45,
-          "ast": 9.55,
-          "tpm": 3.1,
+          "pts": 24.47,
+          "reb": 6.43,
+          "ast": 9.42,
+          "tpm": 3.29,
           "ranks": {
-            "pts": 20,
-            "reb": 9,
-            "ast": 6,
-            "tpm": 22
+            "pts": 11,
+            "reb": 24,
+            "ast": 25,
+            "tpm": 12
           }
         },
         "SG": {
-          "pts": 20.46,
-          "reb": 5.46,
-          "ast": 4.76,
-          "tpm": 2.63,
+          "pts": 20.92,
+          "reb": 5.73,
+          "ast": 4.72,
+          "tpm": 2.8,
           "ranks": {
-            "pts": 26,
-            "reb": 27,
-            "ast": 16,
-            "tpm": 28
+            "pts": 9,
+            "reb": 6,
+            "ast": 15,
+            "tpm": 6
           }
         },
         "SF": {
-          "pts": 22.56,
-          "reb": 8.27,
-          "ast": 4.31,
-          "tpm": 2.47,
+          "pts": 22.54,
+          "reb": 8.38,
+          "ast": 4.49,
+          "tpm": 2.54,
           "ranks": {
-            "pts": 8,
-            "reb": 12,
-            "ast": 13,
-            "tpm": 19
+            "pts": 24,
+            "reb": 18,
+            "ast": 21,
+            "tpm": 15
           }
         },
         "PF": {
-          "pts": 23.31,
-          "reb": 10.11,
-          "ast": 4.28,
-          "tpm": 2.65,
+          "pts": 24.88,
+          "reb": 10.1,
+          "ast": 4.39,
+          "tpm": 2.95,
           "ranks": {
-            "pts": 11,
-            "reb": 15,
-            "ast": 17,
-            "tpm": 11
+            "pts": 24,
+            "reb": 16,
+            "ast": 15,
+            "tpm": 27
           }
         },
         "C": {
-          "pts": 22.98,
-          "reb": 15.42,
-          "ast": 4.61,
-          "tpm": 0.83,
+          "pts": 21.9,
+          "reb": 15.59,
+          "ast": 4.97,
+          "tpm": 0.86,
           "ranks": {
-            "pts": 10,
-            "reb": 7,
-            "ast": 13,
-            "tpm": 22
+            "pts": 18,
+            "reb": 24,
+            "ast": 24,
+            "tpm": 8
           }
         }
       }
@@ -511,10 +511,10 @@
           "ast": 7.81,
           "tpm": 3.46,
           "ranks": {
-            "pts": 29,
-            "reb": 22,
-            "ast": 20,
-            "tpm": 15
+            "pts": 1,
+            "reb": 7,
+            "ast": 12,
+            "tpm": 16
           }
         },
         "SG": {
@@ -523,10 +523,10 @@
           "ast": 6.04,
           "tpm": 2.67,
           "ranks": {
-            "pts": 19,
-            "reb": 7,
-            "ast": 1,
-            "tpm": 26
+            "pts": 12,
+            "reb": 24,
+            "ast": 29,
+            "tpm": 4
           }
         },
         "SF": {
@@ -535,10 +535,10 @@
           "ast": 4.82,
           "tpm": 3.1,
           "ranks": {
-            "pts": 2,
-            "reb": 28,
-            "ast": 8,
-            "tpm": 6
+            "pts": 29,
+            "reb": 3,
+            "ast": 23,
+            "tpm": 25
           }
         },
         "PF": {
@@ -547,10 +547,10 @@
           "ast": 4.35,
           "tpm": 3.12,
           "ranks": {
-            "pts": 8,
-            "reb": 13,
-            "ast": 16,
-            "tpm": 4
+            "pts": 23,
+            "reb": 18,
+            "ast": 13,
+            "tpm": 28
           }
         },
         "C": {
@@ -559,10 +559,10 @@
           "ast": 4.73,
           "tpm": 1.12,
           "ranks": {
-            "pts": 27,
-            "reb": 13,
-            "ast": 10,
-            "tpm": 17
+            "pts": 5,
+            "reb": 17,
+            "ast": 20,
+            "tpm": 12
           }
         }
       }
@@ -581,10 +581,10 @@
           "ast": 7.71,
           "tpm": 2.62,
           "ranks": {
-            "pts": 16,
-            "reb": 30,
-            "ast": 23,
-            "tpm": 27
+            "pts": 15,
+            "reb": 1,
+            "ast": 8,
+            "tpm": 3
           }
         },
         "SG": {
@@ -593,10 +593,10 @@
           "ast": 3.8,
           "tpm": 2.72,
           "ranks": {
-            "pts": 30,
-            "reb": 20,
-            "ast": 27,
-            "tpm": 25
+            "pts": 1,
+            "reb": 10,
+            "ast": 3,
+            "tpm": 5
           }
         },
         "SF": {
@@ -605,10 +605,10 @@
           "ast": 3.61,
           "tpm": 2.98,
           "ranks": {
-            "pts": 6,
-            "reb": 17,
-            "ast": 24,
-            "tpm": 7
+            "pts": 26,
+            "reb": 12,
+            "ast": 7,
+            "tpm": 23
           }
         },
         "PF": {
@@ -617,10 +617,10 @@
           "ast": 4.85,
           "tpm": 2.67,
           "ranks": {
-            "pts": 10,
-            "reb": 1,
-            "ast": 8,
-            "tpm": 10
+            "pts": 20,
+            "reb": 30,
+            "ast": 23,
+            "tpm": 20
           }
         },
         "C": {
@@ -629,10 +629,10 @@
           "ast": 3.41,
           "tpm": 0.73,
           "ranks": {
-            "pts": 18,
-            "reb": 8,
-            "ast": 28,
-            "tpm": 28
+            "pts": 12,
+            "reb": 23,
+            "ast": 3,
+            "tpm": 3
           }
         }
       }
@@ -643,7 +643,7 @@
       "location": "Golden State",
       "nickname": "Warriors",
       "name": "Golden State Warriors",
-      "games": 13,
+      "games": 14,
       "season": {
         "PG": {
           "pts": 26.91,
@@ -651,10 +651,10 @@
           "ast": 8.5,
           "tpm": 3.71,
           "ranks": {
-            "pts": 12,
-            "reb": 11,
-            "ast": 13,
-            "tpm": 10
+            "pts": 19,
+            "reb": 22,
+            "ast": 17,
+            "tpm": 20
           }
         },
         "SG": {
@@ -663,10 +663,10 @@
           "ast": 5.11,
           "tpm": 2.65,
           "ranks": {
-            "pts": 25,
-            "reb": 19,
-            "ast": 12,
-            "tpm": 27
+            "pts": 5,
+            "reb": 11,
+            "ast": 19,
+            "tpm": 3
           }
         },
         "SF": {
@@ -675,10 +675,10 @@
           "ast": 4.15,
           "tpm": 2.54,
           "ranks": {
-            "pts": 11,
-            "reb": 9,
-            "ast": 16,
-            "tpm": 16
+            "pts": 22,
+            "reb": 23,
+            "ast": 14,
+            "tpm": 14
           }
         },
         "PF": {
@@ -687,10 +687,10 @@
           "ast": 4.47,
           "tpm": 2.58,
           "ranks": {
-            "pts": 17,
-            "reb": 28,
-            "ast": 13,
-            "tpm": 16
+            "pts": 14,
+            "reb": 3,
+            "ast": 16,
+            "tpm": 17
           }
         },
         "C": {
@@ -699,10 +699,10 @@
           "ast": 4.82,
           "tpm": 0.68,
           "ranks": {
-            "pts": 20,
-            "reb": 19,
-            "ast": 8,
-            "tpm": 29
+            "pts": 10,
+            "reb": 13,
+            "ast": 22,
+            "tpm": 1
           }
         }
       }
@@ -713,66 +713,66 @@
       "location": "Houston",
       "nickname": "Rockets",
       "name": "Houston Rockets",
-      "games": 14,
+      "games": 15,
       "season": {
         "PG": {
-          "pts": 27.5,
-          "reb": 4.48,
-          "ast": 6.72,
-          "tpm": 4.17,
+          "pts": 26.12,
+          "reb": 4.22,
+          "ast": 7.04,
+          "tpm": 4.08,
           "ranks": {
-            "pts": 11,
-            "reb": 28,
-            "ast": 28,
-            "tpm": 6
+            "pts": 16,
+            "reb": 3,
+            "ast": 4,
+            "tpm": 24
           }
         },
         "SG": {
-          "pts": 22.62,
-          "reb": 5.99,
-          "ast": 4.02,
-          "tpm": 2.99,
+          "pts": 22.75,
+          "reb": 6.23,
+          "ast": 3.9,
+          "tpm": 3,
           "ranks": {
-            "pts": 13,
-            "reb": 21,
-            "ast": 23,
-            "tpm": 20
+            "pts": 18,
+            "reb": 14,
+            "ast": 7,
+            "tpm": 13
           }
         },
         "SF": {
-          "pts": 20.53,
-          "reb": 7.37,
-          "ast": 3.94,
-          "tpm": 2.3,
+          "pts": 21.09,
+          "reb": 7.09,
+          "ast": 3.93,
+          "tpm": 2.44,
           "ranks": {
-            "pts": 15,
-            "reb": 21,
-            "ast": 19,
-            "tpm": 22
+            "pts": 17,
+            "reb": 5,
+            "ast": 12,
+            "tpm": 11
           }
         },
         "PF": {
-          "pts": 17.08,
-          "reb": 9.85,
-          "ast": 5.16,
-          "tpm": 1.9,
+          "pts": 17.54,
+          "reb": 9.97,
+          "ast": 5.24,
+          "tpm": 1.79,
           "ranks": {
-            "pts": 30,
-            "reb": 17,
-            "ast": 4,
-            "tpm": 25
+            "pts": 1,
+            "reb": 15,
+            "ast": 26,
+            "tpm": 3
           }
         },
         "C": {
-          "pts": 19.49,
-          "reb": 13.71,
-          "ast": 3.53,
-          "tpm": 0.77,
+          "pts": 20.45,
+          "reb": 13.66,
+          "ast": 3.47,
+          "tpm": 0.97,
           "ranks": {
-            "pts": 22,
-            "reb": 20,
-            "ast": 26,
-            "tpm": 25
+            "pts": 13,
+            "reb": 10,
+            "ast": 4,
+            "tpm": 9
           }
         }
       }
@@ -786,63 +786,63 @@
       "games": 14,
       "season": {
         "PG": {
-          "pts": 25.87,
+          "pts": 26.48,
           "reb": 5.66,
-          "ast": 8.1,
-          "tpm": 4.35,
+          "ast": 8.01,
+          "tpm": 4.53,
           "ranks": {
             "pts": 17,
-            "reb": 20,
-            "ast": 17,
-            "tpm": 3
+            "reb": 10,
+            "ast": 14,
+            "tpm": 28
           }
         },
         "SG": {
-          "pts": 22.4,
-          "reb": 6.88,
-          "ast": 5.38,
-          "tpm": 3.18,
+          "pts": 22.11,
+          "reb": 6.96,
+          "ast": 5.39,
+          "tpm": 3.09,
           "ranks": {
-            "pts": 15,
-            "reb": 11,
-            "ast": 9,
-            "tpm": 14
+            "pts": 14,
+            "reb": 23,
+            "ast": 23,
+            "tpm": 16
           }
         },
         "SF": {
-          "pts": 20.41,
-          "reb": 9.38,
-          "ast": 3.35,
-          "tpm": 2.32,
+          "pts": 21.54,
+          "reb": 9.1,
+          "ast": 3.33,
+          "tpm": 2.42,
           "ranks": {
-            "pts": 16,
-            "reb": 6,
-            "ast": 26,
-            "tpm": 21
+            "pts": 20,
+            "reb": 22,
+            "ast": 3,
+            "tpm": 10
           }
         },
         "PF": {
-          "pts": 21.58,
-          "reb": 10.15,
-          "ast": 5,
-          "tpm": 2.61,
+          "pts": 21.35,
+          "reb": 10.13,
+          "ast": 5.47,
+          "tpm": 2.56,
           "ranks": {
-            "pts": 18,
-            "reb": 14,
-            "ast": 6,
+            "pts": 13,
+            "reb": 17,
+            "ast": 29,
             "tpm": 15
           }
         },
         "C": {
-          "pts": 24.01,
-          "reb": 16.7,
-          "ast": 4.54,
-          "tpm": 1.18,
+          "pts": 24.05,
+          "reb": 16.18,
+          "ast": 4.25,
+          "tpm": 1.44,
           "ranks": {
-            "pts": 6,
-            "reb": 4,
+            "pts": 25,
+            "reb": 26,
             "ast": 14,
-            "tpm": 15
+            "tpm": 23
           }
         }
       }
@@ -856,63 +856,63 @@
       "games": 12,
       "season": {
         "PG": {
-          "pts": 30.9,
-          "reb": 6.07,
-          "ast": 7.81,
-          "tpm": 3.67,
+          "pts": 31.98,
+          "reb": 5.91,
+          "ast": 7.54,
+          "tpm": 3.94,
           "ranks": {
-            "pts": 3,
-            "reb": 13,
-            "ast": 21,
-            "tpm": 12
+            "pts": 28,
+            "reb": 16,
+            "ast": 7,
+            "tpm": 23
           }
         },
         "SG": {
-          "pts": 22.84,
-          "reb": 6.26,
-          "ast": 5.69,
-          "tpm": 3.41,
-          "ranks": {
-            "pts": 12,
-            "reb": 15,
-            "ast": 3,
-            "tpm": 8
-          }
-        },
-        "SF": {
-          "pts": 18.45,
+          "pts": 22.46,
           "reb": 6.29,
-          "ast": 4.19,
-          "tpm": 2.2,
+          "ast": 5.82,
+          "tpm": 3.38,
           "ranks": {
-            "pts": 25,
-            "reb": 29,
-            "ast": 15,
+            "pts": 17,
+            "reb": 15,
+            "ast": 27,
             "tpm": 25
           }
         },
-        "PF": {
-          "pts": 20.73,
-          "reb": 10.69,
-          "ast": 3.68,
-          "tpm": 1.75,
+        "SF": {
+          "pts": 16.93,
+          "reb": 6.65,
+          "ast": 4.21,
+          "tpm": 2.15,
           "ranks": {
-            "pts": 21,
-            "reb": 11,
-            "ast": 25,
-            "tpm": 28
+            "pts": 1,
+            "reb": 2,
+            "ast": 15,
+            "tpm": 4
+          }
+        },
+        "PF": {
+          "pts": 21.18,
+          "reb": 10.38,
+          "ast": 3.68,
+          "tpm": 2.09,
+          "ranks": {
+            "pts": 12,
+            "reb": 19,
+            "ast": 7,
+            "tpm": 8
           }
         },
         "C": {
-          "pts": 22.89,
-          "reb": 15.75,
-          "ast": 4.98,
-          "tpm": 0.79,
+          "pts": 22.45,
+          "reb": 15.99,
+          "ast": 4.81,
+          "tpm": 0.71,
           "ranks": {
-            "pts": 11,
-            "reb": 6,
-            "ast": 6,
-            "tpm": 24
+            "pts": 21,
+            "reb": 25,
+            "ast": 21,
+            "tpm": 2
           }
         }
       }
@@ -926,63 +926,63 @@
       "games": 14,
       "season": {
         "PG": {
-          "pts": 28.13,
-          "reb": 5.51,
-          "ast": 8.77,
-          "tpm": 4.27,
+          "pts": 28.52,
+          "reb": 5.83,
+          "ast": 8.84,
+          "tpm": 4.16,
           "ranks": {
-            "pts": 7,
-            "reb": 24,
-            "ast": 11,
-            "tpm": 5
+            "pts": 23,
+            "reb": 12,
+            "ast": 22,
+            "tpm": 25
           }
         },
         "SG": {
-          "pts": 23.29,
-          "reb": 6.3,
-          "ast": 5.19,
-          "tpm": 3.85,
+          "pts": 23.59,
+          "reb": 6.42,
+          "ast": 5.2,
+          "tpm": 3.87,
           "ranks": {
-            "pts": 9,
-            "reb": 14,
-            "ast": 11,
-            "tpm": 3
+            "pts": 23,
+            "reb": 18,
+            "ast": 20,
+            "tpm": 28
           }
         },
         "SF": {
-          "pts": 19.52,
-          "reb": 9.47,
-          "ast": 5.19,
-          "tpm": 2.38,
+          "pts": 18.39,
+          "reb": 9.38,
+          "ast": 4.88,
+          "tpm": 2.28,
           "ranks": {
-            "pts": 19,
-            "reb": 5,
-            "ast": 5,
-            "tpm": 20
+            "pts": 7,
+            "reb": 25,
+            "ast": 24,
+            "tpm": 9
           }
         },
         "PF": {
-          "pts": 23.09,
-          "reb": 7.5,
-          "ast": 3.11,
-          "tpm": 2.63,
+          "pts": 23.87,
+          "reb": 7.49,
+          "ast": 3.2,
+          "tpm": 2.65,
           "ranks": {
-            "pts": 13,
-            "reb": 30,
-            "ast": 27,
-            "tpm": 12
+            "pts": 21,
+            "reb": 1,
+            "ast": 4,
+            "tpm": 19
           }
         },
         "C": {
-          "pts": 18.93,
-          "reb": 13.44,
-          "ast": 4.33,
-          "tpm": 1.32,
+          "pts": 18.85,
+          "reb": 13.23,
+          "ast": 4.35,
+          "tpm": 1.25,
           "ranks": {
-            "pts": 23,
-            "reb": 24,
-            "ast": 17,
-            "tpm": 10
+            "pts": 8,
+            "reb": 7,
+            "ast": 16,
+            "tpm": 16
           }
         }
       }
@@ -993,7 +993,7 @@
       "location": "Memphis",
       "nickname": "Grizzlies",
       "name": "Memphis Grizzlies",
-      "games": 13,
+      "games": 14,
       "season": {
         "PG": {
           "pts": 27.79,
@@ -1001,10 +1001,10 @@
           "ast": 7.8,
           "tpm": 3.56,
           "ranks": {
-            "pts": 9,
-            "reb": 21,
-            "ast": 22,
-            "tpm": 13
+            "pts": 21,
+            "reb": 9,
+            "ast": 11,
+            "tpm": 18
           }
         },
         "SG": {
@@ -1013,10 +1013,10 @@
           "ast": 3.98,
           "tpm": 2.2,
           "ranks": {
-            "pts": 29,
-            "reb": 23,
-            "ast": 24,
-            "tpm": 30
+            "pts": 2,
+            "reb": 7,
+            "ast": 8,
+            "tpm": 1
           }
         },
         "SF": {
@@ -1025,10 +1025,10 @@
           "ast": 3.9,
           "tpm": 3.22,
           "ranks": {
-            "pts": 4,
-            "reb": 15,
-            "ast": 20,
-            "tpm": 4
+            "pts": 28,
+            "reb": 14,
+            "ast": 11,
+            "tpm": 27
           }
         },
         "PF": {
@@ -1037,10 +1037,10 @@
           "ast": 3.87,
           "tpm": 1.54,
           "ranks": {
-            "pts": 26,
-            "reb": 21,
-            "ast": 23,
-            "tpm": 29
+            "pts": 4,
+            "reb": 10,
+            "ast": 8,
+            "tpm": 1
           }
         },
         "C": {
@@ -1050,9 +1050,9 @@
           "tpm": 1.41,
           "ranks": {
             "pts": 15,
-            "reb": 22,
-            "ast": 5,
-            "tpm": 8
+            "reb": 11,
+            "ast": 26,
+            "tpm": 22
           }
         }
       }
@@ -1063,7 +1063,7 @@
       "location": "Miami",
       "nickname": "Heat",
       "name": "Miami Heat",
-      "games": 13,
+      "games": 14,
       "season": {
         "PG": {
           "pts": 34.19,
@@ -1071,10 +1071,10 @@
           "ast": 8.79,
           "tpm": 4.97,
           "ranks": {
-            "pts": 1,
-            "reb": 10,
-            "ast": 10,
-            "tpm": 1
+            "pts": 30,
+            "reb": 23,
+            "ast": 21,
+            "tpm": 30
           }
         },
         "SG": {
@@ -1083,10 +1083,10 @@
           "ast": 5.37,
           "tpm": 3.81,
           "ranks": {
-            "pts": 3,
-            "reb": 13,
-            "ast": 10,
-            "tpm": 4
+            "pts": 28,
+            "reb": 19,
+            "ast": 22,
+            "tpm": 27
           }
         },
         "SF": {
@@ -1095,10 +1095,10 @@
           "ast": 6.2,
           "tpm": 2.48,
           "ranks": {
-            "pts": 29,
-            "reb": 11,
-            "ast": 1,
-            "tpm": 18
+            "pts": 3,
+            "reb": 20,
+            "ast": 30,
+            "tpm": 12
           }
         },
         "PF": {
@@ -1107,10 +1107,10 @@
           "ast": 4.83,
           "tpm": 2.76,
           "ranks": {
-            "pts": 19,
-            "reb": 16,
-            "ast": 9,
-            "tpm": 9
+            "pts": 11,
+            "reb": 14,
+            "ast": 22,
+            "tpm": 23
           }
         },
         "C": {
@@ -1119,10 +1119,10 @@
           "ast": 3.92,
           "tpm": 1.09,
           "ranks": {
-            "pts": 26,
-            "reb": 18,
-            "ast": 23,
-            "tpm": 18
+            "pts": 6,
+            "reb": 14,
+            "ast": 7,
+            "tpm": 11
           }
         }
       }
@@ -1136,63 +1136,63 @@
       "games": 14,
       "season": {
         "PG": {
-          "pts": 23.72,
-          "reb": 5.72,
-          "ast": 9.83,
-          "tpm": 3.55,
+          "pts": 24.14,
+          "reb": 5.73,
+          "ast": 9.63,
+          "tpm": 3.49,
           "ranks": {
-            "pts": 21,
-            "reb": 19,
-            "ast": 3,
-            "tpm": 14
+            "pts": 10,
+            "reb": 11,
+            "ast": 26,
+            "tpm": 17
           }
         },
         "SG": {
-          "pts": 25.96,
-          "reb": 7.8,
-          "ast": 4.37,
-          "tpm": 3.43,
+          "pts": 25.75,
+          "reb": 7.73,
+          "ast": 4.48,
+          "tpm": 3.36,
           "ranks": {
-            "pts": 2,
-            "reb": 2,
-            "ast": 20,
-            "tpm": 7
+            "pts": 27,
+            "reb": 30,
+            "ast": 11,
+            "tpm": 23
           }
         },
         "SF": {
-          "pts": 23.15,
-          "reb": 7.27,
-          "ast": 4.43,
-          "tpm": 3.54,
+          "pts": 22.86,
+          "reb": 7.88,
+          "ast": 4.46,
+          "tpm": 3.42,
           "ranks": {
-            "pts": 5,
-            "reb": 23,
-            "ast": 10,
-            "tpm": 1
+            "pts": 25,
+            "reb": 13,
+            "ast": 20,
+            "tpm": 30
           }
         },
         "PF": {
-          "pts": 23.27,
-          "reb": 11.56,
-          "ast": 4.67,
-          "tpm": 2.83,
+          "pts": 22.93,
+          "reb": 11.75,
+          "ast": 4.7,
+          "tpm": 2.7,
           "ranks": {
-            "pts": 12,
-            "reb": 2,
-            "ast": 11,
-            "tpm": 7
+            "pts": 17,
+            "reb": 28,
+            "ast": 21,
+            "tpm": 21
           }
         },
         "C": {
-          "pts": 23.72,
-          "reb": 17.44,
-          "ast": 4.36,
-          "tpm": 1.22,
+          "pts": 23.58,
+          "reb": 17.27,
+          "ast": 4.09,
+          "tpm": 1.39,
           "ranks": {
-            "pts": 7,
-            "reb": 1,
-            "ast": 16,
-            "tpm": 13
+            "pts": 24,
+            "reb": 29,
+            "ast": 12,
+            "tpm": 21
           }
         }
       }
@@ -1203,7 +1203,7 @@
       "location": "Minnesota",
       "nickname": "Timberwolves",
       "name": "Minnesota Timberwolves",
-      "games": 13,
+      "games": 14,
       "season": {
         "PG": {
           "pts": 25.76,
@@ -1211,10 +1211,10 @@
           "ast": 7.07,
           "tpm": 2.74,
           "ranks": {
-            "pts": 18,
-            "reb": 1,
-            "ast": 25,
-            "tpm": 25
+            "pts": 13,
+            "reb": 30,
+            "ast": 5,
+            "tpm": 6
           }
         },
         "SG": {
@@ -1223,10 +1223,10 @@
           "ast": 5.45,
           "tpm": 3.11,
           "ranks": {
-            "pts": 22,
-            "reb": 3,
-            "ast": 8,
-            "tpm": 16
+            "pts": 8,
+            "reb": 28,
+            "ast": 25,
+            "tpm": 17
           }
         },
         "SF": {
@@ -1235,10 +1235,10 @@
           "ast": 3.82,
           "tpm": 1.94,
           "ranks": {
-            "pts": 20,
-            "reb": 22,
-            "ast": 21,
-            "tpm": 28
+            "pts": 11,
+            "reb": 9,
+            "ast": 10,
+            "tpm": 3
           }
         },
         "PF": {
@@ -1247,10 +1247,10 @@
           "ast": 3.59,
           "tpm": 1.83,
           "ranks": {
-            "pts": 29,
-            "reb": 22,
-            "ast": 26,
-            "tpm": 26
+            "pts": 2,
+            "reb": 9,
+            "ast": 5,
+            "tpm": 5
           }
         },
         "C": {
@@ -1259,10 +1259,10 @@
           "ast": 4.4,
           "tpm": 1.46,
           "ranks": {
-            "pts": 13,
-            "reb": 26,
-            "ast": 15,
-            "tpm": 6
+            "pts": 17,
+            "reb": 5,
+            "ast": 17,
+            "tpm": 25
           }
         }
       }
@@ -1273,7 +1273,7 @@
       "location": "New Orleans",
       "nickname": "Pelicans",
       "name": "New Orleans Pelicans",
-      "games": 14,
+      "games": 15,
       "season": {
         "PG": {
           "pts": 33.86,
@@ -1281,10 +1281,10 @@
           "ast": 9.97,
           "tpm": 4.3,
           "ranks": {
-            "pts": 2,
-            "reb": 29,
-            "ast": 1,
-            "tpm": 4
+            "pts": 29,
+            "reb": 2,
+            "ast": 30,
+            "tpm": 27
           }
         },
         "SG": {
@@ -1293,10 +1293,10 @@
           "ast": 5.54,
           "tpm": 2.93,
           "ranks": {
-            "pts": 17,
-            "reb": 18,
-            "ast": 6,
-            "tpm": 22
+            "pts": 15,
+            "reb": 12,
+            "ast": 26,
+            "tpm": 8
           }
         },
         "SF": {
@@ -1305,10 +1305,10 @@
           "ast": 3.71,
           "tpm": 1.72,
           "ranks": {
-            "pts": 28,
-            "reb": 18,
-            "ast": 22,
-            "tpm": 29
+            "pts": 4,
+            "reb": 11,
+            "ast": 8,
+            "tpm": 2
           }
         },
         "PF": {
@@ -1317,10 +1317,10 @@
           "ast": 3.92,
           "tpm": 2.79,
           "ranks": {
-            "pts": 6,
-            "reb": 3,
-            "ast": 21,
-            "tpm": 8
+            "pts": 25,
+            "reb": 27,
+            "ast": 9,
+            "tpm": 24
           }
         },
         "C": {
@@ -1329,10 +1329,10 @@
           "ast": 6.4,
           "tpm": 1.26,
           "ranks": {
-            "pts": 4,
-            "reb": 9,
-            "ast": 1,
-            "tpm": 11
+            "pts": 27,
+            "reb": 19,
+            "ast": 30,
+            "tpm": 17
           }
         }
       }
@@ -1346,63 +1346,63 @@
       "games": 13,
       "season": {
         "PG": {
-          "pts": 22.01,
-          "reb": 6.8,
-          "ast": 7.97,
-          "tpm": 3.21,
+          "pts": 22.49,
+          "reb": 6.74,
+          "ast": 7.94,
+          "tpm": 3.33,
           "ranks": {
-            "pts": 28,
-            "reb": 3,
-            "ast": 19,
-            "tpm": 21
+            "pts": 5,
+            "reb": 26,
+            "ast": 13,
+            "tpm": 13
           }
         },
         "SG": {
-          "pts": 21.62,
-          "reb": 4.29,
-          "ast": 2.6,
-          "tpm": 3.16,
+          "pts": 20.8,
+          "reb": 4.34,
+          "ast": 2.5,
+          "tpm": 3.02,
           "ranks": {
-            "pts": 21,
-            "reb": 30,
-            "ast": 30,
+            "pts": 7,
+            "reb": 1,
+            "ast": 1,
             "tpm": 15
           }
         },
         "SF": {
-          "pts": 22.42,
-          "reb": 9.26,
-          "ast": 4.07,
-          "tpm": 3.52,
+          "pts": 21.82,
+          "reb": 9.2,
+          "ast": 4.26,
+          "tpm": 3.23,
           "ranks": {
-            "pts": 10,
-            "reb": 8,
-            "ast": 17,
-            "tpm": 2
+            "pts": 21,
+            "reb": 24,
+            "ast": 16,
+            "tpm": 28
           }
         },
         "PF": {
-          "pts": 18.5,
-          "reb": 9.56,
-          "ast": 5.22,
-          "tpm": 1.5,
+          "pts": 19.46,
+          "reb": 9.85,
+          "ast": 5.33,
+          "tpm": 1.69,
           "ranks": {
-            "pts": 28,
-            "reb": 19,
-            "ast": 3,
-            "tpm": 30
+            "pts": 6,
+            "reb": 13,
+            "ast": 27,
+            "tpm": 2
           }
         },
         "C": {
-          "pts": 18.41,
-          "reb": 12.54,
-          "ast": 4.77,
-          "tpm": 1.89,
+          "pts": 17.97,
+          "reb": 12.81,
+          "ast": 4.53,
+          "tpm": 1.69,
           "ranks": {
-            "pts": 25,
-            "reb": 27,
-            "ast": 9,
-            "tpm": 2
+            "pts": 4,
+            "reb": 6,
+            "ast": 18,
+            "tpm": 28
           }
         }
       }
@@ -1416,63 +1416,63 @@
       "games": 14,
       "season": {
         "PG": {
-          "pts": 22.02,
-          "reb": 6.46,
-          "ast": 7.07,
-          "tpm": 3.77,
+          "pts": 22.73,
+          "reb": 6.18,
+          "ast": 7.14,
+          "tpm": 3.79,
           "ranks": {
-            "pts": 27,
-            "reb": 8,
-            "ast": 26,
-            "tpm": 9
+            "pts": 7,
+            "reb": 21,
+            "ast": 6,
+            "tpm": 21
           }
         },
         "SG": {
-          "pts": 23.17,
-          "reb": 6.89,
-          "ast": 5.54,
-          "tpm": 3.34,
+          "pts": 23.19,
+          "reb": 6.4,
+          "ast": 5.83,
+          "tpm": 3.33,
           "ranks": {
-            "pts": 10,
-            "reb": 10,
-            "ast": 7,
-            "tpm": 10
+            "pts": 21,
+            "reb": 17,
+            "ast": 28,
+            "tpm": 21
           }
         },
         "SF": {
-          "pts": 22.47,
-          "reb": 6.92,
-          "ast": 3.3,
-          "tpm": 3.38,
+          "pts": 21.1,
+          "reb": 7.17,
+          "ast": 3.12,
+          "tpm": 3.41,
           "ranks": {
-            "pts": 9,
-            "reb": 26,
-            "ast": 28,
-            "tpm": 3
+            "pts": 18,
+            "reb": 7,
+            "ast": 1,
+            "tpm": 29
           }
         },
         "PF": {
-          "pts": 20.05,
-          "reb": 11.41,
-          "ast": 3.91,
-          "tpm": 2.85,
+          "pts": 19.95,
+          "reb": 11.87,
+          "ast": 3.95,
+          "tpm": 2.71,
           "ranks": {
-            "pts": 23,
-            "reb": 4,
-            "ast": 22,
-            "tpm": 6
+            "pts": 9,
+            "reb": 29,
+            "ast": 10,
+            "tpm": 22
           }
         },
         "C": {
-          "pts": 19.57,
-          "reb": 13.71,
-          "ast": 4.02,
-          "tpm": 1.18,
+          "pts": 19.74,
+          "reb": 13.63,
+          "ast": 4.01,
+          "tpm": 1.13,
           "ranks": {
-            "pts": 21,
-            "reb": 21,
-            "ast": 22,
-            "tpm": 16
+            "pts": 9,
+            "reb": 8,
+            "ast": 8,
+            "tpm": 13
           }
         }
       }
@@ -1483,7 +1483,7 @@
       "location": "Orlando",
       "nickname": "Magic",
       "name": "Orlando Magic",
-      "games": 12,
+      "games": 13,
       "season": {
         "PG": {
           "pts": 22.92,
@@ -1491,10 +1491,10 @@
           "ast": 8.69,
           "tpm": 3.23,
           "ranks": {
-            "pts": 22,
-            "reb": 4,
-            "ast": 12,
-            "tpm": 20
+            "pts": 8,
+            "reb": 27,
+            "ast": 19,
+            "tpm": 9
           }
         },
         "SG": {
@@ -1503,10 +1503,10 @@
           "ast": 3.82,
           "tpm": 3.3,
           "ranks": {
-            "pts": 18,
-            "reb": 25,
-            "ast": 25,
-            "tpm": 11
+            "pts": 13,
+            "reb": 4,
+            "ast": 5,
+            "tpm": 20
           }
         },
         "SF": {
@@ -1515,10 +1515,10 @@
           "ast": 4.42,
           "tpm": 3.19,
           "ranks": {
-            "pts": 12,
-            "reb": 30,
-            "ast": 11,
-            "tpm": 5
+            "pts": 19,
+            "reb": 1,
+            "ast": 18,
+            "tpm": 26
           }
         },
         "PF": {
@@ -1527,10 +1527,10 @@
           "ast": 4.37,
           "tpm": 2.62,
           "ranks": {
-            "pts": 1,
-            "reb": 10,
-            "ast": 15,
-            "tpm": 13
+            "pts": 30,
+            "reb": 22,
+            "ast": 14,
+            "tpm": 18
           }
         },
         "C": {
@@ -1539,10 +1539,10 @@
           "ast": 5.68,
           "tpm": 0.75,
           "ranks": {
-            "pts": 30,
-            "reb": 23,
-            "ast": 3,
-            "tpm": 26
+            "pts": 1,
+            "reb": 9,
+            "ast": 29,
+            "tpm": 4
           }
         }
       }
@@ -1553,66 +1553,66 @@
       "location": "Philadelphia",
       "nickname": "76ers",
       "name": "Philadelphia 76ers",
-      "games": 14,
+      "games": 15,
       "season": {
         "PG": {
-          "pts": 22.46,
-          "reb": 6.63,
-          "ast": 9.62,
-          "tpm": 2.55,
+          "pts": 22.73,
+          "reb": 6.92,
+          "ast": 9.83,
+          "tpm": 2.44,
           "ranks": {
-            "pts": 24,
-            "reb": 6,
-            "ast": 5,
-            "tpm": 29
+            "pts": 6,
+            "reb": 29,
+            "ast": 28,
+            "tpm": 2
           }
         },
         "SG": {
-          "pts": 21.75,
+          "pts": 21.91,
           "reb": 6.53,
-          "ast": 3.79,
-          "tpm": 2.97,
+          "ast": 3.77,
+          "tpm": 2.98,
           "ranks": {
-            "pts": 20,
-            "reb": 12,
-            "ast": 28,
-            "tpm": 21
-          }
-        },
-        "SF": {
-          "pts": 20.96,
-          "reb": 9.67,
-          "ast": 3.35,
-          "tpm": 2.77,
-          "ranks": {
-            "pts": 13,
-            "reb": 3,
-            "ast": 27,
+            "pts": 11,
+            "reb": 20,
+            "ast": 2,
             "tpm": 11
           }
         },
-        "PF": {
-          "pts": 22.97,
-          "reb": 11.11,
-          "ast": 3.01,
-          "tpm": 2.13,
+        "SF": {
+          "pts": 20.78,
+          "reb": 9.56,
+          "ast": 3.56,
+          "tpm": 2.6,
           "ranks": {
-            "pts": 14,
-            "reb": 9,
-            "ast": 28,
-            "tpm": 23
+            "pts": 15,
+            "reb": 28,
+            "ast": 6,
+            "tpm": 17
+          }
+        },
+        "PF": {
+          "pts": 23.5,
+          "reb": 10.75,
+          "ast": 3.18,
+          "tpm": 1.99,
+          "ranks": {
+            "pts": 19,
+            "reb": 21,
+            "ast": 3,
+            "tpm": 6
           }
         },
         "C": {
-          "pts": 20.75,
-          "reb": 14.72,
-          "ast": 4.94,
-          "tpm": 1.58,
+          "pts": 20.91,
+          "reb": 14.06,
+          "ast": 4.93,
+          "tpm": 1.73,
           "ranks": {
-            "pts": 17,
-            "reb": 16,
-            "ast": 7,
-            "tpm": 3
+            "pts": 14,
+            "reb": 12,
+            "ast": 23,
+            "tpm": 29
           }
         }
       }
@@ -1626,63 +1626,63 @@
       "games": 12,
       "season": {
         "PG": {
-          "pts": 27.6,
-          "reb": 7.04,
-          "ast": 5.95,
-          "tpm": 4.11,
+          "pts": 29.37,
+          "reb": 6.87,
+          "ast": 6.31,
+          "tpm": 4.26,
           "ranks": {
-            "pts": 10,
-            "reb": 2,
-            "ast": 29,
-            "tpm": 7
+            "pts": 26,
+            "reb": 28,
+            "ast": 2,
+            "tpm": 26
           }
         },
         "SG": {
-          "pts": 23.61,
-          "reb": 5.26,
-          "ast": 4.97,
-          "tpm": 3.9,
+          "pts": 24.3,
+          "reb": 5.2,
+          "ast": 4.77,
+          "tpm": 4.07,
           "ranks": {
-            "pts": 7,
-            "reb": 28,
-            "ast": 15,
-            "tpm": 2
+            "pts": 26,
+            "reb": 3,
+            "ast": 17,
+            "tpm": 29
           }
         },
         "SF": {
-          "pts": 20.13,
-          "reb": 9.3,
-          "ast": 5.92,
-          "tpm": 2.53,
+          "pts": 20.05,
+          "reb": 9.4,
+          "ast": 5.72,
+          "tpm": 2.5,
           "ranks": {
-            "pts": 17,
-            "reb": 7,
-            "ast": 2,
-            "tpm": 17
+            "pts": 14,
+            "reb": 26,
+            "ast": 29,
+            "tpm": 13
           }
         },
         "PF": {
-          "pts": 19,
-          "reb": 9.08,
-          "ast": 5.05,
-          "tpm": 2.62,
+          "pts": 18.34,
+          "reb": 8.79,
+          "ast": 4.98,
+          "tpm": 2.49,
           "ranks": {
-            "pts": 27,
-            "reb": 24,
-            "ast": 5,
-            "tpm": 14
+            "pts": 3,
+            "reb": 4,
+            "ast": 25,
+            "tpm": 13
           }
         },
         "C": {
-          "pts": 26.03,
-          "reb": 16.8,
-          "ast": 4.12,
-          "tpm": 1.08,
+          "pts": 25.7,
+          "reb": 16.86,
+          "ast": 4.14,
+          "tpm": 1.01,
           "ranks": {
-            "pts": 2,
-            "reb": 3,
-            "ast": 19,
-            "tpm": 19
+            "pts": 29,
+            "reb": 27,
+            "ast": 13,
+            "tpm": 10
           }
         }
       }
@@ -1693,7 +1693,7 @@
       "location": "Portland",
       "nickname": "Trail Blazers",
       "name": "Portland Trail Blazers",
-      "games": 12,
+      "games": 13,
       "season": {
         "PG": {
           "pts": 30.69,
@@ -1701,10 +1701,10 @@
           "ast": 5.61,
           "tpm": 2.68,
           "ranks": {
-            "pts": 4,
-            "reb": 26,
-            "ast": 30,
-            "tpm": 26
+            "pts": 27,
+            "reb": 5,
+            "ast": 1,
+            "tpm": 5
           }
         },
         "SG": {
@@ -1713,10 +1713,10 @@
           "ast": 4.62,
           "tpm": 2.38,
           "ranks": {
-            "pts": 28,
-            "reb": 24,
-            "ast": 18,
-            "tpm": 29
+            "pts": 3,
+            "reb": 5,
+            "ast": 13,
+            "tpm": 2
           }
         },
         "SF": {
@@ -1725,10 +1725,10 @@
           "ast": 3.26,
           "tpm": 2.17,
           "ranks": {
-            "pts": 30,
-            "reb": 13,
-            "ast": 30,
-            "tpm": 26
+            "pts": 2,
+            "reb": 17,
+            "ast": 2,
+            "tpm": 6
           }
         },
         "PF": {
@@ -1737,10 +1737,10 @@
           "ast": 4.59,
           "tpm": 2.53,
           "ranks": {
-            "pts": 25,
-            "reb": 26,
-            "ast": 12,
-            "tpm": 18
+            "pts": 8,
+            "reb": 6,
+            "ast": 18,
+            "tpm": 14
           }
         },
         "C": {
@@ -1749,10 +1749,10 @@
           "ast": 5.46,
           "tpm": 1.49,
           "ranks": {
-            "pts": 1,
-            "reb": 12,
-            "ast": 4,
-            "tpm": 5
+            "pts": 30,
+            "reb": 18,
+            "ast": 27,
+            "tpm": 27
           }
         }
       }
@@ -1766,63 +1766,63 @@
       "games": 13,
       "season": {
         "PG": {
-          "pts": 26.39,
-          "reb": 5.94,
-          "ast": 9.35,
+          "pts": 27.24,
+          "reb": 5.62,
+          "ast": 8.79,
           "tpm": 3.24,
           "ranks": {
-            "pts": 13,
-            "reb": 15,
-            "ast": 7,
-            "tpm": 19
+            "pts": 20,
+            "reb": 8,
+            "ast": 20,
+            "tpm": 10
           }
         },
         "SG": {
-          "pts": 24.48,
-          "reb": 6.99,
-          "ast": 5.02,
-          "tpm": 3.22,
+          "pts": 23.81,
+          "reb": 6.68,
+          "ast": 4.68,
+          "tpm": 2.99,
           "ranks": {
-            "pts": 5,
-            "reb": 8,
+            "pts": 24,
+            "reb": 21,
             "ast": 14,
-            "tpm": 13
+            "tpm": 12
           }
         },
         "SF": {
-          "pts": 19.32,
-          "reb": 7.91,
-          "ast": 4.94,
-          "tpm": 2.73,
+          "pts": 19.93,
+          "reb": 8.42,
+          "ast": 5.12,
+          "tpm": 2.59,
           "ranks": {
-            "pts": 21,
-            "reb": 16,
-            "ast": 7,
-            "tpm": 13
+            "pts": 13,
+            "reb": 19,
+            "ast": 25,
+            "tpm": 16
           }
         },
         "PF": {
-          "pts": 25.71,
-          "reb": 8.4,
-          "ast": 4.12,
-          "tpm": 3.23,
+          "pts": 25.7,
+          "reb": 8.22,
+          "ast": 4.15,
+          "tpm": 3.29,
           "ranks": {
-            "pts": 5,
-            "reb": 29,
-            "ast": 20,
-            "tpm": 1
+            "pts": 27,
+            "reb": 2,
+            "ast": 12,
+            "tpm": 30
           }
         },
         "C": {
-          "pts": 25.55,
-          "reb": 14.88,
-          "ast": 2.52,
-          "tpm": 1.4,
+          "pts": 24.94,
+          "reb": 15.36,
+          "ast": 2.62,
+          "tpm": 1.35,
           "ranks": {
-            "pts": 3,
-            "reb": 15,
-            "ast": 30,
-            "tpm": 9
+            "pts": 28,
+            "reb": 22,
+            "ast": 1,
+            "tpm": 20
           }
         }
       }
@@ -1836,63 +1836,63 @@
       "games": 14,
       "season": {
         "PG": {
-          "pts": 26.22,
-          "reb": 6.64,
-          "ast": 7.58,
-          "tpm": 3.46,
+          "pts": 25.84,
+          "reb": 6.59,
+          "ast": 7.76,
+          "tpm": 3.36,
           "ranks": {
             "pts": 14,
-            "reb": 5,
-            "ast": 24,
-            "tpm": 16
+            "reb": 25,
+            "ast": 10,
+            "tpm": 14
           }
         },
         "SG": {
-          "pts": 18.55,
-          "reb": 7.2,
-          "ast": 5.6,
-          "tpm": 2.86,
+          "pts": 18.56,
+          "reb": 7.31,
+          "ast": 5.4,
+          "tpm": 2.95,
           "ranks": {
-            "pts": 27,
-            "reb": 4,
-            "ast": 5,
-            "tpm": 23
+            "pts": 4,
+            "reb": 27,
+            "ast": 24,
+            "tpm": 10
           }
         },
         "SF": {
-          "pts": 18.98,
+          "pts": 18.96,
           "reb": 7.25,
-          "ast": 3.7,
-          "tpm": 2.93,
+          "ast": 3.76,
+          "tpm": 2.92,
           "ranks": {
-            "pts": 24,
-            "reb": 24,
-            "ast": 23,
-            "tpm": 9
+            "pts": 9,
+            "reb": 8,
+            "ast": 9,
+            "tpm": 21
           }
         },
         "PF": {
-          "pts": 19.84,
-          "reb": 9.34,
-          "ast": 2.81,
-          "tpm": 1.81,
+          "pts": 19.42,
+          "reb": 9.51,
+          "ast": 2.98,
+          "tpm": 1.8,
           "ranks": {
-            "pts": 24,
-            "reb": 23,
-            "ast": 29,
-            "tpm": 27
+            "pts": 5,
+            "reb": 11,
+            "ast": 2,
+            "tpm": 4
           }
         },
         "C": {
-          "pts": 21.82,
-          "reb": 12.88,
-          "ast": 4.63,
-          "tpm": 0.94,
+          "pts": 22.62,
+          "reb": 12.42,
+          "ast": 4.58,
+          "tpm": 1.34,
           "ranks": {
-            "pts": 12,
-            "reb": 25,
-            "ast": 12,
-            "tpm": 21
+            "pts": 22,
+            "reb": 4,
+            "ast": 19,
+            "tpm": 19
           }
         }
       }
@@ -1906,63 +1906,63 @@
       "games": 13,
       "season": {
         "PG": {
-          "pts": 25.2,
-          "reb": 6.58,
-          "ast": 8.31,
-          "tpm": 3.37,
+          "pts": 24.65,
+          "reb": 5.97,
+          "ast": 8.65,
+          "tpm": 3.29,
           "ranks": {
-            "pts": 19,
-            "reb": 7,
-            "ast": 14,
-            "tpm": 17
+            "pts": 12,
+            "reb": 18,
+            "ast": 18,
+            "tpm": 11
           }
         },
         "SG": {
-          "pts": 22.39,
-          "reb": 6.16,
-          "ast": 5.66,
-          "tpm": 3.25,
+          "pts": 22.25,
+          "reb": 6.3,
+          "ast": 5.33,
+          "tpm": 3.21,
           "ranks": {
             "pts": 16,
-            "reb": 17,
-            "ast": 4,
-            "tpm": 12
+            "reb": 16,
+            "ast": 21,
+            "tpm": 19
           }
         },
         "SF": {
-          "pts": 23.03,
-          "reb": 7.05,
-          "ast": 4.05,
-          "tpm": 2.75,
+          "pts": 22.05,
+          "reb": 7.14,
+          "ast": 4.03,
+          "tpm": 2.64,
           "ranks": {
-            "pts": 7,
-            "reb": 25,
-            "ast": 18,
-            "tpm": 12
+            "pts": 23,
+            "reb": 6,
+            "ast": 13,
+            "tpm": 18
           }
         },
         "PF": {
-          "pts": 20.94,
-          "reb": 8.76,
-          "ast": 3.82,
+          "pts": 21.06,
+          "reb": 8.82,
+          "ast": 3.63,
           "tpm": 2.15,
           "ranks": {
-            "pts": 20,
-            "reb": 27,
-            "ast": 24,
-            "tpm": 22
+            "pts": 10,
+            "reb": 5,
+            "ast": 6,
+            "tpm": 9
           }
         },
         "C": {
-          "pts": 21.33,
-          "reb": 14.71,
-          "ast": 3.83,
-          "tpm": 0.63,
+          "pts": 21.95,
+          "reb": 15.36,
+          "ast": 3.72,
+          "tpm": 0.85,
           "ranks": {
-            "pts": 14,
-            "reb": 17,
-            "ast": 25,
-            "tpm": 30
+            "pts": 19,
+            "reb": 21,
+            "ast": 6,
+            "tpm": 7
           }
         }
       }
@@ -1976,63 +1976,63 @@
       "games": 14,
       "season": {
         "PG": {
-          "pts": 28.28,
-          "reb": 5.8,
-          "ast": 7.02,
-          "tpm": 3.35,
+          "pts": 28.98,
+          "reb": 6.06,
+          "ast": 6.89,
+          "tpm": 3.37,
           "ranks": {
-            "pts": 6,
-            "reb": 17,
-            "ast": 27,
-            "tpm": 18
+            "pts": 25,
+            "reb": 20,
+            "ast": 3,
+            "tpm": 15
           }
         },
         "SG": {
-          "pts": 23.35,
-          "reb": 7.83,
-          "ast": 5.78,
-          "tpm": 3.11,
+          "pts": 23.57,
+          "reb": 7.71,
+          "ast": 6.12,
+          "tpm": 2.95,
           "ranks": {
-            "pts": 8,
-            "reb": 1,
-            "ast": 2,
-            "tpm": 17
+            "pts": 22,
+            "reb": 29,
+            "ast": 30,
+            "tpm": 9
           }
         },
         "SF": {
-          "pts": 19.82,
-          "reb": 7.57,
-          "ast": 3.46,
-          "tpm": 2.26,
+          "pts": 19.36,
+          "reb": 8,
+          "ast": 3.41,
+          "tpm": 2.23,
           "ranks": {
-            "pts": 18,
-            "reb": 19,
-            "ast": 25,
-            "tpm": 24
+            "pts": 10,
+            "reb": 16,
+            "ast": 5,
+            "tpm": 7
           }
         },
         "PF": {
-          "pts": 24.36,
-          "reb": 9.51,
-          "ast": 2.66,
-          "tpm": 2.52,
+          "pts": 23.14,
+          "reb": 9.33,
+          "ast": 2.67,
+          "tpm": 2.36,
           "ranks": {
-            "pts": 7,
-            "reb": 20,
-            "ast": 30,
-            "tpm": 20
+            "pts": 18,
+            "reb": 8,
+            "ast": 1,
+            "tpm": 11
           }
         },
         "C": {
-          "pts": 21.1,
-          "reb": 15.02,
-          "ast": 3.9,
-          "tpm": 1.04,
+          "pts": 21.65,
+          "reb": 14.78,
+          "ast": 4.07,
+          "tpm": 1.27,
           "ranks": {
             "pts": 16,
-            "reb": 11,
-            "ast": 24,
-            "tpm": 20
+            "reb": 15,
+            "ast": 10,
+            "tpm": 18
           }
         }
       }
@@ -2043,66 +2043,66 @@
       "location": "Washington",
       "nickname": "Wizards",
       "name": "Washington Wizards",
-      "games": 14,
+      "games": 15,
       "season": {
         "PG": {
-          "pts": 22.48,
-          "reb": 5.5,
-          "ast": 9.84,
-          "tpm": 1.93,
+          "pts": 23.23,
+          "reb": 5.57,
+          "ast": 9.88,
+          "tpm": 2.18,
           "ranks": {
-            "pts": 23,
-            "reb": 25,
-            "ast": 2,
-            "tpm": 30
+            "pts": 9,
+            "reb": 6,
+            "ast": 29,
+            "tpm": 1
           }
         },
         "SG": {
-          "pts": 25.43,
-          "reb": 6.19,
-          "ast": 4.13,
-          "tpm": 3.36,
+          "pts": 25.93,
+          "reb": 6.21,
+          "ast": 4.36,
+          "tpm": 3.38,
           "ranks": {
-            "pts": 4,
-            "reb": 16,
-            "ast": 22,
-            "tpm": 9
+            "pts": 29,
+            "reb": 13,
+            "ast": 10,
+            "tpm": 24
           }
         },
         "SF": {
-          "pts": 19.04,
-          "reb": 9.99,
-          "ast": 5.6,
-          "tpm": 1.63,
+          "pts": 18.96,
+          "reb": 10.04,
+          "ast": 5.57,
+          "tpm": 1.59,
           "ranks": {
-            "pts": 23,
-            "reb": 2,
-            "ast": 3,
-            "tpm": 30
+            "pts": 8,
+            "reb": 29,
+            "ast": 28,
+            "tpm": 1
           }
         },
         "PF": {
-          "pts": 26.41,
-          "reb": 11.37,
-          "ast": 4.4,
-          "tpm": 3.15,
+          "pts": 27.31,
+          "reb": 11.46,
+          "ast": 4.67,
+          "tpm": 3.16,
           "ranks": {
-            "pts": 3,
-            "reb": 5,
-            "ast": 14,
-            "tpm": 3
+            "pts": 29,
+            "reb": 26,
+            "ast": 19,
+            "tpm": 29
           }
         },
         "C": {
-          "pts": 18.74,
-          "reb": 16.22,
-          "ast": 3.42,
-          "tpm": 1.26,
+          "pts": 18.79,
+          "reb": 16.89,
+          "ast": 3.62,
+          "tpm": 1.2,
           "ranks": {
-            "pts": 24,
-            "reb": 5,
-            "ast": 27,
-            "tpm": 12
+            "pts": 7,
+            "reb": 28,
+            "ast": 5,
+            "tpm": 14
           }
         }
       }
@@ -2201,12 +2201,12 @@
           "PG",
           "SG"
         ],
-        "games": 13,
-        "starts": 13,
-        "mpg": 29.3,
-        "pts": 13,
+        "games": 14,
+        "starts": 14,
+        "mpg": 29.5,
+        "pts": 12.7,
         "reb": 3,
-        "ast": 5,
+        "ast": 4.8,
         "tpm": 1.9
       },
       {
@@ -2218,13 +2218,13 @@
           "SF",
           "SG"
         ],
-        "games": 11,
-        "starts": 11,
-        "mpg": 29.6,
-        "pts": 20.6,
-        "reb": 5.4,
-        "ast": 4,
-        "tpm": 3.5
+        "games": 12,
+        "starts": 12,
+        "mpg": 30.2,
+        "pts": 20.8,
+        "reb": 5.6,
+        "ast": 3.9,
+        "tpm": 3.6
       },
       {
         "slot": "SF",
@@ -2234,13 +2234,13 @@
           "SF",
           "SG"
         ],
-        "games": 13,
-        "starts": 8,
+        "games": 14,
+        "starts": 9,
         "mpg": 16.5,
-        "pts": 5,
-        "reb": 3.2,
+        "pts": 5.1,
+        "reb": 3.1,
         "ast": 0.6,
-        "tpm": 0.8
+        "tpm": 0.9
       },
       {
         "slot": "PF",
@@ -2250,12 +2250,12 @@
           "PF",
           "SF"
         ],
-        "games": 12,
-        "starts": 12,
-        "mpg": 33.7,
-        "pts": 26.8,
-        "reb": 6.1,
-        "ast": 7.3,
+        "games": 13,
+        "starts": 13,
+        "mpg": 33.8,
+        "pts": 26.5,
+        "reb": 6.5,
+        "ast": 7.1,
         "tpm": 2.6
       },
       {
@@ -2277,22 +2277,6 @@
     "3": [
       {
         "slot": "PG",
-        "id": "5144091",
-        "name": "Jeremiah Fears",
-        "positions": [
-          "PG",
-          "SG"
-        ],
-        "games": 14,
-        "starts": 14,
-        "mpg": 29.5,
-        "pts": 15.3,
-        "reb": 4.5,
-        "ast": 5.2,
-        "tpm": 1.1
-      },
-      {
-        "slot": "SG",
         "id": "3907497",
         "name": "Dejounte Murray",
         "positions": [
@@ -2306,6 +2290,22 @@
         "reb": 4.6,
         "ast": 4.4,
         "tpm": 0.9
+      },
+      {
+        "slot": "SG",
+        "id": "5144091",
+        "name": "Jeremiah Fears",
+        "positions": [
+          "PG",
+          "SG"
+        ],
+        "games": 15,
+        "starts": 15,
+        "mpg": 29.5,
+        "pts": 15.5,
+        "reb": 4.9,
+        "ast": 5.5,
+        "tpm": 1.1
       },
       {
         "slot": "SF",
@@ -2331,13 +2331,13 @@
           "PF",
           "SF"
         ],
-        "games": 13,
-        "starts": 13,
-        "mpg": 32.7,
-        "pts": 21.9,
-        "reb": 5.2,
-        "ast": 2.7,
-        "tpm": 0.5
+        "games": 14,
+        "starts": 14,
+        "mpg": 32.1,
+        "pts": 21.5,
+        "reb": 5.3,
+        "ast": 2.6,
+        "tpm": 0.4
       },
       {
         "slot": "C",
@@ -2347,13 +2347,13 @@
           "C",
           "PF"
         ],
-        "games": 13,
+        "games": 14,
         "starts": 8,
-        "mpg": 18.5,
-        "pts": 7.7,
-        "reb": 4.1,
-        "ast": 1.1,
-        "tpm": 1.3
+        "mpg": 18.6,
+        "pts": 7.4,
+        "reb": 3.9,
+        "ast": 1,
+        "tpm": 1.2
       }
     ],
     "4": [
@@ -2365,13 +2365,13 @@
           "PG",
           "SG"
         ],
-        "games": 12,
-        "starts": 12,
-        "mpg": 28.5,
-        "pts": 10.4,
-        "reb": 5.3,
+        "games": 13,
+        "starts": 13,
+        "mpg": 28.2,
+        "pts": 9.9,
+        "reb": 5.2,
         "ast": 8.5,
-        "tpm": 1.3
+        "tpm": 1.2
       },
       {
         "slot": "SG",
@@ -2381,13 +2381,13 @@
           "SF",
           "SG"
         ],
-        "games": 10,
-        "starts": 10,
-        "mpg": 29.2,
-        "pts": 21.1,
-        "reb": 3,
-        "ast": 1.8,
-        "tpm": 2.4
+        "games": 11,
+        "starts": 11,
+        "mpg": 29.5,
+        "pts": 21.6,
+        "reb": 2.9,
+        "ast": 2.2,
+        "tpm": 2.2
       },
       {
         "slot": "SF",
@@ -2397,12 +2397,12 @@
           "PF",
           "SF"
         ],
-        "games": 12,
-        "starts": 12,
-        "mpg": 26.8,
-        "pts": 13.7,
-        "reb": 4.8,
-        "ast": 2,
+        "games": 13,
+        "starts": 13,
+        "mpg": 27.2,
+        "pts": 14.4,
+        "reb": 4.7,
+        "ast": 1.8,
         "tpm": 1.8
       },
       {
@@ -2429,13 +2429,13 @@
           "C",
           "PF"
         ],
-        "games": 11,
-        "starts": 11,
-        "mpg": 24.6,
-        "pts": 13,
-        "reb": 7.8,
-        "ast": 2,
-        "tpm": 1.7
+        "games": 12,
+        "starts": 12,
+        "mpg": 24.9,
+        "pts": 13.3,
+        "reb": 8.1,
+        "ast": 2.1,
+        "tpm": 1.8
       }
     ],
     "5": [
@@ -2446,12 +2446,12 @@
         "positions": [
           "PG"
         ],
-        "games": 13,
-        "starts": 13,
-        "mpg": 32.8,
-        "pts": 16.9,
-        "reb": 4.7,
-        "ast": 5.8,
+        "games": 14,
+        "starts": 14,
+        "mpg": 32.9,
+        "pts": 16.4,
+        "reb": 4.6,
+        "ast": 6.1,
         "tpm": 2.6
       },
       {
@@ -2462,12 +2462,12 @@
           "PG",
           "SG"
         ],
-        "games": 13,
-        "starts": 13,
-        "mpg": 32.8,
-        "pts": 23,
+        "games": 14,
+        "starts": 14,
+        "mpg": 33.1,
+        "pts": 24.1,
         "reb": 4.9,
-        "ast": 5.6,
+        "ast": 5.5,
         "tpm": 2.8
       },
       {
@@ -2478,13 +2478,13 @@
           "PF",
           "SF"
         ],
-        "games": 11,
-        "starts": 11,
-        "mpg": 28,
-        "pts": 10.4,
+        "games": 12,
+        "starts": 12,
+        "mpg": 27.5,
+        "pts": 10.7,
         "reb": 4.5,
-        "ast": 2.7,
-        "tpm": 0.9
+        "ast": 2.5,
+        "tpm": 1
       },
       {
         "slot": "PF",
@@ -2509,12 +2509,12 @@
         "positions": [
           "C"
         ],
-        "games": 11,
-        "starts": 11,
-        "mpg": 25.8,
-        "pts": 12.5,
-        "reb": 8.3,
-        "ast": 1.4,
+        "games": 12,
+        "starts": 12,
+        "mpg": 26.2,
+        "pts": 12.6,
+        "reb": 8.8,
+        "ast": 1.5,
         "tpm": 0.3
       }
     ],
@@ -2609,13 +2609,13 @@
         "positions": [
           "PG"
         ],
-        "games": 11,
-        "starts": 11,
-        "mpg": 36.5,
-        "pts": 25.9,
-        "reb": 5.2,
-        "ast": 6.2,
-        "tpm": 3.6
+        "games": 12,
+        "starts": 12,
+        "mpg": 36.3,
+        "pts": 26.1,
+        "reb": 5.1,
+        "ast": 6,
+        "tpm": 3.4
       },
       {
         "slot": "SG",
@@ -2625,13 +2625,13 @@
           "SF",
           "SG"
         ],
-        "games": 11,
-        "starts": 11,
+        "games": 12,
+        "starts": 12,
         "mpg": 33.7,
-        "pts": 12.8,
-        "reb": 4.4,
+        "pts": 12.6,
+        "reb": 4.3,
         "ast": 2.3,
-        "tpm": 1.5
+        "tpm": 1.6
       },
       {
         "slot": "SF",
@@ -2642,13 +2642,13 @@
           "SF",
           "SG"
         ],
-        "games": 8,
-        "starts": 8,
-        "mpg": 28.8,
-        "pts": 12.1,
-        "reb": 4,
-        "ast": 1.9,
-        "tpm": 2.1
+        "games": 9,
+        "starts": 9,
+        "mpg": 28.6,
+        "pts": 11.8,
+        "reb": 3.6,
+        "ast": 1.8,
+        "tpm": 1.9
       },
       {
         "slot": "PF",
@@ -2658,13 +2658,13 @@
           "C",
           "PF"
         ],
-        "games": 11,
-        "starts": 11,
-        "mpg": 29.4,
+        "games": 12,
+        "starts": 12,
+        "mpg": 28.9,
         "pts": 11,
-        "reb": 5,
-        "ast": 2,
-        "tpm": 1.1
+        "reb": 4.7,
+        "ast": 1.9,
+        "tpm": 1.2
       },
       {
         "slot": "C",
@@ -2673,13 +2673,13 @@
         "positions": [
           "C"
         ],
-        "games": 11,
-        "starts": 11,
-        "mpg": 36.4,
-        "pts": 23.7,
-        "reb": 10.5,
-        "ast": 9.1,
-        "tpm": 1
+        "games": 12,
+        "starts": 12,
+        "mpg": 36.5,
+        "pts": 24.1,
+        "reb": 10.9,
+        "ast": 8.9,
+        "tpm": 1.1
       }
     ],
     "8": [
@@ -2787,11 +2787,11 @@
           "PG",
           "SG"
         ],
-        "games": 11,
-        "starts": 11,
-        "mpg": 32.5,
-        "pts": 16.5,
-        "reb": 4.9,
+        "games": 12,
+        "starts": 12,
+        "mpg": 32.3,
+        "pts": 16.3,
+        "reb": 5,
         "ast": 3.8,
         "tpm": 2.8
       },
@@ -2803,12 +2803,12 @@
           "PF",
           "SF"
         ],
-        "games": 13,
-        "starts": 13,
-        "mpg": 31.5,
-        "pts": 20.2,
+        "games": 14,
+        "starts": 14,
+        "mpg": 31.6,
+        "pts": 20.8,
         "reb": 7.4,
-        "ast": 3.5,
+        "ast": 3.4,
         "tpm": 2.2
       },
       {
@@ -2819,12 +2819,12 @@
           "PF",
           "SF"
         ],
-        "games": 10,
+        "games": 11,
         "starts": 6,
         "mpg": 18.7,
-        "pts": 5.6,
-        "reb": 3.9,
-        "ast": 1.4,
+        "pts": 6.2,
+        "reb": 4.2,
+        "ast": 1.5,
         "tpm": 0.5
       },
       {
@@ -2835,12 +2835,12 @@
           "C",
           "PF"
         ],
-        "games": 11,
-        "starts": 11,
-        "mpg": 25.9,
-        "pts": 3.3,
-        "reb": 4.7,
-        "ast": 7.1,
+        "games": 12,
+        "starts": 12,
+        "mpg": 25.8,
+        "pts": 3.2,
+        "reb": 5,
+        "ast": 6.9,
         "tpm": 0.3
       }
     ],
@@ -2852,13 +2852,13 @@
         "positions": [
           "PG"
         ],
-        "games": 11,
-        "starts": 11,
-        "mpg": 30.5,
-        "pts": 14,
-        "reb": 2.9,
+        "games": 12,
+        "starts": 12,
+        "mpg": 30.1,
+        "pts": 13.5,
+        "reb": 3.1,
         "ast": 5.4,
-        "tpm": 2.9
+        "tpm": 2.8
       },
       {
         "slot": "SG",
@@ -2885,13 +2885,13 @@
           "PF",
           "SF"
         ],
-        "games": 14,
-        "starts": 14,
-        "mpg": 33.9,
+        "games": 15,
+        "starts": 15,
+        "mpg": 33.6,
         "pts": 21.3,
-        "reb": 5.7,
-        "ast": 3.9,
-        "tpm": 1.4
+        "reb": 5.5,
+        "ast": 3.8,
+        "tpm": 1.5
       },
       {
         "slot": "PF",
@@ -2901,13 +2901,13 @@
           "C",
           "PF"
         ],
-        "games": 14,
-        "starts": 14,
-        "mpg": 33.9,
-        "pts": 15.4,
-        "reb": 6.3,
-        "ast": 2.2,
-        "tpm": 2.4
+        "games": 15,
+        "starts": 15,
+        "mpg": 33.8,
+        "pts": 15.2,
+        "reb": 6.5,
+        "ast": 2.1,
+        "tpm": 2.3
       },
       {
         "slot": "C",
@@ -2917,12 +2917,12 @@
           "C",
           "PF"
         ],
-        "games": 12,
-        "starts": 12,
-        "mpg": 34.6,
+        "games": 13,
+        "starts": 13,
+        "mpg": 34.2,
         "pts": 22.8,
-        "reb": 9.5,
-        "ast": 7.7,
+        "reb": 9.3,
+        "ast": 7.2,
         "tpm": 1
       }
     ],
@@ -3175,13 +3175,13 @@
         "positions": [
           "PG"
         ],
-        "games": 13,
-        "starts": 13,
-        "mpg": 35.7,
-        "pts": 16.8,
+        "games": 14,
+        "starts": 14,
+        "mpg": 35.5,
+        "pts": 16.7,
         "reb": 2.4,
         "ast": 9.2,
-        "tpm": 2.4
+        "tpm": 2.3
       },
       {
         "slot": "SG",
@@ -3192,13 +3192,13 @@
           "SF",
           "SG"
         ],
-        "games": 12,
-        "starts": 12,
-        "mpg": 24.3,
-        "pts": 15.3,
-        "reb": 1.5,
+        "games": 13,
+        "starts": 13,
+        "mpg": 24.2,
+        "pts": 15.5,
+        "reb": 1.4,
         "ast": 2.1,
-        "tpm": 4
+        "tpm": 4.1
       },
       {
         "slot": "SF",
@@ -3209,13 +3209,13 @@
           "SF",
           "SG"
         ],
-        "games": 13,
+        "games": 14,
         "starts": 9,
-        "mpg": 26,
-        "pts": 8.8,
-        "reb": 2.8,
+        "mpg": 26.6,
+        "pts": 9.4,
+        "reb": 2.9,
         "ast": 1.6,
-        "tpm": 1.2
+        "tpm": 1.4
       },
       {
         "slot": "PF",
@@ -3224,10 +3224,10 @@
         "positions": [
           "PF"
         ],
-        "games": 13,
-        "starts": 13,
-        "mpg": 32.5,
-        "pts": 28.9,
+        "games": 14,
+        "starts": 14,
+        "mpg": 32.2,
+        "pts": 28.3,
         "reb": 12.5,
         "ast": 5.2,
         "tpm": 0.6
@@ -3240,13 +3240,13 @@
           "C",
           "PF"
         ],
-        "games": 13,
-        "starts": 13,
-        "mpg": 33.8,
-        "pts": 19.5,
-        "reb": 8.5,
-        "ast": 3.3,
-        "tpm": 0.7
+        "games": 14,
+        "starts": 14,
+        "mpg": 32.5,
+        "pts": 18.4,
+        "reb": 8,
+        "ast": 3.2,
+        "tpm": 0.6
       }
     ],
     "15": [
@@ -3339,13 +3339,13 @@
         "positions": [
           "PG"
         ],
-        "games": 13,
-        "starts": 13,
-        "mpg": 27.8,
-        "pts": 18.6,
-        "reb": 3.6,
-        "ast": 6.2,
-        "tpm": 3.6
+        "games": 14,
+        "starts": 14,
+        "mpg": 27.5,
+        "pts": 17.7,
+        "reb": 3.7,
+        "ast": 5.8,
+        "tpm": 3.5
       },
       {
         "slot": "SG",
@@ -3355,12 +3355,12 @@
           "PG",
           "SG"
         ],
-        "games": 13,
-        "starts": 9,
-        "mpg": 31.2,
-        "pts": 18.5,
+        "games": 14,
+        "starts": 10,
+        "mpg": 31.1,
+        "pts": 17.8,
         "reb": 4.6,
-        "ast": 3.5,
+        "ast": 3.4,
         "tpm": 1.8
       },
       {
@@ -3371,13 +3371,13 @@
           "PF",
           "SF"
         ],
-        "games": 13,
-        "starts": 13,
-        "mpg": 33.5,
-        "pts": 17,
+        "games": 14,
+        "starts": 14,
+        "mpg": 33.3,
+        "pts": 16.7,
         "reb": 6.2,
-        "ast": 3.8,
-        "tpm": 1.4
+        "ast": 3.7,
+        "tpm": 1.3
       },
       {
         "slot": "PF",
@@ -3386,12 +3386,12 @@
         "positions": [
           "PF"
         ],
-        "games": 13,
-        "starts": 13,
-        "mpg": 30.5,
-        "pts": 12.3,
-        "reb": 5.5,
-        "ast": 2.9,
+        "games": 14,
+        "starts": 14,
+        "mpg": 30.4,
+        "pts": 12.4,
+        "reb": 5.7,
+        "ast": 2.8,
         "tpm": 1.6
       },
       {
@@ -3401,12 +3401,12 @@
         "positions": [
           "C"
         ],
-        "games": 12,
-        "starts": 12,
-        "mpg": 29.2,
-        "pts": 7.3,
-        "reb": 11.4,
-        "ast": 1.6,
+        "games": 13,
+        "starts": 13,
+        "mpg": 29.4,
+        "pts": 8.2,
+        "reb": 11.7,
+        "ast": 1.7,
         "tpm": 0
       }
     ],
@@ -3418,13 +3418,13 @@
         "positions": [
           "PG"
         ],
-        "games": 11,
-        "starts": 7,
-        "mpg": 21.9,
-        "pts": 12.7,
-        "reb": 1.9,
-        "ast": 2.5,
-        "tpm": 1.6
+        "games": 12,
+        "starts": 8,
+        "mpg": 22.6,
+        "pts": 13.6,
+        "reb": 1.8,
+        "ast": 2.7,
+        "tpm": 1.7
       },
       {
         "slot": "SG",
@@ -3434,13 +3434,13 @@
           "PG",
           "SG"
         ],
-        "games": 6,
-        "starts": 6,
-        "mpg": 22.8,
-        "pts": 10.7,
-        "reb": 1.8,
-        "ast": 2.3,
-        "tpm": 2.2
+        "games": 7,
+        "starts": 7,
+        "mpg": 23.3,
+        "pts": 10.4,
+        "reb": 2,
+        "ast": 2.6,
+        "tpm": 2.1
       },
       {
         "slot": "SF",
@@ -3450,13 +3450,13 @@
           "PF",
           "SF"
         ],
-        "games": 11,
-        "starts": 11,
-        "mpg": 32.5,
-        "pts": 21.5,
-        "reb": 7.5,
+        "games": 12,
+        "starts": 12,
+        "mpg": 33.2,
+        "pts": 21.8,
+        "reb": 7.4,
         "ast": 1.3,
-        "tpm": 3.5
+        "tpm": 3.4
       },
       {
         "slot": "PF",
@@ -3466,12 +3466,12 @@
           "C",
           "PF"
         ],
-        "games": 12,
-        "starts": 12,
-        "mpg": 32.8,
-        "pts": 19.9,
-        "reb": 6.3,
-        "ast": 5,
+        "games": 13,
+        "starts": 13,
+        "mpg": 32.9,
+        "pts": 20.9,
+        "reb": 6.2,
+        "ast": 4.7,
         "tpm": 1.5
       },
       {
@@ -3481,11 +3481,11 @@
         "positions": [
           "C"
         ],
-        "games": 12,
-        "starts": 12,
-        "mpg": 23.7,
-        "pts": 8.8,
-        "reb": 7.2,
+        "games": 13,
+        "starts": 13,
+        "mpg": 23.8,
+        "pts": 8.6,
+        "reb": 7.3,
         "ast": 4.2,
         "tpm": 0.4
       }
@@ -3582,13 +3582,13 @@
           "SF",
           "SG"
         ],
-        "games": 11,
-        "starts": 11,
-        "mpg": 34.6,
-        "pts": 18.3,
-        "reb": 4.1,
-        "ast": 2.5,
-        "tpm": 4.1
+        "games": 12,
+        "starts": 12,
+        "mpg": 35,
+        "pts": 18.8,
+        "reb": 4.4,
+        "ast": 2.7,
+        "tpm": 4
       },
       {
         "slot": "SG",
@@ -3615,13 +3615,13 @@
           "SF",
           "SG"
         ],
-        "games": 9,
-        "starts": 8,
-        "mpg": 32.2,
-        "pts": 16.3,
-        "reb": 5.6,
-        "ast": 5.4,
-        "tpm": 2
+        "games": 10,
+        "starts": 9,
+        "mpg": 32.3,
+        "pts": 16.7,
+        "reb": 5.2,
+        "ast": 5.6,
+        "tpm": 2.1
       },
       {
         "slot": "PF",
@@ -3631,13 +3631,13 @@
           "PF",
           "SF"
         ],
-        "games": 12,
-        "starts": 12,
+        "games": 13,
+        "starts": 13,
         "mpg": 36.8,
-        "pts": 24.4,
+        "pts": 24.2,
         "reb": 6.8,
         "ast": 8.3,
-        "tpm": 1.4
+        "tpm": 1.3
       },
       {
         "slot": "C",
@@ -3646,11 +3646,11 @@
         "positions": [
           "C"
         ],
-        "games": 12,
-        "starts": 12,
-        "mpg": 32.7,
-        "pts": 13.5,
-        "reb": 9.3,
+        "games": 13,
+        "starts": 13,
+        "mpg": 32.3,
+        "pts": 13.2,
+        "reb": 8.8,
         "ast": 1.1,
         "tpm": 1
       }
@@ -3663,13 +3663,13 @@
         "positions": [
           "PG"
         ],
-        "games": 14,
-        "starts": 14,
-        "mpg": 36.2,
-        "pts": 26.7,
-        "reb": 3.4,
-        "ast": 5.6,
-        "tpm": 2.6
+        "games": 15,
+        "starts": 15,
+        "mpg": 36.1,
+        "pts": 26.5,
+        "reb": 3.3,
+        "ast": 5.8,
+        "tpm": 2.7
       },
       {
         "slot": "SG",
@@ -3679,11 +3679,11 @@
           "PG",
           "SG"
         ],
-        "games": 13,
-        "starts": 13,
+        "games": 14,
+        "starts": 14,
         "mpg": 33.4,
-        "pts": 12.8,
-        "reb": 6.2,
+        "pts": 12.9,
+        "reb": 6.4,
         "ast": 3.7,
         "tpm": 1.5
       },
@@ -3696,13 +3696,13 @@
           "SF",
           "SG"
         ],
-        "games": 13,
-        "starts": 13,
-        "mpg": 34.8,
-        "pts": 21.9,
-        "reb": 6.2,
-        "ast": 3.5,
-        "tpm": 1.8
+        "games": 14,
+        "starts": 14,
+        "mpg": 34.7,
+        "pts": 22.6,
+        "reb": 6.6,
+        "ast": 3.6,
+        "tpm": 1.9
       },
       {
         "slot": "PF",
@@ -3728,13 +3728,13 @@
         "positions": [
           "C"
         ],
-        "games": 11,
-        "starts": 11,
+        "games": 12,
+        "starts": 12,
         "mpg": 31.5,
-        "pts": 17.9,
-        "reb": 8.8,
-        "ast": 3.7,
-        "tpm": 0.4
+        "pts": 19.5,
+        "reb": 8.5,
+        "ast": 3.5,
+        "tpm": 0.5
       }
     ],
     "21": [
@@ -3746,13 +3746,13 @@
           "PG",
           "SG"
         ],
-        "games": 12,
-        "starts": 12,
-        "mpg": 33.4,
-        "pts": 24.8,
-        "reb": 2.7,
-        "ast": 5.2,
-        "tpm": 2
+        "games": 13,
+        "starts": 13,
+        "mpg": 33.7,
+        "pts": 24.5,
+        "reb": 2.8,
+        "ast": 5.4,
+        "tpm": 1.9
       },
       {
         "slot": "SG",
@@ -3763,13 +3763,13 @@
           "SF",
           "SG"
         ],
-        "games": 12,
-        "starts": 12,
-        "mpg": 29.2,
+        "games": 13,
+        "starts": 13,
+        "mpg": 29,
         "pts": 13.8,
         "reb": 3.7,
-        "ast": 1.9,
-        "tpm": 1.8
+        "ast": 2.1,
+        "tpm": 1.9
       },
       {
         "slot": "SF",
@@ -3779,13 +3779,13 @@
           "SF",
           "SG"
         ],
-        "games": 12,
-        "starts": 12,
+        "games": 13,
+        "starts": 13,
         "mpg": 26.7,
-        "pts": 11.6,
-        "reb": 3.3,
+        "pts": 11.9,
+        "reb": 3.4,
         "ast": 2.9,
-        "tpm": 0.9
+        "tpm": 1
       },
       {
         "slot": "PF",
@@ -3795,12 +3795,12 @@
           "PF",
           "SF"
         ],
-        "games": 12,
-        "starts": 12,
+        "games": 13,
+        "starts": 13,
         "mpg": 29.3,
-        "pts": 14.6,
-        "reb": 6.9,
-        "ast": 3.1,
+        "pts": 14.7,
+        "reb": 7,
+        "ast": 3,
         "tpm": 1.8
       },
       {
@@ -3810,11 +3810,11 @@
         "positions": [
           "C"
         ],
-        "games": 10,
-        "starts": 6,
-        "mpg": 21.7,
-        "pts": 5.8,
-        "reb": 4.8,
+        "games": 11,
+        "starts": 7,
+        "mpg": 22.7,
+        "pts": 6,
+        "reb": 5.4,
         "ast": 3.5,
         "tpm": 0
       }
@@ -3827,13 +3827,13 @@
         "positions": [
           "PG"
         ],
-        "games": 12,
+        "games": 13,
         "starts": 5,
         "mpg": 22.3,
-        "pts": 8.6,
-        "reb": 1.9,
-        "ast": 1.5,
-        "tpm": 1
+        "pts": 8.7,
+        "reb": 1.8,
+        "ast": 1.4,
+        "tpm": 0.9
       },
       {
         "slot": "SG",
@@ -3843,13 +3843,13 @@
           "PG",
           "SG"
         ],
-        "games": 12,
-        "starts": 12,
-        "mpg": 29.5,
-        "pts": 20.6,
-        "reb": 3.1,
+        "games": 13,
+        "starts": 13,
+        "mpg": 29.1,
+        "pts": 19.7,
+        "reb": 3,
         "ast": 4.3,
-        "tpm": 3.1
+        "tpm": 3
       },
       {
         "slot": "SF",
@@ -3860,13 +3860,13 @@
           "SF",
           "SG"
         ],
-        "games": 12,
-        "starts": 12,
-        "mpg": 32.8,
-        "pts": 23.9,
-        "reb": 6.1,
-        "ast": 6.3,
-        "tpm": 2
+        "games": 13,
+        "starts": 13,
+        "mpg": 32.5,
+        "pts": 24.2,
+        "reb": 6.2,
+        "ast": 6.1,
+        "tpm": 2.1
       },
       {
         "slot": "PF",
@@ -3877,13 +3877,13 @@
           "SF",
           "SG"
         ],
-        "games": 12,
-        "starts": 12,
-        "mpg": 29.1,
-        "pts": 13.2,
-        "reb": 3.3,
-        "ast": 1.4,
-        "tpm": 2.8
+        "games": 13,
+        "starts": 13,
+        "mpg": 28.8,
+        "pts": 12.4,
+        "reb": 3.1,
+        "ast": 1.3,
+        "tpm": 2.6
       },
       {
         "slot": "C",
@@ -3892,13 +3892,13 @@
         "positions": [
           "C"
         ],
-        "games": 12,
-        "starts": 12,
-        "mpg": 25.5,
-        "pts": 11,
+        "games": 13,
+        "starts": 13,
+        "mpg": 25.2,
+        "pts": 10.9,
         "reb": 10.5,
-        "ast": 1.6,
-        "tpm": 1.1
+        "ast": 1.5,
+        "tpm": 1
       }
     ],
     "23": [
@@ -4236,12 +4236,12 @@
         "positions": [
           "PG"
         ],
-        "games": 14,
-        "starts": 14,
-        "mpg": 35.4,
-        "pts": 18.3,
+        "games": 15,
+        "starts": 15,
+        "mpg": 35.2,
+        "pts": 17.9,
         "reb": 2.9,
-        "ast": 8.7,
+        "ast": 8.9,
         "tpm": 2
       },
       {
@@ -4252,13 +4252,13 @@
           "SF",
           "SG"
         ],
-        "games": 14,
-        "starts": 14,
-        "mpg": 32.9,
-        "pts": 17.6,
-        "reb": 4.3,
-        "ast": 4.7,
-        "tpm": 2.4
+        "games": 15,
+        "starts": 15,
+        "mpg": 33.3,
+        "pts": 17.7,
+        "reb": 4.4,
+        "ast": 4.5,
+        "tpm": 2.3
       },
       {
         "slot": "SF",
@@ -4268,12 +4268,12 @@
           "PF",
           "SF"
         ],
-        "games": 10,
-        "starts": 10,
-        "mpg": 33.4,
-        "pts": 15.1,
-        "reb": 6.2,
-        "ast": 2.2,
+        "games": 11,
+        "starts": 11,
+        "mpg": 33.3,
+        "pts": 15.6,
+        "reb": 6.1,
+        "ast": 2.3,
         "tpm": 0.9
       },
       {
@@ -4284,12 +4284,12 @@
           "C",
           "PF"
         ],
-        "games": 13,
-        "starts": 13,
-        "mpg": 27.3,
-        "pts": 12.2,
-        "reb": 7.5,
-        "ast": 1.7,
+        "games": 14,
+        "starts": 14,
+        "mpg": 27.6,
+        "pts": 11.8,
+        "reb": 7.3,
+        "ast": 1.6,
         "tpm": 1.1
       },
       {
@@ -4300,13 +4300,13 @@
           "C",
           "PF"
         ],
-        "games": 12,
-        "starts": 12,
-        "mpg": 34,
-        "pts": 24.7,
-        "reb": 10.3,
-        "ast": 2.3,
-        "tpm": 0.8
+        "games": 13,
+        "starts": 13,
+        "mpg": 34.1,
+        "pts": 24.5,
+        "reb": 9.8,
+        "ast": 2.1,
+        "tpm": 0.7
       }
     ],
     "28": [
@@ -4416,12 +4416,12 @@
           "SF",
           "SG"
         ],
-        "games": 13,
-        "starts": 13,
+        "games": 14,
+        "starts": 14,
         "mpg": 27.1,
-        "pts": 11.4,
-        "reb": 2.8,
-        "ast": 1.3,
+        "pts": 11.1,
+        "reb": 2.9,
+        "ast": 1.4,
         "tpm": 2.1
       },
       {
@@ -4432,13 +4432,13 @@
           "SF",
           "SG"
         ],
-        "games": 12,
-        "starts": 12,
-        "mpg": 28.8,
-        "pts": 13.8,
+        "games": 13,
+        "starts": 13,
+        "mpg": 28.7,
+        "pts": 14.1,
         "reb": 8.8,
-        "ast": 3.1,
-        "tpm": 2.3
+        "ast": 3.3,
+        "tpm": 2.2
       },
       {
         "slot": "PF",
@@ -4448,13 +4448,13 @@
           "C",
           "PF"
         ],
-        "games": 13,
-        "starts": 13,
-        "mpg": 31.4,
-        "pts": 15.5,
-        "reb": 9.7,
-        "ast": 5.2,
-        "tpm": 1.6
+        "games": 14,
+        "starts": 14,
+        "mpg": 31.2,
+        "pts": 16.5,
+        "reb": 9.5,
+        "ast": 5.4,
+        "tpm": 2
       },
       {
         "slot": "C",
@@ -4463,11 +4463,11 @@
         "positions": [
           "C"
         ],
-        "games": 10,
-        "starts": 10,
+        "games": 11,
+        "starts": 11,
         "mpg": 20.8,
-        "pts": 7.6,
-        "reb": 7.7,
+        "pts": 9,
+        "reb": 7.9,
         "ast": 0.9,
         "tpm": 0.1
       }
@@ -4557,85 +4557,37 @@
   },
   "leagueAverage": {
     "PG": {
-      "pts": 26.06,
-      "reb": 5.88,
-      "ast": 8.27,
-      "tpm": 3.46
+      "pts": 26.27,
+      "reb": 5.86,
+      "ast": 8.26,
+      "tpm": 3.49
     },
     "SG": {
-      "pts": 22.2,
-      "reb": 6.34,
-      "ast": 4.73,
-      "tpm": 3.16
+      "pts": 22.23,
+      "reb": 6.35,
+      "ast": 4.74,
+      "tpm": 3.15
     },
     "SF": {
-      "pts": 20.77,
-      "reb": 8.15,
-      "ast": 4.3,
-      "tpm": 2.62
+      "pts": 20.62,
+      "reb": 8.2,
+      "ast": 4.31,
+      "tpm": 2.61
     },
     "PF": {
-      "pts": 22.38,
-      "reb": 10.11,
-      "ast": 4.32,
-      "tpm": 2.48
+      "pts": 22.41,
+      "reb": 10.1,
+      "ast": 4.36,
+      "tpm": 2.47
     },
     "C": {
-      "pts": 21.23,
-      "reb": 14.46,
+      "pts": 21.22,
+      "reb": 14.47,
       "ast": 4.41,
-      "tpm": 1.16
+      "tpm": 1.2
     }
   },
   "matchups": [
-    {
-      "id": "401909994",
-      "date": "2026-11-17T00:00Z",
-      "home": "2",
-      "away": "19"
-    },
-    {
-      "id": "401909995",
-      "date": "2026-11-17T00:00Z",
-      "home": "5",
-      "away": "4"
-    },
-    {
-      "id": "401909996",
-      "date": "2026-11-17T00:00Z",
-      "home": "27",
-      "away": "29"
-    },
-    {
-      "id": "401909997",
-      "date": "2026-11-17T00:30Z",
-      "home": "17",
-      "away": "20"
-    },
-    {
-      "id": "401909998",
-      "date": "2026-11-17T00:30Z",
-      "home": "14",
-      "away": "10"
-    },
-    {
-      "id": "401910000",
-      "date": "2026-11-17T01:00Z",
-      "home": "3",
-      "away": "9"
-    },
-    {
-      "id": "401909999",
-      "date": "2026-11-17T01:00Z",
-      "home": "16",
-      "away": "22"
-    },
-    {
-      "id": "401910001",
-      "date": "2026-11-17T02:00Z",
-      "home": "7",
-      "away": "21"
-    },
     {
       "id": "401910002",
       "date": "2026-11-18T00:30Z",
@@ -5307,6 +5259,54 @@
       "date": "2026-12-03T01:00Z",
       "home": "3",
       "away": "13"
+    },
+    {
+      "id": "401910080",
+      "date": "2026-12-03T01:00Z",
+      "home": "15",
+      "away": "18"
+    },
+    {
+      "id": "401910083",
+      "date": "2026-12-03T02:00Z",
+      "home": "21",
+      "away": "23"
+    },
+    {
+      "id": "401910084",
+      "date": "2026-12-03T03:30Z",
+      "home": "12",
+      "away": "16"
+    },
+    {
+      "id": "401910085",
+      "date": "2026-12-04T00:00Z",
+      "home": "1",
+      "away": "11"
+    },
+    {
+      "id": "401910086",
+      "date": "2026-12-04T00:30Z",
+      "home": "14",
+      "away": "27"
+    },
+    {
+      "id": "401910087",
+      "date": "2026-12-04T01:00Z",
+      "home": "4",
+      "away": "5"
+    },
+    {
+      "id": "401910088",
+      "date": "2026-12-04T01:00Z",
+      "home": "24",
+      "away": "28"
+    },
+    {
+      "id": "401910089",
+      "date": "2026-12-04T03:00Z",
+      "home": "22",
+      "away": "26"
     }
   ]
 }

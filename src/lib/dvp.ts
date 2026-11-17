@@ -93,16 +93,15 @@ export function ordinal(value: number): string {
 }
 
 /**
- * Rank 1 means the defense gives up the most of that stat to that position (as on
- * the FantasyPros table), so the top third is shaded sage (soft) and the bottom
- * third clay (tough).
+ * Rank 1 means the defense gives up the fewest of that stat to that position,
+ * so the top third is shaded clay (tough) and the bottom third sage (soft).
  */
 export function rankTone(rank: number): string {
-  if (rank <= 6) return "bg-match-favorable-strong";
-  if (rank <= 12) return "bg-match-favorable";
+  if (rank <= 6) return "bg-match-tough-strong";
+  if (rank <= 12) return "bg-match-tough";
   if (rank <= 18) return "bg-match-neutral";
-  if (rank <= 24) return "bg-match-tough";
-  return "bg-match-tough-strong";
+  if (rank <= 24) return "bg-match-favorable";
+  return "bg-match-favorable-strong";
 }
 
 export function formatStat(value: number): string {

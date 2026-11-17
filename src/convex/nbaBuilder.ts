@@ -469,8 +469,8 @@ export async function buildSnapshot(options: BuildOptions = {}): Promise<BuiltSn
     }
   }
 
-  // Defense-vs-position values and ranks, straight from FantasyPros. Ranks are
-  // ordered by most allowed, so 1st is the softest matchup (as on their table).
+  // Defense-vs-position values and ranks, straight from FantasyPros. Their table
+  // ranks by most allowed, so reverse it: 1st allows the fewest, 30th the most.
   const fpRows = new Map<Position, Map<string, FpRow>>();
   for (const position of POSITIONS) {
     const index = new Map<string, FpRow>();
@@ -503,7 +503,10 @@ export async function buildSnapshot(options: BuildOptions = {}): Promise<BuiltSn
         .sort((a, b) => b.value - a.value);
       ordered.forEach((row, i) => {
         const teamRanks = ranks.get(row.id) ?? ({} as Record<Position, Record<StatKey, number>>);
-        teamRanks[pos] = { ...(teamRanks[pos] ?? {}), [stat]: i + 1 } as Record<StatKey, number>;
+        teamRanks[pos] = {
+          ...(teamRanks[pos] ?? {}),
+          [stat]: teams.length - i,
+        } as Record<StatKey, number>;
         ranks.set(row.id, teamRanks);
       });
     }

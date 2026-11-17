@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 import { useMemo } from "react";
 import { Link } from "react-router";
 
-const ENTRY = "/auth?returnTo=/dashboard";
+const ENTRY = "/dashboard";
 
 const PRINCIPLES = [
   {
@@ -58,14 +58,6 @@ export default function Landing() {
             <span className="hidden text-[10px] uppercase tracking-[0.18em] text-muted-foreground sm:inline">
               Season {data.meta.season}
             </span>
-            <Button
-              asChild
-              variant="ghost"
-              size="sm"
-              className="rounded-[3px] text-muted-foreground hover:text-foreground"
-            >
-              <Link to={ENTRY}>Sign in</Link>
-            </Button>
             <Button
               asChild
               size="sm"
@@ -159,7 +151,7 @@ export default function Landing() {
             <p className="mt-4 max-w-2xl text-[11px] leading-5 text-muted-foreground">
               Each figure is a starter&apos;s season average. The small rank
               beneath it is where the opposing defense sits in that category
-              against that position — 1st allows the most, 30th the fewest.
+              against that position — 1st allows the fewest, 30th the most.
               Season through {dataThroughLabel(data)}. Finished games leave the
               picker automatically.
             </p>
@@ -217,8 +209,8 @@ export default function Landing() {
                 Tonight&apos;s slate is already ranked.
               </h2>
               <p className="mt-3 max-w-sm text-[12px] leading-6 text-muted-foreground">
-                Sign in and open the board to compare both sides of any game on
-                the schedule.
+                Open the board to compare both sides of any game on the
+                schedule.
               </p>
             </div>
             <Button
