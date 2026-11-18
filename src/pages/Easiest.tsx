@@ -89,8 +89,12 @@ export default function Easiest() {
                       {CATEGORY_LABELS[stat]}
                     </h3>
                     <span className="text-[9px] uppercase tracking-[0.16em] text-muted-foreground">
-                      Rank
+                      Top 5
                     </span>
+                  </div>
+                  <div className="flex items-center justify-between pt-2 text-[9px] uppercase tracking-[0.14em] text-muted-foreground">
+                    <span>Rank</span>
+                    <span>Allows / gm</span>
                   </div>
                   <ol className="divide-y divide-border/70">
                     {categories[stat].map((entry) => {
@@ -128,6 +132,14 @@ export default function Easiest() {
                 </div>
               ))}
             </div>
+
+            <p className="mt-6 max-w-2xl text-[11px] leading-5 text-muted-foreground">
+              Ranks compare defenses within the same position, so the raw
+              averages are not directly comparable across positions — a 29th
+              here can allow more points than a 30th somewhere else. Rank, not
+              the average, sets the order. Only teams playing on this slate are
+              listed.
+            </p>
           </section>
 
           <section className="border-t border-border pt-8">
