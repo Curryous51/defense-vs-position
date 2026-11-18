@@ -158,8 +158,8 @@ export default function Landing() {
               Each figure is a starter&apos;s season average. The small rank
               beneath it is where the opposing defense sits in that category
               against that position — 1st allows the fewest, 30th the most.
-              Season through {dataThroughLabel(data)}. Finished games leave the
-              picker automatically.
+              Season through {dataThroughLabel(data)}. Games leave the picker at
+              tip-off.
             </p>
           </section>
         ) : null}

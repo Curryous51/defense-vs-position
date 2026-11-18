@@ -38,8 +38,8 @@ export default function Easiest() {
             No games on the next slate
           </h1>
           <p className="max-w-sm text-sm leading-6 text-muted-foreground">
-            Finished games drop off automatically. The next day of basketball
-            appears after the daily sync.
+            Games leave the slate at tip-off. The next day of basketball appears
+            after the daily sync.
           </p>
         </main>
       </AppShell>

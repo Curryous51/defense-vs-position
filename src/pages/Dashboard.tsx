@@ -52,8 +52,8 @@ export default function Dashboard() {
             No games left on the board
           </h1>
           <p className="max-w-sm text-sm leading-6 text-muted-foreground">
-            Finished games drop off automatically. The next slate appears after
-            the daily sync.
+            Games leave the board at tip-off. The next slate appears after the
+            daily sync.
           </p>
         </main>
       </AppShell>

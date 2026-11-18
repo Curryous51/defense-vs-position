@@ -28,9 +28,6 @@ export const CATEGORY_LABELS: Record<StatKey, string> = {
   tpm: "Threes",
 };
 
-/** Keep in sync with LIVE_WINDOW_MS in convex/nbaBuilder.ts. */
-export const GAME_WINDOW_MS = 3.5 * 60 * 60 * 1000;
-
 export interface TeamSeasonRow extends Record<StatKey, number> {
   ranks: Record<StatKey, number>;
 }
@@ -177,13 +174,12 @@ export function matchupShort(data: Snapshot, game: Matchup): string {
 }
 
 /**
- * Drops games that have finished. Tip-off plus a 3.5h window is the cutoff, so a
- * game stays listed while it is being played and disappears shortly after the
- * final whistle, without waiting for the next daily sync.
+ * Games still to be played. A matchup leaves the board the moment it tips off,
+ * so the picker only ever offers games that have not started.
  */
 export function upcomingMatchups(data: Snapshot, now: number): Matchup[] {
   return data.matchups
-    .filter((game) => new Date(game.date).getTime() + GAME_WINDOW_MS > now)
+    .filter((game) => new Date(game.date).getTime() > now)
     .sort((a, b) => a.date.localeCompare(b.date));
 }
 
@@ -201,7 +197,7 @@ function slateKey(iso: string): string {
 
 /**
  * Just the next day of basketball: the calendar day of the earliest upcoming
- * tip-off, with finished games already filtered out.
+ * tip-off, with started games already filtered out.
  */
 export function slateGames(data: Snapshot, now: number): Matchup[] {
   const upcoming = upcomingMatchups(data, now);
