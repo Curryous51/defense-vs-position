@@ -28,6 +28,14 @@ export const CATEGORY_LABELS: Record<StatKey, string> = {
   tpm: "Threes",
 };
 
+export const POSITION_NAMES: Record<Position, string> = {
+  PG: "Point guards",
+  SG: "Shooting guards",
+  SF: "Small forwards",
+  PF: "Power forwards",
+  C: "Centers",
+};
+
 export interface TeamSeasonRow extends Record<StatKey, number> {
   ranks: Record<StatKey, number>;
 }
@@ -249,18 +257,29 @@ export function easyMatchups(data: Snapshot, games: Matchup[]): EasyMatchup[] {
   return rows.sort((a, b) => b.rank - a.rank || b.allowed - a.allowed);
 }
 
-/** The five softest pairings in one category across the whole slate. */
-export function topEasiestByCategory(
+/**
+ * The five softest pairings in each category, split out by position so every
+ * list only compares defenses against the same position.
+ */
+export function topEasiestByPosition(
   data: Snapshot,
   games: Matchup[],
-): Record<StatKey, EasyMatchup[]> {
+): Record<Position, Record<StatKey, EasyMatchup[]>> {
   const rows = easyMatchups(data, games);
-  return STATS.reduce(
-    (byStat, stat) => {
-      byStat[stat] = rows.filter((row) => row.stat === stat).slice(0, 5);
-      return byStat;
+  return POSITIONS.reduce(
+    (byPosition, position) => {
+      byPosition[position] = STATS.reduce(
+        (byStat, stat) => {
+          byStat[stat] = rows
+            .filter((row) => row.position === position && row.stat === stat)
+            .slice(0, 5);
+          return byStat;
+        },
+        {} as Record<StatKey, EasyMatchup[]>,
+      );
+      return byPosition;
     },
-    {} as Record<StatKey, EasyMatchup[]>,
+    {} as Record<Position, Record<StatKey, EasyMatchup[]>>,
   );
 }
 
