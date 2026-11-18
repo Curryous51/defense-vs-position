@@ -1,5 +1,6 @@
 import { AppShell } from "@/components/AppShell";
-import { TeamBadge } from "@/components/TeamBadge";
+import { CategoryColumn } from "@/components/CategoryColumn";
+import { GameReadCards } from "@/components/GameReadCards";
 import { useDvpSnapshot, useNow } from "@/hooks/use-dvp-snapshot";
 import {
   CATEGORY_LABELS,
@@ -8,71 +9,10 @@ import {
   STATS,
   dataThroughLabel,
   gameLongDate,
-  gameQuickReads,
-  gameTime,
-  matchupShort,
-  rankTone,
   slateGames,
-  softReadLabel,
   topEasiestByPosition,
-  type EasyMatchup,
-  type Snapshot,
 } from "@/lib/dvp";
-import { cn } from "@/lib/utils";
 import { useMemo } from "react";
-
-function CategoryColumn({
-  label,
-  entries,
-  data,
-}: {
-  label: string;
-  entries: EasyMatchup[];
-  data: Snapshot;
-}) {
-  return (
-    <div>
-      <div className="flex items-baseline justify-between border-b border-border pb-2">
-        <h4 className="text-[12px] font-medium">{label}</h4>
-        <span className="text-[9px] uppercase tracking-[0.14em] text-muted-foreground">
-          Allows / gm
-        </span>
-      </div>
-      <ol className="divide-y divide-border/70">
-        {entries.map((entry) => {
-          const onDark = entry.rank <= 6 || entry.rank > 24;
-          return (
-            <li
-              key={`${entry.game.id}-${entry.offense.id}`}
-              className="flex items-start gap-2.5 py-2.5"
-            >
-              <span
-                className={cn(
-                  "mt-px inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-[3px] text-[10px] font-medium tabular-nums",
-                  rankTone(entry.rank),
-                  onDark ? "text-white" : "text-foreground",
-                )}
-              >
-                {entry.rank}
-              </span>
-              <div className="min-w-0 flex-1">
-                <p className="text-[12px] font-medium leading-tight">
-                  vs {entry.defense.abbr}
-                </p>
-                <p className="mt-1 truncate text-[9px] uppercase tracking-[0.1em] text-muted-foreground">
-                  {matchupShort(data, entry.game)} · {gameTime(entry.game.date)}
-                </p>
-              </div>
-              <span className="pt-0.5 text-[11px] tabular-nums text-muted-foreground">
-                {entry.allowed.toFixed(1)}
-              </span>
-            </li>
-          );
-        })}
-      </ol>
-    </div>
-  );
-}
 
 export default function Easiest() {
   const { data } = useDvpSnapshot();
@@ -185,77 +125,7 @@ export default function Easiest() {
               position.
             </p>
 
-            <div className="mt-8 grid gap-5 xl:grid-cols-2">
-              {games.map((game) => {
-                const sides = gameQuickReads(data, game);
-                return (
-                  <article key={game.id} className="border border-border">
-                    <header className="flex items-center justify-between gap-3 border-b border-border px-4 py-3">
-                      <span className="text-[13px] font-medium tracking-[0.02em]">
-                        {matchupShort(data, game)}
-                      </span>
-                      <span className="text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
-                        {gameTime(game.date)}
-                      </span>
-                    </header>
-                    <div className="grid divide-y divide-border sm:grid-cols-2 sm:divide-x sm:divide-y-0">
-                      {sides.map((side) => (
-                        <section
-                          key={side.defense.id}
-                          className="flex flex-col px-4 py-5"
-                        >
-                          <header className="flex items-start gap-3">
-                            <TeamBadge team={side.defense} className="size-8" />
-                            <div>
-                              <h3 className="text-[14px] font-medium leading-tight">
-                                {side.defense.nickname} defense allows
-                              </h3>
-                              <p className="mt-1.5 text-[10px] uppercase tracking-[0.12em] text-muted-foreground">
-                                what {side.offense.abbr} sees ·{" "}
-                                {side.offense.games} games
-                              </p>
-                            </div>
-                          </header>
-
-                          <div className="mt-4 border border-border bg-card/40 px-3.5 py-3">
-                            <p className="flex items-center gap-2 text-[10px] uppercase tracking-[0.16em] text-muted-foreground">
-                              <span className="size-1.5 rounded-full bg-match-favorable-strong" />
-                              Quick read
-                            </p>
-                            <ul className="mt-3 flex flex-col gap-2">
-                              {side.reads.map((read) => {
-                                const onDark = read.rank <= 6 || read.rank > 24;
-                                return (
-                                  <li
-                                    key={`${read.position}-${read.stat}`}
-                                    className="flex items-start gap-2.5 text-[13px] leading-snug"
-                                  >
-                                    <span
-                                      className={cn(
-                                        "inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-[3px] text-[10px] font-medium tabular-nums",
-                                        rankTone(read.rank),
-                                        onDark
-                                          ? "text-white"
-                                          : "text-foreground",
-                                      )}
-                                    >
-                                      {read.rank}
-                                    </span>
-                                    <span className="min-w-0 text-foreground">
-                                      {softReadLabel(read)}
-                                    </span>
-                                  </li>
-                                );
-                              })}
-                            </ul>
-                          </div>
-                        </section>
-                      ))}
-                    </div>
-                  </article>
-                );
-              })}
-            </div>
+            <GameReadCards data={data} games={games} mode="soft" />
           </section>
 
           <div className="border-t border-border pt-5 text-[10px] leading-5 text-muted-foreground">

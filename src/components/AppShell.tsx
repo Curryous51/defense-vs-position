@@ -6,6 +6,7 @@ import { NavLink } from "react-router";
 const NAV = [
   { to: "/dashboard", label: "Matchup board", hint: "Both sides of a game" },
   { to: "/easiest", label: "Easiest matchups", hint: "Top of the slate" },
+  { to: "/toughest", label: "Toughest matchups", hint: "Stingiest defenses" },
 ];
 
 function NavItems({ compact = false }: { compact?: boolean }) {

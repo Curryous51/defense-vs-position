@@ -227,8 +227,8 @@ export interface EasyMatchup {
   allowed: number;
 }
 
-/** Every position/stat pairing on the slate, sorted softest first. */
-export function easyMatchups(data: Snapshot, games: Matchup[]): EasyMatchup[] {
+/** Every position/stat pairing on the slate, one row each. */
+function matchupRows(data: Snapshot, games: Matchup[]): EasyMatchup[] {
   const rows: EasyMatchup[] = [];
   for (const game of games) {
     for (const [offenseId, defenseId] of [
@@ -254,7 +254,26 @@ export function easyMatchups(data: Snapshot, games: Matchup[]): EasyMatchup[] {
       }
     }
   }
-  return rows.sort((a, b) => b.rank - a.rank || b.allowed - a.allowed);
+  return rows;
+}
+
+const softestFirst = (a: EasyMatchup, b: EasyMatchup) =>
+  b.rank - a.rank || b.allowed - a.allowed;
+
+const toughestFirst = (a: EasyMatchup, b: EasyMatchup) =>
+  a.rank - b.rank || a.allowed - b.allowed;
+
+/** Every position/stat pairing on the slate, sorted softest first. */
+export function easyMatchups(data: Snapshot, games: Matchup[]): EasyMatchup[] {
+  return matchupRows(data, games).sort(softestFirst);
+}
+
+/** Every position/stat pairing on the slate, sorted toughest first. */
+export function toughestMatchups(
+  data: Snapshot,
+  games: Matchup[],
+): EasyMatchup[] {
+  return matchupRows(data, games).sort(toughestFirst);
 }
 
 /**
@@ -265,7 +284,23 @@ export function topEasiestByPosition(
   data: Snapshot,
   games: Matchup[],
 ): Record<Position, Record<StatKey, EasyMatchup[]>> {
-  const rows = easyMatchups(data, games);
+  return topByPosition(easyMatchups(data, games));
+}
+
+/**
+ * The five stingiest pairings in each category, split out by position so every
+ * list only compares defenses against the same position.
+ */
+export function topToughestByPosition(
+  data: Snapshot,
+  games: Matchup[],
+): Record<Position, Record<StatKey, EasyMatchup[]>> {
+  return topByPosition(toughestMatchups(data, games));
+}
+
+function topByPosition(
+  rows: EasyMatchup[],
+): Record<Position, Record<StatKey, EasyMatchup[]>> {
   return POSITIONS.reduce(
     (byPosition, position) => {
       byPosition[position] = STATS.reduce(
@@ -283,14 +318,29 @@ export function topEasiestByPosition(
   );
 }
 
+type GameReads = Array<{ offense: Team; defense: Team; reads: EasyMatchup[] }>;
+
 /**
  * The quick-read list for one side of a game: each position's softest category,
  * then the three friendliest of those.
  */
-export function gameQuickReads(
+export function gameQuickReads(data: Snapshot, game: Matchup): GameReads {
+  return gameReads(data, game, softestFirst);
+}
+
+/**
+ * The tough-read list for one side of a game: each position's stingiest
+ * category, then the three hardest of those.
+ */
+export function gameToughReads(data: Snapshot, game: Matchup): GameReads {
+  return gameReads(data, game, toughestFirst);
+}
+
+function gameReads(
   data: Snapshot,
   game: Matchup,
-): Array<{ offense: Team; defense: Team; reads: EasyMatchup[] }> {
+  compare: (a: EasyMatchup, b: EasyMatchup) => number,
+): GameReads {
   const sides = [
     { offenseId: game.away, defenseId: game.home },
     { offenseId: game.home, defenseId: game.away },
@@ -311,16 +361,14 @@ export function gameQuickReads(
         stat,
         rank: season.ranks[stat],
         allowed: season[stat],
-      })).sort((a, b) => b.rank - a.rank || b.allowed - a.allowed)[0];
+      })).sort(compare)[0];
     });
 
     return [
       {
         offense,
         defense,
-        reads: perPosition
-          .sort((a, b) => b.rank - a.rank || b.allowed - a.allowed)
-          .slice(0, 3),
+        reads: perPosition.sort(compare).slice(0, 3),
       },
     ];
   });
@@ -331,6 +379,14 @@ export function softReadLabel(entry: EasyMatchup): string {
   const noun = STAT_NAMES[entry.stat];
   const prefix =
     entry.rank === 30 ? `Most ${noun}` : `${ordinal(31 - entry.rank)}-most ${noun}`;
+  return `${prefix} to ${entry.position}s`;
+}
+
+/** "Fewest rebounds to SGs" / "4th-fewest points to PFs". */
+export function toughReadLabel(entry: EasyMatchup): string {
+  const noun = STAT_NAMES[entry.stat];
+  const prefix =
+    entry.rank === 1 ? `Fewest ${noun}` : `${ordinal(entry.rank)}-fewest ${noun}`;
   return `${prefix} to ${entry.position}s`;
 }
 

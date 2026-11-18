@@ -61,6 +61,12 @@ export default function Landing() {
             >
               Easiest matchups
             </Link>
+            <Link
+              to="/toughest"
+              className="hidden text-[11px] text-muted-foreground transition-colors hover:text-foreground md:inline"
+            >
+              Toughest matchups
+            </Link>
             <span className="hidden text-[10px] uppercase tracking-[0.18em] text-muted-foreground sm:inline">
               Season {data.meta.season}
             </span>
