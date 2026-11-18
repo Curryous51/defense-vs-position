@@ -174,14 +174,14 @@ export default function Easiest() {
 
           <section className="border-t border-border pt-8">
             <div className="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
-              <h2 className="text-[11px] uppercase tracking-[0.18em] text-foreground">
+              <h2 className="text-[12px] uppercase tracking-[0.18em] text-foreground">
                 Game by game
               </h2>
-              <span className="text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
+              <span className="text-[11px] uppercase tracking-[0.14em] text-muted-foreground">
                 Quick read · three per offense
               </span>
             </div>
-            <p className="mt-3 max-w-2xl text-[12px] leading-6 text-muted-foreground">
+            <p className="mt-3 max-w-2xl text-[13px] leading-6 text-muted-foreground">
               The three softest spots each offense walks into tonight, one per
               position.
             </p>
@@ -191,11 +191,11 @@ export default function Easiest() {
                 const sides = gameQuickReads(data, game);
                 return (
                   <article key={game.id} className="border border-border">
-                    <header className="flex items-center justify-between gap-3 border-b border-border px-4 py-2.5">
-                      <span className="text-[11px] font-medium tracking-[0.02em]">
+                    <header className="flex items-center justify-between gap-3 border-b border-border px-4 py-3">
+                      <span className="text-[13px] font-medium tracking-[0.02em]">
                         {matchupShort(data, game)}
                       </span>
-                      <span className="text-[9px] uppercase tracking-[0.14em] text-muted-foreground">
+                      <span className="text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
                         {gameTime(game.date)}
                       </span>
                     </header>
@@ -203,48 +203,54 @@ export default function Easiest() {
                       {sides.map((side) => (
                         <section
                           key={side.defense.id}
-                          className="flex flex-col px-4 py-4"
+                          className="flex flex-col px-4 py-5"
                         >
-                          <header className="flex items-start gap-2.5">
-                            <TeamBadge
-                              team={side.defense}
-                              className="size-7 text-[9px]"
-                            />
+                          <header className="flex items-start gap-3">
+                            <TeamBadge team={side.defense} className="size-8" />
                             <div>
-                              <h3 className="text-[12px] font-medium leading-tight">
+                              <h3 className="text-[14px] font-medium leading-tight">
                                 {side.defense.nickname} defense allows
                               </h3>
-                              <p className="mt-1 text-[9px] uppercase tracking-[0.12em] text-muted-foreground">
+                              <p className="mt-1.5 text-[10px] uppercase tracking-[0.12em] text-muted-foreground">
                                 what {side.offense.abbr} sees ·{" "}
                                 {side.offense.games} games
                               </p>
                             </div>
                           </header>
 
-                          <div className="mt-3.5 border border-white/10 bg-match-favorable-strong px-3 py-2.5">
-                            <p className="flex items-center gap-1.5 text-[9px] uppercase tracking-[0.18em] text-white/60">
-                              <span className="size-1.5 rounded-full bg-emerald-400" />
+                          <div className="mt-4 border border-border bg-card/40 px-3.5 py-3">
+                            <p className="flex items-center gap-2 text-[10px] uppercase tracking-[0.16em] text-muted-foreground">
+                              <span className="size-1.5 rounded-full bg-match-favorable-strong" />
                               Quick read
                             </p>
-                            <ul className="mt-2 flex flex-col gap-1.5">
-                              {side.reads.map((read) => (
-                                <li
-                                  key={`${read.position}-${read.stat}`}
-                                  className="flex items-center gap-2 text-[11px] leading-tight text-white/85"
-                                >
-                                  <span className="inline-flex h-5 min-w-5 shrink-0 items-center justify-center rounded-[2px] border border-white/20 bg-white/5 px-1 text-[9px] tabular-nums text-white">
-                                    {read.rank}
-                                  </span>
-                                  <span className="min-w-0">
-                                    <span className="text-white">
+                            <ul className="mt-3 flex flex-col gap-2">
+                              {side.reads.map((read) => {
+                                const onDark = read.rank <= 6 || read.rank > 24;
+                                return (
+                                  <li
+                                    key={`${read.position}-${read.stat}`}
+                                    className="flex items-start gap-2.5 text-[13px] leading-snug"
+                                  >
+                                    <span
+                                      className={cn(
+                                        "inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-[3px] text-[10px] font-medium tabular-nums",
+                                        rankTone(read.rank),
+                                        onDark
+                                          ? "text-white"
+                                          : "text-foreground",
+                                      )}
+                                    >
+                                      {read.rank}
+                                    </span>
+                                    <span className="min-w-0 text-foreground">
                                       {softReadLabel(read)}
+                                      <span className="text-muted-foreground">
+                                        , {ordinal(read.rank)} of 30
+                                      </span>
                                     </span>
-                                    <span className="text-white/55">
-                                      , {ordinal(read.rank)} of 30
-                                    </span>
-                                  </span>
-                                </li>
-                              ))}
+                                  </li>
+                                );
+                              })}
                             </ul>
                           </div>
                         </section>
