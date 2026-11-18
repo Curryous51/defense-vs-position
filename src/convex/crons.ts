@@ -12,4 +12,18 @@ crons.daily(
   api.nbaActions.sync,
 );
 
+// Lines move during the day, so the hit-rate board refreshes once in the
+// morning after the DvP rebuild and again in the early afternoon.
+crons.daily(
+  "refresh hit rate board",
+  { hourUTC: 10, minuteUTC: 50 },
+  api.hitRateActions.sync,
+);
+
+crons.daily(
+  "refresh hit rate lines",
+  { hourUTC: 16, minuteUTC: 30 },
+  api.hitRateActions.sync,
+);
+
 export default crons;

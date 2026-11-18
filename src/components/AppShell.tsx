@@ -7,6 +7,7 @@ const NAV = [
   { to: "/dashboard", label: "Matchup board", hint: "Both sides of a game" },
   { to: "/easiest", label: "Easiest matchups", hint: "Top of the slate" },
   { to: "/toughest", label: "Toughest matchups", hint: "Stingiest defenses" },
+  { to: "/hit-rate", label: "Hit rate dashboard", hint: "L5 · L10 · H2H" },
 ];
 
 function NavItems({ compact = false }: { compact?: boolean }) {

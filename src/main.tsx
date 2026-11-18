@@ -12,6 +12,7 @@ const Landing = lazy(() => import("./pages/Landing.tsx"));
 const Dashboard = lazy(() => import("./pages/Dashboard.tsx"));
 const Easiest = lazy(() => import("./pages/Easiest.tsx"));
 const Toughest = lazy(() => import("./pages/Toughest.tsx"));
+const HitRate = lazy(() => import("./pages/HitRate.tsx"));
 const NotFound = lazy(() => import("./pages/NotFound.tsx"));
 
 // Simple loading fallback for route transitions
@@ -122,6 +123,7 @@ createRoot(document.getElementById("root")!).render(
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/easiest" element={<Easiest />} />
               <Route path="/toughest" element={<Toughest />} />
+              <Route path="/hit-rate" element={<HitRate />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>

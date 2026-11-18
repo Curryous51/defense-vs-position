@@ -1,5 +1,5 @@
 import { v } from "convex/values";
-import { internalMutation, query } from "./_generated/server";
+import { internalMutation, internalQuery, query } from "./_generated/server";
 
 /** Latest stored defense-vs-position snapshot, or null before the first sync. */
 export const latest = query({
@@ -9,6 +9,18 @@ export const latest = query({
       .query("dvpSnapshots")
       .withIndex("by_key", (q) => q.eq("key", "current"))
       .unique();
+  },
+});
+
+/** Server-side read of the snapshot, for the hit-rate builder. */
+export const current = internalQuery({
+  args: {},
+  handler: async (ctx) => {
+    const stored = await ctx.db
+      .query("dvpSnapshots")
+      .withIndex("by_key", (q) => q.eq("key", "current"))
+      .unique();
+    return stored?.payload ?? null;
   },
 });
 

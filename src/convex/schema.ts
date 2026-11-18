@@ -39,6 +39,13 @@ const schema = defineSchema(
       payload: v.any(),
     }).index("by_key", ["key"]),
 
+    // Hit-rate board: one row per player/stat prop on the current slate.
+    hitRateBoards: defineTable({
+      key: v.string(),
+      generatedAt: v.number(),
+      payload: v.any(),
+    }).index("by_key", ["key"]),
+
     // add other tables here
 
     // tableName: defineTable({
