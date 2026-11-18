@@ -180,7 +180,7 @@ export default function Easiest() {
                           </header>
 
                           <div className="mt-3.5 border border-white/10 bg-match-favorable-strong px-3 py-2.5">
-                            <p className="flex items-center gap-1.5 text-[8px] uppercase tracking-[0.2em] text-white/60">
+                            <p className="flex items-center gap-1.5 text-[9px] uppercase tracking-[0.18em] text-white/60">
                               <span className="size-1.5 rounded-full bg-emerald-400" />
                               Quick read
                             </p>
