@@ -13,6 +13,21 @@ export const STAT_LABELS: Record<StatKey, string> = {
   tpm: "3PM",
 };
 
+export const STAT_NAMES: Record<StatKey, string> = {
+  pts: "points",
+  reb: "rebounds",
+  ast: "assists",
+  tpm: "threes",
+};
+
+/** Column headings for the easiest-matchup page. */
+export const CATEGORY_LABELS: Record<StatKey, string> = {
+  pts: "Points",
+  reb: "Rebounds",
+  ast: "Assists",
+  tpm: "Threes",
+};
+
 /** Keep in sync with LIVE_WINDOW_MS in convex/nbaBuilder.ts. */
 export const GAME_WINDOW_MS = 3.5 * 60 * 60 * 1000;
 
@@ -170,6 +185,138 @@ export function upcomingMatchups(data: Snapshot, now: number): Matchup[] {
   return data.matchups
     .filter((game) => new Date(game.date).getTime() + GAME_WINDOW_MS > now)
     .sort((a, b) => a.date.localeCompare(b.date));
+}
+
+/** Calendar day (Eastern) used to key the daily slate. */
+const EASTERN_DAY = new Intl.DateTimeFormat("en-CA", {
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+  timeZone: EASTERN,
+});
+
+function slateKey(iso: string): string {
+  return EASTERN_DAY.format(new Date(iso));
+}
+
+/**
+ * Just the next day of basketball: the calendar day of the earliest upcoming
+ * tip-off, with finished games already filtered out.
+ */
+export function slateGames(data: Snapshot, now: number): Matchup[] {
+  const upcoming = upcomingMatchups(data, now);
+  if (!upcoming.length) return [];
+  const key = slateKey(upcoming[0].date);
+  return upcoming.filter((game) => slateKey(game.date) === key);
+}
+
+/** One offense-vs-defense pairing for a position and stat. */
+export interface EasyMatchup {
+  game: Matchup;
+  offense: Team;
+  defense: Team;
+  position: Position;
+  stat: StatKey;
+  /** 1 = defense allows the fewest, 30 = the most. */
+  rank: number;
+  /** What the defense gives up per game in this category. */
+  allowed: number;
+}
+
+/** Every position/stat pairing on the slate, sorted softest first. */
+export function easyMatchups(data: Snapshot, games: Matchup[]): EasyMatchup[] {
+  const rows: EasyMatchup[] = [];
+  for (const game of games) {
+    for (const [offenseId, defenseId] of [
+      [game.away, game.home],
+      [game.home, game.away],
+    ]) {
+      const offense = teamById(data, offenseId);
+      const defense = teamById(data, defenseId);
+      if (!offense || !defense) continue;
+      for (const position of POSITIONS) {
+        const season = defense.season[position];
+        for (const stat of STATS) {
+          rows.push({
+            game,
+            offense,
+            defense,
+            position,
+            stat,
+            rank: season.ranks[stat],
+            allowed: season[stat],
+          });
+        }
+      }
+    }
+  }
+  return rows.sort((a, b) => b.rank - a.rank || b.allowed - a.allowed);
+}
+
+/** The five softest pairings in one category across the whole slate. */
+export function topEasiestByCategory(
+  data: Snapshot,
+  games: Matchup[],
+): Record<StatKey, EasyMatchup[]> {
+  const rows = easyMatchups(data, games);
+  return STATS.reduce(
+    (byStat, stat) => {
+      byStat[stat] = rows.filter((row) => row.stat === stat).slice(0, 5);
+      return byStat;
+    },
+    {} as Record<StatKey, EasyMatchup[]>,
+  );
+}
+
+/**
+ * The quick-read list for one side of a game: each position's softest category,
+ * then the three friendliest of those.
+ */
+export function gameQuickReads(
+  data: Snapshot,
+  game: Matchup,
+): Array<{ offense: Team; defense: Team; reads: EasyMatchup[] }> {
+  const sides = [
+    { offenseId: game.away, defenseId: game.home },
+    { offenseId: game.home, defenseId: game.away },
+  ];
+
+  return sides.flatMap(({ offenseId, defenseId }) => {
+    const offense = teamById(data, offenseId);
+    const defense = teamById(data, defenseId);
+    if (!offense || !defense) return [];
+
+    const perPosition = POSITIONS.map((position) => {
+      const season = defense.season[position];
+      return STATS.map<EasyMatchup>((stat) => ({
+        game,
+        offense,
+        defense,
+        position,
+        stat,
+        rank: season.ranks[stat],
+        allowed: season[stat],
+      })).sort((a, b) => b.rank - a.rank || b.allowed - a.allowed)[0];
+    });
+
+    return [
+      {
+        offense,
+        defense,
+        reads: perPosition
+          .sort((a, b) => b.rank - a.rank || b.allowed - a.allowed)
+          .slice(0, 3),
+      },
+    ];
+  });
+}
+
+/** "Most rebounds to SGs" / "3rd-most points to PFs". */
+export function softReadLabel(entry: EasyMatchup): string {
+  const noun = STAT_NAMES[entry.stat];
+  const prefix =
+    entry.rank === 30 ? `Most ${noun}` : `${ordinal(31 - entry.rank)}-most ${noun}`;
+  return `${prefix} to ${entry.position}s`;
 }
 
 /** Upcoming matchups grouped by calendar day, in Eastern time. */

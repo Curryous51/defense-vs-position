@@ -55,6 +55,12 @@ export default function Landing() {
         <div className="mx-auto flex h-14 w-full max-w-6xl items-center justify-between px-5 sm:px-8">
           <Wordmark />
           <div className="flex items-center gap-3 sm:gap-5">
+            <Link
+              to="/easiest"
+              className="hidden text-[11px] text-muted-foreground transition-colors hover:text-foreground md:inline"
+            >
+              Easiest matchups
+            </Link>
             <span className="hidden text-[10px] uppercase tracking-[0.18em] text-muted-foreground sm:inline">
               Season {data.meta.season}
             </span>

@@ -1,6 +1,6 @@
+import { AppShell } from "@/components/AppShell";
 import { MatchupBoard } from "@/components/MatchupBoard";
 import { TeamBadge } from "@/components/TeamBadge";
-import { Wordmark } from "@/components/Wordmark";
 import {
   Select,
   SelectContent,
@@ -43,18 +43,20 @@ export default function Dashboard() {
 
   if (!game) {
     return (
-      <main className="flex min-h-screen flex-col items-center justify-center gap-3 bg-background px-6 text-center">
-        <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-          Season {data.meta.season}
-        </p>
-        <h1 className="text-xl font-medium tracking-[-0.01em]">
-          No games left on the board
-        </h1>
-        <p className="max-w-sm text-sm leading-6 text-muted-foreground">
-          Finished games drop off automatically. The next slate appears after
-          the daily sync.
-        </p>
-      </main>
+      <AppShell season={data.meta.season}>
+        <main className="flex min-h-[70vh] flex-col items-center justify-center gap-3 px-6 text-center">
+          <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+            Season {data.meta.season}
+          </p>
+          <h1 className="text-xl font-medium tracking-[-0.01em]">
+            No games left on the board
+          </h1>
+          <p className="max-w-sm text-sm leading-6 text-muted-foreground">
+            Finished games drop off automatically. The next slate appears after
+            the daily sync.
+          </p>
+        </main>
+      </AppShell>
     );
   }
 
@@ -62,16 +64,7 @@ export default function Dashboard() {
   const home = teamById(data, game.home);
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <header className="border-b border-border">
-        <div className="mx-auto flex h-14 w-full max-w-6xl items-center justify-between px-5 sm:px-8">
-          <Wordmark />
-          <span className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
-            Season {data.meta.season}
-          </span>
-        </div>
-      </header>
-
+    <AppShell season={data.meta.season}>
       <main className="mx-auto w-full max-w-6xl px-5 py-10 sm:px-8 sm:py-14">
         <div className="flex flex-col gap-8">
           <div>
@@ -175,6 +168,6 @@ export default function Dashboard() {
           <span>Season {data.meta.season}</span>
         </div>
       </footer>
-    </div>
+    </AppShell>
   );
 }
