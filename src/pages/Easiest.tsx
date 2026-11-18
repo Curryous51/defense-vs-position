@@ -11,7 +11,6 @@ import {
   gameQuickReads,
   gameTime,
   matchupShort,
-  ordinal,
   rankTone,
   slateGames,
   softReadLabel,
@@ -244,9 +243,6 @@ export default function Easiest() {
                                     </span>
                                     <span className="min-w-0 text-foreground">
                                       {softReadLabel(read)}
-                                      <span className="text-muted-foreground">
-                                        , {ordinal(read.rank)} of 30
-                                      </span>
                                     </span>
                                   </li>
                                 );
