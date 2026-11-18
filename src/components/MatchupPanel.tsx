@@ -89,8 +89,8 @@ export function MatchupPanel({
                   </td>
                   {STATS.map((stat) => {
                     const rank = defenseRow.ranks[stat];
-                    // The softest tier is dark green, so it needs light text.
-                    const onDark = rank > 24;
+                    // The extreme tiers are dark red / dark green, so they need light text.
+                    const onDark = rank <= 6 || rank > 24;
                     return (
                       <td
                         key={stat}

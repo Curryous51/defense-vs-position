@@ -69,8 +69,8 @@
   --border: oklch(0.9 0.004 90);
   --input: oklch(0.9 0.004 90);
   --ring: oklch(0.62 0.004 90);
-  /* Matchup tints: clay = defense allows little, dark green = softest. */
-  --match-tough-strong: oklch(0.941 0.023 28);
+  /* Matchup tints: dark red = toughest, dark green = softest. */
+  --match-tough-strong: oklch(0.4 0.125 27);
   --match-tough: oklch(0.962 0.013 30);
   --match-neutral: oklch(0.974 0.002 90);
   --match-favorable: oklch(0.957 0.014 155);
