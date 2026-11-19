@@ -128,6 +128,8 @@ export function formatStat(value: number): string {
   return value.toFixed(1);
 }
 
+/** Times are shown to the reader in India Standard Time. */
+const DISPLAY_TZ = "Asia/Kolkata";
 const EASTERN = "America/New_York";
 
 export function gameDay(iso: string): string {
@@ -135,17 +137,17 @@ export function gameDay(iso: string): string {
     weekday: "short",
     month: "short",
     day: "numeric",
-    timeZone: EASTERN,
+    timeZone: DISPLAY_TZ,
   }).format(new Date(iso));
 }
 
 export function gameTime(iso: string): string {
-  return new Intl.DateTimeFormat("en-US", {
+  const time = new Intl.DateTimeFormat("en-US", {
     hour: "numeric",
     minute: "2-digit",
-    timeZone: EASTERN,
-    timeZoneName: "short",
+    timeZone: DISPLAY_TZ,
   }).format(new Date(iso));
+  return `${time} IST`;
 }
 
 export function gameLongDate(iso: string): string {
@@ -153,7 +155,7 @@ export function gameLongDate(iso: string): string {
     weekday: "long",
     month: "long",
     day: "numeric",
-    timeZone: EASTERN,
+    timeZone: DISPLAY_TZ,
   }).format(new Date(iso));
 }
 
@@ -163,7 +165,7 @@ export function dataThroughLabel(data: Snapshot): string {
     month: "short",
     day: "numeric",
     year: "numeric",
-    timeZone: EASTERN,
+    timeZone: DISPLAY_TZ,
   }).format(new Date(data.meta.throughDate));
 }
 
@@ -390,7 +392,7 @@ export function toughReadLabel(entry: EasyMatchup): string {
   return `${prefix} to ${entry.position}s`;
 }
 
-/** Upcoming matchups grouped by calendar day, in Eastern time. */
+/** Upcoming matchups grouped by calendar day, in IST. */
 export function groupedMatchups(
   matchups: Matchup[],
 ): Array<{ day: string; games: Matchup[] }> {

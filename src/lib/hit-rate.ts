@@ -77,9 +77,11 @@ export function hitRateLabel(sample: { hits: number; n: number }): string {
   return `${Math.round((sample.hits / sample.n) * 100)}%`;
 }
 
+/** American odds are stored; the board shows decimal odds. */
 export function priceLabel(price: number): string {
-  if (!Number.isFinite(price)) return "—";
-  return price > 0 ? `+${price}` : `${price}`;
+  if (!Number.isFinite(price) || price === 0) return "—";
+  const decimal = price > 0 ? 1 + price / 100 : 1 + 100 / Math.abs(price);
+  return decimal.toFixed(2);
 }
 
 /** Percent colouring: green above 60, red below 40, neutral in between. */

@@ -47,23 +47,24 @@ const DEFAULT_DIRECTION: Record<SortKey, "asc" | "desc"> = {
 
 const GRADES = ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "D", "F"] as const;
 
-function slateLabel(date: string | null): string {
-  if (!date) return "No slate";
+/** The slate is labelled by the IST date its games tip off on. */
+function slateLabel(tipoff: string | null): string {
+  if (!tipoff) return "No slate";
   return new Intl.DateTimeFormat("en-US", {
     weekday: "long",
     month: "long",
     day: "numeric",
-    timeZone: "UTC",
-  }).format(new Date(`${date}T12:00:00Z`));
+    timeZone: "Asia/Kolkata",
+  }).format(new Date(tipoff));
 }
 
 function updatedLabel(iso: string): string {
-  return new Intl.DateTimeFormat("en-US", {
+  const time = new Intl.DateTimeFormat("en-US", {
     hour: "numeric",
     minute: "2-digit",
-    timeZone: "America/New_York",
-    timeZoneName: "short",
+    timeZone: "Asia/Kolkata",
   }).format(new Date(iso));
+  return `${time} IST`;
 }
 
 function rate(row: HitRateRow, key: "l5" | "l10" | "h2h"): number {
@@ -271,7 +272,7 @@ export default function HitRate() {
             <div className="flex items-center gap-3">
               <span className="h-px w-8 bg-foreground/30" />
               <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-                Slate · {slateLabel(board.meta.slateDate)}
+                Slate · {slateLabel(board.rows[0]?.tipoff ?? board.meta.slateDate)}
               </p>
             </div>
             <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
