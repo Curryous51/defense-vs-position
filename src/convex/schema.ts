@@ -46,6 +46,14 @@ const schema = defineSchema(
       payload: v.any(),
     }).index("by_key", ["key"]),
 
+    // Per-player game logs, reused across line refreshes so only one pull a
+    // day hits ESPN.
+    playerGameLogs: defineTable({
+      playerId: v.string(),
+      updatedAt: v.number(),
+      logs: v.any(),
+    }).index("by_player", ["playerId"]),
+
     // add other tables here
 
     // tableName: defineTable({

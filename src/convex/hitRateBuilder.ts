@@ -164,7 +164,7 @@ interface RosterPlayer {
   coarse: string;
 }
 
-interface GameLog {
+export interface GameLog {
   date: string;
   season: number;
   opponentId: string;
@@ -426,6 +426,13 @@ export interface BuildHitRateOptions {
   apiKey: string;
   now?: number;
   onProgress?: (message: string) => void;
+  /** Cached logs, so a line refresh does not re-pull every player's history. */
+  loadLogs?: (
+    playerId: string,
+  ) => Promise<{ updatedAt: number; logs: GameLog[] } | null>;
+  saveLogs?: (playerId: string, logs: GameLog[]) => Promise<void>;
+  /** How long a cached history stays fresh (default 20 hours). */
+  logTtlMs?: number;
 }
 
 export async function buildHitRateBoard(
@@ -602,9 +609,23 @@ export async function buildHitRateBoard(
     `Fetching ${playerIds.length} game logs across ${seasons.join(", ")}`,
   );
 
+  const ttl = options.logTtlMs ?? 20 * 60 * 60 * 1000;
   let fetched = 0;
+  let reused = 0;
   const logsByPlayer = new Map<string, GameLog[]>();
   await mapLimit(playerIds, 6, async (playerId) => {
+    const cached = options.loadLogs ? await options.loadLogs(playerId) : null;
+    if (
+      cached &&
+      now - cached.updatedAt < ttl &&
+      Array.isArray(cached.logs) &&
+      cached.logs.length > 0
+    ) {
+      logsByPlayer.set(playerId, cached.logs as GameLog[]);
+      reused += 1;
+      return;
+    }
+
     const logs: GameLog[] = [];
     for (const season of seasons) {
       try {
@@ -617,9 +638,11 @@ export async function buildHitRateBoard(
       }
     }
     logsByPlayer.set(playerId, logs);
+    if (options.saveLogs) await options.saveLogs(playerId, logs);
     fetched += 1;
-    if (fetched % 50 === 0) log(`Game logs: ${fetched}/${playerIds.length}`);
+    if (fetched % 50 === 0) log(`Game logs: ${fetched} fetched, ${reused} cached`);
   });
+  log(`Game logs: ${fetched} fetched, ${reused} reused from cache`);
 
   const rows: HitRateRow[] = [];
   for (const { line, player, teamId, opponentId } of matched) {

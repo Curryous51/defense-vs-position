@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generatedAt": "2026-11-19T05:19:12.518Z",
+    "generatedAt": "2026-11-19T07:55:06.610Z",
     "season": "2026-27",
     "slateDate": "2026-11-19",
     "games": 4,
-    "props": 39,
+    "props": 114,
     "source": "PropLine · ESPN",
     "throughDate": "2026-11-17T02:00Z"
   },
@@ -17,9 +17,9 @@
       "position": "PF",
       "stat": "ast",
       "line": 2.5,
-      "overPrice": -174,
+      "overPrice": -160,
       "underPrice": 132,
-      "books": 1,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 3.7,
@@ -53,49 +53,6 @@
       "injuryStatus": null
     },
     {
-      "playerId": "4431671",
-      "name": "Jaden McDaniels",
-      "teamId": "16",
-      "opponentId": "18",
-      "position": "PF",
-      "stat": "reb",
-      "line": 4.5,
-      "overPrice": -155,
-      "underPrice": 117,
-      "books": 1,
-      "gameId": "718978",
-      "tipoff": "2026-11-20T01:00:00Z",
-      "seasonAvg": 6.1,
-      "minutes": 33.5,
-      "l5": {
-        "hits": 5,
-        "n": 5
-      },
-      "l10": {
-        "hits": 9,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 2,
-        "n": 3
-      },
-      "strip": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false,
-        true
-      ],
-      "rank": 13,
-      "starter": true,
-      "injuryStatus": null
-    },
-    {
       "playerId": "3934672",
       "name": "Jalen Brunson",
       "teamId": "18",
@@ -103,9 +60,9 @@
       "position": "PG",
       "stat": "tpm",
       "line": 2.5,
-      "overPrice": -104,
-      "underPrice": -126,
-      "books": 1,
+      "overPrice": 120,
+      "underPrice": -142,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 2.9,
@@ -146,9 +103,9 @@
       "position": "PG",
       "stat": "pts",
       "line": 17.5,
-      "overPrice": -109,
-      "underPrice": -117,
-      "books": 1,
+      "overPrice": -108,
+      "underPrice": -115,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 18.6,
@@ -189,9 +146,9 @@
       "position": "C",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 103,
-      "underPrice": -135,
-      "books": 1,
+      "overPrice": -108,
+      "underPrice": 100,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 2,
@@ -225,6 +182,135 @@
       "injuryStatus": null
     },
     {
+      "playerId": "3133628",
+      "name": "Myles Turner",
+      "teamId": "15",
+      "opponentId": "22",
+      "position": "C",
+      "stat": "reb",
+      "line": 4.5,
+      "overPrice": -150,
+      "underPrice": 122,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 6,
+      "minutes": 26.6,
+      "l5": {
+        "hits": 4,
+        "n": 5
+      },
+      "l10": {
+        "hits": 8,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 3
+      },
+      "strip": [
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "rank": 18,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4432847",
+      "name": "Terrence Shannon Jr.",
+      "teamId": "16",
+      "opponentId": "18",
+      "position": "PF",
+      "stat": "reb",
+      "line": 2.5,
+      "overPrice": -174,
+      "underPrice": 130,
+      "books": 1,
+      "gameId": "718978",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 3.3,
+      "minutes": 22.8,
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 8,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 2
+      },
+      "strip": [
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "rank": 13,
+      "starter": false,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4683021",
+      "name": "Deni Avdija",
+      "teamId": "22",
+      "opponentId": "15",
+      "position": "PF",
+      "stat": "tpm",
+      "line": 1.5,
+      "overPrice": -130,
+      "underPrice": 118,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 2.1,
+      "minutes": 32.5,
+      "l5": {
+        "hits": 5,
+        "n": 5
+      },
+      "l10": {
+        "hits": 7,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 3,
+        "n": 4
+      },
+      "strip": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false
+      ],
+      "rank": 21,
+      "starter": true,
+      "injuryStatus": "Day-To-Day"
+    },
+    {
       "playerId": "4397002",
       "name": "Ayo Dosunmu",
       "teamId": "16",
@@ -232,9 +318,9 @@
       "position": "PG",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": -186,
+      "overPrice": -158,
       "underPrice": 140,
-      "books": 1,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 2.1,
@@ -268,20 +354,106 @@
       "injuryStatus": null
     },
     {
-      "playerId": "4431671",
-      "name": "Jaden McDaniels",
-      "teamId": "16",
-      "opponentId": "18",
+      "playerId": "4683021",
+      "name": "Deni Avdija",
+      "teamId": "22",
+      "opponentId": "15",
       "position": "PF",
       "stat": "pts",
-      "line": 15.5,
-      "overPrice": -128,
-      "underPrice": 100,
-      "books": 1,
+      "line": 23.5,
+      "overPrice": -115,
+      "underPrice": -110,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 24.2,
+      "minutes": 32.5,
+      "l5": {
+        "hits": 4,
+        "n": 5
+      },
+      "l10": {
+        "hits": 7,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 4
+      },
+      "strip": [
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true
+      ],
+      "rank": 17,
+      "starter": true,
+      "injuryStatus": "Day-To-Day"
+    },
+    {
+      "playerId": "4432848",
+      "name": "Jaime Jaquez Jr.",
+      "teamId": "15",
+      "opponentId": "22",
+      "position": "PF",
+      "stat": "tpm",
+      "line": 1.5,
+      "overPrice": 158,
+      "underPrice": -205,
+      "books": 3,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 1.9,
+      "minutes": 27.6,
+      "l5": {
+        "hits": 4,
+        "n": 5
+      },
+      "l10": {
+        "hits": 7,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 4
+      },
+      "strip": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "rank": 14,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "3934672",
+      "name": "Jalen Brunson",
+      "teamId": "18",
+      "opponentId": "16",
+      "position": "PG",
+      "stat": "pts",
+      "line": 26.5,
+      "overPrice": -108,
+      "underPrice": -115,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
-      "seasonAvg": 17.1,
-      "minutes": 33.5,
+      "seasonAvg": 27,
+      "minutes": 34.2,
       "l5": {
         "hits": 4,
         "n": 5
@@ -296,18 +468,61 @@
       },
       "strip": [
         true,
+        true,
+        true,
+        true,
         false,
         true,
         true,
-        true,
-        true,
         false,
         false,
-        true,
         true
       ],
-      "rank": 6,
+      "rank": 13,
       "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "2991070",
+      "name": "Jerami Grant",
+      "teamId": "29",
+      "opponentId": "9",
+      "position": "PF",
+      "stat": "tpm",
+      "line": 1.5,
+      "overPrice": -130,
+      "underPrice": 100,
+      "books": 1,
+      "gameId": "718962",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 1.8,
+      "minutes": 23.4,
+      "l5": {
+        "hits": 4,
+        "n": 5
+      },
+      "l10": {
+        "hits": 7,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 3,
+        "n": 5
+      },
+      "strip": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "rank": 17,
+      "starter": false,
       "injuryStatus": null
     },
     {
@@ -318,9 +533,9 @@
       "position": "C",
       "stat": "reb",
       "line": 12.5,
-      "overPrice": -133,
-      "underPrice": 101,
-      "books": 1,
+      "overPrice": -130,
+      "underPrice": 108,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 14.1,
@@ -354,6 +569,92 @@
       "injuryStatus": null
     },
     {
+      "playerId": "3914044",
+      "name": "Landry Shamet",
+      "teamId": "18",
+      "opponentId": "16",
+      "position": "SF",
+      "stat": "pts",
+      "line": 8.5,
+      "overPrice": -116,
+      "underPrice": -106,
+      "books": 3,
+      "gameId": "718978",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 10.4,
+      "minutes": 25.7,
+      "l5": {
+        "hits": 4,
+        "n": 5
+      },
+      "l10": {
+        "hits": 7,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 1
+      },
+      "strip": [
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "rank": 11,
+      "starter": false,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "3914044",
+      "name": "Landry Shamet",
+      "teamId": "18",
+      "opponentId": "16",
+      "position": "SF",
+      "stat": "tpm",
+      "line": 1.5,
+      "overPrice": -130,
+      "underPrice": 114,
+      "books": 3,
+      "gameId": "718978",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 2.2,
+      "minutes": 25.7,
+      "l5": {
+        "hits": 4,
+        "n": 5
+      },
+      "l10": {
+        "hits": 7,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 1
+      },
+      "strip": [
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "rank": 3,
+      "starter": false,
+      "injuryStatus": null
+    },
+    {
       "playerId": "3934719",
       "name": "OG Anunoby",
       "teamId": "18",
@@ -362,8 +663,8 @@
       "stat": "tpm",
       "line": 1.5,
       "overPrice": -150,
-      "underPrice": 114,
-      "books": 1,
+      "underPrice": 144,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 2.1,
@@ -397,6 +698,135 @@
       "injuryStatus": null
     },
     {
+      "playerId": "4432847",
+      "name": "Terrence Shannon Jr.",
+      "teamId": "16",
+      "opponentId": "18",
+      "position": "PF",
+      "stat": "ast",
+      "line": 2.5,
+      "overPrice": 130,
+      "underPrice": -174,
+      "books": 1,
+      "gameId": "718978",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 2.9,
+      "minutes": 22.8,
+      "l5": {
+        "hits": 4,
+        "n": 5
+      },
+      "l10": {
+        "hits": 7,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 2
+      },
+      "strip": [
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "rank": 27,
+      "starter": false,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5082206",
+      "name": "Brayden Burries",
+      "teamId": "15",
+      "opponentId": "22",
+      "position": "PG",
+      "stat": "reb",
+      "line": 4.5,
+      "overPrice": -120,
+      "underPrice": -106,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 5.5,
+      "minutes": 22.1,
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 7,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 0
+      },
+      "strip": [
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "rank": 5,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4431671",
+      "name": "Jaden McDaniels",
+      "teamId": "16",
+      "opponentId": "18",
+      "position": "PF",
+      "stat": "reb",
+      "line": 5.5,
+      "overPrice": 120,
+      "underPrice": -138,
+      "books": 2,
+      "gameId": "718978",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 6.1,
+      "minutes": 33.5,
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 7,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 3
+      },
+      "strip": [
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "rank": 13,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4433247",
       "name": "Jonathan Kuminga",
       "teamId": "16",
@@ -404,9 +834,9 @@
       "position": "PF",
       "stat": "ast",
       "line": 2.5,
-      "overPrice": -118,
-      "underPrice": -111,
-      "books": 1,
+      "overPrice": -104,
+      "underPrice": -114,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 2.8,
@@ -440,6 +870,135 @@
       "injuryStatus": "Day-To-Day"
     },
     {
+      "playerId": "4432816",
+      "name": "LaMelo Ball",
+      "teamId": "16",
+      "opponentId": "18",
+      "position": "PG",
+      "stat": "pts",
+      "line": 18.5,
+      "overPrice": -120,
+      "underPrice": -103,
+      "books": 3,
+      "gameId": "718978",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 17.7,
+      "minutes": 27.7,
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 7,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 4,
+        "n": 5
+      },
+      "strip": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "rank": 5,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5041935",
+      "name": "Cameron Boozer",
+      "teamId": "29",
+      "opponentId": "9",
+      "position": "C",
+      "stat": "ast",
+      "line": 4.5,
+      "overPrice": -125,
+      "underPrice": -105,
+      "books": 1,
+      "gameId": "718962",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 5.3,
+      "minutes": 31,
+      "l5": {
+        "hits": 4,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 1
+      },
+      "strip": [
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "rank": 22,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4432848",
+      "name": "Jaime Jaquez Jr.",
+      "teamId": "15",
+      "opponentId": "22",
+      "position": "PF",
+      "stat": "reb",
+      "line": 4.5,
+      "overPrice": 115,
+      "underPrice": -138,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 5.4,
+      "minutes": 27.6,
+      "l5": {
+        "hits": 4,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 4,
+        "n": 4
+      },
+      "strip": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true
+      ],
+      "rank": 6,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
       "playerId": "3136195",
       "name": "Karl-Anthony Towns",
       "teamId": "18",
@@ -447,9 +1006,9 @@
       "position": "C",
       "stat": "pts",
       "line": 20.5,
-      "overPrice": -121,
-      "underPrice": -106,
-      "books": 1,
+      "overPrice": -112,
+      "underPrice": -104,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 21.2,
@@ -490,9 +1049,9 @@
       "position": "C",
       "stat": "ast",
       "line": 1.5,
-      "overPrice": 109,
-      "underPrice": -143,
-      "books": 1,
+      "overPrice": -111,
+      "underPrice": 102,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 1.7,
@@ -526,6 +1085,221 @@
       "injuryStatus": null
     },
     {
+      "playerId": "5175737",
+      "name": "Yaxel Lendeborg",
+      "teamId": "9",
+      "opponentId": "29",
+      "position": "PF",
+      "stat": "reb",
+      "line": 6.5,
+      "overPrice": -115,
+      "underPrice": -115,
+      "books": 1,
+      "gameId": "718962",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 7.3,
+      "minutes": 31.5,
+      "l5": {
+        "hits": 4,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 1
+      },
+      "strip": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "rank": 10,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4709138",
+      "name": "Brandin Podziemski",
+      "teamId": "9",
+      "opponentId": "29",
+      "position": "PG",
+      "stat": "tpm",
+      "line": 2.5,
+      "overPrice": 105,
+      "underPrice": -140,
+      "books": 1,
+      "gameId": "718962",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 2.6,
+      "minutes": 32,
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 8
+      },
+      "strip": [
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "rank": 18,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5082206",
+      "name": "Brayden Burries",
+      "teamId": "15",
+      "opponentId": "22",
+      "position": "PG",
+      "stat": "ast",
+      "line": 2.5,
+      "overPrice": -130,
+      "underPrice": 100,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 2.3,
+      "minutes": 22.1,
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 0
+      },
+      "strip": [
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "rank": 1,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4903027",
+      "name": "Cedric Coward",
+      "teamId": "29",
+      "opponentId": "9",
+      "position": "SF",
+      "stat": "reb",
+      "line": 7.5,
+      "overPrice": 100,
+      "underPrice": -130,
+      "books": 1,
+      "gameId": "718962",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 8.4,
+      "minutes": 29,
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 2
+      },
+      "strip": [
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "rank": 23,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5105565",
+      "name": "Donovan Clingan",
+      "teamId": "22",
+      "opponentId": "15",
+      "position": "C",
+      "stat": "tpm",
+      "line": 0.5,
+      "overPrice": -190,
+      "underPrice": 130,
+      "books": 1,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 0.9,
+      "minutes": 25.7,
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 4
+      },
+      "strip": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "rank": 21,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4431671",
       "name": "Jaden McDaniels",
       "teamId": "16",
@@ -533,9 +1307,9 @@
       "position": "PF",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": -108,
-      "underPrice": -122,
-      "books": 1,
+      "overPrice": 110,
+      "underPrice": -118,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 1.3,
@@ -569,20 +1343,20 @@
       "injuryStatus": null
     },
     {
-      "playerId": "3934672",
-      "name": "Jalen Brunson",
-      "teamId": "18",
-      "opponentId": "16",
-      "position": "PG",
+      "playerId": "4432848",
+      "name": "Jaime Jaquez Jr.",
+      "teamId": "15",
+      "opponentId": "22",
+      "position": "PF",
       "stat": "pts",
-      "line": 27.5,
-      "overPrice": -106,
-      "underPrice": -121,
-      "books": 1,
-      "gameId": "718978",
+      "line": 13.5,
+      "overPrice": -114,
+      "underPrice": -105,
+      "books": 3,
+      "gameId": "718961",
       "tipoff": "2026-11-20T01:00:00Z",
-      "seasonAvg": 27,
-      "minutes": 34.2,
+      "seasonAvg": 15.4,
+      "minutes": 27.6,
       "l5": {
         "hits": 3,
         "n": 5
@@ -592,22 +1366,22 @@
         "n": 10
       },
       "h2h": {
-        "hits": 0,
-        "n": 3
+        "hits": 1,
+        "n": 4
       },
       "strip": [
-        true,
-        true,
-        true,
         false,
         false,
         true,
         true,
+        true,
         false,
-        false,
-        true
+        true,
+        true,
+        true,
+        false
       ],
-      "rank": 13,
+      "rank": 8,
       "starter": true,
       "injuryStatus": null
     },
@@ -619,9 +1393,9 @@
       "position": "PF",
       "stat": "reb",
       "line": 5.5,
-      "overPrice": -107,
-      "underPrice": -122,
-      "books": 1,
+      "overPrice": 106,
+      "underPrice": -115,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 5.7,
@@ -655,6 +1429,92 @@
       "injuryStatus": "Day-To-Day"
     },
     {
+      "playerId": "3995",
+      "name": "Jrue Holiday",
+      "teamId": "22",
+      "opponentId": "15",
+      "position": "PG",
+      "stat": "reb",
+      "line": 3.5,
+      "overPrice": -145,
+      "underPrice": 118,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 3.6,
+      "minutes": 26.5,
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 3,
+        "n": 4
+      },
+      "strip": [
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true
+      ],
+      "rank": 11,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "3134907",
+      "name": "Kyle Kuzma",
+      "teamId": "15",
+      "opponentId": "22",
+      "position": "PF",
+      "stat": "pts",
+      "line": 12.5,
+      "overPrice": -102,
+      "underPrice": -107,
+      "books": 3,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 12.3,
+      "minutes": 27.1,
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 1
+      },
+      "strip": [
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "rank": 8,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4432816",
       "name": "LaMelo Ball",
       "teamId": "16",
@@ -662,9 +1522,9 @@
       "position": "PG",
       "stat": "tpm",
       "line": 3.5,
-      "overPrice": -137,
-      "underPrice": 104,
-      "books": 1,
+      "overPrice": -105,
+      "underPrice": 100,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 3.5,
@@ -705,9 +1565,9 @@
       "position": "PF",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": 111,
+      "overPrice": 120,
       "underPrice": -146,
-      "books": 1,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 3.6,
@@ -748,9 +1608,9 @@
       "position": "PF",
       "stat": "pts",
       "line": 15.5,
-      "overPrice": -102,
-      "underPrice": -125,
-      "books": 1,
+      "overPrice": -105,
+      "underPrice": -121,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 16.4,
@@ -784,6 +1644,135 @@
       "injuryStatus": null
     },
     {
+      "playerId": "4432847",
+      "name": "Terrence Shannon Jr.",
+      "teamId": "16",
+      "opponentId": "18",
+      "position": "PF",
+      "stat": "pts",
+      "line": 11.5,
+      "overPrice": -114,
+      "underPrice": -114,
+      "books": 1,
+      "gameId": "718978",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 12.9,
+      "minutes": 22.8,
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 2
+      },
+      "strip": [
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true
+      ],
+      "rank": 6,
+      "starter": false,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5175737",
+      "name": "Yaxel Lendeborg",
+      "teamId": "9",
+      "opponentId": "29",
+      "position": "PF",
+      "stat": "tpm",
+      "line": 1.5,
+      "overPrice": -165,
+      "underPrice": 120,
+      "books": 1,
+      "gameId": "718962",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 2.1,
+      "minutes": 31.5,
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 1
+      },
+      "strip": [
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "rank": 1,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4709138",
+      "name": "Brandin Podziemski",
+      "teamId": "9",
+      "opponentId": "29",
+      "position": "PG",
+      "stat": "reb",
+      "line": 4.5,
+      "overPrice": -145,
+      "underPrice": 110,
+      "books": 1,
+      "gameId": "718962",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 4.8,
+      "minutes": 32,
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 3,
+        "n": 8
+      },
+      "strip": [
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "rank": 9,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
       "playerId": "3934672",
       "name": "Jalen Brunson",
       "teamId": "18",
@@ -792,8 +1781,8 @@
       "stat": "ast",
       "line": 5.5,
       "overPrice": -130,
-      "underPrice": -101,
-      "books": 1,
+      "underPrice": 110,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 5.9,
@@ -827,92 +1816,6 @@
       "injuryStatus": null
     },
     {
-      "playerId": "3062679",
-      "name": "Josh Hart",
-      "teamId": "18",
-      "opponentId": "16",
-      "position": "SF",
-      "stat": "tpm",
-      "line": 0.5,
-      "overPrice": -235,
-      "underPrice": 175,
-      "books": 1,
-      "gameId": "718978",
-      "tipoff": "2026-11-20T01:00:00Z",
-      "seasonAvg": 1.3,
-      "minutes": 29.8,
-      "l5": {
-        "hits": 2,
-        "n": 5
-      },
-      "l10": {
-        "hits": 6,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 3,
-        "n": 3
-      },
-      "strip": [
-        true,
-        false,
-        false,
-        false,
-        true,
-        true,
-        false,
-        true,
-        true,
-        true
-      ],
-      "rank": 3,
-      "starter": true,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "4432816",
-      "name": "LaMelo Ball",
-      "teamId": "16",
-      "opponentId": "18",
-      "position": "PG",
-      "stat": "pts",
-      "line": 19.5,
-      "overPrice": -106,
-      "underPrice": -120,
-      "books": 1,
-      "gameId": "718978",
-      "tipoff": "2026-11-20T01:00:00Z",
-      "seasonAvg": 17.7,
-      "minutes": 27.7,
-      "l5": {
-        "hits": 2,
-        "n": 5
-      },
-      "l10": {
-        "hits": 6,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 3,
-        "n": 5
-      },
-      "strip": [
-        false,
-        false,
-        false,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false,
-        true
-      ],
-      "rank": 5,
-      "starter": true,
-      "injuryStatus": null
-    },
-    {
       "playerId": "3147657",
       "name": "Mikal Bridges",
       "teamId": "18",
@@ -920,9 +1823,9 @@
       "position": "PF",
       "stat": "tpm",
       "line": 0.5,
-      "overPrice": -193,
-      "underPrice": 145,
-      "books": 1,
+      "overPrice": -240,
+      "underPrice": 179,
+      "books": 2,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 0.9,
@@ -963,9 +1866,9 @@
       "position": "PF",
       "stat": "ast",
       "line": 1.5,
-      "overPrice": -150,
-      "underPrice": 114,
-      "books": 1,
+      "overPrice": -151,
+      "underPrice": 120,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 2,
@@ -1007,8 +1910,8 @@
       "stat": "reb",
       "line": 2.5,
       "overPrice": -132,
-      "underPrice": 101,
-      "books": 1,
+      "underPrice": 116,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 2.9,
@@ -1042,6 +1945,92 @@
       "injuryStatus": null
     },
     {
+      "playerId": "5112087",
+      "name": "Jaylen Wells",
+      "teamId": "29",
+      "opponentId": "9",
+      "position": "SF",
+      "stat": "tpm",
+      "line": 1.5,
+      "overPrice": -165,
+      "underPrice": 120,
+      "books": 1,
+      "gameId": "718962",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 2,
+      "minutes": 27,
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 4,
+        "n": 8
+      },
+      "strip": [
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "rank": 14,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "3995",
+      "name": "Jrue Holiday",
+      "teamId": "22",
+      "opponentId": "15",
+      "position": "PG",
+      "stat": "ast",
+      "line": 4.5,
+      "overPrice": 100,
+      "underPrice": -125,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 4.1,
+      "minutes": 26.5,
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 4
+      },
+      "strip": [
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "rank": 26,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
       "playerId": "3136195",
       "name": "Karl-Anthony Towns",
       "teamId": "18",
@@ -1049,9 +2038,9 @@
       "position": "C",
       "stat": "ast",
       "line": 3.5,
-      "overPrice": -129,
-      "underPrice": -102,
-      "books": 1,
+      "overPrice": -125,
+      "underPrice": 100,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 3.9,
@@ -1092,9 +2081,9 @@
       "position": "PG",
       "stat": "reb",
       "line": 4.5,
-      "overPrice": 116,
-      "underPrice": -152,
-      "books": 1,
+      "overPrice": 115,
+      "underPrice": -145,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 4.1,
@@ -1135,9 +2124,9 @@
       "position": "C",
       "stat": "pts",
       "line": 8.5,
-      "overPrice": -121,
+      "overPrice": -112,
       "underPrice": -105,
-      "books": 1,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 7.6,
@@ -1171,6 +2160,393 @@
       "injuryStatus": null
     },
     {
+      "playerId": "5081727",
+      "name": "Sidy Cissoko",
+      "teamId": "22",
+      "opponentId": "15",
+      "position": "C",
+      "stat": "tpm",
+      "line": 1.5,
+      "overPrice": 125,
+      "underPrice": -154,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 1.4,
+      "minutes": 24.1,
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 3
+      },
+      "strip": [
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "rank": 21,
+      "starter": false,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5175737",
+      "name": "Yaxel Lendeborg",
+      "teamId": "9",
+      "opponentId": "29",
+      "position": "PF",
+      "stat": "pts",
+      "line": 21.5,
+      "overPrice": -115,
+      "underPrice": -115,
+      "books": 1,
+      "gameId": "718962",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 20.3,
+      "minutes": 31.5,
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 1
+      },
+      "strip": [
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "rank": 4,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4600663",
+      "name": "Zach Edey",
+      "teamId": "29",
+      "opponentId": "9",
+      "position": "C",
+      "stat": "pts",
+      "line": 9.5,
+      "overPrice": -130,
+      "underPrice": 100,
+      "books": 1,
+      "gameId": "718962",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 9.2,
+      "minutes": 20.8,
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 3,
+        "n": 6
+      },
+      "strip": [
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "rank": 10,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4709138",
+      "name": "Brandin Podziemski",
+      "teamId": "9",
+      "opponentId": "29",
+      "position": "PG",
+      "stat": "pts",
+      "line": 16.5,
+      "overPrice": -125,
+      "underPrice": -105,
+      "books": 1,
+      "gameId": "718962",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 15.8,
+      "minutes": 32,
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 4,
+        "n": 8
+      },
+      "strip": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true
+      ],
+      "rank": 21,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5082206",
+      "name": "Brayden Burries",
+      "teamId": "15",
+      "opponentId": "22",
+      "position": "PG",
+      "stat": "pts",
+      "line": 11.5,
+      "overPrice": -105,
+      "underPrice": -122,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 10.1,
+      "minutes": 22.1,
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 0
+      },
+      "strip": [
+        true,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "rank": 27,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5041935",
+      "name": "Cameron Boozer",
+      "teamId": "29",
+      "opponentId": "9",
+      "position": "C",
+      "stat": "reb",
+      "line": 8.5,
+      "overPrice": -125,
+      "underPrice": -105,
+      "books": 1,
+      "gameId": "718962",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 9.4,
+      "minutes": 31,
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 1
+      },
+      "strip": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
+      "rank": 13,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "6606",
+      "name": "Damian Lillard",
+      "teamId": "22",
+      "opponentId": "15",
+      "position": "PG",
+      "stat": "ast",
+      "line": 4.5,
+      "overPrice": -108,
+      "underPrice": -110,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 4.4,
+      "minutes": 29.2,
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 0
+      },
+      "strip": [
+        true,
+        false,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "rank": 26,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4683021",
+      "name": "Deni Avdija",
+      "teamId": "22",
+      "opponentId": "15",
+      "position": "PF",
+      "stat": "ast",
+      "line": 5.5,
+      "overPrice": 114,
+      "underPrice": -140,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 6.1,
+      "minutes": 32.5,
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 4
+      },
+      "strip": [
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "rank": 21,
+      "starter": true,
+      "injuryStatus": "Day-To-Day"
+    },
+    {
+      "playerId": "4431671",
+      "name": "Jaden McDaniels",
+      "teamId": "16",
+      "opponentId": "18",
+      "position": "PF",
+      "stat": "pts",
+      "line": 16.5,
+      "overPrice": 100,
+      "underPrice": -126,
+      "books": 3,
+      "gameId": "718978",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 17.1,
+      "minutes": 33.5,
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 3
+      },
+      "strip": [
+        true,
+        false,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "rank": 6,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4433247",
       "name": "Jonathan Kuminga",
       "teamId": "16",
@@ -1178,9 +2554,9 @@
       "position": "PF",
       "stat": "pts",
       "line": 13.5,
-      "overPrice": -114,
-      "underPrice": -112,
-      "books": 1,
+      "overPrice": -105,
+      "underPrice": -108,
+      "books": 2,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 12.4,
@@ -1214,6 +2590,135 @@
       "injuryStatus": "Day-To-Day"
     },
     {
+      "playerId": "3995",
+      "name": "Jrue Holiday",
+      "teamId": "22",
+      "opponentId": "15",
+      "position": "PG",
+      "stat": "pts",
+      "line": 13.5,
+      "overPrice": -102,
+      "underPrice": -115,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 13.3,
+      "minutes": 26.5,
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 3,
+        "n": 4
+      },
+      "strip": [
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true
+      ],
+      "rank": 10,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "3995",
+      "name": "Jrue Holiday",
+      "teamId": "22",
+      "opponentId": "15",
+      "position": "PG",
+      "stat": "tpm",
+      "line": 2.5,
+      "overPrice": 158,
+      "underPrice": -190,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 2.5,
+      "minutes": 26.5,
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 4,
+        "n": 4
+      },
+      "strip": [
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "rank": 17,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4432816",
+      "name": "LaMelo Ball",
+      "teamId": "16",
+      "opponentId": "18",
+      "position": "PG",
+      "stat": "ast",
+      "line": 5.5,
+      "overPrice": -150,
+      "underPrice": 115,
+      "books": 2,
+      "gameId": "718978",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 5.5,
+      "minutes": 27.7,
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 4,
+        "n": 5
+      },
+      "strip": [
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "rank": 13,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
       "playerId": "3934719",
       "name": "OG Anunoby",
       "teamId": "18",
@@ -1221,9 +2726,9 @@
       "position": "PF",
       "stat": "reb",
       "line": 4.5,
-      "overPrice": -151,
-      "underPrice": 115,
-      "books": 1,
+      "overPrice": -140,
+      "underPrice": 119,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 5.3,
@@ -1264,9 +2769,9 @@
       "position": "C",
       "stat": "reb",
       "line": 10.5,
-      "overPrice": 105,
-      "underPrice": -138,
-      "books": 1,
+      "overPrice": 116,
+      "underPrice": -131,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 11.1,
@@ -1300,6 +2805,694 @@
       "injuryStatus": null
     },
     {
+      "playerId": "5175737",
+      "name": "Yaxel Lendeborg",
+      "teamId": "9",
+      "opponentId": "29",
+      "position": "PF",
+      "stat": "ast",
+      "line": 3.5,
+      "overPrice": -165,
+      "underPrice": 120,
+      "books": 1,
+      "gameId": "718962",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 3.5,
+      "minutes": 31.5,
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 1
+      },
+      "strip": [
+        true,
+        false,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "rank": 8,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4600663",
+      "name": "Zach Edey",
+      "teamId": "29",
+      "opponentId": "9",
+      "position": "C",
+      "stat": "reb",
+      "line": 6.5,
+      "overPrice": -140,
+      "underPrice": 105,
+      "books": 1,
+      "gameId": "718962",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 7.4,
+      "minutes": 20.8,
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 5,
+        "n": 6
+      },
+      "strip": [
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "rank": 13,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "3062679",
+      "name": "Josh Hart",
+      "teamId": "18",
+      "opponentId": "16",
+      "position": "SF",
+      "stat": "reb",
+      "line": 5.5,
+      "overPrice": -145,
+      "underPrice": 114,
+      "books": 2,
+      "gameId": "718978",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 6.3,
+      "minutes": 29.8,
+      "l5": {
+        "hits": 1,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 3
+      },
+      "strip": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "rank": 9,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "3062679",
+      "name": "Josh Hart",
+      "teamId": "18",
+      "opponentId": "16",
+      "position": "SF",
+      "stat": "tpm",
+      "line": 1.5,
+      "overPrice": 162,
+      "underPrice": -188,
+      "books": 3,
+      "gameId": "718978",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 1.3,
+      "minutes": 29.8,
+      "l5": {
+        "hits": 1,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 3
+      },
+      "strip": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "rank": 3,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "3134907",
+      "name": "Kyle Kuzma",
+      "teamId": "15",
+      "opponentId": "22",
+      "position": "PF",
+      "stat": "ast",
+      "line": 2.5,
+      "overPrice": -136,
+      "underPrice": 105,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 2.4,
+      "minutes": 27.1,
+      "l5": {
+        "hits": 1,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 1
+      },
+      "strip": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "rank": 18,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4395725",
+      "name": "Tyler Herro",
+      "teamId": "15",
+      "opponentId": "22",
+      "position": "PG",
+      "stat": "pts",
+      "line": 20.5,
+      "overPrice": -105,
+      "underPrice": -115,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 19.4,
+      "minutes": 30,
+      "l5": {
+        "hits": 1,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 1
+      },
+      "strip": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "rank": 27,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4903027",
+      "name": "Cedric Coward",
+      "teamId": "29",
+      "opponentId": "9",
+      "position": "SF",
+      "stat": "pts",
+      "line": 15.5,
+      "overPrice": -125,
+      "underPrice": -105,
+      "books": 1,
+      "gameId": "718962",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 14.5,
+      "minutes": 29,
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 2
+      },
+      "strip": [
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "rank": 22,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "6606",
+      "name": "Damian Lillard",
+      "teamId": "22",
+      "opponentId": "15",
+      "position": "PG",
+      "stat": "pts",
+      "line": 22.5,
+      "overPrice": -106,
+      "underPrice": -110,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 20.1,
+      "minutes": 29.2,
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 0
+      },
+      "strip": [
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "rank": 10,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "6606",
+      "name": "Damian Lillard",
+      "teamId": "22",
+      "opponentId": "15",
+      "position": "PG",
+      "stat": "tpm",
+      "line": 3.5,
+      "overPrice": 118,
+      "underPrice": -145,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 3.1,
+      "minutes": 29.2,
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 0
+      },
+      "strip": [
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "rank": 17,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5105565",
+      "name": "Donovan Clingan",
+      "teamId": "22",
+      "opponentId": "15",
+      "position": "C",
+      "stat": "reb",
+      "line": 11.5,
+      "overPrice": -130,
+      "underPrice": 100,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 10.6,
+      "minutes": 25.7,
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 4
+      },
+      "strip": [
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "rank": 29,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4432848",
+      "name": "Jaime Jaquez Jr.",
+      "teamId": "15",
+      "opponentId": "22",
+      "position": "PF",
+      "stat": "ast",
+      "line": 3.5,
+      "overPrice": 110,
+      "underPrice": -145,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 3.1,
+      "minutes": 27.6,
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 4
+      },
+      "strip": [
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "rank": 18,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "2991070",
+      "name": "Jerami Grant",
+      "teamId": "29",
+      "opponentId": "9",
+      "position": "PF",
+      "stat": "pts",
+      "line": 11.5,
+      "overPrice": -105,
+      "underPrice": -125,
+      "books": 1,
+      "gameId": "718962",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 11.1,
+      "minutes": 23.4,
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 3,
+        "n": 5
+      },
+      "strip": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "rank": 14,
+      "starter": false,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "3134907",
+      "name": "Kyle Kuzma",
+      "teamId": "15",
+      "opponentId": "22",
+      "position": "PF",
+      "stat": "reb",
+      "line": 4.5,
+      "overPrice": 100,
+      "underPrice": -130,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 5.3,
+      "minutes": 27.1,
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 1
+      },
+      "strip": [
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "rank": 6,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "3133628",
+      "name": "Myles Turner",
+      "teamId": "15",
+      "opponentId": "22",
+      "position": "C",
+      "stat": "ast",
+      "line": 2.5,
+      "overPrice": 115,
+      "underPrice": -150,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 2.7,
+      "minutes": 26.6,
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 3
+      },
+      "strip": [
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "rank": 27,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5081727",
+      "name": "Sidy Cissoko",
+      "teamId": "22",
+      "opponentId": "15",
+      "position": "C",
+      "stat": "reb",
+      "line": 3.5,
+      "overPrice": -110,
+      "underPrice": -110,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 3.7,
+      "minutes": 24.1,
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 3
+      },
+      "strip": [
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "rank": 29,
+      "starter": false,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5112087",
+      "name": "Jaylen Wells",
+      "teamId": "29",
+      "opponentId": "9",
+      "position": "SF",
+      "stat": "pts",
+      "line": 9.5,
+      "overPrice": -115,
+      "underPrice": -115,
+      "books": 1,
+      "gameId": "718962",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 10.7,
+      "minutes": 27,
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 5,
+        "n": 8
+      },
+      "strip": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "rank": 22,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
       "playerId": "3062679",
       "name": "Josh Hart",
       "teamId": "18",
@@ -1308,8 +3501,8 @@
       "stat": "ast",
       "line": 3.5,
       "overPrice": 126,
-      "underPrice": -166,
-      "books": 1,
+      "underPrice": -130,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 3.5,
@@ -1343,6 +3536,49 @@
       "injuryStatus": null
     },
     {
+      "playerId": "3134907",
+      "name": "Kyle Kuzma",
+      "teamId": "15",
+      "opponentId": "22",
+      "position": "PF",
+      "stat": "tpm",
+      "line": 1.5,
+      "overPrice": 105,
+      "underPrice": -114,
+      "books": 3,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 1.7,
+      "minutes": 27.1,
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 1
+      },
+      "strip": [
+        true,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "rank": 14,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
       "playerId": "3147657",
       "name": "Mikal Bridges",
       "teamId": "18",
@@ -1351,8 +3587,8 @@
       "stat": "ast",
       "line": 2.5,
       "overPrice": 130,
-      "underPrice": -172,
-      "books": 1,
+      "underPrice": -140,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 2.1,
@@ -1386,6 +3622,135 @@
       "injuryStatus": null
     },
     {
+      "playerId": "5081727",
+      "name": "Sidy Cissoko",
+      "teamId": "22",
+      "opponentId": "15",
+      "position": "C",
+      "stat": "ast",
+      "line": 1.5,
+      "overPrice": -190,
+      "underPrice": 142,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 1.9,
+      "minutes": 24.1,
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 3
+      },
+      "strip": [
+        false,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "rank": 12,
+      "starter": false,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4431736",
+      "name": "Toumani Camara",
+      "teamId": "22",
+      "opponentId": "15",
+      "position": "PF",
+      "stat": "pts",
+      "line": 13.5,
+      "overPrice": -102,
+      "underPrice": -130,
+      "books": 1,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 12.2,
+      "minutes": 29.1,
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 4
+      },
+      "strip": [
+        false,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
+      "rank": 17,
+      "starter": true,
+      "injuryStatus": "Day-To-Day"
+    },
+    {
+      "playerId": "4431736",
+      "name": "Toumani Camara",
+      "teamId": "22",
+      "opponentId": "15",
+      "position": "PF",
+      "stat": "reb",
+      "line": 4.5,
+      "overPrice": -115,
+      "underPrice": -106,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 3.4,
+      "minutes": 29.1,
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 3,
+        "n": 4
+      },
+      "strip": [
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "rank": 28,
+      "starter": true,
+      "injuryStatus": "Day-To-Day"
+    },
+    {
       "playerId": "4397002",
       "name": "Ayo Dosunmu",
       "teamId": "16",
@@ -1393,9 +3758,9 @@
       "position": "PG",
       "stat": "reb",
       "line": 4.5,
-      "overPrice": 113,
-      "underPrice": -148,
-      "books": 1,
+      "overPrice": 115,
+      "underPrice": -141,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 4.6,
@@ -1429,6 +3794,221 @@
       "injuryStatus": null
     },
     {
+      "playerId": "4683021",
+      "name": "Deni Avdija",
+      "teamId": "22",
+      "opponentId": "15",
+      "position": "PF",
+      "stat": "reb",
+      "line": 6.5,
+      "overPrice": -148,
+      "underPrice": 115,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 6.2,
+      "minutes": 32.5,
+      "l5": {
+        "hits": 1,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 4
+      },
+      "strip": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "rank": 28,
+      "starter": true,
+      "injuryStatus": "Day-To-Day"
+    },
+    {
+      "playerId": "5105565",
+      "name": "Donovan Clingan",
+      "teamId": "22",
+      "opponentId": "15",
+      "position": "C",
+      "stat": "pts",
+      "line": 12.5,
+      "overPrice": -114,
+      "underPrice": -105,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 11,
+      "minutes": 25.7,
+      "l5": {
+        "hits": 1,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 4
+      },
+      "strip": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "rank": 24,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "3133628",
+      "name": "Myles Turner",
+      "teamId": "15",
+      "opponentId": "22",
+      "position": "C",
+      "stat": "pts",
+      "line": 8.5,
+      "overPrice": -125,
+      "underPrice": -102,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 7.1,
+      "minutes": 26.6,
+      "l5": {
+        "hits": 1,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 3,
+        "n": 3
+      },
+      "strip": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "rank": 30,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4432847",
+      "name": "Terrence Shannon Jr.",
+      "teamId": "16",
+      "opponentId": "18",
+      "position": "PF",
+      "stat": "tpm",
+      "line": 1.5,
+      "overPrice": 120,
+      "underPrice": -160,
+      "books": 1,
+      "gameId": "718978",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 1.4,
+      "minutes": 22.8,
+      "l5": {
+        "hits": 1,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 2
+      },
+      "strip": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
+      "rank": 2,
+      "starter": false,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4395725",
+      "name": "Tyler Herro",
+      "teamId": "15",
+      "opponentId": "22",
+      "position": "PG",
+      "stat": "reb",
+      "line": 3.5,
+      "overPrice": -140,
+      "underPrice": 114,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 4,
+      "minutes": 30,
+      "l5": {
+        "hits": 1,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 1
+      },
+      "strip": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "rank": 5,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4433247",
       "name": "Jonathan Kuminga",
       "teamId": "16",
@@ -1436,9 +4016,9 @@
       "position": "PF",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 112,
-      "underPrice": -147,
-      "books": 1,
+      "overPrice": 120,
+      "underPrice": -149,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 1.6,
@@ -1472,6 +4052,135 @@
       "injuryStatus": "Day-To-Day"
     },
     {
+      "playerId": "4395725",
+      "name": "Tyler Herro",
+      "teamId": "15",
+      "opponentId": "22",
+      "position": "PG",
+      "stat": "tpm",
+      "line": 2.5,
+      "overPrice": 112,
+      "underPrice": -141,
+      "books": 3,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 2.5,
+      "minutes": 30,
+      "l5": {
+        "hits": 0,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 1
+      },
+      "strip": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "rank": 5,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4903027",
+      "name": "Cedric Coward",
+      "teamId": "29",
+      "opponentId": "9",
+      "position": "SF",
+      "stat": "tpm",
+      "line": 2.5,
+      "overPrice": 130,
+      "underPrice": -190,
+      "books": 1,
+      "gameId": "718962",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 2.4,
+      "minutes": 29,
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 3,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 2
+      },
+      "strip": [
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "rank": 14,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5105565",
+      "name": "Donovan Clingan",
+      "teamId": "22",
+      "opponentId": "15",
+      "position": "C",
+      "stat": "ast",
+      "line": 2.5,
+      "overPrice": 105,
+      "underPrice": -138,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 1.8,
+      "minutes": 25.7,
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 3,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 4
+      },
+      "strip": [
+        true,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "rank": 12,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
       "playerId": "3147657",
       "name": "Mikal Bridges",
       "teamId": "18",
@@ -1479,9 +4188,9 @@
       "position": "PF",
       "stat": "pts",
       "line": 9.5,
-      "overPrice": -123,
-      "underPrice": -104,
-      "books": 1,
+      "overPrice": -120,
+      "underPrice": 100,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 7.5,
@@ -1515,6 +4224,135 @@
       "injuryStatus": null
     },
     {
+      "playerId": "4683678",
+      "name": "Scoot Henderson",
+      "teamId": "22",
+      "opponentId": "15",
+      "position": "PG",
+      "stat": "tpm",
+      "line": 1.5,
+      "overPrice": 110,
+      "underPrice": -128,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 0.9,
+      "minutes": 22.2,
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 3,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 3
+      },
+      "strip": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "rank": 17,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5081727",
+      "name": "Sidy Cissoko",
+      "teamId": "22",
+      "opponentId": "15",
+      "position": "C",
+      "stat": "pts",
+      "line": 7.5,
+      "overPrice": -115,
+      "underPrice": -110,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 7.5,
+      "minutes": 24.1,
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 3,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 3
+      },
+      "strip": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "rank": 24,
+      "starter": false,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4395725",
+      "name": "Tyler Herro",
+      "teamId": "15",
+      "opponentId": "22",
+      "position": "PG",
+      "stat": "ast",
+      "line": 3.5,
+      "overPrice": -115,
+      "underPrice": -108,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 4.2,
+      "minutes": 30,
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 3,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 1
+      },
+      "strip": [
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "rank": 1,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4397002",
       "name": "Ayo Dosunmu",
       "teamId": "16",
@@ -1522,9 +4360,9 @@
       "position": "PG",
       "stat": "ast",
       "line": 4.5,
-      "overPrice": 119,
-      "underPrice": -157,
-      "books": 1,
+      "overPrice": 121,
+      "underPrice": -160,
+      "books": 2,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 3.5,
@@ -1558,6 +4396,49 @@
       "injuryStatus": null
     },
     {
+      "playerId": "5041935",
+      "name": "Cameron Boozer",
+      "teamId": "29",
+      "opponentId": "9",
+      "position": "C",
+      "stat": "pts",
+      "line": 18.5,
+      "overPrice": -115,
+      "underPrice": -115,
+      "books": 1,
+      "gameId": "718962",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 16.6,
+      "minutes": 31,
+      "l5": {
+        "hits": 1,
+        "n": 5
+      },
+      "l10": {
+        "hits": 3,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 1
+      },
+      "strip": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "rank": 10,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
       "playerId": "3062679",
       "name": "Josh Hart",
       "teamId": "18",
@@ -1566,8 +4447,8 @@
       "stat": "pts",
       "line": 7.5,
       "overPrice": -115,
-      "underPrice": -111,
-      "books": 1,
+      "underPrice": -104,
+      "books": 3,
       "gameId": "718978",
       "tipoff": "2026-11-20T01:00:00Z",
       "seasonAvg": 6.5,
@@ -1601,65 +4482,22 @@
       "injuryStatus": null
     },
     {
-      "playerId": "4432816",
-      "name": "LaMelo Ball",
-      "teamId": "16",
-      "opponentId": "18",
-      "position": "PG",
-      "stat": "ast",
-      "line": 6.5,
-      "overPrice": 114,
-      "underPrice": -150,
-      "books": 1,
-      "gameId": "718978",
+      "playerId": "3133628",
+      "name": "Myles Turner",
+      "teamId": "15",
+      "opponentId": "22",
+      "position": "C",
+      "stat": "tpm",
+      "line": 1.5,
+      "overPrice": 110,
+      "underPrice": -114,
+      "books": 3,
+      "gameId": "718961",
       "tipoff": "2026-11-20T01:00:00Z",
-      "seasonAvg": 5.5,
-      "minutes": 27.7,
+      "seasonAvg": 1.3,
+      "minutes": 26.6,
       "l5": {
         "hits": 1,
-        "n": 5
-      },
-      "l10": {
-        "hits": 3,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 2,
-        "n": 5
-      },
-      "strip": [
-        false,
-        false,
-        false,
-        true,
-        false,
-        true,
-        false,
-        false,
-        false,
-        true
-      ],
-      "rank": 13,
-      "starter": true,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "3062679",
-      "name": "Josh Hart",
-      "teamId": "18",
-      "opponentId": "16",
-      "position": "SF",
-      "stat": "reb",
-      "line": 6.5,
-      "overPrice": 101,
-      "underPrice": -133,
-      "books": 1,
-      "gameId": "718978",
-      "tipoff": "2026-11-20T01:00:00Z",
-      "seasonAvg": 6.3,
-      "minutes": 29.8,
-      "l5": {
-        "hits": 0,
         "n": 5
       },
       "l10": {
@@ -1673,6 +4511,49 @@
       "strip": [
         false,
         false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "rank": 27,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4431736",
+      "name": "Toumani Camara",
+      "teamId": "22",
+      "opponentId": "15",
+      "position": "PF",
+      "stat": "tpm",
+      "line": 2.5,
+      "overPrice": 116,
+      "underPrice": -140,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 2.6,
+      "minutes": 29.1,
+      "l5": {
+        "hits": 0,
+        "n": 5
+      },
+      "l10": {
+        "hits": 3,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 4
+      },
+      "strip": [
+        false,
+        false,
         false,
         false,
         false,
@@ -1682,7 +4563,351 @@
         true,
         true
       ],
-      "rank": 9,
+      "rank": 21,
+      "starter": true,
+      "injuryStatus": "Day-To-Day"
+    },
+    {
+      "playerId": "5082206",
+      "name": "Brayden Burries",
+      "teamId": "15",
+      "opponentId": "22",
+      "position": "PG",
+      "stat": "tpm",
+      "line": 1.5,
+      "overPrice": 150,
+      "underPrice": -191,
+      "books": 3,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 1.1,
+      "minutes": 22.1,
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 2,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 0
+      },
+      "strip": [
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "rank": 5,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5041935",
+      "name": "Cameron Boozer",
+      "teamId": "29",
+      "opponentId": "9",
+      "position": "C",
+      "stat": "tpm",
+      "line": 2.5,
+      "overPrice": 125,
+      "underPrice": -175,
+      "books": 1,
+      "gameId": "718962",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 1.9,
+      "minutes": 31,
+      "l5": {
+        "hits": 1,
+        "n": 5
+      },
+      "l10": {
+        "hits": 2,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 1
+      },
+      "strip": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "rank": 1,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4997536",
+      "name": "Gui Santos",
+      "teamId": "9",
+      "opponentId": "29",
+      "position": "PF",
+      "stat": "pts",
+      "line": 9.5,
+      "overPrice": 100,
+      "underPrice": -130,
+      "books": 1,
+      "gameId": "718962",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 6.2,
+      "minutes": 18.6,
+      "l5": {
+        "hits": 1,
+        "n": 5
+      },
+      "l10": {
+        "hits": 2,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 7
+      },
+      "strip": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "rank": 4,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4709138",
+      "name": "Brandin Podziemski",
+      "teamId": "9",
+      "opponentId": "29",
+      "position": "PG",
+      "stat": "ast",
+      "line": 4.5,
+      "overPrice": 105,
+      "underPrice": -140,
+      "books": 1,
+      "gameId": "718962",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 3.8,
+      "minutes": 32,
+      "l5": {
+        "hits": 0,
+        "n": 5
+      },
+      "l10": {
+        "hits": 2,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 5,
+        "n": 8
+      },
+      "strip": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        true
+      ],
+      "rank": 11,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "6606",
+      "name": "Damian Lillard",
+      "teamId": "22",
+      "opponentId": "15",
+      "position": "PG",
+      "stat": "reb",
+      "line": 3.5,
+      "overPrice": 105,
+      "underPrice": -130,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 3,
+      "minutes": 29.2,
+      "l5": {
+        "hits": 0,
+        "n": 5
+      },
+      "l10": {
+        "hits": 2,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 0
+      },
+      "strip": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        true
+      ],
+      "rank": 11,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4683678",
+      "name": "Scoot Henderson",
+      "teamId": "22",
+      "opponentId": "15",
+      "position": "PG",
+      "stat": "pts",
+      "line": 12.5,
+      "overPrice": -120,
+      "underPrice": -110,
+      "books": 1,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 8.7,
+      "minutes": 22.2,
+      "l5": {
+        "hits": 0,
+        "n": 5
+      },
+      "l10": {
+        "hits": 2,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 3
+      },
+      "strip": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "rank": 10,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4683678",
+      "name": "Scoot Henderson",
+      "teamId": "22",
+      "opponentId": "15",
+      "position": "PG",
+      "stat": "ast",
+      "line": 2.5,
+      "overPrice": 110,
+      "underPrice": -138,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 1.4,
+      "minutes": 22.2,
+      "l5": {
+        "hits": 1,
+        "n": 5
+      },
+      "l10": {
+        "hits": 1,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 3,
+        "n": 3
+      },
+      "strip": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "rank": 26,
+      "starter": true,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4683678",
+      "name": "Scoot Henderson",
+      "teamId": "22",
+      "opponentId": "15",
+      "position": "PG",
+      "stat": "reb",
+      "line": 2.5,
+      "overPrice": 115,
+      "underPrice": -148,
+      "books": 2,
+      "gameId": "718961",
+      "tipoff": "2026-11-20T01:00:00Z",
+      "seasonAvg": 1.8,
+      "minutes": 22.2,
+      "l5": {
+        "hits": 0,
+        "n": 5
+      },
+      "l10": {
+        "hits": 1,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 3,
+        "n": 3
+      },
+      "strip": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "rank": 11,
       "starter": true,
       "injuryStatus": null
     }

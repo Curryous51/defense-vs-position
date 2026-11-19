@@ -3,7 +3,7 @@
 import type { BuiltSnapshot } from "./nbaBuilder";
 import { internal } from "./_generated/api";
 import { action } from "./_generated/server";
-import { buildHitRateBoard } from "./hitRateBuilder";
+import { buildHitRateBoard, type GameLog } from "./hitRateBuilder";
 
 /**
  * Rebuilds the hit-rate board: today's prop lines joined with each player's
@@ -31,6 +31,15 @@ export const sync = action({
       snapshot,
       apiKey,
       onProgress: (message) => console.log(`[hit-rate] ${message}`),
+      // Logs only change once a day, so refreshes reuse them.
+      loadLogs: async (playerId) =>
+        (await ctx.runQuery(internal.hitRates.getLogs, { playerId })) as {
+          updatedAt: number;
+          logs: GameLog[];
+        } | null,
+      saveLogs: async (playerId, logs) => {
+        await ctx.runMutation(internal.hitRates.saveLogs, { playerId, logs });
+      },
     });
 
     await ctx.runMutation(internal.hitRates.save, {

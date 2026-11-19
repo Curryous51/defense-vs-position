@@ -1,4 +1,5 @@
 import { AppShell } from "@/components/AppShell";
+import { api } from "@/convex/_generated/api";
 import { useDvpSnapshot } from "@/hooks/use-dvp-snapshot";
 import { useHitRateBoard } from "@/hooks/use-hit-rate-board";
 import {
@@ -18,6 +19,7 @@ import {
   type HitRateRow,
 } from "@/lib/hit-rate";
 import { cn } from "@/lib/utils";
+import { useAction } from "convex/react";
 import { useMemo, useState } from "react";
 
 const SORTS = ["l10", "l5", "h2h"] as const;
@@ -39,6 +41,15 @@ function slateLabel(date: string | null): string {
     day: "numeric",
     timeZone: "UTC",
   }).format(new Date(`${date}T12:00:00Z`));
+}
+
+function updatedLabel(iso: string): string {
+  return new Intl.DateTimeFormat("en-US", {
+    hour: "numeric",
+    minute: "2-digit",
+    timeZone: "America/New_York",
+    timeZoneName: "short",
+  }).format(new Date(iso));
 }
 
 function rate(row: HitRateRow, key: SortKey): number {
@@ -152,6 +163,8 @@ export default function HitRate() {
   const [query, setQuery] = useState("");
   const [hideOut, setHideOut] = useState(true);
   const [sort, setSort] = useState<SortKey>("l10");
+  const sync = useAction(api.hitRateActions.sync);
+  const [refreshing, setRefreshing] = useState(false);
   const [l5Min, setL5Min] = useState("");
   const [l5Max, setL5Max] = useState("");
   const [h2hMin, setH2hMin] = useState("");
@@ -241,9 +254,31 @@ export default function HitRate() {
                 Slate · {slateLabel(board.meta.slateDate)}
               </p>
             </div>
-            <h1 className="mt-4 text-3xl font-medium tracking-[-0.02em] sm:text-4xl">
-              Hit rate dashboard
-            </h1>
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+              <h1 className="mt-4 text-3xl font-medium tracking-[-0.02em] sm:text-4xl">
+                Hit rate dashboard
+              </h1>
+              <div className="flex items-center gap-3">
+                <span className="text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
+                  Lines · {updatedLabel(board.meta.generatedAt)}
+                </span>
+                <button
+                  type="button"
+                  onClick={async () => {
+                    setRefreshing(true);
+                    try {
+                      await sync({});
+                    } finally {
+                      setRefreshing(false);
+                    }
+                  }}
+                  disabled={refreshing}
+                  className="h-8 rounded-[3px] border border-border px-2.5 text-[10px] uppercase tracking-[0.12em] text-muted-foreground transition-colors hover:text-foreground disabled:opacity-50"
+                >
+                  {refreshing ? "Refreshing…" : "Refresh lines"}
+                </button>
+              </div>
+            </div>
             <p className="mt-3 max-w-2xl text-sm leading-6 text-muted-foreground">
               Every prop on tonight's board, graded against today's line over the
               last five and ten games, head to head against the opponent across

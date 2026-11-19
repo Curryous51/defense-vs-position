@@ -20,9 +20,12 @@ crons.daily(
   api.hitRateActions.sync,
 );
 
-crons.daily(
+// Books post their boards through the US morning. Refresh every 30 minutes
+// from 12:00 to 23:30 UTC (7am-6:30pm ET); game logs are cached, so a refresh
+// only costs one PropLine call plus ESPN's free roster/injury endpoints.
+crons.cron(
   "refresh hit rate lines",
-  { hourUTC: 16, minuteUTC: 30 },
+  "*/30 12-23 * * *",
   api.hitRateActions.sync,
 );
 
