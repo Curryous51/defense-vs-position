@@ -166,6 +166,7 @@ interface RosterPlayer {
 
 interface GameLog {
   date: string;
+  season: number;
   opponentId: string;
   minutes: number;
   pts: number;
@@ -173,6 +174,9 @@ interface GameLog {
   ast: number;
   tpm: number;
 }
+
+/** How many seasons the head-to-head sample reaches back, including this one. */
+const H2H_SEASONS = 3;
 
 interface DepthEntry {
   positions: Position[];
@@ -262,7 +266,7 @@ interface EspnInjuries {
   }>;
 }
 
-function parseGamelog(json: EspnGamelog): GameLog[] {
+function parseGamelog(json: EspnGamelog, season: number): GameLog[] {
   const names = json.names ?? [];
   const index = (key: string) => names.indexOf(key);
   const iPts = index("points");
@@ -286,6 +290,7 @@ function parseGamelog(json: EspnGamelog): GameLog[] {
         if (minutes <= 0) continue;
         logs.push({
           date: meta.gameDate,
+          season,
           opponentId: String(meta.opponent.id),
           minutes,
           pts: iPts >= 0 ? num(entry.stats[iPts]) : 0,
@@ -588,29 +593,41 @@ export async function buildHitRateBoard(
 
   const playerIds = [...new Set(matched.map((row) => row.player.id))];
   const seasonEnd = snapshot.meta.season.split("-")[1] ?? "27";
-  const seasonParam = String(2000 + Number(seasonEnd.slice(-2)));
-  log(`Fetching ${playerIds.length} game logs (season ${seasonParam})`);
+  const currentSeason = 2000 + Number(seasonEnd.slice(-2));
+  const seasons = Array.from(
+    { length: H2H_SEASONS },
+    (_, index) => currentSeason - index,
+  );
+  log(
+    `Fetching ${playerIds.length} game logs across ${seasons.join(", ")}`,
+  );
 
   let fetched = 0;
   const logsByPlayer = new Map<string, GameLog[]>();
   await mapLimit(playerIds, 6, async (playerId) => {
-    try {
-      const json = await getJson<EspnGamelog>(
-        `${ESPN_WEB}/athletes/${playerId}/gamelog?season=${seasonParam}`,
-      );
-      logsByPlayer.set(playerId, parseGamelog(json));
-    } catch {
-      logsByPlayer.set(playerId, []);
+    const logs: GameLog[] = [];
+    for (const season of seasons) {
+      try {
+        const json = await getJson<EspnGamelog>(
+          `${ESPN_WEB}/athletes/${playerId}/gamelog?season=${season}`,
+        );
+        logs.push(...parseGamelog(json, season));
+      } catch {
+        // Older seasons are optional; a miss just shortens the H2H sample.
+      }
     }
+    logsByPlayer.set(playerId, logs);
     fetched += 1;
     if (fetched % 50 === 0) log(`Game logs: ${fetched}/${playerIds.length}`);
   });
 
   const rows: HitRateRow[] = [];
   for (const { line, player, teamId, opponentId } of matched) {
-    const logs = (logsByPlayer.get(player.id) ?? [])
+    const history = (logsByPlayer.get(player.id) ?? [])
       .filter((entry) => new Date(entry.date).getTime() < new Date(line.tipoff).getTime())
       .sort((a, b) => b.date.localeCompare(a.date));
+    // Recent form is this season only; H2H reaches back through the archive.
+    const logs = history.filter((entry) => entry.season === currentSeason);
     if (logs.length < 3) continue;
     const minutes = logs.reduce((sum, entry) => sum + entry.minutes, 0) / logs.length;
     if (minutes < 8) continue;
@@ -631,7 +648,7 @@ export async function buildHitRateBoard(
     const outcomeFor = (value: number): boolean | null =>
       value > line.line ? true : value === line.line ? null : false;
     const outcomes = logs.map((entry) => outcomeFor(entry[line.stat]));
-    const againstOpponent = logs
+    const againstOpponent = history
       .filter((entry) => entry.opponentId === opponentId)
       .map((entry) => outcomeFor(entry[line.stat]));
 

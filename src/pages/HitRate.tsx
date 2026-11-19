@@ -29,6 +29,8 @@ const SORT_LABELS: Record<SortKey, string> = {
   h2h: "H2H",
 };
 
+const GRADES = ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "D", "F"] as const;
+
 function slateLabel(date: string | null): string {
   if (!date) return "No slate";
   return new Intl.DateTimeFormat("en-US", {
@@ -42,6 +44,29 @@ function slateLabel(date: string | null): string {
 function rate(row: HitRateRow, key: SortKey): number {
   const sample = row[key];
   return sample.n ? sample.hits / sample.n : -1;
+}
+
+/** Percentage 0-100, or null when a player has no games in the sample. */
+function pct(sample: { hits: number; n: number }): number | null {
+  return sample.n ? (sample.hits / sample.n) * 100 : null;
+}
+
+function parseBound(value: string, fallback: number): number {
+  const trimmed = value.trim();
+  if (trimmed === "") return fallback;
+  const parsed = Number(trimmed);
+  return Number.isFinite(parsed) ? parsed : fallback;
+}
+
+/**
+ * Range filter with the defaults the board asks for: empty minimum means 0%,
+ * empty maximum means 100%. Rows without a sample only pass the full range.
+ */
+function inRange(value: number | null, min: string, max: string): boolean {
+  const low = parseBound(min, 0);
+  const high = parseBound(max, 100);
+  if (value === null) return low <= 0 && high >= 100;
+  return value >= low && value <= high;
 }
 
 function Strip({ row }: { row: HitRateRow }) {
@@ -67,21 +92,55 @@ function Strip({ row }: { row: HitRateRow }) {
   );
 }
 
-function Sample({
-  value,
-  className,
-}: {
-  value: { hits: number; n: number };
-  className?: string;
-}) {
+function Sample({ value }: { value: { hits: number; n: number } }) {
   return (
     <div className="flex flex-col">
-      <span className={cn("text-[12px] tabular-nums", hitRateTone(value), className)}>
+      <span className={cn("text-[12px] tabular-nums", hitRateTone(value))}>
         {hitRateLabel(value)}
       </span>
       <span className="text-[9px] tabular-nums text-muted-foreground">
         {value.n ? `${value.hits}/${value.n}` : "—"}
       </span>
+    </div>
+  );
+}
+
+function RangeFilter({
+  label,
+  min,
+  max,
+  onMin,
+  onMax,
+}: {
+  label: string;
+  min: string;
+  max: string;
+  onMin: (value: string) => void;
+  onMax: (value: string) => void;
+}) {
+  return (
+    <div className="flex items-center gap-1.5">
+      <span className="text-[9px] uppercase tracking-[0.14em] text-muted-foreground">
+        {label}
+      </span>
+      <input
+        value={min}
+        onChange={(event) => onMin(event.target.value)}
+        inputMode="numeric"
+        placeholder="0"
+        aria-label={`${label} minimum hit rate`}
+        className="h-8 w-12 rounded-[3px] border border-border bg-transparent px-1.5 text-center text-[11px] tabular-nums outline-none placeholder:text-muted-foreground/60 focus:border-foreground/40"
+      />
+      <span className="text-[10px] text-muted-foreground">–</span>
+      <input
+        value={max}
+        onChange={(event) => onMax(event.target.value)}
+        inputMode="numeric"
+        placeholder="100"
+        aria-label={`${label} maximum hit rate`}
+        className="h-8 w-12 rounded-[3px] border border-border bg-transparent px-1.5 text-center text-[11px] tabular-nums outline-none placeholder:text-muted-foreground/60 focus:border-foreground/40"
+      />
+      <span className="text-[10px] text-muted-foreground">%</span>
     </div>
   );
 }
@@ -93,12 +152,20 @@ export default function HitRate() {
   const [query, setQuery] = useState("");
   const [hideOut, setHideOut] = useState(true);
   const [sort, setSort] = useState<SortKey>("l10");
+  const [l5Min, setL5Min] = useState("");
+  const [l5Max, setL5Max] = useState("");
+  const [h2hMin, setH2hMin] = useState("");
+  const [h2hMax, setH2hMax] = useState("");
+  const [grades, setGrades] = useState<string[]>([]);
 
   const rows = useMemo(() => {
     const needle = query.trim().toLowerCase();
     const filtered = board.rows.filter((row) => {
       if (stat !== "all" && row.stat !== stat) return false;
       if (hideOut && row.injuryStatus === "Out") return false;
+      if (!inRange(pct(row.l5), l5Min, l5Max)) return false;
+      if (!inRange(pct(row.h2h), h2hMin, h2hMax)) return false;
+      if (grades.length && !grades.includes(matchupGrade(row.rank))) return false;
       if (!needle) return true;
       const team = teamById(snapshot, row.teamId);
       const opponent = teamById(snapshot, row.opponentId);
@@ -118,9 +185,50 @@ export default function HitRate() {
         b[sort].n - a[sort].n ||
         a.name.localeCompare(b.name),
     );
-  }, [board.rows, hideOut, query, snapshot, sort, stat]);
+  }, [
+    board.rows,
+    grades,
+    h2hMax,
+    h2hMin,
+    hideOut,
+    l5Max,
+    l5Min,
+    query,
+    snapshot,
+    sort,
+    stat,
+  ]);
 
   const players = new Set(rows.map((row) => row.playerId)).size;
+  const filtered =
+    stat !== "all" ||
+    query.trim() !== "" ||
+    !hideOut ||
+    l5Min.trim() !== "" ||
+    l5Max.trim() !== "" ||
+    h2hMin.trim() !== "" ||
+    h2hMax.trim() !== "" ||
+    grades.length > 0;
+
+  const reset = () => {
+    setStat("all");
+    setQuery("");
+    setHideOut(true);
+    setL5Min("");
+    setL5Max("");
+    setH2hMin("");
+    setH2hMax("");
+    setGrades([]);
+    setSort("l10");
+  };
+
+  const toggleGrade = (grade: string) => {
+    setGrades((current) =>
+      current.includes(grade)
+        ? current.filter((value) => value !== grade)
+        : [...current, grade],
+    );
+  };
 
   return (
     <AppShell season={snapshot.meta.season}>
@@ -138,12 +246,12 @@ export default function HitRate() {
             </h1>
             <p className="mt-3 max-w-2xl text-sm leading-6 text-muted-foreground">
               Every prop on tonight's board, graded against today's line over the
-              last five and ten games, head to head against the opponent, and
-              against that defense's position rank.
+              last five and ten games, head to head against the opponent across
+              three seasons, and against that defense's position rank.
             </p>
           </div>
 
-          <div className="flex flex-col gap-4 border-y border-border py-4 lg:flex-row lg:items-center lg:justify-between">
+          <div className="flex flex-col gap-3 border-y border-border py-4">
             <div className="flex flex-wrap items-center gap-1.5">
               <button
                 type="button"
@@ -174,7 +282,56 @@ export default function HitRate() {
               ))}
             </div>
 
-            <div className="flex flex-wrap items-center gap-3">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+              <RangeFilter
+                label="L5 hit"
+                min={l5Min}
+                max={l5Max}
+                onMin={setL5Min}
+                onMax={setL5Max}
+              />
+              <RangeFilter
+                label="H2H hit"
+                min={h2hMin}
+                max={h2hMax}
+                onMin={setH2hMin}
+                onMax={setH2hMax}
+              />
+
+              <details className="relative">
+                <summary className="flex h-8 cursor-pointer list-none items-center gap-1.5 rounded-[3px] border border-border px-2.5 text-[10px] uppercase tracking-[0.12em] text-muted-foreground transition-colors [&::-webkit-details-marker]:hidden hover:text-foreground">
+                  Matchup
+                  <span className="text-foreground">
+                    {grades.length ? grades.join(", ") : "All"}
+                  </span>
+                </summary>
+                <div className="absolute left-0 z-20 mt-1 w-44 border border-border bg-background p-2 shadow-sm">
+                  <div className="grid grid-cols-2 gap-0.5">
+                    {GRADES.map((grade) => (
+                      <label
+                        key={grade}
+                        className="flex cursor-pointer items-center gap-1.5 rounded-[2px] px-1 py-1 text-[11px] hover:bg-accent/60"
+                      >
+                        <input
+                          type="checkbox"
+                          checked={grades.includes(grade)}
+                          onChange={() => toggleGrade(grade)}
+                          className="size-3 accent-foreground"
+                        />
+                        {grade}
+                      </label>
+                    ))}
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => setGrades([])}
+                    className="mt-1.5 w-full border-t border-border pt-1.5 text-left text-[9px] uppercase tracking-[0.14em] text-muted-foreground hover:text-foreground"
+                  >
+                    Clear matchups
+                  </button>
+                </div>
+              </details>
+
               <input
                 value={query}
                 onChange={(event) => setQuery(event.target.value)}
@@ -193,7 +350,16 @@ export default function HitRate() {
               >
                 Hide out
               </button>
-              <span className="text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
+              {filtered ? (
+                <button
+                  type="button"
+                  onClick={reset}
+                  className="h-8 rounded-[3px] border border-transparent px-1 text-[10px] uppercase tracking-[0.12em] text-muted-foreground underline-offset-4 hover:text-foreground hover:underline"
+                >
+                  Reset
+                </button>
+              ) : null}
+              <span className="ml-auto text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
                 {rows.length} props · {players} players
               </span>
             </div>
@@ -307,13 +473,12 @@ export default function HitRate() {
           </div>
 
           <div className="border-t border-border pt-5 text-[10px] leading-5 text-muted-foreground">
-            L5 and L10 count every completed game against today's line; pushes
-            are dropped from the sample. H2H is this season against tonight's
-            opponent. Matchup grade comes from the opponent's defense-vs-position
-            rank (30 = softest, 1 = toughest). Lines are a consensus of the
-            major books.{" "}
-            {live ? "Live board" : "Snapshot"} · data through{" "}
-            {dataThroughLabel(snapshot)} · {board.meta.source}.
+            L5 and L10 count this season's completed games against today's line;
+            pushes are dropped from the sample. H2H reaches back across this
+            season and the previous two. Matchup grade comes from the opponent's
+            defense-vs-position rank (30 = softest, 1 = toughest). Lines are a
+            consensus of the major books. {live ? "Live board" : "Snapshot"} ·
+            data through {dataThroughLabel(snapshot)} · {board.meta.source}.
           </div>
         </div>
       </main>
