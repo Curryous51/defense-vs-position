@@ -166,6 +166,7 @@ export default function HitRate() {
   const { data: snapshot } = useDvpSnapshot();
   const { data: board, live } = useHitRateBoard();
   const [stat, setStat] = useState<StatKey | "all">("all");
+  const [gameId, setGameId] = useState<string>("all");
   const [query, setQuery] = useState("");
   const [hideOut, setHideOut] = useState(true);
   const [sort, setSort] = useState<SortKey>("l10");
@@ -178,9 +179,25 @@ export default function HitRate() {
   const [h2hMax, setH2hMax] = useState("");
   const [grades, setGrades] = useState<string[]>([]);
 
+  const games = useMemo(() => {
+    const byId = new Map<string, { id: string; label: string; tipoff: string }>();
+    for (const row of board.rows) {
+      if (byId.has(row.gameId)) continue;
+      byId.set(row.gameId, {
+        id: row.gameId,
+        label: `${teamById(snapshot, row.teamId)?.abbr ?? "—"} vs ${
+          teamById(snapshot, row.opponentId)?.abbr ?? "—"
+        }`,
+        tipoff: row.tipoff,
+      });
+    }
+    return [...byId.values()].sort((a, b) => a.tipoff.localeCompare(b.tipoff));
+  }, [board.rows, snapshot]);
+
   const rows = useMemo(() => {
     const needle = query.trim().toLowerCase();
     const filtered = board.rows.filter((row) => {
+      if (gameId !== "all" && row.gameId !== gameId) return false;
       if (stat !== "all" && row.stat !== stat) return false;
       if (hideOut && row.injuryStatus === "Out") return false;
       if (!inRange(pct(row.l5), l5Min, l5Max)) return false;
@@ -211,6 +228,7 @@ export default function HitRate() {
   }, [
     board.rows,
     direction,
+    gameId,
     grades,
     h2hMax,
     h2hMin,
@@ -226,6 +244,7 @@ export default function HitRate() {
   const players = new Set(rows.map((row) => row.playerId)).size;
   const filtered =
     stat !== "all" ||
+    gameId !== "all" ||
     query.trim() !== "" ||
     !hideOut ||
     l5Min.trim() !== "" ||
@@ -236,6 +255,7 @@ export default function HitRate() {
 
   const reset = () => {
     setStat("all");
+    setGameId("all");
     setQuery("");
     setHideOut(true);
     setL5Min("");
@@ -339,6 +359,24 @@ export default function HitRate() {
             </div>
 
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+              <label className="flex items-center gap-1.5">
+                <span className="text-[9px] uppercase tracking-[0.14em] text-muted-foreground">
+                  Match
+                </span>
+                <select
+                  value={gameId}
+                  onChange={(event) => setGameId(event.target.value)}
+                  className="h-8 max-w-[11rem] rounded-[3px] border border-border bg-background px-1.5 text-[10px] uppercase tracking-[0.12em] text-foreground outline-none focus:border-foreground/40"
+                >
+                  <option value="all">All matches</option>
+                  {games.map((game) => (
+                    <option key={game.id} value={game.id}>
+                      {game.label}
+                    </option>
+                  ))}
+                </select>
+              </label>
+
               <RangeFilter
                 label="L5 hit"
                 min={l5Min}

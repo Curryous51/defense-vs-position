@@ -479,6 +479,9 @@ export async function buildHitRateBoard(
   const slateEvents = events.filter((event) => {
     const home = teamIdByName.get(normalizeName(event.home_team ?? ""));
     const away = teamIdByName.get(normalizeName(event.away_team ?? ""));
+    // A game leaves the board at tip-off, so a refresh never resurrects one.
+    if (!event.commence_time) return false;
+    if (new Date(event.commence_time).getTime() <= now) return false;
     return Boolean(home && away && slateTeamIds.has(home) && slateTeamIds.has(away));
   });
   log(`PropLine: ${events.length} events, ${slateEvents.length} on this slate`);
