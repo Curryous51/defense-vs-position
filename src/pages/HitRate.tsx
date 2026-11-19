@@ -22,13 +22,27 @@ import { cn } from "@/lib/utils";
 import { useAction } from "convex/react";
 import { useMemo, useState } from "react";
 
-const SORTS = ["l10", "l5", "h2h"] as const;
-type SortKey = (typeof SORTS)[number];
+type SortKey = "player" | "line" | "l5" | "l10" | "h2h" | "matchup" | "dvp";
 
-const SORT_LABELS: Record<SortKey, string> = {
-  l10: "L10",
-  l5: "L5",
-  h2h: "H2H",
+const COLUMNS: Array<{ key: SortKey; label: string }> = [
+  { key: "player", label: "Player" },
+  { key: "line", label: "Line" },
+  { key: "l5", label: "L5" },
+  { key: "l10", label: "L10" },
+  { key: "h2h", label: "H2H" },
+  { key: "matchup", label: "Matchup" },
+  { key: "dvp", label: "DvP" },
+];
+
+/** First click on a column shows the most useful end of it. */
+const DEFAULT_DIRECTION: Record<SortKey, "asc" | "desc"> = {
+  player: "asc",
+  line: "desc",
+  l5: "desc",
+  l10: "desc",
+  h2h: "desc",
+  matchup: "desc",
+  dvp: "desc",
 };
 
 const GRADES = ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "D", "F"] as const;
@@ -52,9 +66,23 @@ function updatedLabel(iso: string): string {
   }).format(new Date(iso));
 }
 
-function rate(row: HitRateRow, key: SortKey): number {
+function rate(row: HitRateRow, key: "l5" | "l10" | "h2h"): number {
   const sample = row[key];
   return sample.n ? sample.hits / sample.n : -1;
+}
+
+function sortValue(row: HitRateRow, key: SortKey): number | string {
+  switch (key) {
+    case "player":
+      return row.name;
+    case "line":
+      return row.line;
+    case "matchup":
+    case "dvp":
+      return row.rank;
+    default:
+      return rate(row, key);
+  }
 }
 
 /** Percentage 0-100, or null when a player has no games in the sample. */
@@ -78,29 +106,6 @@ function inRange(value: number | null, min: string, max: string): boolean {
   const high = parseBound(max, 100);
   if (value === null) return low <= 0 && high >= 100;
   return value >= low && value <= high;
-}
-
-function Strip({ row }: { row: HitRateRow }) {
-  return (
-    <div className="flex items-end gap-[3px]">
-      {row.strip.map((outcome, index) => (
-        <span
-          key={index}
-          className={cn(
-            "h-4 w-[5px] rounded-[1px]",
-            outcome === true
-              ? "bg-match-favorable-strong"
-              : outcome === false
-                ? "bg-match-tough-strong"
-                : "bg-border",
-          )}
-          title={
-            outcome === true ? "Over" : outcome === false ? "Under" : "Push"
-          }
-        />
-      ))}
-    </div>
-  );
 }
 
 function Sample({ value }: { value: { hits: number; n: number } }) {
@@ -163,6 +168,7 @@ export default function HitRate() {
   const [query, setQuery] = useState("");
   const [hideOut, setHideOut] = useState(true);
   const [sort, setSort] = useState<SortKey>("l10");
+  const [direction, setDirection] = useState<"asc" | "desc">("desc");
   const sync = useAction(api.hitRateActions.sync);
   const [refreshing, setRefreshing] = useState(false);
   const [l5Min, setL5Min] = useState("");
@@ -192,14 +198,18 @@ export default function HitRate() {
         .filter(Boolean)
         .some((value) => value!.toLowerCase().includes(needle));
     });
-    return [...filtered].sort(
-      (a, b) =>
-        rate(b, sort) - rate(a, sort) ||
-        b[sort].n - a[sort].n ||
-        a.name.localeCompare(b.name),
-    );
+    const factor = direction === "asc" ? 1 : -1;
+    return [...filtered].sort((a, b) => {
+      const left = sortValue(a, sort);
+      const right = sortValue(b, sort);
+      if (typeof left === "string" || typeof right === "string") {
+        return factor * String(left).localeCompare(String(right));
+      }
+      return factor * (left - right) || a.name.localeCompare(b.name);
+    });
   }, [
     board.rows,
+    direction,
     grades,
     h2hMax,
     h2hMin,
@@ -233,6 +243,16 @@ export default function HitRate() {
     setH2hMax("");
     setGrades([]);
     setSort("l10");
+    setDirection("desc");
+  };
+
+  const changeSort = (key: SortKey) => {
+    if (key === sort) {
+      setDirection((current) => (current === "asc" ? "desc" : "asc"));
+      return;
+    }
+    setSort(key);
+    setDirection(DEFAULT_DIRECTION[key]);
   };
 
   const toggleGrade = (grade: string) => {
@@ -402,25 +422,28 @@ export default function HitRate() {
 
           <div className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
             <div className="min-w-[780px]">
-              <div className="grid grid-cols-[minmax(0,1fr)_7.5rem_8rem_3.5rem_3.5rem_3.5rem_4.5rem_3.5rem] items-center gap-3 border-b border-border pb-2 text-[9px] uppercase tracking-[0.14em] text-muted-foreground">
-                <span>Player</span>
-                <span>Line</span>
-                <span>L10 games</span>
-                {SORTS.map((key) => (
+              <div className="grid grid-cols-[minmax(0,1fr)_7.5rem_3.5rem_3.5rem_3.5rem_4.5rem_3.5rem] items-center gap-3 border-b border-border pb-2 text-[9px] uppercase tracking-[0.14em] text-muted-foreground">
+                {COLUMNS.map((column) => (
                   <button
-                    key={key}
+                    key={column.key}
                     type="button"
-                    onClick={() => setSort(key)}
+                    onClick={() => changeSort(column.key)}
+                    title={`Sort by ${column.label}`}
                     className={cn(
-                      "text-left uppercase tracking-[0.14em] transition-colors hover:text-foreground",
-                      sort === key && "text-foreground",
+                      "flex items-center gap-1 text-left uppercase tracking-[0.14em] transition-colors hover:text-foreground",
+                      sort === column.key && "text-foreground",
                     )}
                   >
-                    {SORT_LABELS[key]}
+                    {column.label}
+                    <span className="text-[8px] leading-none">
+                      {sort === column.key
+                        ? direction === "asc"
+                          ? "▲"
+                          : "▼"
+                        : ""}
+                    </span>
                   </button>
                 ))}
-                <span>Matchup</span>
-                <span>DvP</span>
               </div>
 
               <div className="divide-y divide-border/70">
@@ -430,7 +453,7 @@ export default function HitRate() {
                   return (
                     <div
                       key={`${row.playerId}-${row.stat}`}
-                      className="grid grid-cols-[minmax(0,1fr)_7.5rem_8rem_3.5rem_3.5rem_3.5rem_4.5rem_3.5rem] items-center gap-3 py-2.5 transition-colors hover:bg-accent/40"
+                      className="grid grid-cols-[minmax(0,1fr)_7.5rem_3.5rem_3.5rem_3.5rem_4.5rem_3.5rem] items-center gap-3 py-2.5 transition-colors hover:bg-accent/40"
                     >
                       <div className="flex min-w-0 items-center gap-2.5">
                         <span className="inline-flex h-6 w-9 shrink-0 items-center justify-center rounded-[3px] border border-border text-[9px] font-semibold tracking-[0.06em] text-muted-foreground">
@@ -471,8 +494,6 @@ export default function HitRate() {
                           {priceLabel(row.overPrice)}
                         </span>
                       </div>
-
-                      <Strip row={row} />
 
                       <Sample value={row.l5} />
                       <Sample value={row.l10} />
