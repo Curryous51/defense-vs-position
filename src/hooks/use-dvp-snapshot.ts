@@ -1,6 +1,6 @@
 import { api } from "@/convex/_generated/api";
+import { useLiveQuery } from "@/hooks/use-live-query";
 import { fallbackSnapshot, type Snapshot } from "@/lib/dvp";
-import { useQuery } from "convex/react";
 import { useEffect, useState } from "react";
 
 /**
@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
  * sync or if the deployment is unreachable.
  */
 export function useDvpSnapshot(): { data: Snapshot; live: boolean } {
-  const stored = useQuery(api.nba.latest);
+  const stored = useLiveQuery(api.nba.latest);
   if (stored?.payload) {
     return { data: stored.payload as Snapshot, live: true };
   }

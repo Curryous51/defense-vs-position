@@ -1,6 +1,7 @@
 import { AppShell } from "@/components/AppShell";
 import { api } from "@/convex/_generated/api";
 import { useHitRateBoard } from "@/hooks/use-hit-rate-board";
+import { useLiveAction } from "@/hooks/use-live-query";
 import { CATEGORY_LABELS, STATS, gameTime, type StatKey } from "@/lib/dvp";
 import {
   gradeTone,
@@ -10,8 +11,8 @@ import {
   priceLabel,
   type HitRateRow,
 } from "@/lib/hit-rate";
+import { LIVE_MODE } from "@/lib/live-mode";
 import { cn } from "@/lib/utils";
-import { useAction } from "convex/react";
 import { useMemo, useState } from "react";
 
 type SortKey = "player" | "line" | "l5" | "l10" | "h2h" | "matchup" | "dvp";
@@ -172,7 +173,7 @@ export default function HitRate() {
   const [hideOut, setHideOut] = useState(true);
   const [sort, setSort] = useState<SortKey>("l10");
   const [direction, setDirection] = useState<"asc" | "desc">("desc");
-  const sync = useAction(api.hitRateActions.sync);
+  const sync = useLiveAction(api.hitRateActions.sync);
   const [refreshing, setRefreshing] = useState(false);
   const [refreshNote, setRefreshNote] = useState<string | null>(null);
   const [refreshError, setRefreshError] = useState<string | null>(null);
@@ -295,30 +296,34 @@ export default function HitRate() {
                 <span className="text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
                   Lines · {updatedLabel(board.meta.generatedAt)}
                 </span>
-                <button
-                  type="button"
-                  onClick={async () => {
-                    setRefreshing(true);
-                    setRefreshError(null);
-                    setRefreshNote(null);
-                    try {
-                      const result = await sync({});
-                      setRefreshNote(
-                        result.changed ? "Lines updated" : "Checked · no line changes",
-                      );
-                    } catch (error) {
-                      setRefreshError(
-                        error instanceof Error ? error.message : String(error),
-                      );
-                    } finally {
-                      setRefreshing(false);
-                    }
-                  }}
-                  disabled={refreshing}
-                  className="h-8 rounded-[3px] border border-border px-2.5 text-[10px] uppercase tracking-[0.12em] text-muted-foreground transition-colors hover:text-foreground disabled:opacity-50"
-                >
-                  {refreshing ? "Refreshing…" : "Refresh lines"}
-                </button>
+                {LIVE_MODE ? (
+                  <button
+                    type="button"
+                    onClick={async () => {
+                      setRefreshing(true);
+                      setRefreshError(null);
+                      setRefreshNote(null);
+                      try {
+                        const result = await sync({});
+                        setRefreshNote(
+                          result.changed
+                            ? "Lines updated"
+                            : "Checked · no line changes",
+                        );
+                      } catch (error) {
+                        setRefreshError(
+                          error instanceof Error ? error.message : String(error),
+                        );
+                      } finally {
+                        setRefreshing(false);
+                      }
+                    }}
+                    disabled={refreshing}
+                    className="h-8 rounded-[3px] border border-border px-2.5 text-[10px] uppercase tracking-[0.12em] text-muted-foreground transition-colors hover:text-foreground disabled:opacity-50"
+                  >
+                    {refreshing ? "Refreshing…" : "Refresh lines"}
+                  </button>
+                ) : null}
                 {refreshNote ? (
                   <span className="text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
                     {refreshNote}

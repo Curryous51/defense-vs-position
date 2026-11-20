@@ -29,6 +29,37 @@ The convex server has a separate set of environment variables that are accessibl
 
 Currently, these variables include auth-specific keys: JWKS, JWT_PRIVATE_KEY, and SITE_URL.
 
+## Running it for free on GitHub (no backend)
+
+Both datasets are committed as JSON — `src/data/dvp.json` (defense vs position)
+and `src/data/hit-rate.json` (hit-rate board) — so the whole site can run as a
+static build. `VITE_DATA_MODE=static` turns off the Convex client; every page
+then reads those files and the “Refresh lines” button is hidden.
+
+To publish:
+
+1. Push the repository to GitHub (the default branch is assumed to be `main`).
+2. Settings → Pages → Source: **GitHub Actions**.
+3. Run the **Deploy to GitHub Pages** workflow (it also runs on every push).
+   The site lands at `https://<user>.github.io/<repo>/`.
+
+The first copy of `src/convex/_generated` is committed on purpose so `tsc` and
+the Pages build work without a Convex deployment. `bun install && bun run dev`
+from a fresh clone also works: it serves the same JSON snapshots.
+
+**Keeping the data fresh.** `.github/workflows/sync-data.yml` runs every four
+hours (and on demand) to rerun `scripts/sync-nba.ts` and
+`scripts/sync-hit-rates.ts`, commit the updated JSON, and trigger a redeploy.
+Add `PROPLINE_API_KEY` under Settings → Secrets and variables → Actions. This is
+the closest GitHub equivalent of the Convex cron: Actions is the scheduler, the
+repository is the database, Pages is the host.
+
+What you give up compared with Convex: no realtime updates (a reload is needed),
+no on-demand refresh for visitors, data is only as fresh as the last commit, and
+each sync adds a commit to the history. GitHub also pauses scheduled workflows
+after 60 days without repository activity — the manual “Run workflow” button
+re-enables them.
+
 
 # Using Authentication (Important!)
 

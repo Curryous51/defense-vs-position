@@ -2,6 +2,7 @@ import '@vly-ai/integrations';
 import { Toaster } from "@/components/ui/sonner";
 import { VlyToolbar } from "../vly-toolbar-readonly.tsx";
 import { ConvexProvider, ConvexReactClient } from "convex/react";
+import { LIVE_MODE } from "@/lib/live-mode";
 import React, { StrictMode, useEffect, lazy, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router";
@@ -85,7 +86,13 @@ class RootErrorBoundary extends React.Component<
 // data), which left the dashboard on its bundled fallback and made every
 // refresh fail. Point the client at the deployment the Convex CLI here manages.
 const CONVEX_URL = "https://loyal-wildcat-974.convex.cloud";
-const convex = new ConvexReactClient(CONVEX_URL);
+
+// Static builds (GitHub Pages) ship without a backend: no client is created,
+// so every page reads the checked-in snapshots in src/data.
+const convex = LIVE_MODE ? new ConvexReactClient(CONVEX_URL) : null;
+
+// Pages serves the site from /<repo>/, so the router needs that prefix too.
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, "") || "/";
 
 
 
@@ -113,28 +120,32 @@ function RouteSyncer() {
 }
 
 
+const app = (
+  <>
+    <BrowserRouter basename={basePath}>
+      <RouteSyncer />
+      <Suspense fallback={<RouteLoading />}>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/easiest" element={<Easiest />} />
+          <Route path="/toughest" element={<Toughest />} />
+          <Route path="/hit-rate" element={<HitRate />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Suspense>
+    </BrowserRouter>
+    <Toaster />
+  </>
+);
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <RootErrorBoundary>
       <ToolbarErrorBoundary>
         <VlyToolbar />
       </ToolbarErrorBoundary>
-      <ConvexProvider client={convex}>
-        <BrowserRouter>
-          <RouteSyncer />
-          <Suspense fallback={<RouteLoading />}>
-            <Routes>
-              <Route path="/" element={<Landing />} />
-              <Route path="/dashboard" element={<Dashboard />} />
-              <Route path="/easiest" element={<Easiest />} />
-              <Route path="/toughest" element={<Toughest />} />
-              <Route path="/hit-rate" element={<HitRate />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </Suspense>
-        </BrowserRouter>
-        <Toaster />
-      </ConvexProvider>
+      {convex ? <ConvexProvider client={convex}>{app}</ConvexProvider> : app}
     </RootErrorBoundary>
   </StrictMode>,
 );
