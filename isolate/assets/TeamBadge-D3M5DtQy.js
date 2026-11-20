@@ -1,0 +1,1 @@
+import{j as t}from"./framer-motion-D5IBGcks.js";import{c as n}from"./use-dvp-snapshot-BGmRsG1G.js";function s({team:e,className:r}){return t.jsx("span",{"aria-hidden":!0,className:n("inline-flex size-8 shrink-0 items-center justify-center rounded-[3px] border border-border text-[10px] font-semibold tracking-[0.06em] text-foreground",r),children:e.abbr})}export{s as T};
