@@ -571,12 +571,6 @@ export async function buildHitRateBoard(
     rosterByName.set(key, [...(rosterByName.get(key) ?? []), player]);
   }
 
-  const starters = new Set(
-    Object.values(snapshot.lineups ?? {}).flatMap((lineup) =>
-      lineup.map((starter) => starter.id),
-    ),
-  );
-
   const matched: Array<{
     line: PropLine;
     player: RosterPlayer;
@@ -682,25 +676,19 @@ export async function buildHitRateBoard(
       playerId: player.id,
       name: player.name,
       teamId,
+      teamAbbr: team.abbr,
       opponentId,
+      opponentAbbr: opponent.abbr,
       position,
       stat: line.stat,
       line: line.line,
       overPrice: line.overPrice,
-      underPrice: line.underPrice,
-      books: line.books,
       gameId: line.gameId,
       tipoff: line.tipoff,
-      seasonAvg: Number(
-        (logs.reduce((sum, entry) => sum + entry[line.stat], 0) / logs.length).toFixed(1),
-      ),
-      minutes: Number(minutes.toFixed(1)),
       l5: summarize(outcomes.slice(0, 5)),
       l10: summarize(outcomes.slice(0, 10)),
       h2h: summarize(againstOpponent),
-      strip: outcomes.slice(0, 10),
       rank,
-      starter: starters.has(player.id) || depthEntry?.depth === 0,
       injuryStatus: injuries.get(player.id) ?? null,
     });
   }

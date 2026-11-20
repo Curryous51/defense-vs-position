@@ -1,15 +1,7 @@
 import { AppShell } from "@/components/AppShell";
 import { api } from "@/convex/_generated/api";
-import { useDvpSnapshot } from "@/hooks/use-dvp-snapshot";
 import { useHitRateBoard } from "@/hooks/use-hit-rate-board";
-import {
-  CATEGORY_LABELS,
-  STATS,
-  dataThroughLabel,
-  gameTime,
-  teamById,
-  type StatKey,
-} from "@/lib/dvp";
+import { CATEGORY_LABELS, STATS, gameTime, type StatKey } from "@/lib/dvp";
 import {
   gradeTone,
   hitRateLabel,
@@ -65,6 +57,16 @@ function updatedLabel(iso: string): string {
     timeZone: "Asia/Kolkata",
   }).format(new Date(iso));
   return `${time} IST`;
+}
+
+/** Date the stats run through, in IST. */
+function throughLabel(iso: string | null): string {
+  if (!iso) return "—";
+  return new Intl.DateTimeFormat("en-US", {
+    month: "short",
+    day: "numeric",
+    timeZone: "Asia/Kolkata",
+  }).format(new Date(iso));
 }
 
 function rate(row: HitRateRow, key: "l5" | "l10" | "h2h"): number {
@@ -163,7 +165,6 @@ function RangeFilter({
 }
 
 export default function HitRate() {
-  const { data: snapshot } = useDvpSnapshot();
   const { data: board, live } = useHitRateBoard();
   const [stat, setStat] = useState<StatKey | "all">("all");
   const [gameId, setGameId] = useState<string>("all");
@@ -173,7 +174,7 @@ export default function HitRate() {
   const [direction, setDirection] = useState<"asc" | "desc">("desc");
   const sync = useAction(api.hitRateActions.sync);
   const [refreshing, setRefreshing] = useState(false);
-  const [refreshedAt, setRefreshedAt] = useState<string | null>(null);
+  const [refreshNote, setRefreshNote] = useState<string | null>(null);
   const [refreshError, setRefreshError] = useState<string | null>(null);
   const [l5Min, setL5Min] = useState("");
   const [l5Max, setL5Max] = useState("");
@@ -187,14 +188,12 @@ export default function HitRate() {
       if (byId.has(row.gameId)) continue;
       byId.set(row.gameId, {
         id: row.gameId,
-        label: `${teamById(snapshot, row.teamId)?.abbr ?? "—"} vs ${
-          teamById(snapshot, row.opponentId)?.abbr ?? "—"
-        }`,
+        label: `${row.teamAbbr} vs ${row.opponentAbbr}`,
         tipoff: row.tipoff,
       });
     }
     return [...byId.values()].sort((a, b) => a.tipoff.localeCompare(b.tipoff));
-  }, [board.rows, snapshot]);
+  }, [board.rows]);
 
   const rows = useMemo(() => {
     const needle = query.trim().toLowerCase();
@@ -206,17 +205,9 @@ export default function HitRate() {
       if (!inRange(pct(row.h2h), h2hMin, h2hMax)) return false;
       if (grades.length && !grades.includes(matchupGrade(row.rank))) return false;
       if (!needle) return true;
-      const team = teamById(snapshot, row.teamId);
-      const opponent = teamById(snapshot, row.opponentId);
-      return [
-        row.name,
-        team?.abbr,
-        team?.nickname,
-        opponent?.abbr,
-        row.position,
-      ]
-        .filter(Boolean)
-        .some((value) => value!.toLowerCase().includes(needle));
+      return [row.name, row.teamAbbr, row.opponentAbbr, row.position].some(
+        (value) => value.toLowerCase().includes(needle),
+      );
     });
     const factor = direction === "asc" ? 1 : -1;
     return [...filtered].sort((a, b) => {
@@ -238,7 +229,6 @@ export default function HitRate() {
     l5Max,
     l5Min,
     query,
-    snapshot,
     sort,
     stat,
   ]);
@@ -287,7 +277,7 @@ export default function HitRate() {
   };
 
   return (
-    <AppShell season={snapshot.meta.season}>
+    <AppShell season={board.meta.season}>
       <main className="mx-auto w-full max-w-[86rem] px-5 py-10 sm:px-8 sm:py-12">
         <div className="flex flex-col gap-6">
           <div>
@@ -303,16 +293,19 @@ export default function HitRate() {
               </h1>
               <div className="flex items-center gap-3">
                 <span className="text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
-                  Lines · {updatedLabel(refreshedAt ?? board.meta.generatedAt)}
+                  Lines · {updatedLabel(board.meta.generatedAt)}
                 </span>
                 <button
                   type="button"
                   onClick={async () => {
                     setRefreshing(true);
                     setRefreshError(null);
+                    setRefreshNote(null);
                     try {
                       const result = await sync({});
-                      setRefreshedAt(new Date(result.generatedAt).toISOString());
+                      setRefreshNote(
+                        result.changed ? "Lines updated" : "Checked · no line changes",
+                      );
                     } catch (error) {
                       setRefreshError(
                         error instanceof Error ? error.message : String(error),
@@ -326,6 +319,11 @@ export default function HitRate() {
                 >
                   {refreshing ? "Refreshing…" : "Refresh lines"}
                 </button>
+                {refreshNote ? (
+                  <span className="text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
+                    {refreshNote}
+                  </span>
+                ) : null}
               </div>
             </div>
             <p className="mt-3 max-w-2xl text-sm leading-6 text-muted-foreground">
@@ -500,8 +498,6 @@ export default function HitRate() {
 
               <div className="divide-y divide-border/70">
                 {rows.map((row) => {
-                  const team = teamById(snapshot, row.teamId);
-                  const opponent = teamById(snapshot, row.opponentId);
                   return (
                     <div
                       key={`${row.playerId}-${row.stat}`}
@@ -509,7 +505,7 @@ export default function HitRate() {
                     >
                       <div className="flex min-w-0 items-center gap-2.5">
                         <span className="inline-flex h-6 w-9 shrink-0 items-center justify-center rounded-[3px] border border-border text-[9px] font-semibold tracking-[0.06em] text-muted-foreground">
-                          {team?.abbr ?? "—"}
+                          {row.teamAbbr}
                         </span>
                         <div className="min-w-0">
                           <p className="flex items-center gap-1.5 truncate text-[12px] font-medium leading-tight">
@@ -530,7 +526,7 @@ export default function HitRate() {
                             ) : null}
                           </p>
                           <p className="mt-0.5 truncate text-[9px] uppercase tracking-[0.1em] text-muted-foreground">
-                            {team?.abbr ?? "—"} vs {opponent?.abbr ?? "—"} ·{" "}
+                            {row.teamAbbr} vs {row.opponentAbbr} ·{" "}
                             {row.position} · {CATEGORY_LABELS[row.stat]} ·{" "}
                             {gameTime(row.tipoff)}
                           </p>
@@ -586,7 +582,7 @@ export default function HitRate() {
             season and the previous two. Matchup grade comes from the opponent's
             defense-vs-position rank (30 = softest, 1 = toughest). Lines are a
             consensus of the major books. {live ? "Live board" : "Snapshot"} ·
-            data through {dataThroughLabel(snapshot)} · {board.meta.source}.
+            data through {throughLabel(board.meta.throughDate)} · {board.meta.source}.
           </div>
         </div>
       </main>

@@ -43,6 +43,9 @@ const schema = defineSchema(
     hitRateBoards: defineTable({
       key: v.string(),
       generatedAt: v.number(),
+      // Fingerprint of the rows, so a refresh that finds identical lines skips
+      // rewriting the (large) payload.
+      signature: v.optional(v.string()),
       payload: v.any(),
     }).index("by_key", ["key"]),
 

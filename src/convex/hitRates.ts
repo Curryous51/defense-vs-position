@@ -12,6 +12,18 @@ export const latest = query({
   },
 });
 
+/** Cheap read of the stored board's fingerprint, for change detection. */
+export const current = internalQuery({
+  args: {},
+  handler: async (ctx) => {
+    const doc = await ctx.db
+      .query("hitRateBoards")
+      .withIndex("by_key", (q) => q.eq("key", "current"))
+      .unique();
+    return doc ? { signature: doc.signature ?? null, generatedAt: doc.generatedAt } : null;
+  },
+});
+
 /** Cached game log for one player, or null when never fetched. */
 export const getLogs = internalQuery({
   args: { playerId: v.string() },
@@ -47,6 +59,7 @@ export const save = internalMutation({
   args: {
     key: v.string(),
     generatedAt: v.number(),
+    signature: v.string(),
     payload: v.any(),
   },
   handler: async (ctx, args) => {

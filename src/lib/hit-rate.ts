@@ -7,27 +7,22 @@ export interface HitRateRow {
   playerId: string;
   name: string;
   teamId: string;
+  teamAbbr: string;
   opponentId: string;
+  opponentAbbr: string;
   position: Position;
   stat: StatKey;
   /** Consensus line across the quoted books. */
   line: number;
   /** Best available over price at the consensus line. */
   overPrice: number;
-  underPrice: number;
-  books: number;
   gameId: string;
   tipoff: string;
-  seasonAvg: number;
-  minutes: number;
   l5: { hits: number; n: number };
   l10: { hits: number; n: number };
   h2h: { hits: number; n: number };
-  /** Last ten games, newest first: true = over, false = under, null = push. */
-  strip: Array<boolean | null>;
   /** Opponent's defense-vs-position rank (1 = fewest allowed, 30 = most). */
   rank: number;
-  starter: boolean;
   injuryStatus: string | null;
 }
 
