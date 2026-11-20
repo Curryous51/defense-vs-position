@@ -173,6 +173,8 @@ export default function HitRate() {
   const [direction, setDirection] = useState<"asc" | "desc">("desc");
   const sync = useAction(api.hitRateActions.sync);
   const [refreshing, setRefreshing] = useState(false);
+  const [refreshedAt, setRefreshedAt] = useState<string | null>(null);
+  const [refreshError, setRefreshError] = useState<string | null>(null);
   const [l5Min, setL5Min] = useState("");
   const [l5Max, setL5Max] = useState("");
   const [h2hMin, setH2hMin] = useState("");
@@ -301,14 +303,20 @@ export default function HitRate() {
               </h1>
               <div className="flex items-center gap-3">
                 <span className="text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
-                  Lines · {updatedLabel(board.meta.generatedAt)}
+                  Lines · {updatedLabel(refreshedAt ?? board.meta.generatedAt)}
                 </span>
                 <button
                   type="button"
                   onClick={async () => {
                     setRefreshing(true);
+                    setRefreshError(null);
                     try {
-                      await sync({});
+                      const result = await sync({});
+                      setRefreshedAt(new Date(result.generatedAt).toISOString());
+                    } catch (error) {
+                      setRefreshError(
+                        error instanceof Error ? error.message : String(error),
+                      );
                     } finally {
                       setRefreshing(false);
                     }
@@ -325,6 +333,11 @@ export default function HitRate() {
               last five and ten games, head to head against the opponent across
               three seasons, and against that defense's position rank.
             </p>
+            {refreshError ? (
+              <p className="mt-3 max-w-2xl border-l-2 border-match-tough-strong pl-2.5 text-[11px] leading-5 text-match-tough-strong">
+                Refresh failed: {refreshError}
+              </p>
+            ) : null}
           </div>
 
           <div className="flex flex-col gap-3 border-y border-border py-4">

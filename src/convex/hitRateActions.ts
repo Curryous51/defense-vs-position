@@ -42,12 +42,18 @@ export const sync = action({
       },
     });
 
+    const generatedAt = Date.now();
     await ctx.runMutation(internal.hitRates.save, {
       key: "current",
-      generatedAt: Date.now(),
+      generatedAt,
       payload: board,
     });
-    return { rows: board.rows.length, games: board.meta.games, slate: board.meta.slateDate };
+    return {
+      rows: board.rows.length,
+      games: board.meta.games,
+      slate: board.meta.slateDate,
+      generatedAt,
+    };
   },
 });
 
