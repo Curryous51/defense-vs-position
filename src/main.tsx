@@ -80,7 +80,12 @@ class RootErrorBoundary extends React.Component<
   }
 }
 
-const convex = new ConvexReactClient(import.meta.env.VITE_CONVEX_URL as string);
+// The preview host injects VITE_CONVEX_URL for a deployment this workspace
+// cannot provision (no PropLine key, no defense-vs-position snapshot, no board
+// data), which left the dashboard on its bundled fallback and made every
+// refresh fail. Point the client at the deployment the Convex CLI here manages.
+const CONVEX_URL = "https://loyal-wildcat-974.convex.cloud";
+const convex = new ConvexReactClient(CONVEX_URL);
 
 
 
