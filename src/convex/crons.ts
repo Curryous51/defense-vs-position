@@ -12,21 +12,13 @@ crons.daily(
   api.nbaActions.sync,
 );
 
-// Lines move during the day, so the hit-rate board refreshes once in the
-// morning after the DvP rebuild and again in the early afternoon.
-crons.daily(
-  "refresh hit rate board",
-  { hourUTC: 10, minuteUTC: 50 },
-  api.hitRateActions.sync,
-);
-
-// Books post their boards through the US morning. Refresh hourly from 12:00 to
-// 23:00 UTC (7am-7pm ET). An unchanged board is not rewritten, so this costs
-// one PropLine call and one cached-log read per hour. Use the Refresh lines
-// button when a line has just moved.
+// Twice a day is enough: 05:30 UTC (11:00 IST) after the US books have posted,
+// and 14:30 UTC (20:00 IST) for late line movement. Each run reads the cached
+// game logs for the slate, which is the largest cost on the free tier, so keep
+// this at two. The Refresh lines button covers anything in between.
 crons.cron(
-  "refresh hit rate lines",
-  "0 12-23 * * *",
+  "refresh hit rate board",
+  "30 5,14 * * *",
   api.hitRateActions.sync,
 );
 

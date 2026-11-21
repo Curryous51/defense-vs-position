@@ -47,8 +47,9 @@ The first copy of `src/convex/_generated` is committed on purpose so `tsc` and
 the Pages build work without a Convex deployment. `bun install && bun run dev`
 from a fresh clone also works: it serves the same JSON snapshots.
 
-**Keeping the data fresh.** `.github/workflows/sync-data.yml` runs every four
-hours (and on demand) to rerun `scripts/sync-nba.ts` and
+**Keeping the data fresh.** `.github/workflows/sync-data.yml` runs twice a day —
+05:30 UTC (11:00 IST) and 14:30 UTC (20:00 IST) — and on demand, rerunning
+`scripts/sync-nba.ts` and
 `scripts/sync-hit-rates.ts`, commit the updated JSON, and trigger a redeploy.
 Add `PROPLINE_API_KEY` under Settings → Secrets and variables → Actions. This is
 the closest GitHub equivalent of the Convex cron: Actions is the scheduler, the
