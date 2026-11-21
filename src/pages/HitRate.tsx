@@ -711,7 +711,9 @@ export default function HitRate() {
                             ? "bg-match-favorable-strong text-white"
                             : gradeTone(row.rank) === "tough"
                               ? "bg-match-tough-strong text-white"
-                              : "bg-match-neutral text-foreground",
+                              : matchupGrade(row.rank) === "A-"
+                                ? "bg-match-favorable text-match-favorable-strong"
+                                : "bg-match-neutral text-foreground",
                         )}
                       >
                         {matchupGrade(row.rank)}
