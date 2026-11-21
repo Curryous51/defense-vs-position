@@ -45,6 +45,10 @@ jobs:
         run: cp dist/index.html dist/404.html
 
       - uses: actions/configure-pages@v5
+        with:
+          # Creates the Pages site on the first run; if the token lacks admin
+          # rights, enable it once via Settings → Pages → Source: GitHub Actions.
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

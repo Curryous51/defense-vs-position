@@ -19,6 +19,8 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    env:
+      PROPLINE_API_KEY: ${{ secrets.PROPLINE_API_KEY }}
     steps:
       - uses: actions/checkout@v4
 
@@ -30,13 +32,16 @@ jobs:
         run: bun install --frozen-lockfile
 
       - name: Sync defense-vs-position snapshot
-        env:
-          PROPLINE_API_KEY: ${{ secrets.PROPLINE_API_KEY }}
         run: bun scripts/sync-nba.ts
 
+      - name: Check for PropLine key
+        if: env.PROPLINE_API_KEY == ''
+        run: echo "::warning::PROPLINE_API_KEY is not set, skipping the hit-rate refresh."
+
+      # Skipped rather than failed when the secret is missing, so the DvP
+      # snapshot still refreshes on a fresh fork.
       - name: Sync hit-rate board
-        env:
-          PROPLINE_API_KEY: ${{ secrets.PROPLINE_API_KEY }}
+        if: env.PROPLINE_API_KEY != ''
         run: bun scripts/sync-hit-rates.ts
 
       - name: Commit changed data
