@@ -2,7 +2,7 @@
   "meta": {
     "season": "2026-27",
     "source": "FantasyPros defense vs position",
-    "generatedAt": "2026-11-21T06:03:16.619Z",
+    "generatedAt": "2026-11-21T06:47:52.287Z",
     "gamesSampled": 235,
     "throughDate": "2026-11-21T03:00Z"
   },
@@ -503,7 +503,7 @@
       "location": "Denver",
       "nickname": "Nuggets",
       "name": "Denver Nuggets",
-      "games": 13,
+      "games": 14,
       "season": {
         "PG": {
           "pts": 21.73,
@@ -713,7 +713,7 @@
       "location": "Houston",
       "nickname": "Rockets",
       "name": "Houston Rockets",
-      "games": 16,
+      "games": 17,
       "season": {
         "PG": {
           "pts": 26.2,
