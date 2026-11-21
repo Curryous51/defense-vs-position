@@ -170,7 +170,7 @@ function StaticRefresh({
     } catch (caught) {
       const message = caught instanceof Error ? caught.message : String(caught);
       setError(message);
-      if (/token|401|403/i.test(message)) setAskToken(true);
+      if (/token|401|403|refused/i.test(message)) setAskToken(true);
     } finally {
       setBusy(false);
       setStatus(null);
@@ -205,7 +205,7 @@ function StaticRefresh({
         </span>
       ) : null}
       {error ? (
-        <span className="max-w-56 text-[10px] leading-4 text-match-tough-strong">
+        <span className="max-w-80 text-[10px] leading-4 text-match-tough-strong">
           {error}
         </span>
       ) : null}

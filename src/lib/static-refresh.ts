@@ -53,12 +53,54 @@ function headers(token: string, accept: string): Record<string, string> {
   };
 }
 
-function describe(status: number): string {
-  if (status === 401) return "GitHub rejected the token — it may be expired or mistyped.";
-  if (status === 403)
-    return "GitHub refused that token. It needs Contents: read and Actions: read and write on this repo.";
-  if (status === 404) return "Repository or workflow not found for this token.";
-  return `GitHub returned ${status}.`;
+/** GitHub's own explanation, which tells us far more than the status code. */
+async function detail(response: Response): Promise<string> {
+  try {
+    const body = (await response.json()) as { message?: string };
+    return body?.message ?? "";
+  } catch {
+    return "";
+  }
+}
+
+function describe(status: number, message: string): string {
+  const hint =
+    status === 401
+      ? "GitHub rejected the token — it may be expired or mistyped."
+      : status === 403
+        ? "GitHub refused the request."
+        : status === 404
+          ? "Repository or workflow not found for this token."
+          : `GitHub returned ${status}.`;
+  return message ? `${hint} GitHub says: “${message}”` : hint;
+}
+
+/**
+ * Distinguishes the three usual 403s (wrong repo, no Actions access, expired)
+ * by asking GitHub what the token can actually see.
+ */
+async function diagnose(token: string): Promise<string> {
+  const status = async (path: string) => {
+    try {
+      const response = await fetch(`https://api.github.com${path}`, {
+        headers: headers(token, "application/vnd.github+json"),
+        cache: "no-store",
+      });
+      return response.status;
+    } catch {
+      return 0;
+    }
+  };
+  const [repo, workflow] = await Promise.all([
+    status(`/repos/${REPO}`),
+    status(`/repos/${REPO}/actions/workflows/${WORKFLOW}`),
+  ]);
+  if (repo === 401) return "That token is expired or mistyped.";
+  if (repo === 404) return "That token can't see this repository — check its repository access.";
+  if (repo === 403) return "That token has no access to this repository.";
+  if (workflow === 404 || workflow === 403)
+    return "The token can see the repo but not its Actions — set Actions to read and write.";
+  return "The token can read this repo and its workflow, yet GitHub refused the dispatch — try revoking and recreating the token.";
 }
 
 /**
@@ -77,7 +119,7 @@ export async function fetchBoard(token: string | null = storedToken()): Promise<
         `https://raw.githubusercontent.com/${REPO}/${BRANCH}/${BOARD_PATH}?t=${bust}`,
         { cache: "no-store" },
       );
-  if (!response.ok) throw new Error(describe(response.status));
+  if (!response.ok) throw new Error(describe(response.status, await detail(response)));
   return (await response.json()) as HitRateBoard;
 }
 
@@ -94,7 +136,12 @@ export async function triggerRefresh(token: string): Promise<void> {
       body: JSON.stringify({ ref: BRANCH }),
     },
   );
-  if (!response.ok) throw new Error(describe(response.status));
+  if (!response.ok) {
+    const message = await detail(response);
+    throw new Error(
+      `${describe(response.status, message)}${response.status === 403 ? ` ${await diagnose(token)}` : ""}`,
+    );
+  }
 }
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
