@@ -34,7 +34,8 @@ Currently, these variables include auth-specific keys: JWKS, JWT_PRIVATE_KEY, an
 Both datasets are committed as JSON — `src/data/dvp.json` (defense vs position)
 and `src/data/hit-rate.json` (hit-rate board) — so the whole site can run as a
 static build. `VITE_DATA_MODE=static` turns off the Convex client; every page
-then reads those files and the “Refresh lines” button is hidden.
+then reads those files, and “Refresh lines” starts the GitHub workflow instead
+of calling Convex (see below).
 
 To publish:
 
@@ -51,12 +52,23 @@ from a fresh clone also works: it serves the same JSON snapshots.
 05:30 UTC (11:00 IST) and 14:30 UTC (20:00 IST) — and on demand, rerunning
 `scripts/sync-nba.ts` and
 `scripts/sync-hit-rates.ts`, commit the updated JSON, and trigger a redeploy.
-Add `PROPLINE_API_KEY` under Settings → Secrets and variables → Actions. This is
-the closest GitHub equivalent of the Convex cron: Actions is the scheduler, the
-repository is the database, Pages is the host.
+Add `PROPLINE_API_KEY` under Settings → Secrets and variables → Actions — the
+hit-rate step is skipped without it, leaving `src/data/hit-rate.json` on
+whatever slate it was last committed for. This is the closest GitHub equivalent
+of the Convex cron: Actions is the scheduler, the repository is the database,
+Pages is the host.
+
+**Refreshing from the page.** In the static build the “Refresh lines” button
+starts `sync-data.yml` through the GitHub API, then polls the committed JSON
+until the new board lands. Starting a workflow needs a token the browser can
+hold, so the first click asks for a fine-grained personal access token scoped to
+this repository with `Actions: read and write` and `Contents: read`; it is kept
+in `localStorage` for that browser only. The same freshness rules apply: a game
+leaves the board at tip-off, and the board follows the next slate once today's
+games have started.
 
 What you give up compared with Convex: no realtime updates (a reload is needed),
-no on-demand refresh for visitors, data is only as fresh as the last commit, and
+data is only as fresh as the last commit, and
 each sync adds a commit to the history. GitHub also pauses scheduled workflows
 after 60 days without repository activity — the manual “Run workflow” button
 re-enables them.

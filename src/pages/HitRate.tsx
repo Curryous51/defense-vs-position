@@ -12,6 +12,14 @@ import {
   type HitRateRow,
 } from "@/lib/hit-rate";
 import { LIVE_MODE } from "@/lib/live-mode";
+import {
+  TOKEN_URL,
+  clearToken,
+  saveToken,
+  storedToken,
+  triggerRefresh,
+  waitForBoard,
+} from "@/lib/static-refresh";
 import { cn } from "@/lib/utils";
 import { useMemo, useState } from "react";
 
@@ -125,6 +133,145 @@ function Sample({ value }: { value: { hits: number; n: number } }) {
   );
 }
 
+/**
+ * Refresh for the backend-free build: starts the GitHub data workflow, then
+ * polls until the committed snapshot changes. Dispatching needs a token, which
+ * the user pastes once and which stays in this browser.
+ */
+function StaticRefresh({
+  generatedAt,
+  onReload,
+}: {
+  generatedAt: string;
+  onReload: () => Promise<void>;
+}) {
+  const [busy, setBusy] = useState(false);
+  const [note, setNote] = useState<string | null>(null);
+  const [status, setStatus] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [askToken, setAskToken] = useState(false);
+  const [draft, setDraft] = useState("");
+
+  const run = async (token: string) => {
+    setBusy(true);
+    setError(null);
+    setNote(null);
+    setStatus("Starting the data refresh…");
+    try {
+      const since = Date.now();
+      await triggerRefresh(token);
+      const board = await waitForBoard(generatedAt, token, {
+        since,
+        onCheck: (seconds) =>
+          setStatus(`Refreshing · ${Math.floor(seconds / 60)}m ${seconds % 60}s`),
+      });
+      await onReload();
+      setNote(`Lines updated · ${board.meta.props} props`);
+    } catch (caught) {
+      const message = caught instanceof Error ? caught.message : String(caught);
+      setError(message);
+      if (/token|401|403/i.test(message)) setAskToken(true);
+    } finally {
+      setBusy(false);
+      setStatus(null);
+    }
+  };
+
+  return (
+    <div className="relative flex items-center gap-3">
+      <button
+        type="button"
+        onClick={() => {
+          const token = storedToken();
+          if (!token) {
+            setAskToken(true);
+            return;
+          }
+          void run(token);
+        }}
+        disabled={busy}
+        className="h-8 rounded-[3px] border border-border px-2.5 text-[10px] uppercase tracking-[0.12em] text-muted-foreground transition-colors hover:text-foreground disabled:opacity-50"
+      >
+        {busy ? "Refreshing…" : "Refresh lines"}
+      </button>
+      {status ? (
+        <span className="text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
+          {status}
+        </span>
+      ) : null}
+      {note ? (
+        <span className="text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
+          {note}
+        </span>
+      ) : null}
+      {error ? (
+        <span className="max-w-56 text-[10px] leading-4 text-match-tough-strong">
+          {error}
+        </span>
+      ) : null}
+
+      {askToken ? (
+        <div className="absolute right-0 top-9 z-30 w-80 border border-border bg-background p-3 shadow-sm">
+          <p className="text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
+            GitHub token
+          </p>
+          <p className="mt-1.5 text-[11px] leading-4 text-muted-foreground">
+            Refreshing a static site means starting the data workflow on GitHub.
+            Create a fine-grained token for this repository with{" "}
+            <span className="text-foreground">Actions: read and write</span> and{" "}
+            <span className="text-foreground">Contents: read</span>, then paste it
+            here. It is stored only in this browser.
+          </p>
+          <a
+            href={TOKEN_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-1.5 inline-block text-[11px] underline underline-offset-4 hover:text-foreground"
+          >
+            Create a token
+          </a>
+          <input
+            value={draft}
+            onChange={(event) => setDraft(event.target.value)}
+            type="password"
+            placeholder="github_pat_…"
+            autoComplete="off"
+            className="mt-2 h-8 w-full rounded-[3px] border border-border bg-transparent px-2 text-[11px] outline-none placeholder:text-muted-foreground/60 focus:border-foreground/40"
+          />
+          <div className="mt-2 flex items-center gap-3">
+            <button
+              type="button"
+              disabled={!draft.trim() || busy}
+              onClick={() => {
+                const token = draft.trim();
+                saveToken(token);
+                setDraft("");
+                setAskToken(false);
+                void run(token);
+              }}
+              className="h-7 rounded-[3px] border border-foreground bg-foreground px-2.5 text-[10px] uppercase tracking-[0.12em] text-background disabled:opacity-40"
+            >
+              Save & refresh
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                clearToken();
+                setDraft("");
+                setAskToken(false);
+                setError(null);
+              }}
+              className="text-[10px] uppercase tracking-[0.12em] text-muted-foreground hover:text-foreground"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      ) : null}
+    </div>
+  );
+}
+
 function RangeFilter({
   label,
   min,
@@ -166,7 +313,7 @@ function RangeFilter({
 }
 
 export default function HitRate() {
-  const { data: board, live } = useHitRateBoard();
+  const { data: board, live, reload } = useHitRateBoard();
   const [stat, setStat] = useState<StatKey | "all">("all");
   const [gameId, setGameId] = useState<string>("all");
   const [query, setQuery] = useState("");
@@ -323,7 +470,12 @@ export default function HitRate() {
                   >
                     {refreshing ? "Refreshing…" : "Refresh lines"}
                   </button>
-                ) : null}
+                ) : (
+                  <StaticRefresh
+                    generatedAt={board.meta.generatedAt}
+                    onReload={reload}
+                  />
+                )}
                 {refreshNote ? (
                   <span className="text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
                     {refreshNote}
