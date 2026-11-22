@@ -1,0 +1,23 @@
+name: Probe NBA tracking stats
+
+# Answers a data question, not a delivery one: can the pipeline reach
+# stats.nba.com for potential assists and rebound chances? Manual only — it
+# touches no snapshots and needs no secrets.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Probe tracking endpoints
+        run: bun scripts/probe-tracking.ts
