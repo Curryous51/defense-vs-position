@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generatedAt": "2026-11-22T07:46:15.530Z",
+    "generatedAt": "2026-11-22T13:29:02.422Z",
     "season": "2026-27",
     "slateDate": "2026-11-22",
     "games": 7,
-    "props": 294,
+    "props": 304,
     "source": "PropLine · ESPN",
     "throughDate": "2026-11-22T03:00Z"
   },
@@ -19,7 +19,7 @@
       "position": "PG",
       "stat": "pts",
       "line": 14.5,
-      "overPrice": -104,
+      "overPrice": -102,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -34,7 +34,7 @@
         "hits": 0,
         "n": 3
       },
-      "rank": 7,
+      "rank": 8,
       "injuryStatus": null
     },
     {
@@ -47,7 +47,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 2.5,
-      "overPrice": -150,
+      "overPrice": -130,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -75,7 +75,7 @@
       "position": "C",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": -136,
+      "overPrice": -125,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -103,7 +103,7 @@
       "position": "SF",
       "stat": "tpm",
       "line": 0.5,
-      "overPrice": -210,
+      "overPrice": -222,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -122,6 +122,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "4397183",
+      "name": "Aaron Wiggins",
+      "teamId": "1",
+      "teamAbbr": "ATL",
+      "opponentId": "8",
+      "opponentAbbr": "DET",
+      "position": "PF",
+      "stat": "ast",
+      "line": 1.5,
+      "overPrice": -175,
+      "gameId": "731176",
+      "tipoff": "2026-11-22T20:30:00Z",
+      "l5": {
+        "hits": 4,
+        "n": 5
+      },
+      "l10": {
+        "hits": 8,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 2
+      },
+      "rank": 20,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4066320",
       "name": "Desmond Bane",
       "teamId": "19",
@@ -131,7 +159,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 3.5,
-      "overPrice": 110,
+      "overPrice": 121,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -159,7 +187,7 @@
       "position": "SF",
       "stat": "reb",
       "line": 7.5,
-      "overPrice": 120,
+      "overPrice": 118,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -187,7 +215,7 @@
       "position": "SF",
       "stat": "tpm",
       "line": 0.5,
-      "overPrice": -225,
+      "overPrice": -250,
       "gameId": "731183",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -215,7 +243,7 @@
       "position": "C",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": -115,
+      "overPrice": -110,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -230,7 +258,7 @@
         "hits": 5,
         "n": 6
       },
-      "rank": 25,
+      "rank": 24,
       "injuryStatus": "Day-To-Day"
     },
     {
@@ -243,7 +271,7 @@
       "position": "PF",
       "stat": "ast",
       "line": 1.5,
-      "overPrice": -130,
+      "overPrice": -137,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -258,7 +286,7 @@
         "hits": 2,
         "n": 6
       },
-      "rank": 17,
+      "rank": 19,
       "injuryStatus": null
     },
     {
@@ -271,7 +299,7 @@
       "position": "SF",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": -175,
+      "overPrice": -186,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -299,7 +327,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 4.5,
-      "overPrice": 124,
+      "overPrice": 122,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -314,7 +342,7 @@
         "hits": 0,
         "n": 4
       },
-      "rank": 12,
+      "rank": 13,
       "injuryStatus": null
     },
     {
@@ -327,7 +355,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 3.5,
-      "overPrice": -165,
+      "overPrice": -150,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -374,6 +402,34 @@
       "injuryStatus": "Day-To-Day"
     },
     {
+      "playerId": "4397189",
+      "name": "Jalen Smith",
+      "teamId": "4",
+      "teamAbbr": "CHI",
+      "opponentId": "7",
+      "opponentAbbr": "DEN",
+      "position": "C",
+      "stat": "ast",
+      "line": 1.5,
+      "overPrice": -165,
+      "gameId": "731184",
+      "tipoff": "2026-11-23T00:00:00Z",
+      "l5": {
+        "hits": 5,
+        "n": 5
+      },
+      "l10": {
+        "hits": 7,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 3
+      },
+      "rank": 27,
+      "injuryStatus": "Day-To-Day"
+    },
+    {
       "playerId": "3133603",
       "name": "Kelly Oubre Jr.",
       "teamId": "11",
@@ -411,7 +467,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": -110,
+      "overPrice": 100,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -439,7 +495,7 @@
       "position": "C",
       "stat": "pts",
       "line": 14.5,
-      "overPrice": -109,
+      "overPrice": -120,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -454,35 +510,7 @@
         "hits": 3,
         "n": 8
       },
-      "rank": 13,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "4712849",
-      "name": "Anthony Black",
-      "teamId": "19",
-      "teamAbbr": "ORL",
-      "opponentId": "27",
-      "opponentAbbr": "WSH",
-      "position": "PG",
-      "stat": "tpm",
-      "line": 1.5,
-      "overPrice": 105,
-      "gameId": "731181",
-      "tipoff": "2026-11-23T00:00:00Z",
-      "l5": {
-        "hits": 4,
-        "n": 5
-      },
-      "l10": {
-        "hits": 7,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 2,
-        "n": 6
-      },
-      "rank": 1,
+      "rank": 14,
       "injuryStatus": null
     },
     {
@@ -495,7 +523,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 5.5,
-      "overPrice": 116,
+      "overPrice": 121,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -514,6 +542,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "4712849",
+      "name": "Anthony Black",
+      "teamId": "19",
+      "teamAbbr": "ORL",
+      "opponentId": "27",
+      "opponentAbbr": "WSH",
+      "position": "PG",
+      "stat": "tpm",
+      "line": 1.5,
+      "overPrice": -101,
+      "gameId": "731181",
+      "tipoff": "2026-11-23T00:00:00Z",
+      "l5": {
+        "hits": 4,
+        "n": 5
+      },
+      "l10": {
+        "hits": 7,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 6
+      },
+      "rank": 1,
+      "injuryStatus": null
+    },
+    {
       "playerId": "5104155",
       "name": "Bilal Coulibaly",
       "teamId": "27",
@@ -523,7 +579,7 @@
       "position": "PF",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": -105,
+      "overPrice": -110,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -538,7 +594,7 @@
         "hits": 4,
         "n": 7
       },
-      "rank": 21,
+      "rank": 22,
       "injuryStatus": null
     },
     {
@@ -551,7 +607,7 @@
       "position": "SF",
       "stat": "ast",
       "line": 2.5,
-      "overPrice": 140,
+      "overPrice": 129,
       "gameId": "731184",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -579,7 +635,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": -190,
+      "overPrice": -191,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -607,7 +663,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 2.5,
-      "overPrice": 134,
+      "overPrice": 145,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -622,7 +678,91 @@
         "hits": 1,
         "n": 3
       },
-      "rank": 23,
+      "rank": 24,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4066320",
+      "name": "Desmond Bane",
+      "teamId": "19",
+      "teamAbbr": "ORL",
+      "opponentId": "27",
+      "opponentAbbr": "WSH",
+      "position": "PG",
+      "stat": "ast",
+      "line": 2.5,
+      "overPrice": -140,
+      "gameId": "731181",
+      "tipoff": "2026-11-23T00:00:00Z",
+      "l5": {
+        "hits": 4,
+        "n": 5
+      },
+      "l10": {
+        "hits": 7,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 5,
+        "n": 5
+      },
+      "rank": 30,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4066320",
+      "name": "Desmond Bane",
+      "teamId": "19",
+      "teamAbbr": "ORL",
+      "opponentId": "27",
+      "opponentAbbr": "WSH",
+      "position": "PG",
+      "stat": "pts",
+      "line": 18.5,
+      "overPrice": -115,
+      "gameId": "731181",
+      "tipoff": "2026-11-23T00:00:00Z",
+      "l5": {
+        "hits": 4,
+        "n": 5
+      },
+      "l10": {
+        "hits": 7,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 3,
+        "n": 5
+      },
+      "rank": 9,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4222252",
+      "name": "Isaiah Hartenstein",
+      "teamId": "25",
+      "teamAbbr": "OKC",
+      "opponentId": "14",
+      "opponentAbbr": "MIA",
+      "position": "C",
+      "stat": "reb",
+      "line": 10.5,
+      "overPrice": -130,
+      "gameId": "731180",
+      "tipoff": "2026-11-22T23:00:00Z",
+      "l5": {
+        "hits": 4,
+        "n": 5
+      },
+      "l10": {
+        "hits": 7,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 2
+      },
+      "rank": 14,
       "injuryStatus": null
     },
     {
@@ -635,7 +775,7 @@
       "position": "PF",
       "stat": "tpm",
       "line": 3.5,
-      "overPrice": -115,
+      "overPrice": -120,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -651,62 +791,6 @@
         "n": 6
       },
       "rank": 16,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "5174563",
-      "name": "Kyshawn George",
-      "teamId": "27",
-      "teamAbbr": "WSH",
-      "opponentId": "19",
-      "opponentAbbr": "ORL",
-      "position": "SF",
-      "stat": "ast",
-      "line": 3.5,
-      "overPrice": -148,
-      "gameId": "731181",
-      "tipoff": "2026-11-23T00:00:00Z",
-      "l5": {
-        "hits": 4,
-        "n": 5
-      },
-      "l10": {
-        "hits": 7,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 2,
-        "n": 5
-      },
-      "rank": 22,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "3147657",
-      "name": "Mikal Bridges",
-      "teamId": "18",
-      "teamAbbr": "NY",
-      "opponentId": "11",
-      "opponentAbbr": "IND",
-      "position": "PF",
-      "stat": "reb",
-      "line": 2.5,
-      "overPrice": -165,
-      "gameId": "731186",
-      "tipoff": "2026-11-23T01:00:00Z",
-      "l5": {
-        "hits": 4,
-        "n": 5
-      },
-      "l10": {
-        "hits": 7,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 7,
-        "n": 8
-      },
-      "rank": 17,
       "injuryStatus": null
     },
     {
@@ -734,7 +818,7 @@
         "hits": 5,
         "n": 6
       },
-      "rank": 24,
+      "rank": 27,
       "injuryStatus": "Day-To-Day"
     },
     {
@@ -747,7 +831,7 @@
       "position": "PF",
       "stat": "pts",
       "line": 11.5,
-      "overPrice": -105,
+      "overPrice": -104,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -775,7 +859,7 @@
       "position": "PF",
       "stat": "reb",
       "line": 6.5,
-      "overPrice": -140,
+      "overPrice": -145,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -794,16 +878,16 @@
       "injuryStatus": null
     },
     {
-      "playerId": "4395712",
-      "name": "Andrew Nembhard",
+      "playerId": "4396909",
+      "name": "Aaron Nesmith",
       "teamId": "11",
       "teamAbbr": "IND",
       "opponentId": "18",
       "opponentAbbr": "NY",
-      "position": "PG",
-      "stat": "tpm",
+      "position": "SF",
+      "stat": "ast",
       "line": 1.5,
-      "overPrice": -130,
+      "overPrice": -210,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -818,7 +902,35 @@
         "hits": 2,
         "n": 6
       },
-      "rank": 16,
+      "rank": 10,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4395712",
+      "name": "Andrew Nembhard",
+      "teamId": "11",
+      "teamAbbr": "IND",
+      "opponentId": "18",
+      "opponentAbbr": "NY",
+      "position": "PG",
+      "stat": "tpm",
+      "line": 1.5,
+      "overPrice": -115,
+      "gameId": "731186",
+      "tipoff": "2026-11-23T01:00:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 7,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 6
+      },
+      "rank": 7,
       "injuryStatus": null
     },
     {
@@ -830,8 +942,8 @@
       "opponentAbbr": "ORL",
       "position": "C",
       "stat": "pts",
-      "line": 24.5,
-      "overPrice": -104,
+      "line": 23.5,
+      "overPrice": -115,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -859,7 +971,7 @@
       "position": "C",
       "stat": "pts",
       "line": 7.5,
-      "overPrice": -102,
+      "overPrice": -118,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -902,7 +1014,7 @@
         "hits": 0,
         "n": 0
       },
-      "rank": 3,
+      "rank": 5,
       "injuryStatus": null
     },
     {
@@ -915,7 +1027,7 @@
       "position": "C",
       "stat": "reb",
       "line": 12.5,
-      "overPrice": -115,
+      "overPrice": -120,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -943,7 +1055,7 @@
       "position": "C",
       "stat": "ast",
       "line": 1.5,
-      "overPrice": -162,
+      "overPrice": -165,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -958,7 +1070,7 @@
         "hits": 3,
         "n": 6
       },
-      "rank": 14,
+      "rank": 12,
       "injuryStatus": null
     },
     {
@@ -971,7 +1083,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 3.5,
-      "overPrice": -128,
+      "overPrice": -130,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -986,7 +1098,7 @@
         "hits": 0,
         "n": 0
       },
-      "rank": 7,
+      "rank": 6,
       "injuryStatus": "Out"
     },
     {
@@ -999,7 +1111,7 @@
       "position": "PF",
       "stat": "ast",
       "line": 1.5,
-      "overPrice": -128,
+      "overPrice": -132,
       "gameId": "731184",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -1014,7 +1126,7 @@
         "hits": 4,
         "n": 4
       },
-      "rank": 10,
+      "rank": 11,
       "injuryStatus": null
     },
     {
@@ -1027,7 +1139,7 @@
       "position": "C",
       "stat": "reb",
       "line": 7.5,
-      "overPrice": -130,
+      "overPrice": -141,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -1042,7 +1154,7 @@
         "hits": 3,
         "n": 8
       },
-      "rank": 21,
+      "rank": 20,
       "injuryStatus": null
     },
     {
@@ -1055,7 +1167,7 @@
       "position": "C",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": -125,
+      "overPrice": -138,
       "gameId": "731183",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -1098,7 +1210,7 @@
         "hits": 2,
         "n": 3
       },
-      "rank": 19,
+      "rank": 20,
       "injuryStatus": null
     },
     {
@@ -1111,7 +1223,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": -145,
+      "overPrice": -164,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -1130,34 +1242,6 @@
       "injuryStatus": "Day-To-Day"
     },
     {
-      "playerId": "4277905",
-      "name": "Trae Young",
-      "teamId": "27",
-      "teamAbbr": "WSH",
-      "opponentId": "19",
-      "opponentAbbr": "ORL",
-      "position": "PG",
-      "stat": "tpm",
-      "line": 1.5,
-      "overPrice": -190,
-      "gameId": "731181",
-      "tipoff": "2026-11-23T00:00:00Z",
-      "l5": {
-        "hits": 3,
-        "n": 5
-      },
-      "l10": {
-        "hits": 7,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 4,
-        "n": 7
-      },
-      "rank": 14,
-      "injuryStatus": null
-    },
-    {
       "playerId": "5160992",
       "name": "Alex Sarr",
       "teamId": "27",
@@ -1167,7 +1251,7 @@
       "position": "C",
       "stat": "reb",
       "line": 6.5,
-      "overPrice": -115,
+      "overPrice": -105,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -1195,7 +1279,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 4.5,
-      "overPrice": -110,
+      "overPrice": -105,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -1210,7 +1294,7 @@
         "hits": 3,
         "n": 6
       },
-      "rank": 12,
+      "rank": 13,
       "injuryStatus": null
     },
     {
@@ -1223,7 +1307,7 @@
       "position": "PF",
       "stat": "ast",
       "line": 2.5,
-      "overPrice": 130,
+      "overPrice": 120,
       "gameId": "731183",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -1251,7 +1335,7 @@
       "position": "SF",
       "stat": "reb",
       "line": 2.5,
-      "overPrice": -165,
+      "overPrice": -150,
       "gameId": "731184",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -1294,63 +1378,7 @@
         "hits": 4,
         "n": 6
       },
-      "rank": 7,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "4897262",
-      "name": "Will Richard",
-      "teamId": "9",
-      "teamAbbr": "GS",
-      "opponentId": "2",
-      "opponentAbbr": "BOS",
-      "position": "PG",
-      "stat": "pts",
-      "line": 6.5,
-      "overPrice": -130,
-      "gameId": "723055",
-      "tipoff": "2026-11-23T01:30:00Z",
-      "l5": {
-        "hits": 5,
-        "n": 5
-      },
-      "l10": {
-        "hits": 6,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 2,
-        "n": 2
-      },
-      "rank": 2,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "4397183",
-      "name": "Aaron Wiggins",
-      "teamId": "1",
-      "teamAbbr": "ATL",
-      "opponentId": "8",
-      "opponentAbbr": "DET",
-      "position": "PF",
-      "stat": "ast",
-      "line": 2.5,
-      "overPrice": 125,
-      "gameId": "731176",
-      "tipoff": "2026-11-22T20:30:00Z",
-      "l5": {
-        "hits": 4,
-        "n": 5
-      },
-      "l10": {
-        "hits": 6,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 1,
-        "n": 2
-      },
-      "rank": 19,
+      "rank": 6,
       "injuryStatus": null
     },
     {
@@ -1363,7 +1391,7 @@
       "position": "PF",
       "stat": "reb",
       "line": 6.5,
-      "overPrice": -110,
+      "overPrice": 107,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -1378,7 +1406,7 @@
         "hits": 0,
         "n": 1
       },
-      "rank": 21,
+      "rank": 22,
       "injuryStatus": null
     },
     {
@@ -1390,8 +1418,8 @@
       "opponentAbbr": "NY",
       "position": "PG",
       "stat": "ast",
-      "line": 6.5,
-      "overPrice": -154,
+      "line": 7.5,
+      "overPrice": 110,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -1403,10 +1431,38 @@
         "n": 10
       },
       "h2h": {
-        "hits": 2,
+        "hits": 1,
         "n": 6
       },
-      "rank": 15,
+      "rank": 14,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5107199",
+      "name": "Daniss Jenkins",
+      "teamId": "8",
+      "teamAbbr": "DET",
+      "opponentId": "1",
+      "opponentAbbr": "ATL",
+      "position": "PG",
+      "stat": "reb",
+      "line": 3.5,
+      "overPrice": -145,
+      "gameId": "731176",
+      "tipoff": "2026-11-22T20:30:00Z",
+      "l5": {
+        "hits": 4,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 4
+      },
+      "rank": 11,
       "injuryStatus": null
     },
     {
@@ -1419,7 +1475,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 2.5,
-      "overPrice": -165,
+      "overPrice": -130,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -1435,34 +1491,6 @@
         "n": 3
       },
       "rank": 22,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "4066320",
-      "name": "Desmond Bane",
-      "teamId": "19",
-      "teamAbbr": "ORL",
-      "opponentId": "27",
-      "opponentAbbr": "WSH",
-      "position": "PG",
-      "stat": "pts",
-      "line": 19.5,
-      "overPrice": -105,
-      "gameId": "731181",
-      "tipoff": "2026-11-23T00:00:00Z",
-      "l5": {
-        "hits": 4,
-        "n": 5
-      },
-      "l10": {
-        "hits": 6,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 3,
-        "n": 5
-      },
-      "rank": 8,
       "injuryStatus": null
     },
     {
@@ -1522,6 +1550,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "4432822",
+      "name": "Isaac Okoro",
+      "teamId": "4",
+      "teamAbbr": "CHI",
+      "opponentId": "7",
+      "opponentAbbr": "DEN",
+      "position": "SF",
+      "stat": "ast",
+      "line": 1.5,
+      "overPrice": -175,
+      "gameId": "731184",
+      "tipoff": "2026-11-23T00:00:00Z",
+      "l5": {
+        "hits": 4,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 3
+      },
+      "rank": 23,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4397189",
       "name": "Jalen Smith",
       "teamId": "4",
@@ -1531,7 +1587,7 @@
       "position": "C",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": -115,
+      "overPrice": -125,
       "gameId": "731184",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -1550,6 +1606,62 @@
       "injuryStatus": "Day-To-Day"
     },
     {
+      "playerId": "4065648",
+      "name": "Jayson Tatum",
+      "teamId": "2",
+      "teamAbbr": "BOS",
+      "opponentId": "9",
+      "opponentAbbr": "GS",
+      "position": "PF",
+      "stat": "tpm",
+      "line": 2.5,
+      "overPrice": -165,
+      "gameId": "723055",
+      "tipoff": "2026-11-23T01:30:00Z",
+      "l5": {
+        "hits": 4,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 3,
+        "n": 3
+      },
+      "rank": 18,
+      "injuryStatus": "Out"
+    },
+    {
+      "playerId": "5149077",
+      "name": "Kingston Flemings",
+      "teamId": "1",
+      "teamAbbr": "ATL",
+      "opponentId": "8",
+      "opponentAbbr": "DET",
+      "position": "PG",
+      "stat": "pts",
+      "line": 7.5,
+      "overPrice": -125,
+      "gameId": "731176",
+      "tipoff": "2026-11-22T20:30:00Z",
+      "l5": {
+        "hits": 4,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 0
+      },
+      "rank": 11,
+      "injuryStatus": "Out"
+    },
+    {
       "playerId": "3147657",
       "name": "Mikal Bridges",
       "teamId": "18",
@@ -1559,7 +1671,7 @@
       "position": "PF",
       "stat": "ast",
       "line": 2.5,
-      "overPrice": -108,
+      "overPrice": 105,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -1602,7 +1714,7 @@
         "hits": 1,
         "n": 4
       },
-      "rank": 15,
+      "rank": 14,
       "injuryStatus": null
     },
     {
@@ -1615,7 +1727,7 @@
       "position": "C",
       "stat": "pts",
       "line": 25.5,
-      "overPrice": -120,
+      "overPrice": -123,
       "gameId": "731184",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -1630,7 +1742,7 @@
         "hits": 2,
         "n": 3
       },
-      "rank": 22,
+      "rank": 24,
       "injuryStatus": null
     },
     {
@@ -1643,7 +1755,7 @@
       "position": "C",
       "stat": "pts",
       "line": 20.5,
-      "overPrice": -102,
+      "overPrice": -105,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -1671,7 +1783,7 @@
       "position": "PG",
       "stat": "pts",
       "line": 31.5,
-      "overPrice": -105,
+      "overPrice": -114,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -1686,7 +1798,7 @@
         "hits": 2,
         "n": 4
       },
-      "rank": 29,
+      "rank": 30,
       "injuryStatus": "Day-To-Day"
     },
     {
@@ -1699,7 +1811,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 2.5,
-      "overPrice": -105,
+      "overPrice": 100,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -1727,7 +1839,7 @@
       "position": "C",
       "stat": "ast",
       "line": 1.5,
-      "overPrice": -188,
+      "overPrice": -181,
       "gameId": "731184",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -1770,7 +1882,7 @@
         "hits": 1,
         "n": 2
       },
-      "rank": 17,
+      "rank": 18,
       "injuryStatus": null
     },
     {
@@ -1783,7 +1895,7 @@
       "position": "PF",
       "stat": "tpm",
       "line": 2.5,
-      "overPrice": 125,
+      "overPrice": 120,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -1799,34 +1911,6 @@
         "n": 2
       },
       "rank": 17,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "4873138",
-      "name": "Ace Bailey",
-      "teamId": "26",
-      "teamAbbr": "UTAH",
-      "opponentId": "6",
-      "opponentAbbr": "DAL",
-      "position": "PF",
-      "stat": "ast",
-      "line": 1.5,
-      "overPrice": -174,
-      "gameId": "731183",
-      "tipoff": "2026-11-23T00:00:00Z",
-      "l5": {
-        "hits": 3,
-        "n": 5
-      },
-      "l10": {
-        "hits": 6,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 2,
-        "n": 4
-      },
-      "rank": 20,
       "injuryStatus": null
     },
     {
@@ -1854,7 +1938,7 @@
         "hits": 2,
         "n": 4
       },
-      "rank": 15,
+      "rank": 14,
       "injuryStatus": null
     },
     {
@@ -1867,7 +1951,7 @@
       "position": "PF",
       "stat": "ast",
       "line": 2.5,
-      "overPrice": 104,
+      "overPrice": 110,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -1923,7 +2007,7 @@
       "position": "C",
       "stat": "reb",
       "line": 10.5,
-      "overPrice": 100,
+      "overPrice": 105,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -1951,7 +2035,7 @@
       "position": "SF",
       "stat": "reb",
       "line": 7.5,
-      "overPrice": -114,
+      "overPrice": -102,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -1968,6 +2052,34 @@
       },
       "rank": 3,
       "injuryStatus": null
+    },
+    {
+      "playerId": "4432166",
+      "name": "Cade Cunningham",
+      "teamId": "8",
+      "teamAbbr": "DET",
+      "opponentId": "1",
+      "opponentAbbr": "ATL",
+      "position": "PG",
+      "stat": "pts",
+      "line": 25.5,
+      "overPrice": -118,
+      "gameId": "731176",
+      "tipoff": "2026-11-22T20:30:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 3,
+        "n": 7
+      },
+      "rank": 4,
+      "injuryStatus": "Day-To-Day"
     },
     {
       "playerId": "3138196",
@@ -1994,7 +2106,7 @@
         "hits": 4,
         "n": 4
       },
-      "rank": 9,
+      "rank": 10,
       "injuryStatus": null
     },
     {
@@ -2007,7 +2119,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 4.5,
-      "overPrice": -158,
+      "overPrice": -150,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -2022,7 +2134,7 @@
         "hits": 3,
         "n": 4
       },
-      "rank": 20,
+      "rank": 21,
       "injuryStatus": null
     },
     {
@@ -2035,7 +2147,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 8.5,
-      "overPrice": -125,
+      "overPrice": 100,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -2063,7 +2175,7 @@
       "position": "PF",
       "stat": "ast",
       "line": 7.5,
-      "overPrice": -102,
+      "overPrice": 114,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -2078,36 +2190,8 @@
         "hits": 0,
         "n": 6
       },
-      "rank": 15,
+      "rank": 14,
       "injuryStatus": null
-    },
-    {
-      "playerId": "3032977",
-      "name": "Giannis Antetokounmpo",
-      "teamId": "14",
-      "teamAbbr": "MIA",
-      "opponentId": "25",
-      "opponentAbbr": "OKC",
-      "position": "C",
-      "stat": "pts",
-      "line": 27.5,
-      "overPrice": -112,
-      "gameId": "731180",
-      "tipoff": "2026-11-22T23:00:00Z",
-      "l5": {
-        "hits": 3,
-        "n": 5
-      },
-      "l10": {
-        "hits": 6,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 0,
-        "n": 3
-      },
-      "rank": 12,
-      "injuryStatus": "Day-To-Day"
     },
     {
       "playerId": "3032977",
@@ -2119,7 +2203,7 @@
       "position": "C",
       "stat": "ast",
       "line": 5.5,
-      "overPrice": -145,
+      "overPrice": -140,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -2135,6 +2219,34 @@
         "n": 3
       },
       "rank": 8,
+      "injuryStatus": "Day-To-Day"
+    },
+    {
+      "playerId": "3032977",
+      "name": "Giannis Antetokounmpo",
+      "teamId": "14",
+      "teamAbbr": "MIA",
+      "opponentId": "25",
+      "opponentAbbr": "OKC",
+      "position": "C",
+      "stat": "pts",
+      "line": 27.5,
+      "overPrice": -106,
+      "gameId": "731180",
+      "tipoff": "2026-11-22T23:00:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 3
+      },
+      "rank": 12,
       "injuryStatus": "Day-To-Day"
     },
     {
@@ -2162,7 +2274,7 @@
         "hits": 0,
         "n": 2
       },
-      "rank": 10,
+      "rank": 9,
       "injuryStatus": null
     },
     {
@@ -2194,34 +2306,6 @@
       "injuryStatus": null
     },
     {
-      "playerId": "3136195",
-      "name": "Karl-Anthony Towns",
-      "teamId": "18",
-      "teamAbbr": "NY",
-      "opponentId": "11",
-      "opponentAbbr": "IND",
-      "position": "C",
-      "stat": "reb",
-      "line": 12.5,
-      "overPrice": -140,
-      "gameId": "731186",
-      "tipoff": "2026-11-23T01:00:00Z",
-      "l5": {
-        "hits": 3,
-        "n": 5
-      },
-      "l10": {
-        "hits": 6,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 3,
-        "n": 6
-      },
-      "rank": 25,
-      "injuryStatus": "Day-To-Day"
-    },
-    {
       "playerId": "4433627",
       "name": "Keyonte George",
       "teamId": "26",
@@ -2231,7 +2315,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 7.5,
-      "overPrice": -122,
+      "overPrice": -110,
       "gameId": "731183",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -2246,7 +2330,7 @@
         "hits": 2,
         "n": 8
       },
-      "rank": 24,
+      "rank": 22,
       "injuryStatus": null
     },
     {
@@ -2259,7 +2343,7 @@
       "position": "PF",
       "stat": "pts",
       "line": 14.5,
-      "overPrice": -109,
+      "overPrice": -108,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -2278,34 +2362,6 @@
       "injuryStatus": null
     },
     {
-      "playerId": "6442",
-      "name": "Kyrie Irving",
-      "teamId": "6",
-      "teamAbbr": "DAL",
-      "opponentId": "26",
-      "opponentAbbr": "UTAH",
-      "position": "PG",
-      "stat": "tpm",
-      "line": 2.5,
-      "overPrice": -175,
-      "gameId": "731183",
-      "tipoff": "2026-11-23T00:00:00Z",
-      "l5": {
-        "hits": 3,
-        "n": 5
-      },
-      "l10": {
-        "hits": 6,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 2,
-        "n": 3
-      },
-      "rank": 12,
-      "injuryStatus": null
-    },
-    {
       "playerId": "4066354",
       "name": "Payton Pritchard",
       "teamId": "2",
@@ -2315,7 +2371,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 4.5,
-      "overPrice": 110,
+      "overPrice": 114,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -2330,35 +2386,7 @@
         "hits": 3,
         "n": 4
       },
-      "rank": 26,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "4065804",
-      "name": "Sam Hauser",
-      "teamId": "2",
-      "teamAbbr": "BOS",
-      "opponentId": "9",
-      "opponentAbbr": "GS",
-      "position": "PF",
-      "stat": "pts",
-      "line": 8.5,
-      "overPrice": -114,
-      "gameId": "723055",
-      "tipoff": "2026-11-23T01:30:00Z",
-      "l5": {
-        "hits": 3,
-        "n": 5
-      },
-      "l10": {
-        "hits": 6,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 2,
-        "n": 4
-      },
-      "rank": 14,
+      "rank": 27,
       "injuryStatus": null
     },
     {
@@ -2371,7 +2399,7 @@
       "position": "PF",
       "stat": "tpm",
       "line": 2.5,
-      "overPrice": 125,
+      "overPrice": 124,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -2390,31 +2418,31 @@
       "injuryStatus": null
     },
     {
-      "playerId": "4395702",
-      "name": "Isaiah Joe",
-      "teamId": "8",
-      "teamAbbr": "DET",
-      "opponentId": "1",
-      "opponentAbbr": "ATL",
-      "position": "SF",
+      "playerId": "4065804",
+      "name": "Sam Hauser",
+      "teamId": "2",
+      "teamAbbr": "BOS",
+      "opponentId": "9",
+      "opponentAbbr": "GS",
+      "position": "PF",
       "stat": "pts",
       "line": 8.5,
-      "overPrice": -120,
-      "gameId": "731176",
-      "tipoff": "2026-11-22T20:30:00Z",
+      "overPrice": -107,
+      "gameId": "723055",
+      "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
         "hits": 3,
         "n": 5
       },
       "l10": {
-        "hits": 3,
-        "n": 5
+        "hits": 6,
+        "n": 10
       },
       "h2h": {
-        "hits": 1,
-        "n": 3
+        "hits": 2,
+        "n": 4
       },
-      "rank": 27,
+      "rank": 14,
       "injuryStatus": null
     },
     {
@@ -2427,7 +2455,7 @@
       "position": "PG",
       "stat": "pts",
       "line": 15.5,
-      "overPrice": -105,
+      "overPrice": -109,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -2442,7 +2470,7 @@
         "hits": 1,
         "n": 6
       },
-      "rank": 8,
+      "rank": 9,
       "injuryStatus": null
     },
     {
@@ -2455,7 +2483,7 @@
       "position": "PG",
       "stat": "pts",
       "line": 18.5,
-      "overPrice": -114,
+      "overPrice": -112,
       "gameId": "731183",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -2470,7 +2498,7 @@
         "hits": 1,
         "n": 1
       },
-      "rank": 11,
+      "rank": 10,
       "injuryStatus": null
     },
     {
@@ -2511,7 +2539,7 @@
       "position": "C",
       "stat": "ast",
       "line": 5.5,
-      "overPrice": -125,
+      "overPrice": -108,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -2526,7 +2554,7 @@
         "hits": 0,
         "n": 3
       },
-      "rank": 16,
+      "rank": 15,
       "injuryStatus": null
     },
     {
@@ -2539,7 +2567,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 4.5,
-      "overPrice": 110,
+      "overPrice": 102,
       "gameId": "731184",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -2567,7 +2595,7 @@
       "position": "SF",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": -150,
+      "overPrice": -165,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -2595,7 +2623,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": -110,
+      "overPrice": -120,
       "gameId": "731183",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -2614,6 +2642,62 @@
       "injuryStatus": null
     },
     {
+      "playerId": "4066354",
+      "name": "Payton Pritchard",
+      "teamId": "2",
+      "teamAbbr": "BOS",
+      "opponentId": "9",
+      "opponentAbbr": "GS",
+      "position": "PG",
+      "stat": "reb",
+      "line": 2.5,
+      "overPrice": -164,
+      "gameId": "723055",
+      "tipoff": "2026-11-23T01:30:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 4
+      },
+      "rank": 29,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5175737",
+      "name": "Yaxel Lendeborg",
+      "teamId": "9",
+      "teamAbbr": "GS",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "PF",
+      "stat": "ast",
+      "line": 3.5,
+      "overPrice": -160,
+      "gameId": "723055",
+      "tipoff": "2026-11-23T01:30:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 0
+      },
+      "rank": 16,
+      "injuryStatus": null
+    },
+    {
       "playerId": "5175737",
       "name": "Yaxel Lendeborg",
       "teamId": "9",
@@ -2623,7 +2707,7 @@
       "position": "PF",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": -145,
+      "overPrice": -175,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -2642,6 +2726,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "4395712",
+      "name": "Andrew Nembhard",
+      "teamId": "11",
+      "teamAbbr": "IND",
+      "opponentId": "18",
+      "opponentAbbr": "NY",
+      "position": "PG",
+      "stat": "pts",
+      "line": 13.5,
+      "overPrice": -127,
+      "gameId": "731186",
+      "tipoff": "2026-11-23T01:00:00Z",
+      "l5": {
+        "hits": 1,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 6
+      },
+      "rank": 2,
+      "injuryStatus": null
+    },
+    {
       "playerId": "6583",
       "name": "Anthony Davis",
       "teamId": "27",
@@ -2651,7 +2763,7 @@
       "position": "C",
       "stat": "ast",
       "line": 1.5,
-      "overPrice": -175,
+      "overPrice": -170,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -2666,7 +2778,7 @@
         "hits": 2,
         "n": 3
       },
-      "rank": 29,
+      "rank": 30,
       "injuryStatus": null
     },
     {
@@ -2679,7 +2791,7 @@
       "position": "PF",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": -125,
+      "overPrice": -122,
       "gameId": "731183",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -2694,7 +2806,7 @@
         "hits": 4,
         "n": 5
       },
-      "rank": 12,
+      "rank": 11,
       "injuryStatus": null
     },
     {
@@ -2707,7 +2819,7 @@
       "position": "SF",
       "stat": "reb",
       "line": 4.5,
-      "overPrice": -105,
+      "overPrice": -110,
       "gameId": "731184",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -2763,7 +2875,7 @@
       "position": "C",
       "stat": "ast",
       "line": 3.5,
-      "overPrice": -106,
+      "overPrice": 110,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -2782,18 +2894,18 @@
       "injuryStatus": "Day-To-Day"
     },
     {
-      "playerId": "4278594",
-      "name": "Naji Marshall",
-      "teamId": "6",
-      "teamAbbr": "DAL",
-      "opponentId": "26",
-      "opponentAbbr": "UTAH",
-      "position": "PF",
+      "playerId": "4897262",
+      "name": "Will Richard",
+      "teamId": "9",
+      "teamAbbr": "GS",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "PG",
       "stat": "pts",
-      "line": 11.5,
-      "overPrice": -126,
-      "gameId": "731183",
-      "tipoff": "2026-11-23T00:00:00Z",
+      "line": 7.5,
+      "overPrice": 100,
+      "gameId": "723055",
+      "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
         "hits": 4,
         "n": 5
@@ -2803,10 +2915,10 @@
         "n": 10
       },
       "h2h": {
-        "hits": 5,
-        "n": 8
+        "hits": 1,
+        "n": 2
       },
-      "rank": 15,
+      "rank": 3,
       "injuryStatus": null
     },
     {
@@ -2819,7 +2931,7 @@
       "position": "PF",
       "stat": "pts",
       "line": 17.5,
-      "overPrice": -128,
+      "overPrice": -105,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -2862,7 +2974,7 @@
         "hits": 3,
         "n": 6
       },
-      "rank": 24,
+      "rank": 27,
       "injuryStatus": null
     },
     {
@@ -2875,7 +2987,7 @@
       "position": "C",
       "stat": "pts",
       "line": 19.5,
-      "overPrice": 100,
+      "overPrice": -110,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -2894,6 +3006,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "5105839",
+      "name": "Brice Sensabaugh",
+      "teamId": "26",
+      "teamAbbr": "UTAH",
+      "opponentId": "6",
+      "opponentAbbr": "DAL",
+      "position": "PF",
+      "stat": "ast",
+      "line": 1.5,
+      "overPrice": -175,
+      "gameId": "731183",
+      "tipoff": "2026-11-23T00:00:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 4,
+        "n": 7
+      },
+      "rank": 18,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4432166",
       "name": "Cade Cunningham",
       "teamId": "8",
@@ -2901,9 +3041,9 @@
       "opponentId": "1",
       "opponentAbbr": "ATL",
       "position": "PG",
-      "stat": "pts",
-      "line": 26.5,
-      "overPrice": -105,
+      "stat": "tpm",
+      "line": 1.5,
+      "overPrice": -175,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -2915,10 +3055,10 @@
         "n": 10
       },
       "h2h": {
-        "hits": 3,
+        "hits": 2,
         "n": 7
       },
-      "rank": 4,
+      "rank": 2,
       "injuryStatus": "Day-To-Day"
     },
     {
@@ -2931,7 +3071,7 @@
       "position": "SF",
       "stat": "pts",
       "line": 13.5,
-      "overPrice": 100,
+      "overPrice": -101,
       "gameId": "731184",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -2974,7 +3114,35 @@
         "hits": 1,
         "n": 3
       },
-      "rank": 12,
+      "rank": 13,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4278049",
+      "name": "Daniel Gafford",
+      "teamId": "6",
+      "teamAbbr": "DAL",
+      "opponentId": "26",
+      "opponentAbbr": "UTAH",
+      "position": "C",
+      "stat": "ast",
+      "line": 1.5,
+      "overPrice": 130,
+      "gameId": "731183",
+      "tipoff": "2026-11-23T00:00:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 6
+      },
+      "rank": 7,
       "injuryStatus": null
     },
     {
@@ -2987,7 +3155,7 @@
       "position": "PG",
       "stat": "pts",
       "line": 16.5,
-      "overPrice": 100,
+      "overPrice": -102,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -3015,7 +3183,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 2.5,
-      "overPrice": -146,
+      "overPrice": -135,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -3030,7 +3198,7 @@
         "hits": 0,
         "n": 2
       },
-      "rank": 6,
+      "rank": 7,
       "injuryStatus": null
     },
     {
@@ -3043,7 +3211,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": -114,
+      "overPrice": -110,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -3058,35 +3226,7 @@
         "hits": 1,
         "n": 2
       },
-      "rank": 7,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "3978",
-      "name": "DeMar DeRozan",
-      "teamId": "7",
-      "teamAbbr": "DEN",
-      "opponentId": "4",
-      "opponentAbbr": "CHI",
-      "position": "PF",
-      "stat": "reb",
-      "line": 1.5,
-      "overPrice": -182,
-      "gameId": "731184",
-      "tipoff": "2026-11-23T00:00:00Z",
-      "l5": {
-        "hits": 3,
-        "n": 5
-      },
-      "l10": {
-        "hits": 5,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 2,
-        "n": 3
-      },
-      "rank": 9,
+      "rank": 6,
       "injuryStatus": null
     },
     {
@@ -3099,7 +3239,7 @@
       "position": "C",
       "stat": "tpm",
       "line": 0.5,
-      "overPrice": -110,
+      "overPrice": 115,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -3127,7 +3267,7 @@
       "position": "PF",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": -130,
+      "overPrice": -145,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -3155,7 +3295,7 @@
       "position": "C",
       "stat": "reb",
       "line": 8.5,
-      "overPrice": 110,
+      "overPrice": -102,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -3170,7 +3310,7 @@
         "hits": 4,
         "n": 6
       },
-      "rank": 5,
+      "rank": 4,
       "injuryStatus": null
     },
     {
@@ -3183,7 +3323,7 @@
       "position": "PG",
       "stat": "pts",
       "line": 28.5,
-      "overPrice": -105,
+      "overPrice": -104,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -3202,6 +3342,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "4701230",
+      "name": "Jalen Johnson",
+      "teamId": "1",
+      "teamAbbr": "ATL",
+      "opponentId": "8",
+      "opponentAbbr": "DET",
+      "position": "PF",
+      "stat": "reb",
+      "line": 8.5,
+      "overPrice": -138,
+      "gameId": "731176",
+      "tipoff": "2026-11-22T20:30:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 4,
+        "n": 6
+      },
+      "rank": 30,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4397189",
       "name": "Jalen Smith",
       "teamId": "4",
@@ -3211,7 +3379,7 @@
       "position": "C",
       "stat": "reb",
       "line": 7.5,
-      "overPrice": -105,
+      "overPrice": 100,
       "gameId": "731184",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -3226,7 +3394,7 @@
         "hits": 2,
         "n": 3
       },
-      "rank": 20,
+      "rank": 19,
       "injuryStatus": "Day-To-Day"
     },
     {
@@ -3254,7 +3422,7 @@
         "hits": 2,
         "n": 4
       },
-      "rank": 23,
+      "rank": 24,
       "injuryStatus": null
     },
     {
@@ -3282,7 +3450,7 @@
         "hits": 2,
         "n": 8
       },
-      "rank": 24,
+      "rank": 22,
       "injuryStatus": null
     },
     {
@@ -3295,7 +3463,7 @@
       "position": "C",
       "stat": "reb",
       "line": 5.5,
-      "overPrice": -114,
+      "overPrice": -115,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -3311,6 +3479,34 @@
         "n": 2
       },
       "rank": 26,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4871145",
+      "name": "Josh Giddey",
+      "teamId": "4",
+      "teamAbbr": "CHI",
+      "opponentId": "7",
+      "opponentAbbr": "DEN",
+      "position": "PG",
+      "stat": "ast",
+      "line": 7.5,
+      "overPrice": -145,
+      "gameId": "731184",
+      "tipoff": "2026-11-23T00:00:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 3
+      },
+      "rank": 11,
       "injuryStatus": null
     },
     {
@@ -3338,7 +3534,7 @@
         "hits": 2,
         "n": 5
       },
-      "rank": 24,
+      "rank": 22,
       "injuryStatus": null
     },
     {
@@ -3351,7 +3547,7 @@
       "position": "C",
       "stat": "pts",
       "line": 21.5,
-      "overPrice": -102,
+      "overPrice": 100,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -3366,22 +3562,22 @@
         "hits": 5,
         "n": 6
       },
-      "rank": 21,
+      "rank": 23,
       "injuryStatus": "Day-To-Day"
     },
     {
-      "playerId": "5149077",
-      "name": "Kingston Flemings",
-      "teamId": "1",
-      "teamAbbr": "ATL",
-      "opponentId": "8",
-      "opponentAbbr": "DET",
-      "position": "PG",
-      "stat": "pts",
-      "line": 8.5,
-      "overPrice": 100,
-      "gameId": "731176",
-      "tipoff": "2026-11-22T20:30:00Z",
+      "playerId": "3136195",
+      "name": "Karl-Anthony Towns",
+      "teamId": "18",
+      "teamAbbr": "NY",
+      "opponentId": "11",
+      "opponentAbbr": "IND",
+      "position": "C",
+      "stat": "reb",
+      "line": 13.5,
+      "overPrice": 105,
+      "gameId": "731186",
+      "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
         "hits": 3,
         "n": 5
@@ -3391,11 +3587,11 @@
         "n": 10
       },
       "h2h": {
-        "hits": 0,
-        "n": 0
+        "hits": 3,
+        "n": 6
       },
-      "rank": 10,
-      "injuryStatus": "Out"
+      "rank": 25,
+      "injuryStatus": "Day-To-Day"
     },
     {
       "playerId": "5149077",
@@ -3407,7 +3603,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 0.5,
-      "overPrice": -112,
+      "overPrice": -110,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -3463,7 +3659,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": -145,
+      "overPrice": -140,
       "gameId": "731183",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -3491,7 +3687,7 @@
       "position": "SF",
       "stat": "pts",
       "line": 11.5,
-      "overPrice": -126,
+      "overPrice": -105,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -3506,7 +3702,7 @@
         "hits": 1,
         "n": 5
       },
-      "rank": 20,
+      "rank": 21,
       "injuryStatus": null
     },
     {
@@ -3519,7 +3715,7 @@
       "position": "PF",
       "stat": "tpm",
       "line": 2.5,
-      "overPrice": 121,
+      "overPrice": 120,
       "gameId": "731184",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -3547,7 +3743,7 @@
       "position": "PF",
       "stat": "tpm",
       "line": 0.5,
-      "overPrice": -165,
+      "overPrice": -150,
       "gameId": "731183",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -3562,7 +3758,7 @@
         "hits": 5,
         "n": 8
       },
-      "rank": 12,
+      "rank": 13,
       "injuryStatus": null
     },
     {
@@ -3575,7 +3771,7 @@
       "position": "C",
       "stat": "pts",
       "line": 9.5,
-      "overPrice": -122,
+      "overPrice": -111,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -3590,7 +3786,7 @@
         "hits": 1,
         "n": 4
       },
-      "rank": 9,
+      "rank": 10,
       "injuryStatus": null
     },
     {
@@ -3603,7 +3799,7 @@
       "position": "SF",
       "stat": "tpm",
       "line": 2.5,
-      "overPrice": -119,
+      "overPrice": -115,
       "gameId": "731184",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -3622,6 +3818,34 @@
       "injuryStatus": "Day-To-Day"
     },
     {
+      "playerId": "3934719",
+      "name": "OG Anunoby",
+      "teamId": "18",
+      "teamAbbr": "NY",
+      "opponentId": "11",
+      "opponentAbbr": "IND",
+      "position": "PF",
+      "stat": "reb",
+      "line": 4.5,
+      "overPrice": -150,
+      "gameId": "731186",
+      "tipoff": "2026-11-23T01:00:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 3,
+        "n": 6
+      },
+      "rank": 16,
+      "injuryStatus": "Day-To-Day"
+    },
+    {
       "playerId": "4251",
       "name": "Paul George",
       "teamId": "2",
@@ -3631,7 +3855,7 @@
       "position": "PF",
       "stat": "pts",
       "line": 18.5,
-      "overPrice": -105,
+      "overPrice": -110,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -3650,6 +3874,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "4278562",
+      "name": "Paul Reed",
+      "teamId": "8",
+      "teamAbbr": "DET",
+      "opponentId": "1",
+      "opponentAbbr": "ATL",
+      "position": "C",
+      "stat": "ast",
+      "line": 2.5,
+      "overPrice": 142,
+      "gameId": "731176",
+      "tipoff": "2026-11-22T20:30:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 6
+      },
+      "rank": 28,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4278073",
       "name": "Shai Gilgeous-Alexander",
       "teamId": "25",
@@ -3659,7 +3911,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": -130,
+      "overPrice": -140,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -3687,7 +3939,7 @@
       "position": "PF",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": -145,
+      "overPrice": -130,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -3715,7 +3967,7 @@
       "position": "PF",
       "stat": "pts",
       "line": 14.5,
-      "overPrice": -102,
+      "overPrice": -103,
       "gameId": "731183",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -3730,7 +3982,7 @@
         "hits": 2,
         "n": 4
       },
-      "rank": 23,
+      "rank": 24,
       "injuryStatus": null
     },
     {
@@ -3743,7 +3995,7 @@
       "position": "C",
       "stat": "ast",
       "line": 3.5,
-      "overPrice": 100,
+      "overPrice": 110,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -3799,7 +4051,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 2.5,
-      "overPrice": 140,
+      "overPrice": 138,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -3814,7 +4066,7 @@
         "hits": 0,
         "n": 2
       },
-      "rank": 7,
+      "rank": 6,
       "injuryStatus": null
     },
     {
@@ -3870,7 +4122,7 @@
         "hits": 1,
         "n": 1
       },
-      "rank": 15,
+      "rank": 16,
       "injuryStatus": null
     },
     {
@@ -3883,7 +4135,7 @@
       "position": "C",
       "stat": "reb",
       "line": 4.5,
-      "overPrice": -106,
+      "overPrice": 100,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -3898,7 +4150,7 @@
         "hits": 2,
         "n": 3
       },
-      "rank": 3,
+      "rank": 5,
       "injuryStatus": null
     },
     {
@@ -3911,7 +4163,7 @@
       "position": "SF",
       "stat": "ast",
       "line": 5.5,
-      "overPrice": -130,
+      "overPrice": -115,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -3930,34 +4182,6 @@
       "injuryStatus": null
     },
     {
-      "playerId": "4222252",
-      "name": "Isaiah Hartenstein",
-      "teamId": "25",
-      "teamAbbr": "OKC",
-      "opponentId": "14",
-      "opponentAbbr": "MIA",
-      "position": "C",
-      "stat": "reb",
-      "line": 11.5,
-      "overPrice": 105,
-      "gameId": "731180",
-      "tipoff": "2026-11-22T23:00:00Z",
-      "l5": {
-        "hits": 2,
-        "n": 5
-      },
-      "l10": {
-        "hits": 5,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 1,
-        "n": 2
-      },
-      "rank": 13,
-      "injuryStatus": null
-    },
-    {
       "playerId": "4683778",
       "name": "Jared McCain",
       "teamId": "25",
@@ -3967,7 +4191,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": 128,
+      "overPrice": 132,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -4021,9 +4245,9 @@
       "opponentId": "19",
       "opponentAbbr": "ORL",
       "position": "SF",
-      "stat": "pts",
-      "line": 16.5,
-      "overPrice": 100,
+      "stat": "ast",
+      "line": 4.5,
+      "overPrice": 120,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -4039,6 +4263,62 @@
         "n": 5
       },
       "rank": 22,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5174563",
+      "name": "Kyshawn George",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "19",
+      "opponentAbbr": "ORL",
+      "position": "SF",
+      "stat": "pts",
+      "line": 15.5,
+      "overPrice": -105,
+      "gameId": "731181",
+      "tipoff": "2026-11-23T00:00:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 5
+      },
+      "rank": 23,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "3147657",
+      "name": "Mikal Bridges",
+      "teamId": "18",
+      "teamAbbr": "NY",
+      "opponentId": "11",
+      "opponentAbbr": "IND",
+      "position": "PF",
+      "stat": "reb",
+      "line": 3.5,
+      "overPrice": 120,
+      "gameId": "731186",
+      "tipoff": "2026-11-23T01:00:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 6,
+        "n": 8
+      },
+      "rank": 16,
       "injuryStatus": null
     },
     {
@@ -4077,37 +4357,9 @@
       "opponentId": "9",
       "opponentAbbr": "GS",
       "position": "PG",
-      "stat": "reb",
-      "line": 3.5,
-      "overPrice": 130,
-      "gameId": "723055",
-      "tipoff": "2026-11-23T01:30:00Z",
-      "l5": {
-        "hits": 2,
-        "n": 5
-      },
-      "l10": {
-        "hits": 5,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 1,
-        "n": 4
-      },
-      "rank": 30,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "4066354",
-      "name": "Payton Pritchard",
-      "teamId": "2",
-      "teamAbbr": "BOS",
-      "opponentId": "9",
-      "opponentAbbr": "GS",
-      "position": "PG",
       "stat": "tpm",
       "line": 2.5,
-      "overPrice": 100,
+      "overPrice": -105,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -4135,7 +4387,7 @@
       "position": "SF",
       "stat": "ast",
       "line": 3.5,
-      "overPrice": 100,
+      "overPrice": 115,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -4154,6 +4406,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "4277905",
+      "name": "Trae Young",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "19",
+      "opponentAbbr": "ORL",
+      "position": "PG",
+      "stat": "tpm",
+      "line": 2.5,
+      "overPrice": 158,
+      "gameId": "731181",
+      "tipoff": "2026-11-23T00:00:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 7
+      },
+      "rank": 15,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4702382",
       "name": "Tristan da Silva",
       "teamId": "19",
@@ -4163,7 +4443,7 @@
       "position": "PF",
       "stat": "tpm",
       "line": 2.5,
-      "overPrice": 131,
+      "overPrice": 141,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -4191,7 +4471,7 @@
       "position": "PF",
       "stat": "pts",
       "line": 20.5,
-      "overPrice": -104,
+      "overPrice": 102,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -4206,35 +4486,7 @@
         "hits": 0,
         "n": 0
       },
-      "rank": 5,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "4395712",
-      "name": "Andrew Nembhard",
-      "teamId": "11",
-      "teamAbbr": "IND",
-      "opponentId": "18",
-      "opponentAbbr": "NY",
-      "position": "PG",
-      "stat": "pts",
-      "line": 14.5,
-      "overPrice": 102,
-      "gameId": "731186",
-      "tipoff": "2026-11-23T01:00:00Z",
-      "l5": {
-        "hits": 1,
-        "n": 5
-      },
-      "l10": {
-        "hits": 5,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 2,
-        "n": 6
-      },
-      "rank": 3,
+      "rank": 7,
       "injuryStatus": null
     },
     {
@@ -4262,7 +4514,7 @@
         "hits": 2,
         "n": 6
       },
-      "rank": 14,
+      "rank": 12,
       "injuryStatus": "Day-To-Day"
     },
     {
@@ -4275,7 +4527,7 @@
       "position": "C",
       "stat": "reb",
       "line": 8.5,
-      "overPrice": 112,
+      "overPrice": 106,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -4290,7 +4542,7 @@
         "hits": 5,
         "n": 7
       },
-      "rank": 29,
+      "rank": 28,
       "injuryStatus": null
     },
     {
@@ -4303,7 +4555,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": -110,
+      "overPrice": -130,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -4331,7 +4583,7 @@
       "position": "PG",
       "stat": "pts",
       "line": 11.5,
-      "overPrice": -124,
+      "overPrice": -105,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -4346,7 +4598,7 @@
         "hits": 1,
         "n": 4
       },
-      "rank": 8,
+      "rank": 9,
       "injuryStatus": null
     },
     {
@@ -4359,7 +4611,7 @@
       "position": "PF",
       "stat": "pts",
       "line": 5.5,
-      "overPrice": -115,
+      "overPrice": -125,
       "gameId": "731183",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -4387,7 +4639,7 @@
       "position": "PF",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 123,
+      "overPrice": 135,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -4413,37 +4665,9 @@
       "opponentId": "18",
       "opponentAbbr": "NY",
       "position": "SF",
-      "stat": "ast",
-      "line": 2.5,
-      "overPrice": 158,
-      "gameId": "731186",
-      "tipoff": "2026-11-23T01:00:00Z",
-      "l5": {
-        "hits": 3,
-        "n": 5
-      },
-      "l10": {
-        "hits": 4,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 1,
-        "n": 6
-      },
-      "rank": 15,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "4396909",
-      "name": "Aaron Nesmith",
-      "teamId": "11",
-      "teamAbbr": "IND",
-      "opponentId": "18",
-      "opponentAbbr": "NY",
-      "position": "SF",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": -120,
+      "overPrice": -111,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -4458,7 +4682,35 @@
         "hits": 2,
         "n": 6
       },
-      "rank": 24,
+      "rank": 25,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4873138",
+      "name": "Ace Bailey",
+      "teamId": "26",
+      "teamAbbr": "UTAH",
+      "opponentId": "6",
+      "opponentAbbr": "DAL",
+      "position": "PF",
+      "stat": "ast",
+      "line": 2.5,
+      "overPrice": 146,
+      "gameId": "731183",
+      "tipoff": "2026-11-23T00:00:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 4
+      },
+      "rank": 18,
       "injuryStatus": null
     },
     {
@@ -4471,7 +4723,7 @@
       "position": "SF",
       "stat": "ast",
       "line": 4.5,
-      "overPrice": 102,
+      "overPrice": 114,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -4486,7 +4738,7 @@
         "hits": 1,
         "n": 7
       },
-      "rank": 18,
+      "rank": 17,
       "injuryStatus": null
     },
     {
@@ -4498,8 +4750,8 @@
       "opponentAbbr": "ATL",
       "position": "SF",
       "stat": "pts",
-      "line": 12.5,
-      "overPrice": -102,
+      "line": 11.5,
+      "overPrice": -128,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -4511,7 +4763,7 @@
         "n": 10
       },
       "h2h": {
-        "hits": 4,
+        "hits": 5,
         "n": 7
       },
       "rank": 27,
@@ -4526,8 +4778,8 @@
       "opponentAbbr": "DAL",
       "position": "PF",
       "stat": "pts",
-      "line": 11.5,
-      "overPrice": -124,
+      "line": 12.5,
+      "overPrice": -105,
       "gameId": "731183",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -4542,7 +4794,7 @@
         "hits": 4,
         "n": 7
       },
-      "rank": 23,
+      "rank": 24,
       "injuryStatus": null
     },
     {
@@ -4583,7 +4835,7 @@
       "position": "PF",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 120,
+      "overPrice": 115,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -4611,7 +4863,7 @@
       "position": "SF",
       "stat": "pts",
       "line": 10.5,
-      "overPrice": 102,
+      "overPrice": 100,
       "gameId": "731184",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -4639,7 +4891,7 @@
       "position": "C",
       "stat": "pts",
       "line": 11.5,
-      "overPrice": -115,
+      "overPrice": -105,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -4667,7 +4919,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 6.5,
-      "overPrice": 104,
+      "overPrice": 110,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -4682,7 +4934,7 @@
         "hits": 6,
         "n": 7
       },
-      "rank": 12,
+      "rank": 13,
       "injuryStatus": null
     },
     {
@@ -4695,7 +4947,7 @@
       "position": "C",
       "stat": "pts",
       "line": 9.5,
-      "overPrice": -129,
+      "overPrice": -122,
       "gameId": "731183",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -4710,7 +4962,7 @@
         "hits": 2,
         "n": 8
       },
-      "rank": 18,
+      "rank": 19,
       "injuryStatus": null
     },
     {
@@ -4751,7 +5003,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 6.5,
-      "overPrice": -105,
+      "overPrice": 114,
       "gameId": "731184",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -4779,7 +5031,7 @@
       "position": "PF",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 120,
+      "overPrice": 115,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -4794,7 +5046,7 @@
         "hits": 1,
         "n": 6
       },
-      "rank": 4,
+      "rank": 5,
       "injuryStatus": null
     },
     {
@@ -4807,7 +5059,7 @@
       "position": "PG",
       "stat": "pts",
       "line": 23.5,
-      "overPrice": -115,
+      "overPrice": -114,
       "gameId": "731183",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -4822,7 +5074,7 @@
         "hits": 2,
         "n": 8
       },
-      "rank": 11,
+      "rank": 10,
       "injuryStatus": null
     },
     {
@@ -4835,7 +5087,7 @@
       "position": "PF",
       "stat": "pts",
       "line": 16.5,
-      "overPrice": -115,
+      "overPrice": -110,
       "gameId": "731184",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -4850,7 +5102,7 @@
         "hits": 1,
         "n": 4
       },
-      "rank": 25,
+      "rank": 26,
       "injuryStatus": null
     },
     {
@@ -4889,34 +5141,6 @@
       "opponentId": "7",
       "opponentAbbr": "DEN",
       "position": "SF",
-      "stat": "pts",
-      "line": 21.5,
-      "overPrice": -118,
-      "gameId": "731184",
-      "tipoff": "2026-11-23T00:00:00Z",
-      "l5": {
-        "hits": 3,
-        "n": 5
-      },
-      "l10": {
-        "hits": 4,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 5,
-        "n": 6
-      },
-      "rank": 30,
-      "injuryStatus": "Day-To-Day"
-    },
-    {
-      "playerId": "2595516",
-      "name": "Norman Powell",
-      "teamId": "4",
-      "teamAbbr": "CHI",
-      "opponentId": "7",
-      "opponentAbbr": "DEN",
-      "position": "SF",
       "stat": "ast",
       "line": 2.5,
       "overPrice": 120,
@@ -4935,6 +5159,34 @@
         "n": 6
       },
       "rank": 23,
+      "injuryStatus": "Day-To-Day"
+    },
+    {
+      "playerId": "2595516",
+      "name": "Norman Powell",
+      "teamId": "4",
+      "teamAbbr": "CHI",
+      "opponentId": "7",
+      "opponentAbbr": "DEN",
+      "position": "SF",
+      "stat": "pts",
+      "line": 21.5,
+      "overPrice": -115,
+      "gameId": "731184",
+      "tipoff": "2026-11-23T00:00:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 5,
+        "n": 6
+      },
+      "rank": 30,
       "injuryStatus": "Day-To-Day"
     },
     {
@@ -5003,7 +5255,7 @@
       "position": "PF",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": -167,
+      "overPrice": -161,
       "gameId": "731183",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -5018,7 +5270,7 @@
         "hits": 1,
         "n": 4
       },
-      "rank": 25,
+      "rank": 27,
       "injuryStatus": null
     },
     {
@@ -5046,7 +5298,7 @@
         "hits": 0,
         "n": 0
       },
-      "rank": 13,
+      "rank": 14,
       "injuryStatus": null
     },
     {
@@ -5059,7 +5311,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 4.5,
-      "overPrice": 102,
+      "overPrice": 109,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -5074,7 +5326,7 @@
         "hits": 0,
         "n": 3
       },
-      "rank": 17,
+      "rank": 16,
       "injuryStatus": null
     },
     {
@@ -5115,7 +5367,7 @@
       "position": "PF",
       "stat": "reb",
       "line": 4.5,
-      "overPrice": 105,
+      "overPrice": 115,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -5130,7 +5382,7 @@
         "hits": 2,
         "n": 3
       },
-      "rank": 4,
+      "rank": 3,
       "injuryStatus": null
     },
     {
@@ -5199,7 +5451,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 6.5,
-      "overPrice": 104,
+      "overPrice": 115,
       "gameId": "731183",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -5214,7 +5466,7 @@
         "hits": 2,
         "n": 3
       },
-      "rank": 4,
+      "rank": 3,
       "injuryStatus": null
     },
     {
@@ -5227,7 +5479,7 @@
       "position": "C",
       "stat": "pts",
       "line": 9.5,
-      "overPrice": 100,
+      "overPrice": -104,
       "gameId": "731183",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -5246,34 +5498,6 @@
       "injuryStatus": null
     },
     {
-      "playerId": "5107199",
-      "name": "Daniss Jenkins",
-      "teamId": "8",
-      "teamAbbr": "DET",
-      "opponentId": "1",
-      "opponentAbbr": "ATL",
-      "position": "PG",
-      "stat": "reb",
-      "line": 4.5,
-      "overPrice": 136,
-      "gameId": "731176",
-      "tipoff": "2026-11-22T20:30:00Z",
-      "l5": {
-        "hits": 2,
-        "n": 5
-      },
-      "l10": {
-        "hits": 4,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 1,
-        "n": 4
-      },
-      "rank": 11,
-      "injuryStatus": null
-    },
-    {
       "playerId": "3078576",
       "name": "Derrick White",
       "teamId": "2",
@@ -5283,7 +5507,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 5.5,
-      "overPrice": 114,
+      "overPrice": 120,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -5298,7 +5522,7 @@
         "hits": 1,
         "n": 4
       },
-      "rank": 26,
+      "rank": 27,
       "injuryStatus": "Out"
     },
     {
@@ -5311,7 +5535,7 @@
       "position": "PG",
       "stat": "pts",
       "line": 14.5,
-      "overPrice": -115,
+      "overPrice": -108,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -5326,7 +5550,7 @@
         "hits": 1,
         "n": 4
       },
-      "rank": 15,
+      "rank": 17,
       "injuryStatus": "Out"
     },
     {
@@ -5339,7 +5563,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 4.5,
-      "overPrice": -105,
+      "overPrice": -104,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -5354,7 +5578,7 @@
         "hits": 0,
         "n": 5
       },
-      "rank": 12,
+      "rank": 13,
       "injuryStatus": null
     },
     {
@@ -5367,7 +5591,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": 130,
+      "overPrice": 129,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -5382,7 +5606,7 @@
         "hits": 5,
         "n": 7
       },
-      "rank": 13,
+      "rank": 14,
       "injuryStatus": null
     },
     {
@@ -5410,35 +5634,7 @@
         "hits": 4,
         "n": 6
       },
-      "rank": 19,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "3908845",
-      "name": "John Collins",
-      "teamId": "8",
-      "teamAbbr": "DET",
-      "opponentId": "1",
-      "opponentAbbr": "ATL",
-      "position": "C",
-      "stat": "pts",
-      "line": 10.5,
-      "overPrice": -123,
-      "gameId": "731176",
-      "tipoff": "2026-11-22T20:30:00Z",
-      "l5": {
-        "hits": 2,
-        "n": 5
-      },
-      "l10": {
-        "hits": 4,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 1,
-        "n": 2
-      },
-      "rank": 19,
+      "rank": 20,
       "injuryStatus": null
     },
     {
@@ -5466,35 +5662,7 @@
         "hits": 2,
         "n": 3
       },
-      "rank": 10,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "4871145",
-      "name": "Josh Giddey",
-      "teamId": "4",
-      "teamAbbr": "CHI",
-      "opponentId": "7",
-      "opponentAbbr": "DEN",
-      "position": "PG",
-      "stat": "ast",
-      "line": 8.5,
-      "overPrice": 100,
-      "gameId": "731184",
-      "tipoff": "2026-11-23T00:00:00Z",
-      "l5": {
-        "hits": 2,
-        "n": 5
-      },
-      "l10": {
-        "hits": 4,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 2,
-        "n": 3
-      },
-      "rank": 11,
+      "rank": 8,
       "injuryStatus": null
     },
     {
@@ -5507,7 +5675,7 @@
       "position": "SF",
       "stat": "ast",
       "line": 3.5,
-      "overPrice": -145,
+      "overPrice": -105,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -5522,7 +5690,7 @@
         "hits": 5,
         "n": 6
       },
-      "rank": 3,
+      "rank": 4,
       "injuryStatus": null
     },
     {
@@ -5535,7 +5703,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 4.5,
-      "overPrice": -110,
+      "overPrice": -115,
       "gameId": "731183",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -5550,7 +5718,35 @@
         "hits": 2,
         "n": 3
       },
-      "rank": 4,
+      "rank": 3,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "6442",
+      "name": "Kyrie Irving",
+      "teamId": "6",
+      "teamAbbr": "DAL",
+      "opponentId": "26",
+      "opponentAbbr": "UTAH",
+      "position": "PG",
+      "stat": "tpm",
+      "line": 3.5,
+      "overPrice": 130,
+      "gameId": "731183",
+      "tipoff": "2026-11-23T00:00:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 3
+      },
+      "rank": 13,
       "injuryStatus": null
     },
     {
@@ -5563,7 +5759,7 @@
       "position": "SF",
       "stat": "reb",
       "line": 4.5,
-      "overPrice": 105,
+      "overPrice": 115,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -5606,7 +5802,7 @@
         "hits": 1,
         "n": 5
       },
-      "rank": 10,
+      "rank": 11,
       "injuryStatus": null
     },
     {
@@ -5619,7 +5815,7 @@
       "position": "PF",
       "stat": "ast",
       "line": 3.5,
-      "overPrice": 100,
+      "overPrice": 107,
       "gameId": "731183",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -5638,6 +5834,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "3112335",
+      "name": "Nikola Jokic",
+      "teamId": "7",
+      "teamAbbr": "DEN",
+      "opponentId": "4",
+      "opponentAbbr": "CHI",
+      "position": "C",
+      "stat": "ast",
+      "line": 9.5,
+      "overPrice": -106,
+      "gameId": "731184",
+      "tipoff": "2026-11-23T00:00:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 3,
+        "n": 3
+      },
+      "rank": 2,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4278355",
       "name": "Obi Toppin",
       "teamId": "11",
@@ -5647,7 +5871,7 @@
       "position": "PF",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 110,
+      "overPrice": 105,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -5662,7 +5886,7 @@
         "hits": 2,
         "n": 5
       },
-      "rank": 4,
+      "rank": 5,
       "injuryStatus": null
     },
     {
@@ -5703,7 +5927,7 @@
       "position": "C",
       "stat": "reb",
       "line": 7.5,
-      "overPrice": 108,
+      "overPrice": 106,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -5731,7 +5955,7 @@
       "position": "C",
       "stat": "pts",
       "line": 10.5,
-      "overPrice": -120,
+      "overPrice": -112,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -5746,7 +5970,7 @@
         "hits": 0,
         "n": 6
       },
-      "rank": 19,
+      "rank": 18,
       "injuryStatus": null
     },
     {
@@ -5759,7 +5983,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 162,
+      "overPrice": 167,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -5774,7 +5998,35 @@
         "hits": 1,
         "n": 2
       },
-      "rank": 7,
+      "rank": 6,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4395702",
+      "name": "Isaiah Joe",
+      "teamId": "8",
+      "teamAbbr": "DET",
+      "opponentId": "1",
+      "opponentAbbr": "ATL",
+      "position": "SF",
+      "stat": "pts",
+      "line": 9.5,
+      "overPrice": -104,
+      "gameId": "731176",
+      "tipoff": "2026-11-22T20:30:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 2,
+        "n": 5
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 3
+      },
+      "rank": 27,
       "injuryStatus": null
     },
     {
@@ -5787,7 +6039,7 @@
       "position": "SF",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": -132,
+      "overPrice": -149,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -5843,7 +6095,7 @@
       "position": "PF",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": 106,
+      "overPrice": 105,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -5870,8 +6122,8 @@
       "opponentAbbr": "BOS",
       "position": "PG",
       "stat": "pts",
-      "line": 15.5,
-      "overPrice": -125,
+      "line": 16.5,
+      "overPrice": -105,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -5886,7 +6138,7 @@
         "hits": 0,
         "n": 2
       },
-      "rank": 2,
+      "rank": 3,
       "injuryStatus": null
     },
     {
@@ -5899,7 +6151,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 4.5,
-      "overPrice": 110,
+      "overPrice": 115,
       "gameId": "731183",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -5914,7 +6166,7 @@
         "hits": 1,
         "n": 1
       },
-      "rank": 24,
+      "rank": 22,
       "injuryStatus": null
     },
     {
@@ -5927,7 +6179,7 @@
       "position": "PF",
       "stat": "ast",
       "line": 2.5,
-      "overPrice": 138,
+      "overPrice": 108,
       "gameId": "731184",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -5955,7 +6207,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 2.5,
-      "overPrice": -105,
+      "overPrice": -125,
       "gameId": "731184",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -5983,7 +6235,7 @@
       "position": "PG",
       "stat": "pts",
       "line": 18.5,
-      "overPrice": -112,
+      "overPrice": -103,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -5998,7 +6250,7 @@
         "hits": 1,
         "n": 2
       },
-      "rank": 29,
+      "rank": 30,
       "injuryStatus": null
     },
     {
@@ -6011,7 +6263,7 @@
       "position": "SF",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 130,
+      "overPrice": 132,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -6026,7 +6278,7 @@
         "hits": 2,
         "n": 6
       },
-      "rank": 10,
+      "rank": 11,
       "injuryStatus": null
     },
     {
@@ -6039,7 +6291,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 3.5,
-      "overPrice": 148,
+      "overPrice": 146,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -6058,6 +6310,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "3934719",
+      "name": "OG Anunoby",
+      "teamId": "18",
+      "teamAbbr": "NY",
+      "opponentId": "11",
+      "opponentAbbr": "IND",
+      "position": "PF",
+      "stat": "pts",
+      "line": 16.5,
+      "overPrice": -120,
+      "gameId": "731186",
+      "tipoff": "2026-11-23T01:00:00Z",
+      "l5": {
+        "hits": 1,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 3,
+        "n": 6
+      },
+      "rank": 13,
+      "injuryStatus": "Day-To-Day"
+    },
+    {
       "playerId": "4431680",
       "name": "Onyeka Okongwu",
       "teamId": "1",
@@ -6067,7 +6347,7 @@
       "position": "C",
       "stat": "ast",
       "line": 2.5,
-      "overPrice": 126,
+      "overPrice": 125,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -6095,7 +6375,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 5.5,
-      "overPrice": 130,
+      "overPrice": 116,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -6110,7 +6390,7 @@
         "hits": 2,
         "n": 4
       },
-      "rank": 17,
+      "rank": 16,
       "injuryStatus": "Day-To-Day"
     },
     {
@@ -6138,35 +6418,7 @@
         "hits": 5,
         "n": 7
       },
-      "rank": 6,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "5175737",
-      "name": "Yaxel Lendeborg",
-      "teamId": "9",
-      "teamAbbr": "GS",
-      "opponentId": "2",
-      "opponentAbbr": "BOS",
-      "position": "PF",
-      "stat": "ast",
-      "line": 4.5,
-      "overPrice": 125,
-      "gameId": "723055",
-      "tipoff": "2026-11-23T01:30:00Z",
-      "l5": {
-        "hits": 1,
-        "n": 5
-      },
-      "l10": {
-        "hits": 4,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 0,
-        "n": 0
-      },
-      "rank": 18,
+      "rank": 7,
       "injuryStatus": null
     },
     {
@@ -6179,7 +6431,7 @@
       "position": "PF",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": -145,
+      "overPrice": -162,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -6194,7 +6446,7 @@
         "hits": 1,
         "n": 5
       },
-      "rank": 10,
+      "rank": 9,
       "injuryStatus": null
     },
     {
@@ -6207,7 +6459,7 @@
       "position": "C",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 164,
+      "overPrice": 168,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -6254,34 +6506,6 @@
       "injuryStatus": null
     },
     {
-      "playerId": "4701230",
-      "name": "Jalen Johnson",
-      "teamId": "1",
-      "teamAbbr": "ATL",
-      "opponentId": "8",
-      "opponentAbbr": "DET",
-      "position": "PF",
-      "stat": "reb",
-      "line": 9.5,
-      "overPrice": 115,
-      "gameId": "731176",
-      "tipoff": "2026-11-22T20:30:00Z",
-      "l5": {
-        "hits": 3,
-        "n": 5
-      },
-      "l10": {
-        "hits": 3,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 2,
-        "n": 6
-      },
-      "rank": 30,
-      "injuryStatus": null
-    },
-    {
       "playerId": "3133603",
       "name": "Kelly Oubre Jr.",
       "teamId": "11",
@@ -6291,7 +6515,7 @@
       "position": "PF",
       "stat": "reb",
       "line": 4.5,
-      "overPrice": 120,
+      "overPrice": 115,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -6306,7 +6530,7 @@
         "hits": 6,
         "n": 6
       },
-      "rank": 10,
+      "rank": 9,
       "injuryStatus": null
     },
     {
@@ -6319,7 +6543,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 2.5,
-      "overPrice": 115,
+      "overPrice": 108,
       "gameId": "731183",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -6334,7 +6558,7 @@
         "hits": 3,
         "n": 8
       },
-      "rank": 15,
+      "rank": 16,
       "injuryStatus": null
     },
     {
@@ -6347,7 +6571,7 @@
       "position": "PF",
       "stat": "pts",
       "line": 11.5,
-      "overPrice": -111,
+      "overPrice": -105,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -6375,7 +6599,7 @@
       "position": "C",
       "stat": "pts",
       "line": 11.5,
-      "overPrice": -112,
+      "overPrice": -114,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -6403,7 +6627,7 @@
       "position": "C",
       "stat": "ast",
       "line": 2.5,
-      "overPrice": 122,
+      "overPrice": 137,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -6418,7 +6642,7 @@
         "hits": 0,
         "n": 0
       },
-      "rank": 10,
+      "rank": 9,
       "injuryStatus": null
     },
     {
@@ -6446,7 +6670,35 @@
         "hits": 3,
         "n": 7
       },
-      "rank": 25,
+      "rank": 27,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5105839",
+      "name": "Brice Sensabaugh",
+      "teamId": "26",
+      "teamAbbr": "UTAH",
+      "opponentId": "6",
+      "opponentAbbr": "DAL",
+      "position": "PF",
+      "stat": "reb",
+      "line": 3.5,
+      "overPrice": -115,
+      "gameId": "731183",
+      "tipoff": "2026-11-23T00:00:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 3,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 4,
+        "n": 7
+      },
+      "rank": 14,
       "injuryStatus": null
     },
     {
@@ -6474,7 +6726,7 @@
         "hits": 5,
         "n": 7
       },
-      "rank": 20,
+      "rank": 21,
       "injuryStatus": "Day-To-Day"
     },
     {
@@ -6487,7 +6739,7 @@
       "position": "PF",
       "stat": "pts",
       "line": 13.5,
-      "overPrice": -107,
+      "overPrice": -105,
       "gameId": "731184",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -6502,7 +6754,7 @@
         "hits": 4,
         "n": 4
       },
-      "rank": 21,
+      "rank": 22,
       "injuryStatus": null
     },
     {
@@ -6515,7 +6767,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 2.5,
-      "overPrice": 115,
+      "overPrice": 125,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -6543,7 +6795,7 @@
       "position": "PF",
       "stat": "pts",
       "line": 7.5,
-      "overPrice": -120,
+      "overPrice": -126,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -6558,7 +6810,7 @@
         "hits": 2,
         "n": 3
       },
-      "rank": 5,
+      "rank": 7,
       "injuryStatus": null
     },
     {
@@ -6598,8 +6850,8 @@
       "opponentAbbr": "DET",
       "position": "PF",
       "stat": "pts",
-      "line": 23.5,
-      "overPrice": 160,
+      "line": 21.5,
+      "overPrice": -102,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -6614,7 +6866,7 @@
         "hits": 3,
         "n": 6
       },
-      "rank": 17,
+      "rank": 18,
       "injuryStatus": null
     },
     {
@@ -6627,7 +6879,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 3.5,
-      "overPrice": 128,
+      "overPrice": 124,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -6655,7 +6907,7 @@
       "position": "PF",
       "stat": "reb",
       "line": 7.5,
-      "overPrice": 102,
+      "overPrice": 105,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -6670,7 +6922,7 @@
         "hits": 2,
         "n": 3
       },
-      "rank": 4,
+      "rank": 3,
       "injuryStatus": "Out"
     },
     {
@@ -6682,8 +6934,8 @@
       "opponentAbbr": "ATL",
       "position": "SF",
       "stat": "pts",
-      "line": 15.5,
-      "overPrice": 130,
+      "line": 13.5,
+      "overPrice": -122,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -6695,7 +6947,7 @@
         "n": 10
       },
       "h2h": {
-        "hits": 1,
+        "hits": 2,
         "n": 6
       },
       "rank": 27,
@@ -6711,7 +6963,7 @@
       "position": "SF",
       "stat": "ast",
       "line": 3.5,
-      "overPrice": 122,
+      "overPrice": 130,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -6726,7 +6978,35 @@
         "hits": 2,
         "n": 6
       },
-      "rank": 18,
+      "rank": 17,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4066372",
+      "name": "Kevin Huerter",
+      "teamId": "8",
+      "teamAbbr": "DET",
+      "opponentId": "1",
+      "opponentAbbr": "ATL",
+      "position": "SF",
+      "stat": "reb",
+      "line": 3.5,
+      "overPrice": -120,
+      "gameId": "731176",
+      "tipoff": "2026-11-22T20:30:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 3,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 6
+      },
+      "rank": 3,
       "injuryStatus": null
     },
     {
@@ -6739,7 +7019,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 2.5,
-      "overPrice": -114,
+      "overPrice": -110,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -6758,6 +7038,34 @@
       "injuryStatus": "Out"
     },
     {
+      "playerId": "4278594",
+      "name": "Naji Marshall",
+      "teamId": "6",
+      "teamAbbr": "DAL",
+      "opponentId": "26",
+      "opponentAbbr": "UTAH",
+      "position": "PF",
+      "stat": "pts",
+      "line": 12.5,
+      "overPrice": 100,
+      "gameId": "731183",
+      "tipoff": "2026-11-23T00:00:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 3,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 5,
+        "n": 8
+      },
+      "rank": 15,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4397424",
       "name": "Neemias Queta",
       "teamId": "2",
@@ -6767,7 +7075,7 @@
       "position": "C",
       "stat": "reb",
       "line": 8.5,
-      "overPrice": 106,
+      "overPrice": 111,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -6786,6 +7094,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "4278078",
+      "name": "P.J. Washington",
+      "teamId": "6",
+      "teamAbbr": "DAL",
+      "opponentId": "26",
+      "opponentAbbr": "UTAH",
+      "position": "C",
+      "stat": "ast",
+      "line": 1.5,
+      "overPrice": 120,
+      "gameId": "731183",
+      "tipoff": "2026-11-23T00:00:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 3,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 4
+      },
+      "rank": 7,
+      "injuryStatus": "Out"
+    },
+    {
       "playerId": "3149673",
       "name": "Pascal Siakam",
       "teamId": "11",
@@ -6795,7 +7131,7 @@
       "position": "C",
       "stat": "reb",
       "line": 5.5,
-      "overPrice": -120,
+      "overPrice": -130,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -6810,7 +7146,7 @@
         "hits": 3,
         "n": 6
       },
-      "rank": 5,
+      "rank": 4,
       "injuryStatus": "Day-To-Day"
     },
     {
@@ -6823,7 +7159,7 @@
       "position": "PF",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": -110,
+      "overPrice": -105,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -6838,7 +7174,7 @@
         "hits": 1,
         "n": 4
       },
-      "rank": 4,
+      "rank": 3,
       "injuryStatus": null
     },
     {
@@ -6851,7 +7187,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 8.5,
-      "overPrice": 105,
+      "overPrice": 110,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -6866,7 +7202,7 @@
         "hits": 2,
         "n": 7
       },
-      "rank": 8,
+      "rank": 9,
       "injuryStatus": null
     },
     {
@@ -6879,7 +7215,7 @@
       "position": "C",
       "stat": "pts",
       "line": 13.5,
-      "overPrice": -121,
+      "overPrice": -110,
       "gameId": "731184",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -6894,7 +7230,7 @@
         "hits": 1,
         "n": 2
       },
-      "rank": 22,
+      "rank": 24,
       "injuryStatus": null
     },
     {
@@ -6906,8 +7242,8 @@
       "opponentAbbr": "NY",
       "position": "SF",
       "stat": "pts",
-      "line": 13.5,
-      "overPrice": -1000000,
+      "line": 12.5,
+      "overPrice": -102,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -6922,7 +7258,7 @@
         "hits": 2,
         "n": 6
       },
-      "rank": 21,
+      "rank": 17,
       "injuryStatus": null
     },
     {
@@ -6935,7 +7271,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 4.5,
-      "overPrice": 120,
+      "overPrice": 134,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -6963,7 +7299,7 @@
       "position": "C",
       "stat": "reb",
       "line": 9.5,
-      "overPrice": 110,
+      "overPrice": 116,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -7019,7 +7355,7 @@
       "position": "PG",
       "stat": "pts",
       "line": 10.5,
-      "overPrice": -114,
+      "overPrice": 100,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -7034,7 +7370,7 @@
         "hits": 1,
         "n": 2
       },
-      "rank": 2,
+      "rank": 3,
       "injuryStatus": null
     },
     {
@@ -7047,7 +7383,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": 105,
+      "overPrice": 110,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -7062,36 +7398,8 @@
         "hits": 4,
         "n": 4
       },
-      "rank": 30,
+      "rank": 29,
       "injuryStatus": "Out"
-    },
-    {
-      "playerId": "4066320",
-      "name": "Desmond Bane",
-      "teamId": "19",
-      "teamAbbr": "ORL",
-      "opponentId": "27",
-      "opponentAbbr": "WSH",
-      "position": "PG",
-      "stat": "ast",
-      "line": 3.5,
-      "overPrice": 128,
-      "gameId": "731181",
-      "tipoff": "2026-11-23T00:00:00Z",
-      "l5": {
-        "hits": 1,
-        "n": 5
-      },
-      "l10": {
-        "hits": 3,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 3,
-        "n": 5
-      },
-      "rank": 30,
-      "injuryStatus": null
     },
     {
       "playerId": "4701230",
@@ -7103,7 +7411,7 @@
       "position": "PF",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 168,
+      "overPrice": 164,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -7131,7 +7439,7 @@
       "position": "PF",
       "stat": "ast",
       "line": 7.5,
-      "overPrice": 105,
+      "overPrice": 116,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -7146,7 +7454,7 @@
         "hits": 0,
         "n": 3
       },
-      "rank": 14,
+      "rank": 13,
       "injuryStatus": "Out"
     },
     {
@@ -7159,7 +7467,7 @@
       "position": "PF",
       "stat": "pts",
       "line": 28.5,
-      "overPrice": -105,
+      "overPrice": -111,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -7178,18 +7486,18 @@
       "injuryStatus": "Out"
     },
     {
-      "playerId": "4065648",
-      "name": "Jayson Tatum",
-      "teamId": "2",
-      "teamAbbr": "BOS",
-      "opponentId": "9",
-      "opponentAbbr": "GS",
-      "position": "PF",
-      "stat": "tpm",
-      "line": 3.5,
-      "overPrice": 146,
-      "gameId": "723055",
-      "tipoff": "2026-11-23T01:30:00Z",
+      "playerId": "3908845",
+      "name": "John Collins",
+      "teamId": "8",
+      "teamAbbr": "DET",
+      "opponentId": "1",
+      "opponentAbbr": "ATL",
+      "position": "C",
+      "stat": "pts",
+      "line": 11.5,
+      "overPrice": 100,
+      "gameId": "731176",
+      "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
         "hits": 1,
         "n": 5
@@ -7199,11 +7507,39 @@
         "n": 10
       },
       "h2h": {
-        "hits": 2,
-        "n": 3
+        "hits": 1,
+        "n": 2
       },
       "rank": 18,
-      "injuryStatus": "Out"
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4432811",
+      "name": "Josh Green",
+      "teamId": "26",
+      "teamAbbr": "UTAH",
+      "opponentId": "6",
+      "opponentAbbr": "DAL",
+      "position": "SF",
+      "stat": "reb",
+      "line": 2.5,
+      "overPrice": -115,
+      "gameId": "731183",
+      "tipoff": "2026-11-23T00:00:00Z",
+      "l5": {
+        "hits": 1,
+        "n": 5
+      },
+      "l10": {
+        "hits": 3,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 4,
+        "n": 5
+      },
+      "rank": 21,
+      "injuryStatus": null
     },
     {
       "playerId": "4278594",
@@ -7230,7 +7566,7 @@
         "hits": 3,
         "n": 8
       },
-      "rank": 12,
+      "rank": 11,
       "injuryStatus": null
     },
     {
@@ -7271,7 +7607,7 @@
       "position": "PF",
       "stat": "pts",
       "line": 11.5,
-      "overPrice": -114,
+      "overPrice": -105,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -7299,7 +7635,7 @@
       "position": "C",
       "stat": "reb",
       "line": 6.5,
-      "overPrice": 114,
+      "overPrice": 116,
       "gameId": "731183",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -7314,36 +7650,8 @@
         "hits": 3,
         "n": 4
       },
-      "rank": 18,
+      "rank": 16,
       "injuryStatus": "Out"
-    },
-    {
-      "playerId": "4278562",
-      "name": "Paul Reed",
-      "teamId": "8",
-      "teamAbbr": "DET",
-      "opponentId": "1",
-      "opponentAbbr": "ATL",
-      "position": "C",
-      "stat": "ast",
-      "line": 3.5,
-      "overPrice": 340,
-      "gameId": "731176",
-      "tipoff": "2026-11-22T20:30:00Z",
-      "l5": {
-        "hits": 1,
-        "n": 5
-      },
-      "l10": {
-        "hits": 3,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 0,
-        "n": 6
-      },
-      "rank": 28,
-      "injuryStatus": null
     },
     {
       "playerId": "4601025",
@@ -7355,7 +7663,7 @@
       "position": "SF",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": 105,
+      "overPrice": 100,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -7370,7 +7678,7 @@
         "hits": 0,
         "n": 3
       },
-      "rank": 7,
+      "rank": 8,
       "injuryStatus": null
     },
     {
@@ -7383,7 +7691,7 @@
       "position": "C",
       "stat": "pts",
       "line": 12.5,
-      "overPrice": 101,
+      "overPrice": 100,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -7411,7 +7719,7 @@
       "position": "PG",
       "stat": "pts",
       "line": 20.5,
-      "overPrice": -124,
+      "overPrice": -115,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -7426,7 +7734,7 @@
         "hits": 0,
         "n": 3
       },
-      "rank": 29,
+      "rank": 30,
       "injuryStatus": null
     },
     {
@@ -7439,7 +7747,7 @@
       "position": "PG",
       "stat": "pts",
       "line": 20.5,
-      "overPrice": -108,
+      "overPrice": -104,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -7454,8 +7762,36 @@
         "hits": 4,
         "n": 6
       },
-      "rank": 10,
+      "rank": 11,
       "injuryStatus": null
+    },
+    {
+      "playerId": "3934719",
+      "name": "OG Anunoby",
+      "teamId": "18",
+      "teamAbbr": "NY",
+      "opponentId": "11",
+      "opponentAbbr": "IND",
+      "position": "PF",
+      "stat": "tpm",
+      "line": 2.5,
+      "overPrice": 120,
+      "gameId": "731186",
+      "tipoff": "2026-11-23T01:00:00Z",
+      "l5": {
+        "hits": 0,
+        "n": 5
+      },
+      "l10": {
+        "hits": 3,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 6
+      },
+      "rank": 24,
+      "injuryStatus": "Day-To-Day"
     },
     {
       "playerId": "5142718",
@@ -7482,7 +7818,7 @@
         "hits": 0,
         "n": 1
       },
-      "rank": 22,
+      "rank": 23,
       "injuryStatus": null
     },
     {
@@ -7495,7 +7831,7 @@
       "position": "C",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 152,
+      "overPrice": 168,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -7523,7 +7859,7 @@
       "position": "PF",
       "stat": "ast",
       "line": 2.5,
-      "overPrice": 120,
+      "overPrice": 134,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -7538,7 +7874,7 @@
         "hits": 1,
         "n": 3
       },
-      "rank": 14,
+      "rank": 13,
       "injuryStatus": null
     },
     {
@@ -7551,7 +7887,7 @@
       "position": "PF",
       "stat": "pts",
       "line": 11.5,
-      "overPrice": -114,
+      "overPrice": -112,
       "gameId": "731184",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -7566,7 +7902,35 @@
         "hits": 3,
         "n": 3
       },
-      "rank": 21,
+      "rank": 22,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "6589",
+      "name": "Draymond Green",
+      "teamId": "9",
+      "teamAbbr": "GS",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "C",
+      "stat": "tpm",
+      "line": 0.5,
+      "overPrice": -135,
+      "gameId": "723055",
+      "tipoff": "2026-11-23T01:30:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 2,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 3
+      },
+      "rank": 23,
       "injuryStatus": null
     },
     {
@@ -7579,7 +7943,7 @@
       "position": "SF",
       "stat": "tpm",
       "line": 0.5,
-      "overPrice": 175,
+      "overPrice": 170,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -7607,7 +7971,7 @@
       "position": "C",
       "stat": "pts",
       "line": 9.5,
-      "overPrice": 100,
+      "overPrice": -106,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -7635,7 +7999,7 @@
       "position": "PF",
       "stat": "reb",
       "line": 5.5,
-      "overPrice": 110,
+      "overPrice": 100,
       "gameId": "731184",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -7650,35 +8014,7 @@
         "hits": 1,
         "n": 4
       },
-      "rank": 19,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "3064290",
-      "name": "Aaron Gordon",
-      "teamId": "7",
-      "teamAbbr": "DEN",
-      "opponentId": "4",
-      "opponentAbbr": "CHI",
-      "position": "C",
-      "stat": "tpm",
-      "line": 1.5,
-      "overPrice": 130,
-      "gameId": "731184",
-      "tipoff": "2026-11-23T00:00:00Z",
-      "l5": {
-        "hits": 1,
-        "n": 5
-      },
-      "l10": {
-        "hits": 2,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 0,
-        "n": 2
-      },
-      "rank": 15,
+      "rank": 18,
       "injuryStatus": null
     },
     {
@@ -7710,6 +8046,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "3064290",
+      "name": "Aaron Gordon",
+      "teamId": "7",
+      "teamAbbr": "DEN",
+      "opponentId": "4",
+      "opponentAbbr": "CHI",
+      "position": "C",
+      "stat": "tpm",
+      "line": 1.5,
+      "overPrice": 130,
+      "gameId": "731184",
+      "tipoff": "2026-11-23T00:00:00Z",
+      "l5": {
+        "hits": 1,
+        "n": 5
+      },
+      "l10": {
+        "hits": 2,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 2
+      },
+      "rank": 15,
+      "injuryStatus": null
+    },
+    {
       "playerId": "3138196",
       "name": "Cameron Johnson",
       "teamId": "7",
@@ -7719,7 +8083,7 @@
       "position": "PF",
       "stat": "tpm",
       "line": 2.5,
-      "overPrice": 133,
+      "overPrice": 131,
       "gameId": "731184",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -7762,7 +8126,7 @@
         "hits": 3,
         "n": 6
       },
-      "rank": 18,
+      "rank": 16,
       "injuryStatus": null
     },
     {
@@ -7775,7 +8139,7 @@
       "position": "SF",
       "stat": "pts",
       "line": 10.5,
-      "overPrice": -114,
+      "overPrice": -109,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -7803,7 +8167,7 @@
       "position": "PF",
       "stat": "ast",
       "line": 2.5,
-      "overPrice": 136,
+      "overPrice": 139,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -7818,7 +8182,7 @@
         "hits": 0,
         "n": 3
       },
-      "rank": 18,
+      "rank": 16,
       "injuryStatus": null
     },
     {
@@ -7831,7 +8195,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 2.5,
-      "overPrice": 120,
+      "overPrice": 129,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -7846,7 +8210,7 @@
         "hits": 1,
         "n": 2
       },
-      "rank": 17,
+      "rank": 16,
       "injuryStatus": null
     },
     {
@@ -7859,7 +8223,7 @@
       "position": "SF",
       "stat": "reb",
       "line": 7.5,
-      "overPrice": -120,
+      "overPrice": -114,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -7874,7 +8238,7 @@
         "hits": 4,
         "n": 6
       },
-      "rank": 21,
+      "rank": 22,
       "injuryStatus": null
     },
     {
@@ -7887,7 +8251,7 @@
       "position": "SF",
       "stat": "reb",
       "line": 2.5,
-      "overPrice": 154,
+      "overPrice": 130,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -7902,35 +8266,7 @@
         "hits": 2,
         "n": 5
       },
-      "rank": 21,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "3112335",
-      "name": "Nikola Jokic",
-      "teamId": "7",
-      "teamAbbr": "DEN",
-      "opponentId": "4",
-      "opponentAbbr": "CHI",
-      "position": "C",
-      "stat": "ast",
-      "line": 10.5,
-      "overPrice": 110,
-      "gameId": "731184",
-      "tipoff": "2026-11-23T00:00:00Z",
-      "l5": {
-        "hits": 1,
-        "n": 5
-      },
-      "l10": {
-        "hits": 2,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 3,
-        "n": 3
-      },
-      "rank": 2,
+      "rank": 22,
       "injuryStatus": null
     },
     {
@@ -7942,8 +8278,8 @@
       "opponentAbbr": "GS",
       "position": "PG",
       "stat": "pts",
-      "line": 16.5,
-      "overPrice": 100,
+      "line": 15.5,
+      "overPrice": -110,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -7955,10 +8291,10 @@
         "n": 10
       },
       "h2h": {
-        "hits": 2,
+        "hits": 3,
         "n": 4
       },
-      "rank": 15,
+      "rank": 17,
       "injuryStatus": null
     },
     {
@@ -7971,7 +8307,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 143,
+      "overPrice": 162,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
@@ -7990,34 +8326,6 @@
       "injuryStatus": null
     },
     {
-      "playerId": "4432166",
-      "name": "Cade Cunningham",
-      "teamId": "8",
-      "teamAbbr": "DET",
-      "opponentId": "1",
-      "opponentAbbr": "ATL",
-      "position": "PG",
-      "stat": "tpm",
-      "line": 3.5,
-      "overPrice": 350,
-      "gameId": "731176",
-      "tipoff": "2026-11-22T20:30:00Z",
-      "l5": {
-        "hits": 0,
-        "n": 5
-      },
-      "l10": {
-        "hits": 2,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 1,
-        "n": 7
-      },
-      "rank": 2,
-      "injuryStatus": "Day-To-Day"
-    },
-    {
       "playerId": "4277905",
       "name": "Trae Young",
       "teamId": "27",
@@ -8027,7 +8335,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 2.5,
-      "overPrice": -114,
+      "overPrice": 100,
       "gameId": "731181",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -8055,7 +8363,7 @@
       "position": "PF",
       "stat": "tpm",
       "line": 0.5,
-      "overPrice": 139,
+      "overPrice": 141,
       "gameId": "731184",
       "tipoff": "2026-11-23T00:00:00Z",
       "l5": {
@@ -8083,7 +8391,7 @@
       "position": "C",
       "stat": "pts",
       "line": 4.5,
-      "overPrice": -136,
+      "overPrice": -120,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -8110,8 +8418,8 @@
       "opponentAbbr": "IND",
       "position": "SF",
       "stat": "pts",
-      "line": 10.5,
-      "overPrice": 100,
+      "line": 9.5,
+      "overPrice": -115,
       "gameId": "731186",
       "tipoff": "2026-11-23T01:00:00Z",
       "l5": {
@@ -8126,35 +8434,7 @@
         "hits": 5,
         "n": 6
       },
-      "rank": 20,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "4066372",
-      "name": "Kevin Huerter",
-      "teamId": "8",
-      "teamAbbr": "DET",
-      "opponentId": "1",
-      "opponentAbbr": "ATL",
-      "position": "SF",
-      "stat": "reb",
-      "line": 5.5,
-      "overPrice": 260,
-      "gameId": "731176",
-      "tipoff": "2026-11-22T20:30:00Z",
-      "l5": {
-        "hits": 1,
-        "n": 5
-      },
-      "l10": {
-        "hits": 1,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 1,
-        "n": 6
-      },
-      "rank": 3,
+      "rank": 21,
       "injuryStatus": null
     },
     {
@@ -8167,7 +8447,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 4.5,
-      "overPrice": 118,
+      "overPrice": 125,
       "gameId": "723055",
       "tipoff": "2026-11-23T01:30:00Z",
       "l5": {
@@ -8182,7 +8462,7 @@
         "hits": 2,
         "n": 2
       },
-      "rank": 6,
+      "rank": 7,
       "injuryStatus": null
     },
     {
@@ -8195,7 +8475,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 5.5,
-      "overPrice": 105,
+      "overPrice": 112,
       "gameId": "731176",
       "tipoff": "2026-11-22T20:30:00Z",
       "l5": {
@@ -8223,7 +8503,7 @@
       "position": "PF",
       "stat": "reb",
       "line": 2.5,
-      "overPrice": 140,
+      "overPrice": 139,
       "gameId": "731180",
       "tipoff": "2026-11-22T23:00:00Z",
       "l5": {
