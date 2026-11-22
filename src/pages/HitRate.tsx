@@ -14,6 +14,7 @@ import {
 import { LIVE_MODE } from "@/lib/live-mode";
 import {
   TOKEN_URL,
+  WORKFLOW_URL,
   clearToken,
   saveToken,
   storedToken,
@@ -229,6 +230,15 @@ function StaticRefresh({
             className="mt-1.5 inline-block text-[11px] underline underline-offset-4 hover:text-foreground"
           >
             Create a token
+          </a>
+          <span className="mx-1.5 text-[11px] text-muted-foreground">·</span>
+          <a
+            href={WORKFLOW_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-1.5 inline-block text-[11px] underline underline-offset-4 hover:text-foreground"
+          >
+            or run it on GitHub
           </a>
           <input
             value={draft}

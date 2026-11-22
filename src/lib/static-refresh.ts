@@ -20,6 +20,8 @@ const TOKEN_KEY = "dvp.github.token";
 
 export const TOKEN_URL = "https://github.com/settings/personal-access-tokens/new";
 export const REPO_URL = `https://github.com/${REPO}`;
+/** The workflow page, where the refresh can also be started by hand. */
+export const WORKFLOW_URL = `https://github.com/${REPO}/actions/workflows/${WORKFLOW}`;
 
 export function storedToken(): string | null {
   try {
@@ -138,6 +140,13 @@ export async function triggerRefresh(token: string): Promise<void> {
   );
   if (!response.ok) {
     const message = await detail(response);
+    // The dispatch endpoint is the only thing this app needs write access for,
+    // so this exact wording means the token's Actions permission is read-only.
+    if (/resource not accessible by personal access token/i.test(message)) {
+      throw new Error(
+        "That token can read the repo but not run its workflows — its Actions permission is Read-only. Set Actions to Read and write (Repository access must be Only select repositories, not All public repositories).",
+      );
+    }
     throw new Error(
       `${describe(response.status, message)}${response.status === 403 ? ` ${await diagnose(token)}` : ""}`,
     );
