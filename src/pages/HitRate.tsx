@@ -22,7 +22,7 @@ import {
   waitForBoard,
 } from "@/lib/static-refresh";
 import { cn } from "@/lib/utils";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router";
 
 type SortKey = "player" | "line" | "l5" | "l10" | "h2h" | "matchup" | "dvp";
@@ -49,6 +49,48 @@ const DEFAULT_DIRECTION: Record<SortKey, "asc" | "desc"> = {
 };
 
 const GRADES = ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "D", "F"] as const;
+
+/**
+ * Filter state outlives the page: opening a player's profile and coming back
+ * should land on the same board. Kept in sessionStorage so a fresh tab starts
+ * clean and the two builds behave the same.
+ */
+const FILTER_KEY = "dvp.hitRate.filters";
+
+interface SavedFilters {
+  stat: StatKey | "all";
+  gameId: string;
+  query: string;
+  hideOut: boolean;
+  sort: SortKey;
+  direction: "asc" | "desc";
+  l5Min: string;
+  l5Max: string;
+  h2hMin: string;
+  h2hMax: string;
+  grades: string[];
+}
+
+function loadFilters(): Partial<SavedFilters> | null {
+  try {
+    const parsed = JSON.parse(
+      window.sessionStorage.getItem(FILTER_KEY) ?? "null",
+    ) as unknown;
+    return parsed && typeof parsed === "object"
+      ? (parsed as Partial<SavedFilters>)
+      : null;
+  } catch {
+    return null;
+  }
+}
+
+function saveFilters(filters: SavedFilters): void {
+  try {
+    window.sessionStorage.setItem(FILTER_KEY, JSON.stringify(filters));
+  } catch {
+    // Private browsing: the board just forgets between visits.
+  }
+}
 
 /** The slate is labelled by the IST date its games tip off on. */
 function slateLabel(tipoff: string | null): string {
@@ -325,21 +367,61 @@ function RangeFilter({
 
 export default function HitRate() {
   const { data: board, live, reload } = useHitRateBoard();
-  const [stat, setStat] = useState<StatKey | "all">("all");
-  const [gameId, setGameId] = useState<string>("all");
-  const [query, setQuery] = useState("");
-  const [hideOut, setHideOut] = useState(true);
-  const [sort, setSort] = useState<SortKey>("l10");
-  const [direction, setDirection] = useState<"asc" | "desc">("desc");
+  // Read once, before the first paint, so the board comes back filtered.
+  const [saved] = useState(loadFilters);
+  const [stat, setStat] = useState<StatKey | "all">(() => {
+    const value = saved?.stat;
+    return value === "all" || (value && STATS.includes(value)) ? value : "all";
+  });
+  const [gameId, setGameId] = useState<string>(saved?.gameId ?? "all");
+  const [query, setQuery] = useState(saved?.query ?? "");
+  const [hideOut, setHideOut] = useState(saved?.hideOut ?? true);
+  const [sort, setSort] = useState<SortKey>(() => {
+    const found = COLUMNS.find((column) => column.key === saved?.sort);
+    return found ? found.key : "l10";
+  });
+  const [direction, setDirection] = useState<"asc" | "desc">(
+    saved?.direction === "asc" ? "asc" : "desc",
+  );
   const sync = useLiveAction(api.hitRateActions.sync);
   const [refreshing, setRefreshing] = useState(false);
   const [refreshNote, setRefreshNote] = useState<string | null>(null);
   const [refreshError, setRefreshError] = useState<string | null>(null);
-  const [l5Min, setL5Min] = useState("");
-  const [l5Max, setL5Max] = useState("");
-  const [h2hMin, setH2hMin] = useState("");
-  const [h2hMax, setH2hMax] = useState("");
-  const [grades, setGrades] = useState<string[]>([]);
+  const [l5Min, setL5Min] = useState(saved?.l5Min ?? "");
+  const [l5Max, setL5Max] = useState(saved?.l5Max ?? "");
+  const [h2hMin, setH2hMin] = useState(saved?.h2hMin ?? "");
+  const [h2hMax, setH2hMax] = useState(saved?.h2hMax ?? "");
+  const [grades, setGrades] = useState<string[]>(
+    Array.isArray(saved?.grades) ? saved.grades : [],
+  );
+
+  useEffect(() => {
+    saveFilters({
+      stat,
+      gameId,
+      query,
+      hideOut,
+      sort,
+      direction,
+      l5Min,
+      l5Max,
+      h2hMin,
+      h2hMax,
+      grades,
+    });
+  }, [
+    stat,
+    gameId,
+    query,
+    hideOut,
+    sort,
+    direction,
+    l5Min,
+    l5Max,
+    h2hMin,
+    h2hMax,
+    grades,
+  ]);
 
   const games = useMemo(() => {
     const byId = new Map<string, { id: string; label: string; tipoff: string }>();

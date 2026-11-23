@@ -106,7 +106,11 @@ export default function PlayerProfile() {
 
   const line = row?.line ?? 0;
   const tonight = row
-    ? { opponentAbbr: row.opponentAbbr, rank: row.rank }
+    ? {
+        opponentId: row.opponentId,
+        opponentAbbr: row.opponentAbbr,
+        rank: row.rank,
+      }
     : null;
 
   return (

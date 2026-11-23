@@ -65,13 +65,19 @@ export function PlayerHistoryChart({
   stat: StatKey;
   position: Position;
   context: HitRateContext | undefined;
-  tonight: { opponentAbbr: string; rank: number } | null;
+  tonight: { opponentId: string; opponentAbbr: string; rank: number } | null;
 }) {
   const [hover, setHover] = useState<number | null>(null);
   const [pinned, setPinned] = useState<number | null>(null);
   const active = pinned ?? hover;
+  // The empty slot for tonight sits one past the last completed game.
+  const nextIndex = games.length;
+  const isNext = active === nextIndex;
+  const nextAllowed = tonight
+    ? (context?.allowed[tonight.opponentId]?.[position]?.[stat] ?? null)
+    : null;
 
-  if (!games.length) {
+  if (!games.length && !tonight) {
     return (
       <p className="border border-dashed border-border px-4 py-10 text-center text-[12px] text-muted-foreground">
         No completed games in this window.
@@ -162,10 +168,31 @@ export function PlayerHistoryChart({
           );
         })}
 
-        {/* tonight's game, still empty */}
+        {/* tonight's game, still empty but hoverable for the matchup */}
         {tonight ? (
-          <div className="flex h-full flex-1 flex-col items-center justify-end opacity-60">
-            <span className="mb-1 h-full w-full border-x border-t border-dashed border-border" />
+          <button
+            type="button"
+            onMouseEnter={() => setHover(nextIndex)}
+            onMouseLeave={() => setHover(null)}
+            onFocus={() => setHover(nextIndex)}
+            onBlur={() => setHover(null)}
+            onClick={() =>
+              setPinned((current) =>
+                current === nextIndex ? null : nextIndex,
+              )
+            }
+            aria-label={`Tonight against ${tonight.opponentAbbr}: rank ${tonight.rank}, no game yet`}
+            className={cn(
+              "relative flex h-full flex-1 flex-col items-center justify-end outline-none transition-opacity",
+              isNext ? "opacity-100" : "opacity-60 hover:opacity-90",
+            )}
+          >
+            <span
+              className={cn(
+                "h-full w-full border-x border-t border-dashed",
+                isNext ? "border-foreground/40 bg-accent/40" : "border-border",
+              )}
+            />
             <span className="mt-2 flex flex-col items-center gap-1">
               <img
                 src={LOGO(tonight.opponentAbbr)}
@@ -179,7 +206,7 @@ export function PlayerHistoryChart({
                 Next
               </span>
             </span>
-          </div>
+          </button>
         ) : null}
       </div>
 
@@ -274,6 +301,49 @@ export function PlayerHistoryChart({
                   </span>
                 </>
               )}
+            </p>
+          </div>
+        </div>
+      ) : null}
+
+      {isNext && tonight ? (
+        <div
+          className="pointer-events-none absolute -top-2 z-20 w-64 -translate-y-full -translate-x-1/2 border border-border bg-background p-3 shadow-sm"
+          style={{
+            left: `${Math.min(
+              Math.max(((nextIndex + 0.5) / (games.length + 1)) * 100, 26),
+              74,
+            )}%`,
+          }}
+        >
+          <p className="text-[11px] font-medium leading-tight">
+            Tonight
+            <span className="text-muted-foreground">
+              {" · vs "}
+              {tonight.opponentAbbr}
+            </span>
+          </p>
+          <p className="mt-0.5 text-[10px] uppercase tracking-[0.1em] text-muted-foreground">
+            No game yet
+          </p>
+
+          <div className="mt-2 border-t border-border pt-2">
+            <BoxLine label="Line" value={`o${line}`} />
+            <BoxLine label="Stat" value={CATEGORY_LABELS[stat]} />
+          </div>
+
+          <div className="mt-2 border-t border-border pt-2">
+            <p className="text-[9px] uppercase tracking-[0.14em] text-muted-foreground">
+              Matchup · {position} vs {tonight.opponentAbbr}
+            </p>
+            <p className="mt-0.5 text-[11px] leading-tight">
+              <span className="font-medium">Rank #{tonight.rank}</span>{" "}
+              <span className="text-muted-foreground">
+                {matchupGrade(tonight.rank)}
+                {nextAllowed === null
+                  ? ""
+                  : ` · allows ${nextAllowed.toFixed(1)} ${statLabel} to ${position}s`}
+              </span>
             </p>
           </div>
         </div>
