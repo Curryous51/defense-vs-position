@@ -1,3 +1,4 @@
+import type { TrackingRow } from "@/hooks/use-tracking";
 import { CATEGORY_LABELS, type StatKey } from "@/lib/dvp";
 import {
   matchupGrade,
@@ -59,6 +60,7 @@ export function PlayerHistoryChart({
   position,
   context,
   tonight,
+  tracking,
 }: {
   games: GameLineFields[];
   line: number;
@@ -66,6 +68,8 @@ export function PlayerHistoryChart({
   position: Position;
   context: HitRateContext | undefined;
   tonight: { opponentId: string; opponentAbbr: string; rank: number } | null;
+  /** NBA tracking numbers for this player, keyed by game start. Optional. */
+  tracking?: Record<string, TrackingRow>;
 }) {
   const [hover, setHover] = useState<number | null>(null);
   const [pinned, setPinned] = useState<number | null>(null);
@@ -95,6 +99,24 @@ export function PlayerHistoryChart({
     : null;
   const activeAllowed = activeGame
     ? (context?.allowed[activeGame.opponentId]?.[position]?.[stat] ?? null)
+    : null;
+  // Tracking is only pulled for assists and rebounds, and only for games the
+  // local sync has seen: potential assists and rebound chances.
+  const activeTracking = activeGame ? tracking?.[activeGame.date] : undefined;
+  const trackingLine = activeGame
+    ? stat === "ast" && activeTracking && activeTracking[0] > 0
+      ? {
+          label: "Potential assists",
+          total: activeTracking[0],
+          made: activeGame.ast,
+        }
+      : stat === "reb" && activeTracking && activeTracking[1] > 0
+        ? {
+            label: "Rebound chances",
+            total: activeTracking[1],
+            made: activeGame.reb,
+          }
+        : null
     : null;
 
   return (
@@ -282,6 +304,17 @@ export function PlayerHistoryChart({
             <BoxLine label="3P" value={`${activeGame.tpm}/${activeGame.tpa}`} />
             <BoxLine label="FT" value={`${activeGame.ftm}/${activeGame.fta}`} />
           </div>
+
+          {trackingLine ? (
+            <div className="mt-2 border-t border-border pt-2">
+              <BoxLine
+                label={trackingLine.label}
+                value={`${trackingLine.total} · ${Math.round(
+                  (trackingLine.made / trackingLine.total) * 100,
+                )}%`}
+              />
+            </div>
+          ) : null}
 
           <div className="mt-2 border-t border-border pt-2">
             <p className="text-[9px] uppercase tracking-[0.14em] text-muted-foreground">

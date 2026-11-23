@@ -2,6 +2,7 @@ import { AppShell } from "@/components/AppShell";
 import { PlayerHistoryChart } from "@/components/PlayerHistoryChart";
 import { useHitRateBoard } from "@/hooks/use-hit-rate-board";
 import { usePlayerHistory } from "@/hooks/use-player-history";
+import { useTracking } from "@/hooks/use-tracking";
 import { CATEGORY_LABELS, STATS, gameTime, type StatKey } from "@/lib/dvp";
 import {
   gradeTone,
@@ -72,6 +73,7 @@ function Sample({
 export default function PlayerProfile() {
   const { playerId } = useParams<{ playerId: string }>();
   const { data: board } = useHitRateBoard();
+  const tracking = useTracking();
   const [picked, setPicked] = useState<StatKey | null>(null);
   const [window, setWindow] = useState<Window>("l10");
 
@@ -301,6 +303,7 @@ export default function PlayerProfile() {
                     position={row.position}
                     context={board.context}
                     tonight={window === "h2h" ? null : tonight}
+                    tracking={playerId ? tracking?.players[playerId] : undefined}
                   />
                 </div>
               ) : (
@@ -316,7 +319,9 @@ export default function PlayerProfile() {
               Bars are coloured against the current line: green over, red under.
               Hover or tap a bar for the box score, the opponent's
               defense-vs-position rank for this stat, and what that defense
-              allows. Pushes are dropped from the hit-rate samples.
+              allows. Where tracking data is available, assists and rebounds
+              also show potential assists or rebound chances and the share
+              converted. Pushes are dropped from the hit-rate samples.
             </div>
           </>
         )}
