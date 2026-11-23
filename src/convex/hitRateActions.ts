@@ -52,17 +52,29 @@ export const sync = action({
       apiKey,
       onProgress: (message) => console.log(`[hit-rate] ${message}`),
       // Logs only change once a day, so refreshes reuse them.
-      loadLogs: async (playerId) =>
-        (await ctx.runQuery(internal.hitRates.getLogs, { playerId })) as {
-          updatedAt: number;
-          logs: GameLog[];
-        } | null,
+      loadLogs: async (playerId) => {
+        const cached = (await ctx.runQuery(internal.hitRates.getLogs, {
+          playerId,
+        })) as { updatedAt: number; logs: GameLog[] } | null;
+        // Logs cached before the profile page existed carry no box score, so
+        // they are refetched once instead of filling the chart with blanks.
+        const stale = cached?.logs?.some(
+          (log) => log.score === undefined || (log.fga ?? 0) === 0,
+        );
+        return stale ? null : cached;
+      },
       saveLogs: async (playerId, logs) => {
         await ctx.runMutation(internal.hitRates.saveLogs, { playerId, logs });
       },
     });
 
-    const signature = fingerprint(board.rows);
+    // History and context ride along in the payload, so their presence is part
+    // of the fingerprint: the first snapshot that carries them must rewrite.
+    const signature = fingerprint({
+      rows: board.rows,
+      logPlayers: Object.keys(board.history ?? {}).length,
+      teams: Object.keys(board.context?.ranks ?? {}).length,
+    });
     const existing = (await ctx.runQuery(internal.hitRates.current, {})) as {
       signature: string | null;
       generatedAt: number;
@@ -80,12 +92,17 @@ export const sync = action({
       return { ...summary, generatedAt: existing.generatedAt };
     }
 
+    // The live app reads game logs per player from playerGameLogs, so the board
+    // document skips the history: it would double every subscriber's payload.
+    const stored = { ...board };
+    delete stored.history;
+
     const generatedAt = Date.now();
     await ctx.runMutation(internal.hitRates.save, {
       key: "current",
       generatedAt,
       signature,
-      payload: board,
+      payload: stored,
     });
     return { ...summary, generatedAt };
   },

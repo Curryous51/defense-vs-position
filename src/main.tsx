@@ -14,6 +14,7 @@ const Dashboard = lazy(() => import("./pages/Dashboard.tsx"));
 const Easiest = lazy(() => import("./pages/Easiest.tsx"));
 const Toughest = lazy(() => import("./pages/Toughest.tsx"));
 const HitRate = lazy(() => import("./pages/HitRate.tsx"));
+const PlayerProfile = lazy(() => import("./pages/PlayerProfile.tsx"));
 const NotFound = lazy(() => import("./pages/NotFound.tsx"));
 
 // Simple loading fallback for route transitions
@@ -131,6 +132,7 @@ const app = (
           <Route path="/easiest" element={<Easiest />} />
           <Route path="/toughest" element={<Toughest />} />
           <Route path="/hit-rate" element={<HitRate />} />
+          <Route path="/hit-rate/player/:playerId" element={<PlayerProfile />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>

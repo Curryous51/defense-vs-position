@@ -11,7 +11,12 @@
  * L5 and L10 are over-rates against today's line; H2H is the same against the
  * opponent this player faces tonight. Pushes are dropped from the denominator.
  */
-import type { HitRateBoard, HitRateRow } from "../lib/hit-rate";
+import type {
+  GameLine,
+  HitRateBoard,
+  HitRateContext,
+  HitRateRow,
+} from "../lib/hit-rate";
 import type { BuiltSnapshot, Position, StatKey } from "./nbaBuilder";
 
 const ESPN = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba";
@@ -168,11 +173,20 @@ export interface GameLog {
   date: string;
   season: number;
   opponentId: string;
+  /** Absent on logs cached before the profile page needed box scores. */
+  opponentAbbr?: string;
+  home?: boolean;
   minutes: number;
   pts: number;
   reb: number;
   ast: number;
   tpm: number;
+  fgm?: number;
+  fga?: number;
+  tpa?: number;
+  ftm?: number;
+  fta?: number;
+  score?: string | null;
 }
 
 /** How many seasons the head-to-head sample reaches back, including this one. */
@@ -241,7 +255,13 @@ interface EspnGamelog {
   names?: string[];
   events?: Record<
     string,
-    { gameDate?: string; opponent?: { id?: string } }
+    {
+      gameDate?: string;
+      opponent?: { id?: string; abbreviation?: string };
+      /** "vs" at home, "@" on the road. */
+      atVs?: string;
+      score?: string;
+    }
   >;
   seasonTypes?: Array<{
     displayName?: string;
@@ -273,7 +293,14 @@ function parseGamelog(json: EspnGamelog, season: number): GameLog[] {
   const iReb = index("totalRebounds");
   const iAst = index("assists");
   const iTpm = index("threePointFieldGoalsMade-threePointFieldGoalsAttempted");
+  const iFg = index("fieldGoalsMade-fieldGoalsAttempted");
+  const iFt = index("freeThrowsMade-freeThrowsAttempted");
   const iMin = index("minutes");
+  /** ESPN packs makes and attempts as "4-5". */
+  const split = (value: string | undefined): [number, number] => {
+    const [made, attempted] = String(value ?? "0-0").split("-");
+    return [num(made), num(attempted)];
+  };
 
   const seen = new Set<string>();
   const logs: GameLog[] = [];
@@ -288,15 +315,26 @@ function parseGamelog(json: EspnGamelog, season: number): GameLog[] {
         if (!meta?.gameDate || !meta.opponent?.id) continue;
         const minutes = iMin >= 0 ? num(entry.stats[iMin]) : 0;
         if (minutes <= 0) continue;
+        const threes = split(iTpm >= 0 ? entry.stats[iTpm] : undefined);
+        const field = split(iFg >= 0 ? entry.stats[iFg] : undefined);
+        const free = split(iFt >= 0 ? entry.stats[iFt] : undefined);
         logs.push({
           date: meta.gameDate,
           season,
           opponentId: String(meta.opponent.id),
+          opponentAbbr: meta.opponent.abbreviation,
+          home: meta.atVs !== "@",
           minutes,
           pts: iPts >= 0 ? num(entry.stats[iPts]) : 0,
           reb: iReb >= 0 ? num(entry.stats[iReb]) : 0,
           ast: iAst >= 0 ? num(entry.stats[iAst]) : 0,
-          tpm: iTpm >= 0 ? num(entry.stats[iTpm]) : 0,
+          tpm: threes[0],
+          fgm: field[0],
+          fga: field[1],
+          tpa: threes[1],
+          ftm: free[0],
+          fta: free[1],
+          score: meta.score ?? null,
         });
       }
     }
@@ -419,6 +457,91 @@ function consensusLines(
     });
   }
   return lines;
+}
+
+/**
+ * The profile page's game log: this season's recent games plus every game
+ * against the opponent, packed as tuples.
+ *
+ * Shared by the snapshot builder (the backend-free build ships the log inside
+ * the board) and by the per-player query the live app uses, so the Convex board
+ * document stays small.
+ */
+export function packPlayerGames(
+  logs: GameLog[],
+  options: { opponentId: string; currentSeason?: number; before?: number },
+): GameLine[] {
+  const tipoff = options.before ?? Number.POSITIVE_INFINITY;
+  const played = logs
+    .filter((entry) => new Date(entry.date).getTime() < tipoff)
+    .sort((a, b) => b.date.localeCompare(a.date));
+  const recent = played
+    .filter((entry) => entry.season === options.currentSeason)
+    .slice(0, 12);
+  const vsOpponent = played
+    .filter((entry) => entry.opponentId === options.opponentId)
+    .slice(0, 8);
+
+  return [...recent, ...vsOpponent]
+    .sort((a, b) => b.date.localeCompare(a.date))
+    .slice(0, 18)
+    .map((entry): GameLine => [
+      entry.date,
+      entry.opponentId,
+      entry.opponentAbbr ?? "—",
+      entry.home === false ? 0 : 1,
+      entry.minutes,
+      entry.pts,
+      entry.reb,
+      entry.ast,
+      entry.tpm,
+      entry.fgm ?? 0,
+      entry.fga ?? 0,
+      entry.tpa ?? 0,
+      entry.ftm ?? 0,
+      entry.fta ?? 0,
+      entry.score ?? "",
+    ]);
+}
+
+/** Every player on the slate, packed for the backend-free build. */
+function packHistory(
+  rows: HitRateRow[],
+  logsByPlayer: Map<string, GameLog[]>,
+  currentSeason: number,
+): Record<string, GameLine[]> {
+  const history: Record<string, GameLine[]> = {};
+  for (const row of rows) {
+    if (history[row.playerId]) continue;
+    history[row.playerId] = packPlayerGames(logsByPlayer.get(row.playerId) ?? [], {
+      opponentId: row.opponentId,
+      currentSeason,
+      before: new Date(row.tipoff).getTime(),
+    });
+  }
+  return history;
+}
+
+/** Whole-league DvP ranks and averages, so any opponent on a profile is graded. */
+function packContext(snapshot: BuiltSnapshot): HitRateContext {
+  const ranks: HitRateContext["ranks"] = {};
+  const allowed: HitRateContext["allowed"] = {};
+  for (const team of snapshot.teams) {
+    ranks[team.id] = {} as HitRateContext["ranks"][string];
+    allowed[team.id] = {} as HitRateContext["allowed"][string];
+    for (const position of POSITIONS) {
+      const season = team.season[position];
+      if (!season) continue;
+      ranks[team.id][position] = { ...season.ranks };
+      allowed[team.id][position] = {
+        pts: season.pts,
+        reb: season.reb,
+        ast: season.ast,
+        tpm: season.tpm,
+      };
+    }
+  }
+  return { ranks, allowed };
 }
 
 export interface BuildHitRateOptions {
@@ -716,5 +839,7 @@ export async function buildHitRateBoard(
       throughDate: snapshot.meta.throughDate,
     },
     rows,
+    history: packHistory(rows, logsByPlayer, currentSeason),
+    context: packContext(snapshot),
   };
 }

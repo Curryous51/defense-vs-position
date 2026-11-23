@@ -1,5 +1,6 @@
 import { v } from "convex/values";
 import { internalMutation, internalQuery, query } from "./_generated/server";
+import { packPlayerGames, type GameLog } from "./hitRateBuilder";
 
 /** Latest hit-rate board, or null before the first sync. */
 export const latest = query({
@@ -21,6 +22,29 @@ export const current = internalQuery({
       .withIndex("by_key", (q) => q.eq("key", "current"))
       .unique();
     return doc ? { signature: doc.signature ?? null, generatedAt: doc.generatedAt } : null;
+  },
+});
+
+/**
+ * Recent games plus every game against tonight's opponent, for the profile
+ * chart. Read per player so the shared board payload stays small.
+ */
+export const playerHistory = query({
+  args: {
+    playerId: v.string(),
+    opponentId: v.string(),
+    currentSeason: v.number(),
+  },
+  handler: async (ctx, args) => {
+    const doc = await ctx.db
+      .query("playerGameLogs")
+      .withIndex("by_player", (q) => q.eq("playerId", args.playerId))
+      .unique();
+    if (!doc) return null;
+    return packPlayerGames(doc.logs as GameLog[], {
+      opponentId: args.opponentId,
+      currentSeason: args.currentSeason,
+    });
   },
 });
 

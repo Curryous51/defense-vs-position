@@ -23,6 +23,7 @@ import {
 } from "@/lib/static-refresh";
 import { cn } from "@/lib/utils";
 import { useMemo, useState } from "react";
+import { Link } from "react-router";
 
 type SortKey = "player" | "line" | "l5" | "l10" | "h2h" | "matchup" | "dvp";
 
@@ -666,16 +667,18 @@ export default function HitRate() {
               <div className="divide-y divide-border/70">
                 {rows.map((row) => {
                   return (
-                    <div
+                    <Link
                       key={`${row.playerId}-${row.stat}`}
-                      className="grid grid-cols-[minmax(0,1fr)_7.5rem_3.5rem_3.5rem_3.5rem_4.5rem_3.5rem] items-center gap-3 py-2.5 transition-colors hover:bg-accent/40"
+                      to={`/hit-rate/player/${row.playerId}`}
+                      title={`Open ${row.name}'s profile`}
+                      className="group grid grid-cols-[minmax(0,1fr)_7.5rem_3.5rem_3.5rem_3.5rem_4.5rem_3.5rem] items-center gap-3 py-2.5 transition-colors hover:bg-accent/40 focus-visible:bg-accent/40 focus-visible:outline-none"
                     >
                       <div className="flex min-w-0 items-center gap-2.5">
                         <span className="inline-flex h-6 w-9 shrink-0 items-center justify-center rounded-[3px] border border-border text-[9px] font-semibold tracking-[0.06em] text-muted-foreground">
                           {row.teamAbbr}
                         </span>
                         <div className="min-w-0">
-                          <p className="flex items-center gap-1.5 truncate text-[12px] font-medium leading-tight">
+                          <p className="flex items-center gap-1.5 truncate text-[12px] font-medium leading-tight group-hover:underline group-hover:underline-offset-2">
                             {row.name}
                             {row.injuryStatus ? (
                               <span
@@ -732,7 +735,7 @@ export default function HitRate() {
                       <span className="text-[10px] tabular-nums text-muted-foreground">
                         #{row.rank}
                       </span>
-                    </div>
+                    </Link>
                   );
                 })}
               </div>

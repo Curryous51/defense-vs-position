@@ -26,6 +26,96 @@ export interface HitRateRow {
   injuryStatus: string | null;
 }
 
+/**
+ * One completed game, packed as a tuple: the board carries a couple of
+ * thousand of them, and named keys would triple the payload.
+ *
+ * [date, opponentId, opponentAbbr, home, minutes, pts, reb, ast, tpm,
+ *  fgm, fga, 3pa, ftm, fta, score]
+ */
+export type GameLine = [
+  string,
+  string,
+  string,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  number,
+  string,
+];
+
+/** Named view of a {@link GameLine}, for rendering. */
+export interface GameLineFields {
+  date: string;
+  opponentId: string;
+  opponentAbbr: string;
+  home: boolean;
+  minutes: number;
+  pts: number;
+  reb: number;
+  ast: number;
+  tpm: number;
+  fgm: number;
+  fga: number;
+  tpa: number;
+  ftm: number;
+  fta: number;
+  score: string;
+}
+
+export function unpackGame(line: GameLine): GameLineFields {
+  const [
+    date,
+    opponentId,
+    opponentAbbr,
+    home,
+    minutes,
+    pts,
+    reb,
+    ast,
+    tpm,
+    fgm,
+    fga,
+    tpa,
+    ftm,
+    fta,
+    score,
+  ] = line;
+  return {
+    date,
+    opponentId,
+    opponentAbbr,
+    home: home === 1,
+    minutes,
+    pts,
+    reb,
+    ast,
+    tpm,
+    fgm,
+    fga,
+    tpa,
+    ftm,
+    fta,
+    score,
+  };
+}
+
+/**
+ * Defense-vs-position numbers for every team, so a profile can rank any
+ * opponent a player has already faced, not just tonight's.
+ */
+export interface HitRateContext {
+  ranks: Record<string, Record<Position, Record<StatKey, number>>>;
+  allowed: Record<string, Record<Position, Record<StatKey, number>>>;
+}
+
 export interface HitRateBoard {
   meta: {
     generatedAt: string;
@@ -37,6 +127,10 @@ export interface HitRateBoard {
     throughDate: string | null;
   };
   rows: HitRateRow[];
+  /** Completed games per player, newest first. Absent on older snapshots. */
+  history?: Record<string, GameLine[]>;
+  /** Whole-league DvP context. Absent on older snapshots. */
+  context?: HitRateContext;
 }
 
 /**

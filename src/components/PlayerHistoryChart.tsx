@@ -1,0 +1,289 @@
+import { CATEGORY_LABELS, type StatKey } from "@/lib/dvp";
+import {
+  matchupGrade,
+  type GameLineFields,
+  type HitRateContext,
+  type Position,
+} from "@/lib/hit-rate";
+import { cn } from "@/lib/utils";
+import { useState } from "react";
+
+const LOGO = (abbr: string) =>
+  `https://a.espncdn.com/i/teamlogos/nba/500/${abbr.toLowerCase()}.png`;
+
+/** Game dates read as IST, matching the rest of the app. */
+function dayLabel(iso: string): string {
+  return new Intl.DateTimeFormat("en-US", {
+    month: "short",
+    day: "numeric",
+    timeZone: "Asia/Kolkata",
+  }).format(new Date(iso));
+}
+
+function fullDayLabel(iso: string): string {
+  return new Intl.DateTimeFormat("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+    timeZone: "Asia/Kolkata",
+  }).format(new Date(iso));
+}
+
+/** "W 112-108" with the win/loss separated for tone. */
+function scoreParts(score: string): { result: string; margin: string } | null {
+  const match = /^([WL])\s*(.+)$/.exec(score.trim());
+  if (match) return { result: match[1], margin: match[2] };
+  return score.trim() ? { result: "", margin: score.trim() } : null;
+}
+
+function BoxLine({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="flex items-baseline justify-between gap-4">
+      <span className="text-[9px] uppercase tracking-[0.14em] text-muted-foreground">
+        {label}
+      </span>
+      <span className="text-[11px] tabular-nums text-foreground">{value}</span>
+    </div>
+  );
+}
+
+/**
+ * One bar per completed game, coloured against today's line, with a hover (or
+ * pinned) card carrying the box score plus that opponent's defense-vs-position
+ * rank for this stat.
+ */
+export function PlayerHistoryChart({
+  games,
+  line,
+  stat,
+  position,
+  context,
+  tonight,
+}: {
+  games: GameLineFields[];
+  line: number;
+  stat: StatKey;
+  position: Position;
+  context: HitRateContext | undefined;
+  tonight: { opponentAbbr: string; rank: number } | null;
+}) {
+  const [hover, setHover] = useState<number | null>(null);
+  const [pinned, setPinned] = useState<number | null>(null);
+  const active = pinned ?? hover;
+
+  if (!games.length) {
+    return (
+      <p className="border border-dashed border-border px-4 py-10 text-center text-[12px] text-muted-foreground">
+        No completed games in this window.
+      </p>
+    );
+  }
+
+  const values = games.map((game) => game[stat]);
+  const peak = Math.max(line, ...values, 1) * 1.18;
+  const statLabel = CATEGORY_LABELS[stat].toLowerCase();
+  const activeGame = active === null ? null : games[active];
+  const activeScore = activeGame ? scoreParts(activeGame.score) : null;
+  const activeRank = activeGame
+    ? (context?.ranks[activeGame.opponentId]?.[position]?.[stat] ?? null)
+    : null;
+  const activeAllowed = activeGame
+    ? (context?.allowed[activeGame.opponentId]?.[position]?.[stat] ?? null)
+    : null;
+
+  return (
+    <div className="relative">
+      <div className="relative flex h-60 items-end gap-1.5 sm:gap-2">
+        {/* the line */}
+        <div
+          className="pointer-events-none absolute inset-x-0 border-t border-dashed border-foreground/45"
+          style={{ bottom: `${(line / peak) * 100}%` }}
+        >
+          <span className="absolute -top-2 right-0 bg-background pl-1.5 text-[10px] font-medium tabular-nums text-foreground">
+            {line}
+          </span>
+        </div>
+
+        {games.map((game, index) => {
+          const value = game[stat];
+          const tone =
+            value > line ? "favourable" : value < line ? "tough" : "push";
+          const isActive = active === index;
+          return (
+            <button
+              key={`${game.date}-${game.opponentId}`}
+              type="button"
+              onMouseEnter={() => setHover(index)}
+              onMouseLeave={() => setHover(null)}
+              onFocus={() => setHover(index)}
+              onBlur={() => setHover(null)}
+              onClick={() => setPinned((current) => (current === index ? null : index))}
+              aria-label={`${fullDayLabel(game.date)} ${game.home ? "vs" : "at"} ${game.opponentAbbr}: ${value} ${statLabel} against a line of ${line}`}
+              className="group relative flex h-full flex-1 cursor-pointer flex-col items-center justify-end outline-none"
+            >
+              <span
+                className={cn(
+                  "mb-1 text-[10px] font-medium tabular-nums transition-colors",
+                  tone === "favourable"
+                    ? "text-match-favorable-strong"
+                    : tone === "tough"
+                      ? "text-match-tough-strong"
+                      : "text-muted-foreground",
+                )}
+              >
+                {value}
+              </span>
+              <span
+                className={cn(
+                  "w-full max-w-10 rounded-t-[2px] transition-opacity",
+                  tone === "favourable"
+                    ? "bg-match-favorable-strong"
+                    : tone === "tough"
+                      ? "bg-match-tough-strong"
+                      : "bg-muted-foreground/40",
+                  isActive ? "opacity-100" : "opacity-90 group-hover:opacity-100",
+                )}
+                style={{ height: `${Math.max((value / peak) * 100, 2)}%` }}
+              />
+              <span className="mt-2 flex flex-col items-center gap-1">
+                <img
+                  src={LOGO(game.opponentAbbr)}
+                  alt=""
+                  className="size-4 opacity-80"
+                  onError={(event) => {
+                    event.currentTarget.style.visibility = "hidden";
+                  }}
+                />
+                <span className="text-[9px] uppercase tracking-[0.06em] text-muted-foreground">
+                  {dayLabel(game.date)}
+                </span>
+              </span>
+            </button>
+          );
+        })}
+
+        {/* tonight's game, still empty */}
+        {tonight ? (
+          <div className="flex h-full flex-1 flex-col items-center justify-end opacity-60">
+            <span className="mb-1 h-full w-full border-x border-t border-dashed border-border" />
+            <span className="mt-2 flex flex-col items-center gap-1">
+              <img
+                src={LOGO(tonight.opponentAbbr)}
+                alt=""
+                className="size-4 opacity-60"
+                onError={(event) => {
+                  event.currentTarget.style.visibility = "hidden";
+                }}
+              />
+              <span className="text-[9px] uppercase tracking-[0.06em] text-muted-foreground">
+                Next
+              </span>
+            </span>
+          </div>
+        ) : null}
+      </div>
+
+      {activeGame ? (
+        <div
+          className="pointer-events-none absolute -top-2 z-20 w-64 -translate-y-full -translate-x-1/2 border border-border bg-background p-3 shadow-sm"
+          style={{
+            left: `${Math.min(
+              Math.max(((active! + 0.5) / (games.length + (tonight ? 1 : 0))) * 100, 26),
+              74,
+            )}%`,
+          }}
+        >
+          <div className="flex items-start justify-between gap-3">
+            <div className="min-w-0">
+              <p className="text-[11px] font-medium leading-tight">
+                {fullDayLabel(activeGame.date)}
+                <span className="text-muted-foreground">
+                  {" · "}
+                  {activeGame.home ? "vs" : "@"} {activeGame.opponentAbbr}
+                </span>
+              </p>
+              {activeScore ? (
+                <p className="mt-0.5 text-[10px] tabular-nums text-muted-foreground">
+                  <span
+                    className={cn(
+                      "font-medium",
+                      activeScore.result === "W"
+                        ? "text-match-favorable-strong"
+                        : activeScore.result === "L"
+                          ? "text-match-tough-strong"
+                          : "text-muted-foreground",
+                    )}
+                  >
+                    {activeScore.result}
+                  </span>{" "}
+                  {activeScore.margin}
+                </p>
+              ) : null}
+            </div>
+            <span className="text-[9px] uppercase tracking-[0.14em] text-muted-foreground">
+              {activeGame.home ? "Home" : "Away"}
+            </span>
+          </div>
+
+          <div className="mt-2 flex items-baseline gap-1.5 border-t border-border pt-2">
+            <span
+              className={cn(
+                "text-lg font-medium tabular-nums",
+                activeGame[stat] > line
+                  ? "text-match-favorable-strong"
+                  : activeGame[stat] < line
+                    ? "text-match-tough-strong"
+                    : "text-foreground",
+              )}
+            >
+              {activeGame[stat]}
+            </span>
+            <span className="text-[11px] text-muted-foreground">
+              {CATEGORY_LABELS[stat]} ·{" "}
+              {activeGame[stat] > line ? "over" : activeGame[stat] < line ? "under" : "push"}{" "}
+              {line}
+            </span>
+          </div>
+
+          <p className="mt-1 text-[10px] tabular-nums text-muted-foreground">
+            {activeGame.minutes} min · {activeGame.pts} pts · {activeGame.reb} reb ·{" "}
+            {activeGame.ast} ast · {activeGame.tpm} 3PM
+          </p>
+
+          <div className="mt-2 border-t border-border pt-2">
+            <BoxLine label="FG" value={`${activeGame.fgm}/${activeGame.fga}`} />
+            <BoxLine label="3P" value={`${activeGame.tpm}/${activeGame.tpa}`} />
+            <BoxLine label="FT" value={`${activeGame.ftm}/${activeGame.fta}`} />
+          </div>
+
+          <div className="mt-2 border-t border-border pt-2">
+            <p className="text-[9px] uppercase tracking-[0.14em] text-muted-foreground">
+              Matchup · {position} vs {activeGame.opponentAbbr}
+            </p>
+            <p className="mt-0.5 text-[11px] leading-tight">
+              {activeRank === null ? (
+                <span className="text-muted-foreground">No rank available</span>
+              ) : (
+                <>
+                  <span className="font-medium">Rank #{activeRank}</span>{" "}
+                  <span className="text-muted-foreground">
+                    {matchupGrade(activeRank)}
+                    {activeAllowed === null
+                      ? ""
+                      : ` · allows ${activeAllowed.toFixed(1)} ${statLabel} to ${position}s`}
+                  </span>
+                </>
+              )}
+            </p>
+          </div>
+        </div>
+      ) : null}
+
+      <p className="mt-3 text-[9px] uppercase tracking-[0.14em] text-muted-foreground">
+        {pinned === null
+          ? "Hover a bar for the box score and matchup · click to pin"
+          : "Pinned · click the bar again to release"}
+      </p>
+    </div>
+  );
+}
