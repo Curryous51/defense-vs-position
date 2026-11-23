@@ -14,8 +14,10 @@
  *
  * After it finishes: git add public/tracking.json && git commit && git push.
  */
+import { execFile } from "node:child_process";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { promisify } from "node:util";
 import type { GameLine, HitRateBoard } from "../src/lib/hit-rate";
 
 const ENDPOINT = "https://stats.nba.com/stats/leaguedashptstats";
@@ -58,12 +60,16 @@ interface ResultSet {
   rowSet: Array<Array<string | number | null>>;
 }
 
+const execFileAsync = promisify(execFile);
+
 interface PlayerRow {
   playerId: string;
   teamAbbr: string;
 }
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
+let curlUsed = false;
 
 /** NBA schedules games by US Eastern date; our log carries UTC tip-off times. */
 function easternDate(iso: string): string {
@@ -96,6 +102,40 @@ function nameKey(name: string): string {
     .replace(/\b(jr|sr|ii|iii|iv|v)\b/g, "")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+/**
+ * stats.nba.com's edge sometimes stalls a Node/Bun TLS handshake while a plain
+ * curl request from the same machine succeeds, so the system curl is the
+ * fallback whenever fetch times out.
+ */
+async function curlJson(url: string): Promise<unknown> {
+  const args = [
+    "-sS",
+    "--max-time",
+    "60",
+    "--compressed",
+    ...Object.entries(HEADERS).flatMap(([name, value]) => [
+      "-H",
+      `${name}: ${value}`,
+    ]),
+    url,
+  ];
+  const binaries =
+    process.platform === "win32" ? ["curl.exe", "curl"] : ["curl"];
+  let lastError: unknown;
+  for (const binary of binaries) {
+    try {
+      const { stdout } = await execFileAsync(binary, args, {
+        maxBuffer: 64 * 1024 * 1024,
+        windowsHide: true,
+      });
+      return JSON.parse(stdout) as unknown;
+    } catch (error) {
+      lastError = error;
+    }
+  }
+  throw lastError;
 }
 
 async function fetchMeasure(
@@ -138,26 +178,37 @@ async function fetchMeasure(
   });
   const url = `${ENDPOINT}?${params.toString()}`;
 
+  const accept = (body: unknown, via: string): ResultSet => {
+    const set = (body as { resultSets?: ResultSet[] }).resultSets?.[0];
+    if (!set) throw new Error(`no resultSets for ${measure} on ${date}`);
+    if (via === "curl") curlUsed = true;
+    return set;
+  };
+
   let lastError: unknown;
-  for (let attempt = 1; attempt <= 2; attempt += 1) {
-    try {
-      const response = await fetch(url, {
-        headers: HEADERS,
-        signal: AbortSignal.timeout(30_000),
-      });
-      if (!response.ok) {
-        throw new Error(`HTTP ${response.status} for ${measure} on ${date}`);
-      }
-      const body = (await response.json()) as { resultSets?: ResultSet[] };
-      const set = body.resultSets?.[0];
-      if (!set) throw new Error(`no resultSets for ${measure} on ${date}`);
-      return set;
-    } catch (error) {
-      lastError = error;
-      if (attempt === 1) await sleep(1_500);
+  try {
+    const response = await fetch(url, {
+      headers: HEADERS,
+      signal: AbortSignal.timeout(25_000),
+    });
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status} for ${measure} on ${date}`);
     }
+    return accept(await response.json(), "fetch");
+  } catch (error) {
+    lastError = error;
   }
-  throw lastError;
+
+  try {
+    return accept(await curlJson(url), "curl");
+  } catch (error) {
+    const reason = [lastError, error]
+      .map((item) => (item instanceof Error ? item.message : String(item)))
+      .join(" / ");
+    throw new Error(
+      `fetch and curl both failed for ${measure} on ${date} (${reason})`,
+    );
+  }
 }
 
 function column(set: ResultSet, name: string): number {
@@ -242,6 +293,7 @@ const players: Record<string, Record<string, TrackingRow>> = FORCE
   : { ...(existing?.players ?? {}) };
 const covered = new Set<string>(FORCE ? [] : (existing?.meta.dates ?? []));
 const failed: string[] = [];
+let timeouts = 0;
 
 if (!todo.length) {
   console.log(
@@ -303,6 +355,7 @@ for (const [index, date] of todo.entries()) {
   } catch (error) {
     const reason = error instanceof Error ? error.message : String(error);
     failed.push(date);
+    if (/timed out|\(28\)/i.test(reason)) timeouts += 1;
     console.log(`failed · ${reason}`);
     if (/403|Access Denied/i.test(reason)) {
       console.log(
@@ -331,6 +384,12 @@ const output: TrackingFile = {
 await mkdir(path.dirname(OUT_FILE), { recursive: true });
 await writeFile(OUT_FILE, `${JSON.stringify(output)}\n`);
 
+if (curlUsed) {
+  console.log(
+    "\nNode's fetch stalled, so those requests went through the system curl instead — that is expected and harmless.",
+  );
+}
+
 const size = (JSON.stringify(output).length / 1024).toFixed(0);
 console.log(
   `\nWrote public/tracking.json · ${Object.keys(players).length} players · ${output.meta.games} game rows · ${size} KB`,
@@ -341,6 +400,12 @@ if (failed.length) {
   console.log(
     `\n${failed.length} date(s) failed: ${failed.join(", ")}. Run the script again to retry just those.`,
   );
+  if (timeouts === failed.length) {
+    const curl = process.platform === "win32" ? "curl.exe" : "curl";
+    console.log(
+      `\nEvery request timed out, from both fetch and curl. That usually means the network\nitself cannot reach stats.nba.com: turn off any VPN, private DNS or ad blocker and\ntry again. To see whether the host answers at all, run:\n\n  ${curl} -s -m 25 -o ${process.platform === "win32" ? "NUL" : "/dev/null"} -w "http=%{http_code} time=%{time_total}" "${ENDPOINT}?LeagueID=00&PerMode=Totals&PlayerOrTeam=Player&PtMeasureType=Passing&Season=${season}&SeasonType=Regular%20Season&DateFrom=11/21/2026&DateTo=11/21/2026&LastNGames=0&Month=0&TeamID=0&OpponentTeamID=0&Period=0"`,
+    );
+  }
   process.exit(1);
 }
 
