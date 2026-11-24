@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-24T04:47:48.877Z",
+    "generatedAt": "2026-11-24T05:13:45.280Z",
     "season": "2026-27",
     "slateDate": "2026-11-24",
     "games": 3,
@@ -44,10 +44,10 @@
       "teamAbbr": "ORL",
       "opponentId": "8",
       "opponentAbbr": "DET",
-      "position": "PG",
+      "position": "SG",
       "stat": "ast",
       "line": 2.5,
-      "overPrice": -136,
+      "overPrice": -144,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -62,7 +62,7 @@
         "hits": 3,
         "n": 6
       },
-      "rank": 6,
+      "rank": 9,
       "injuryStatus": null
     },
     {
@@ -75,7 +75,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 110,
+      "overPrice": 105,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -103,7 +103,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 4.5,
-      "overPrice": -165,
+      "overPrice": -162,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -131,7 +131,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": -162,
+      "overPrice": -145,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -156,10 +156,10 @@
       "teamAbbr": "ORL",
       "opponentId": "8",
       "opponentAbbr": "DET",
-      "position": "PF",
+      "position": "SF",
       "stat": "reb",
       "line": 6.5,
-      "overPrice": 116,
+      "overPrice": 114,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -174,7 +174,7 @@
         "hits": 3,
         "n": 4
       },
-      "rank": 30,
+      "rank": 21,
       "injuryStatus": null
     },
     {
@@ -184,10 +184,10 @@
       "teamAbbr": "ORL",
       "opponentId": "8",
       "opponentAbbr": "DET",
-      "position": "PF",
+      "position": "SF",
       "stat": "ast",
       "line": 6.5,
-      "overPrice": -128,
+      "overPrice": -125,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -202,7 +202,7 @@
         "hits": 2,
         "n": 4
       },
-      "rank": 15,
+      "rank": 17,
       "injuryStatus": null
     },
     {
@@ -212,10 +212,10 @@
       "teamAbbr": "DET",
       "opponentId": "19",
       "opponentAbbr": "ORL",
-      "position": "C",
+      "position": "PF",
       "stat": "tpm",
       "line": 0.5,
-      "overPrice": -240,
+      "overPrice": -243,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -230,7 +230,7 @@
         "hits": 1,
         "n": 2
       },
-      "rank": 5,
+      "rank": 22,
       "injuryStatus": null
     },
     {
@@ -240,10 +240,10 @@
       "teamAbbr": "ORL",
       "opponentId": "8",
       "opponentAbbr": "DET",
-      "position": "PF",
+      "position": "SF",
       "stat": "pts",
       "line": 10.5,
-      "overPrice": -110,
+      "overPrice": -112,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -258,7 +258,7 @@
         "hits": 3,
         "n": 7
       },
-      "rank": 16,
+      "rank": 26,
       "injuryStatus": null
     },
     {
@@ -268,10 +268,10 @@
       "teamAbbr": "ORL",
       "opponentId": "8",
       "opponentAbbr": "DET",
-      "position": "PG",
+      "position": "SG",
       "stat": "tpm",
       "line": 3.5,
-      "overPrice": 116,
+      "overPrice": 120,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -286,7 +286,7 @@
         "hits": 2,
         "n": 6
       },
-      "rank": 3,
+      "rank": 8,
       "injuryStatus": null
     },
     {
@@ -296,10 +296,10 @@
       "teamAbbr": "ORL",
       "opponentId": "8",
       "opponentAbbr": "DET",
-      "position": "PF",
+      "position": "SF",
       "stat": "pts",
-      "line": 22.5,
-      "overPrice": -125,
+      "line": 23.5,
+      "overPrice": -104,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -314,7 +314,7 @@
         "hits": 2,
         "n": 4
       },
-      "rank": 16,
+      "rank": 26,
       "injuryStatus": null
     },
     {
@@ -327,7 +327,7 @@
       "position": "C",
       "stat": "reb",
       "line": 6.5,
-      "overPrice": -140,
+      "overPrice": -145,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -355,7 +355,7 @@
       "position": "C",
       "stat": "reb",
       "line": 7.5,
-      "overPrice": -120,
+      "overPrice": -140,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -383,7 +383,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 4.5,
-      "overPrice": -125,
+      "overPrice": -115,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -411,7 +411,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 4.5,
-      "overPrice": 120,
+      "overPrice": 122,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -467,7 +467,7 @@
       "position": "C",
       "stat": "tpm",
       "line": 0.5,
-      "overPrice": -140,
+      "overPrice": -145,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -495,7 +495,7 @@
       "position": "SF",
       "stat": "pts",
       "line": 10.5,
-      "overPrice": -108,
+      "overPrice": 102,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -548,10 +548,10 @@
       "teamAbbr": "ORL",
       "opponentId": "8",
       "opponentAbbr": "DET",
-      "position": "PG",
+      "position": "SG",
       "stat": "pts",
       "line": 17.5,
-      "overPrice": -110,
+      "overPrice": -114,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -566,7 +566,7 @@
         "hits": 3,
         "n": 6
       },
-      "rank": 10,
+      "rank": 2,
       "injuryStatus": null
     },
     {
@@ -576,7 +576,7 @@
       "teamAbbr": "DET",
       "opponentId": "19",
       "opponentAbbr": "ORL",
-      "position": "SF",
+      "position": "SG",
       "stat": "ast",
       "line": 2.5,
       "overPrice": -139,
@@ -594,7 +594,7 @@
         "hits": 3,
         "n": 5
       },
-      "rank": 22,
+      "rank": 2,
       "injuryStatus": null
     },
     {
@@ -604,10 +604,10 @@
       "teamAbbr": "ORL",
       "opponentId": "8",
       "opponentAbbr": "DET",
-      "position": "PF",
+      "position": "SF",
       "stat": "ast",
       "line": 1.5,
-      "overPrice": 110,
+      "overPrice": 109,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -622,7 +622,7 @@
         "hits": 2,
         "n": 7
       },
-      "rank": 15,
+      "rank": 17,
       "injuryStatus": null
     },
     {
@@ -660,10 +660,10 @@
       "teamAbbr": "DET",
       "opponentId": "19",
       "opponentAbbr": "ORL",
-      "position": "C",
+      "position": "PF",
       "stat": "reb",
       "line": 5.5,
-      "overPrice": -120,
+      "overPrice": -115,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -678,7 +678,7 @@
         "hits": 1,
         "n": 2
       },
-      "rank": 8,
+      "rank": 22,
       "injuryStatus": null
     },
     {
@@ -744,10 +744,10 @@
       "teamAbbr": "DET",
       "opponentId": "19",
       "opponentAbbr": "ORL",
-      "position": "C",
+      "position": "PF",
       "stat": "pts",
       "line": 10.5,
-      "overPrice": -105,
+      "overPrice": -108,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -762,7 +762,7 @@
         "hits": 1,
         "n": 2
       },
-      "rank": 2,
+      "rank": 30,
       "injuryStatus": null
     },
     {
@@ -775,7 +775,7 @@
       "position": "C",
       "stat": "pts",
       "line": 9.5,
-      "overPrice": -115,
+      "overPrice": -120,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -828,7 +828,7 @@
       "teamAbbr": "DET",
       "opponentId": "19",
       "opponentAbbr": "ORL",
-      "position": "SF",
+      "position": "SG",
       "stat": "pts",
       "line": 9.5,
       "overPrice": -124,
@@ -846,7 +846,7 @@
         "hits": 2,
         "n": 4
       },
-      "rank": 24,
+      "rank": 10,
       "injuryStatus": null
     },
     {
@@ -884,10 +884,10 @@
       "teamAbbr": "DET",
       "opponentId": "19",
       "opponentAbbr": "ORL",
-      "position": "C",
+      "position": "PF",
       "stat": "ast",
       "line": 0.5,
-      "overPrice": -240,
+      "overPrice": -250,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -902,7 +902,7 @@
         "hits": 0,
         "n": 2
       },
-      "rank": 30,
+      "rank": 22,
       "injuryStatus": null
     },
     {
@@ -912,10 +912,10 @@
       "teamAbbr": "DET",
       "opponentId": "19",
       "opponentAbbr": "ORL",
-      "position": "SF",
+      "position": "SG",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": -165,
+      "overPrice": -145,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -930,7 +930,7 @@
         "hits": 3,
         "n": 5
       },
-      "rank": 30,
+      "rank": 18,
       "injuryStatus": null
     },
     {
@@ -940,7 +940,7 @@
       "teamAbbr": "ORL",
       "opponentId": "8",
       "opponentAbbr": "DET",
-      "position": "PF",
+      "position": "SF",
       "stat": "tpm",
       "line": 2.5,
       "overPrice": 120,
@@ -958,7 +958,7 @@
         "hits": 2,
         "n": 7
       },
-      "rank": 14,
+      "rank": 24,
       "injuryStatus": null
     },
     {
@@ -968,7 +968,7 @@
       "teamAbbr": "ORL",
       "opponentId": "8",
       "opponentAbbr": "DET",
-      "position": "PF",
+      "position": "SF",
       "stat": "reb",
       "line": 3.5,
       "overPrice": -120,
@@ -986,7 +986,7 @@
         "hits": 5,
         "n": 7
       },
-      "rank": 30,
+      "rank": 21,
       "injuryStatus": null
     },
     {
@@ -996,7 +996,7 @@
       "teamAbbr": "DET",
       "opponentId": "19",
       "opponentAbbr": "ORL",
-      "position": "SF",
+      "position": "SG",
       "stat": "tpm",
       "line": 1.5,
       "overPrice": -187,
@@ -1014,7 +1014,7 @@
         "hits": 2,
         "n": 4
       },
-      "rank": 30,
+      "rank": 18,
       "injuryStatus": null
     },
     {
@@ -1053,37 +1053,9 @@
       "opponentId": "19",
       "opponentAbbr": "ORL",
       "position": "PG",
-      "stat": "tpm",
-      "line": 1.5,
-      "overPrice": -190,
-      "gameId": "735038",
-      "tipoff": "2026-11-25T00:00:00Z",
-      "l5": {
-        "hits": 3,
-        "n": 5
-      },
-      "l10": {
-        "hits": 4,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 4,
-        "n": 5
-      },
-      "rank": 15,
-      "injuryStatus": "Day-To-Day"
-    },
-    {
-      "playerId": "4432166",
-      "name": "Cade Cunningham",
-      "teamId": "8",
-      "teamAbbr": "DET",
-      "opponentId": "19",
-      "opponentAbbr": "ORL",
-      "position": "PG",
       "stat": "ast",
       "line": 8.5,
-      "overPrice": -105,
+      "overPrice": -106,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -1111,7 +1083,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 2.5,
-      "overPrice": 158,
+      "overPrice": 162,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -1136,10 +1108,10 @@
       "teamAbbr": "ORL",
       "opponentId": "8",
       "opponentAbbr": "DET",
-      "position": "PG",
+      "position": "SG",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": -140,
+      "overPrice": -145,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -1154,7 +1126,7 @@
         "hits": 5,
         "n": 6
       },
-      "rank": 2,
+      "rank": 6,
       "injuryStatus": null
     },
     {
@@ -1164,7 +1136,7 @@
       "teamAbbr": "ORL",
       "opponentId": "8",
       "opponentAbbr": "DET",
-      "position": "PF",
+      "position": "SF",
       "stat": "tpm",
       "line": 1.5,
       "overPrice": 129,
@@ -1182,7 +1154,7 @@
         "hits": 3,
         "n": 4
       },
-      "rank": 14,
+      "rank": 24,
       "injuryStatus": null
     },
     {
@@ -1192,7 +1164,7 @@
       "teamAbbr": "DET",
       "opponentId": "19",
       "opponentAbbr": "ORL",
-      "position": "SF",
+      "position": "SG",
       "stat": "pts",
       "line": 11.5,
       "overPrice": -120,
@@ -1210,7 +1182,7 @@
         "hits": 3,
         "n": 5
       },
-      "rank": 24,
+      "rank": 10,
       "injuryStatus": null
     },
     {
@@ -1251,7 +1223,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": -115,
+      "overPrice": -120,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -1278,8 +1250,8 @@
       "opponentAbbr": "DET",
       "position": "PG",
       "stat": "pts",
-      "line": 10.5,
-      "overPrice": -125,
+      "line": 11.5,
+      "overPrice": 100,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -1298,16 +1270,44 @@
       "injuryStatus": null
     },
     {
+      "playerId": "4432166",
+      "name": "Cade Cunningham",
+      "teamId": "8",
+      "teamAbbr": "DET",
+      "opponentId": "19",
+      "opponentAbbr": "ORL",
+      "position": "PG",
+      "stat": "tpm",
+      "line": 2.5,
+      "overPrice": 144,
+      "gameId": "735038",
+      "tipoff": "2026-11-25T00:00:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 3,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 5
+      },
+      "rank": 15,
+      "injuryStatus": "Day-To-Day"
+    },
+    {
       "playerId": "4066372",
       "name": "Kevin Huerter",
       "teamId": "8",
       "teamAbbr": "DET",
       "opponentId": "19",
       "opponentAbbr": "ORL",
-      "position": "SF",
+      "position": "SG",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": -114,
+      "overPrice": -110,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -1322,7 +1322,7 @@
         "hits": 3,
         "n": 5
       },
-      "rank": 1,
+      "rank": 17,
       "injuryStatus": null
     },
     {
@@ -1335,7 +1335,7 @@
       "position": "SF",
       "stat": "tpm",
       "line": 0.5,
-      "overPrice": 600,
+      "overPrice": 650,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {

@@ -2,7 +2,7 @@
   "meta": {
     "season": "2026-27",
     "source": "FantasyPros defense vs position",
-    "generatedAt": "2026-11-24T04:47:47.025Z",
+    "generatedAt": "2026-11-24T05:13:40.644Z",
     "gamesSampled": 256,
     "throughDate": "2026-11-24T01:30Z"
   },
@@ -713,7 +713,7 @@
       "location": "Houston",
       "nickname": "Rockets",
       "name": "Houston Rockets",
-      "games": 17,
+      "games": 18,
       "season": {
         "PG": {
           "pts": 25.74,
@@ -853,7 +853,7 @@
       "location": "LA",
       "nickname": "Clippers",
       "name": "LA Clippers",
-      "games": 15,
+      "games": 16,
       "season": {
         "PG": {
           "pts": 31.23,
@@ -1273,7 +1273,7 @@
       "location": "New Orleans",
       "nickname": "Pelicans",
       "name": "New Orleans Pelicans",
-      "games": 18,
+      "games": 19,
       "season": {
         "PG": {
           "pts": 31.52,
@@ -1623,7 +1623,7 @@
       "location": "Phoenix",
       "nickname": "Suns",
       "name": "Phoenix Suns",
-      "games": 15,
+      "games": 16,
       "season": {
         "PG": {
           "pts": 29.83,
