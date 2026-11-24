@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generatedAt": "2026-11-24T06:22:50.934Z",
+    "generatedAt": "2026-11-24T16:02:59.995Z",
     "season": "2026-27",
     "slateDate": "2026-11-24",
     "games": 3,
-    "props": 147,
+    "props": 149,
     "source": "PropLine · ESPN",
     "throughDate": "2026-11-24T03:00Z"
   },
@@ -19,7 +19,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 4.5,
-      "overPrice": -132,
+      "overPrice": 100,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -34,7 +34,7 @@
         "hits": 1,
         "n": 5
       },
-      "rank": 6,
+      "rank": 7,
       "injuryStatus": null
     },
     {
@@ -47,7 +47,7 @@
       "position": "PF",
       "stat": "pts",
       "line": 21.5,
-      "overPrice": -115,
+      "overPrice": -105,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -62,7 +62,7 @@
         "hits": 1,
         "n": 1
       },
-      "rank": 7,
+      "rank": 6,
       "injuryStatus": null
     },
     {
@@ -75,7 +75,7 @@
       "position": "SG",
       "stat": "ast",
       "line": 2.5,
-      "overPrice": 100,
+      "overPrice": 110,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -94,44 +94,16 @@
       "injuryStatus": null
     },
     {
-      "playerId": "3936299",
-      "name": "Jamal Murray",
-      "teamId": "7",
-      "teamAbbr": "DEN",
-      "opponentId": "6",
-      "opponentAbbr": "DAL",
-      "position": "PG",
-      "stat": "reb",
-      "line": 3.5,
-      "overPrice": 100,
-      "gameId": "135604",
-      "tipoff": "2026-11-25T03:10:00Z",
-      "l5": {
-        "hits": 4,
-        "n": 5
-      },
-      "l10": {
-        "hits": 8,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 4,
-        "n": 8
-      },
-      "rank": 20,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "4066354",
-      "name": "Payton Pritchard",
+      "playerId": "4065804",
+      "name": "Sam Hauser",
       "teamId": "2",
       "teamAbbr": "BOS",
       "opponentId": "27",
       "opponentAbbr": "WSH",
-      "position": "PG",
-      "stat": "ast",
-      "line": 3.5,
-      "overPrice": -150,
+      "position": "SF",
+      "stat": "pts",
+      "line": 7.5,
+      "overPrice": -128,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -143,10 +115,10 @@
         "n": 10
       },
       "h2h": {
-        "hits": 6,
-        "n": 7
+        "hits": 4,
+        "n": 6
       },
-      "rank": 30,
+      "rank": 11,
       "injuryStatus": null
     },
     {
@@ -159,7 +131,7 @@
       "position": "SG",
       "stat": "ast",
       "line": 2.5,
-      "overPrice": 139,
+      "overPrice": 115,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -187,7 +159,7 @@
       "position": "SG",
       "stat": "ast",
       "line": 2.5,
-      "overPrice": -140,
+      "overPrice": -125,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -202,7 +174,7 @@
         "hits": 3,
         "n": 6
       },
-      "rank": 9,
+      "rank": 8,
       "injuryStatus": null
     },
     {
@@ -215,7 +187,7 @@
       "position": "SF",
       "stat": "reb",
       "line": 6.5,
-      "overPrice": -110,
+      "overPrice": 105,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -271,7 +243,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": -140,
+      "overPrice": -155,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -286,7 +258,35 @@
         "hits": 0,
         "n": 4
       },
-      "rank": 18,
+      "rank": 17,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4566434",
+      "name": "Franz Wagner",
+      "teamId": "19",
+      "teamAbbr": "ORL",
+      "opponentId": "8",
+      "opponentAbbr": "DET",
+      "position": "SF",
+      "stat": "ast",
+      "line": 6.5,
+      "overPrice": -119,
+      "gameId": "735038",
+      "tipoff": "2026-11-25T00:00:00Z",
+      "l5": {
+        "hits": 4,
+        "n": 5
+      },
+      "l10": {
+        "hits": 7,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 4
+      },
+      "rank": 16,
       "injuryStatus": null
     },
     {
@@ -299,7 +299,7 @@
       "position": "SF",
       "stat": "reb",
       "line": 6.5,
-      "overPrice": 114,
+      "overPrice": 100,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -315,34 +315,6 @@
         "n": 4
       },
       "rank": 21,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "4566434",
-      "name": "Franz Wagner",
-      "teamId": "19",
-      "teamAbbr": "ORL",
-      "opponentId": "8",
-      "opponentAbbr": "DET",
-      "position": "SF",
-      "stat": "ast",
-      "line": 6.5,
-      "overPrice": -125,
-      "gameId": "735038",
-      "tipoff": "2026-11-25T00:00:00Z",
-      "l5": {
-        "hits": 4,
-        "n": 5
-      },
-      "l10": {
-        "hits": 7,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 2,
-        "n": 4
-      },
-      "rank": 17,
       "injuryStatus": null
     },
     {
@@ -374,72 +346,16 @@
       "injuryStatus": null
     },
     {
-      "playerId": "3908845",
-      "name": "John Collins",
-      "teamId": "8",
-      "teamAbbr": "DET",
-      "opponentId": "19",
-      "opponentAbbr": "ORL",
-      "position": "PF",
-      "stat": "tpm",
-      "line": 0.5,
-      "overPrice": -240,
-      "gameId": "735038",
-      "tipoff": "2026-11-25T00:00:00Z",
-      "l5": {
-        "hits": 4,
-        "n": 5
-      },
-      "l10": {
-        "hits": 7,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 1,
-        "n": 2
-      },
-      "rank": 22,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "5174563",
-      "name": "Kyshawn George",
-      "teamId": "27",
-      "teamAbbr": "WSH",
-      "opponentId": "2",
-      "opponentAbbr": "BOS",
-      "position": "SG",
-      "stat": "ast",
-      "line": 3.5,
-      "overPrice": -136,
-      "gameId": "135601",
-      "tipoff": "2026-11-25T01:10:00Z",
-      "l5": {
-        "hits": 4,
-        "n": 5
-      },
-      "l10": {
-        "hits": 7,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 0,
-        "n": 4
-      },
-      "rank": 6,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "4251",
-      "name": "Paul George",
+      "playerId": "4397424",
+      "name": "Neemias Queta",
       "teamId": "2",
       "teamAbbr": "BOS",
       "opponentId": "27",
       "opponentAbbr": "WSH",
-      "position": "SF",
-      "stat": "reb",
-      "line": 4.5,
-      "overPrice": -150,
+      "position": "C",
+      "stat": "ast",
+      "line": 1.5,
+      "overPrice": -165,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -451,10 +367,38 @@
         "n": 10
       },
       "h2h": {
-        "hits": 2,
-        "n": 3
+        "hits": 3,
+        "n": 7
       },
-      "rank": 28,
+      "rank": 8,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "3112335",
+      "name": "Nikola Jokic",
+      "teamId": "7",
+      "teamAbbr": "DEN",
+      "opponentId": "6",
+      "opponentAbbr": "DAL",
+      "position": "C",
+      "stat": "pts",
+      "line": 25.5,
+      "overPrice": -112,
+      "gameId": "135604",
+      "tipoff": "2026-11-25T03:10:00Z",
+      "l5": {
+        "hits": 4,
+        "n": 5
+      },
+      "l10": {
+        "hits": 7,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 4,
+        "n": 7
+      },
+      "rank": 17,
       "injuryStatus": null
     },
     {
@@ -482,7 +426,35 @@
         "hits": 3,
         "n": 7
       },
-      "rank": 26,
+      "rank": 24,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5104155",
+      "name": "Bilal Coulibaly",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "SG",
+      "stat": "reb",
+      "line": 3.5,
+      "overPrice": 105,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 7,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 4,
+        "n": 5
+      },
+      "rank": 2,
       "injuryStatus": null
     },
     {
@@ -495,7 +467,7 @@
       "position": "SG",
       "stat": "tpm",
       "line": 3.5,
-      "overPrice": 120,
+      "overPrice": 116,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -523,7 +495,7 @@
       "position": "SF",
       "stat": "pts",
       "line": 23.5,
-      "overPrice": -104,
+      "overPrice": -105,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -538,35 +510,7 @@
         "hits": 2,
         "n": 4
       },
-      "rank": 26,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "3936299",
-      "name": "Jamal Murray",
-      "teamId": "7",
-      "teamAbbr": "DEN",
-      "opponentId": "6",
-      "opponentAbbr": "DAL",
-      "position": "PG",
-      "stat": "ast",
-      "line": 5.5,
-      "overPrice": 100,
-      "gameId": "135604",
-      "tipoff": "2026-11-25T03:10:00Z",
-      "l5": {
-        "hits": 3,
-        "n": 5
-      },
-      "l10": {
-        "hits": 7,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 5,
-        "n": 8
-      },
-      "rank": 27,
+      "rank": 24,
       "injuryStatus": null
     },
     {
@@ -579,7 +523,7 @@
       "position": "PF",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 100,
+      "overPrice": -150,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -607,7 +551,7 @@
       "position": "C",
       "stat": "reb",
       "line": 6.5,
-      "overPrice": -148,
+      "overPrice": -120,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -626,34 +570,6 @@
       "injuryStatus": null
     },
     {
-      "playerId": "4066354",
-      "name": "Payton Pritchard",
-      "teamId": "2",
-      "teamAbbr": "BOS",
-      "opponentId": "27",
-      "opponentAbbr": "WSH",
-      "position": "PG",
-      "stat": "tpm",
-      "line": 1.5,
-      "overPrice": -175,
-      "gameId": "135601",
-      "tipoff": "2026-11-25T01:10:00Z",
-      "l5": {
-        "hits": 3,
-        "n": 5
-      },
-      "l10": {
-        "hits": 7,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 5,
-        "n": 7
-      },
-      "rank": 1,
-      "injuryStatus": null
-    },
-    {
       "playerId": "4277905",
       "name": "Trae Young",
       "teamId": "27",
@@ -663,7 +579,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": -194,
+      "overPrice": -161,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -691,7 +607,7 @@
       "position": "C",
       "stat": "reb",
       "line": 6.5,
-      "overPrice": 116,
+      "overPrice": 118,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -706,7 +622,7 @@
         "hits": 2,
         "n": 6
       },
-      "rank": 4,
+      "rank": 3,
       "injuryStatus": null
     },
     {
@@ -734,7 +650,7 @@
         "hits": 0,
         "n": 5
       },
-      "rank": 2,
+      "rank": 1,
       "injuryStatus": null
     },
     {
@@ -747,7 +663,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 4.5,
-      "overPrice": 120,
+      "overPrice": 122,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -762,7 +678,7 @@
         "hits": 1,
         "n": 7
       },
-      "rank": 2,
+      "rank": 1,
       "injuryStatus": null
     },
     {
@@ -775,7 +691,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 3.5,
-      "overPrice": -140,
+      "overPrice": -125,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -790,8 +706,36 @@
         "hits": 3,
         "n": 7
       },
-      "rank": 6,
+      "rank": 7,
       "injuryStatus": null
+    },
+    {
+      "playerId": "4432166",
+      "name": "Cade Cunningham",
+      "teamId": "8",
+      "teamAbbr": "DET",
+      "opponentId": "19",
+      "opponentAbbr": "ORL",
+      "position": "PG",
+      "stat": "ast",
+      "line": 7.5,
+      "overPrice": -140,
+      "gameId": "735038",
+      "tipoff": "2026-11-25T00:00:00Z",
+      "l5": {
+        "hits": 4,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 5,
+        "n": 5
+      },
+      "rank": 12,
+      "injuryStatus": "Day-To-Day"
     },
     {
       "playerId": "4431767",
@@ -803,7 +747,7 @@
       "position": "SG",
       "stat": "reb",
       "line": 4.5,
-      "overPrice": 125,
+      "overPrice": -105,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -818,7 +762,7 @@
         "hits": 2,
         "n": 5
       },
-      "rank": 18,
+      "rank": 17,
       "injuryStatus": null
     },
     {
@@ -831,7 +775,7 @@
       "position": "SF",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 100,
+      "overPrice": -115,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -859,7 +803,7 @@
       "position": "C",
       "stat": "ast",
       "line": 1.5,
-      "overPrice": -118,
+      "overPrice": -114,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -878,6 +822,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "4277905",
+      "name": "Trae Young",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "PG",
+      "stat": "ast",
+      "line": 7.5,
+      "overPrice": -115,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 4,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 3
+      },
+      "rank": 8,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4277847",
       "name": "Wendell Carter Jr.",
       "teamId": "19",
@@ -887,7 +859,7 @@
       "position": "C",
       "stat": "tpm",
       "line": 0.5,
-      "overPrice": -145,
+      "overPrice": -140,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -915,7 +887,7 @@
       "position": "SF",
       "stat": "tpm",
       "line": 0.5,
-      "overPrice": 100,
+      "overPrice": -222,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -934,34 +906,6 @@
       "injuryStatus": null
     },
     {
-      "playerId": "3064290",
-      "name": "Aaron Gordon",
-      "teamId": "7",
-      "teamAbbr": "DEN",
-      "opponentId": "6",
-      "opponentAbbr": "DAL",
-      "position": "PF",
-      "stat": "reb",
-      "line": 4.5,
-      "overPrice": 100,
-      "gameId": "135604",
-      "tipoff": "2026-11-25T03:10:00Z",
-      "l5": {
-        "hits": 3,
-        "n": 5
-      },
-      "l10": {
-        "hits": 6,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 2,
-        "n": 3
-      },
-      "rank": 14,
-      "injuryStatus": null
-    },
-    {
       "playerId": "5142718",
       "name": "AJ Dybantsa",
       "teamId": "27",
@@ -971,7 +915,7 @@
       "position": "SF",
       "stat": "ast",
       "line": 2.5,
-      "overPrice": -112,
+      "overPrice": -150,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -986,7 +930,35 @@
         "hits": 0,
         "n": 0
       },
-      "rank": 13,
+      "rank": 12,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5160992",
+      "name": "Alex Sarr",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "C",
+      "stat": "pts",
+      "line": 9.5,
+      "overPrice": -110,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 3,
+        "n": 6
+      },
+      "rank": 5,
       "injuryStatus": null
     },
     {
@@ -999,7 +971,7 @@
       "position": "SF",
       "stat": "pts",
       "line": 10.5,
-      "overPrice": 102,
+      "overPrice": -111,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -1014,7 +986,7 @@
         "hits": 2,
         "n": 6
       },
-      "rank": 24,
+      "rank": 23,
       "injuryStatus": null
     },
     {
@@ -1027,7 +999,7 @@
       "position": "SF",
       "stat": "reb",
       "line": 7.5,
-      "overPrice": -125,
+      "overPrice": -140,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -1046,34 +1018,6 @@
       "injuryStatus": null
     },
     {
-      "playerId": "3138196",
-      "name": "Cameron Johnson",
-      "teamId": "7",
-      "teamAbbr": "DEN",
-      "opponentId": "6",
-      "opponentAbbr": "DAL",
-      "position": "SF",
-      "stat": "ast",
-      "line": 1.5,
-      "overPrice": -167,
-      "gameId": "135604",
-      "tipoff": "2026-11-25T03:10:00Z",
-      "l5": {
-        "hits": 3,
-        "n": 5
-      },
-      "l10": {
-        "hits": 6,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 4,
-        "n": 4
-      },
-      "rank": 18,
-      "injuryStatus": null
-    },
-    {
       "playerId": "3078576",
       "name": "Derrick White",
       "teamId": "2",
@@ -1083,7 +1027,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 4.5,
-      "overPrice": -122,
+      "overPrice": -112,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -1098,7 +1042,7 @@
         "hits": 4,
         "n": 7
       },
-      "rank": 30,
+      "rank": 29,
       "injuryStatus": null
     },
     {
@@ -1111,7 +1055,7 @@
       "position": "SG",
       "stat": "pts",
       "line": 17.5,
-      "overPrice": -114,
+      "overPrice": -105,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -1130,6 +1074,90 @@
       "injuryStatus": null
     },
     {
+      "playerId": "3936299",
+      "name": "Jamal Murray",
+      "teamId": "7",
+      "teamAbbr": "DEN",
+      "opponentId": "6",
+      "opponentAbbr": "DAL",
+      "position": "PG",
+      "stat": "ast",
+      "line": 6.5,
+      "overPrice": 106,
+      "gameId": "135604",
+      "tipoff": "2026-11-25T03:10:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 3,
+        "n": 8
+      },
+      "rank": 27,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "3936299",
+      "name": "Jamal Murray",
+      "teamId": "7",
+      "teamAbbr": "DEN",
+      "opponentId": "6",
+      "opponentAbbr": "DAL",
+      "position": "PG",
+      "stat": "pts",
+      "line": 22.5,
+      "overPrice": -118,
+      "gameId": "135604",
+      "tipoff": "2026-11-25T03:10:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 4,
+        "n": 8
+      },
+      "rank": 11,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "3936299",
+      "name": "Jamal Murray",
+      "teamId": "7",
+      "teamAbbr": "DEN",
+      "opponentId": "6",
+      "opponentAbbr": "DAL",
+      "position": "PG",
+      "stat": "reb",
+      "line": 4.5,
+      "overPrice": 105,
+      "gameId": "135604",
+      "tipoff": "2026-11-25T03:10:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 3,
+        "n": 8
+      },
+      "rank": 20,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4066372",
       "name": "Kevin Huerter",
       "teamId": "8",
@@ -1139,7 +1167,7 @@
       "position": "SG",
       "stat": "ast",
       "line": 2.5,
-      "overPrice": -139,
+      "overPrice": -121,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -1158,34 +1186,6 @@
       "injuryStatus": null
     },
     {
-      "playerId": "6442",
-      "name": "Kyrie Irving",
-      "teamId": "6",
-      "teamAbbr": "DAL",
-      "opponentId": "7",
-      "opponentAbbr": "DEN",
-      "position": "PG",
-      "stat": "tpm",
-      "line": 2.5,
-      "overPrice": 100,
-      "gameId": "135604",
-      "tipoff": "2026-11-25T03:10:00Z",
-      "l5": {
-        "hits": 3,
-        "n": 5
-      },
-      "l10": {
-        "hits": 6,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 1,
-        "n": 3
-      },
-      "rank": 8,
-      "injuryStatus": null
-    },
-    {
       "playerId": "4278594",
       "name": "Naji Marshall",
       "teamId": "6",
@@ -1195,7 +1195,7 @@
       "position": "SF",
       "stat": "tpm",
       "line": 0.5,
-      "overPrice": 100,
+      "overPrice": -138,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -1214,6 +1214,62 @@
       "injuryStatus": null
     },
     {
+      "playerId": "4066354",
+      "name": "Payton Pritchard",
+      "teamId": "2",
+      "teamAbbr": "BOS",
+      "opponentId": "27",
+      "opponentAbbr": "WSH",
+      "position": "PG",
+      "stat": "ast",
+      "line": 4.5,
+      "overPrice": 116,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 4,
+        "n": 7
+      },
+      "rank": 29,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4065804",
+      "name": "Sam Hauser",
+      "teamId": "2",
+      "teamAbbr": "BOS",
+      "opponentId": "27",
+      "opponentAbbr": "WSH",
+      "position": "SF",
+      "stat": "tpm",
+      "line": 2.5,
+      "overPrice": 142,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 4,
+        "n": 6
+      },
+      "rank": 3,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4702382",
       "name": "Tristan da Silva",
       "teamId": "19",
@@ -1223,7 +1279,7 @@
       "position": "SF",
       "stat": "ast",
       "line": 1.5,
-      "overPrice": 109,
+      "overPrice": 112,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -1238,7 +1294,7 @@
         "hits": 2,
         "n": 7
       },
-      "rank": 17,
+      "rank": 16,
       "injuryStatus": null
     },
     {
@@ -1251,7 +1307,7 @@
       "position": "SF",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": 100,
+      "overPrice": -130,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -1279,7 +1335,7 @@
       "position": "PG",
       "stat": "pts",
       "line": 14.5,
-      "overPrice": -104,
+      "overPrice": -105,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -1298,6 +1354,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "6583",
+      "name": "Anthony Davis",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "PF",
+      "stat": "reb",
+      "line": 9.5,
+      "overPrice": -120,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 1
+      },
+      "rank": 25,
+      "injuryStatus": null
+    },
+    {
       "playerId": "3138196",
       "name": "Cameron Johnson",
       "teamId": "7",
@@ -1307,7 +1391,7 @@
       "position": "SF",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 100,
+      "overPrice": -181,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -1326,34 +1410,6 @@
       "injuryStatus": null
     },
     {
-      "playerId": "4896372",
-      "name": "Walter Clayton Jr.",
-      "teamId": "6",
-      "teamAbbr": "DAL",
-      "opponentId": "7",
-      "opponentAbbr": "DEN",
-      "position": "PG",
-      "stat": "reb",
-      "line": 2.5,
-      "overPrice": 148,
-      "gameId": "135604",
-      "tipoff": "2026-11-25T03:10:00Z",
-      "l5": {
-        "hits": 2,
-        "n": 5
-      },
-      "l10": {
-        "hits": 6,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 0,
-        "n": 3
-      },
-      "rank": 16,
-      "injuryStatus": null
-    },
-    {
       "playerId": "5211175",
       "name": "Zaccharie Risacher",
       "teamId": "6",
@@ -1363,7 +1419,7 @@
       "position": "SF",
       "stat": "ast",
       "line": 0.5,
-      "overPrice": -200,
+      "overPrice": -175,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -1391,7 +1447,7 @@
       "position": "SG",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": 126,
+      "overPrice": 105,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -1419,7 +1475,7 @@
       "position": "SG",
       "stat": "pts",
       "line": 5.5,
-      "overPrice": 100,
+      "overPrice": -105,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -1434,7 +1490,7 @@
         "hits": 2,
         "n": 3
       },
-      "rank": 18,
+      "rank": 19,
       "injuryStatus": null
     },
     {
@@ -1447,7 +1503,7 @@
       "position": "SG",
       "stat": "tpm",
       "line": 0.5,
-      "overPrice": 100,
+      "overPrice": -130,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -1474,7 +1530,7 @@
       "opponentAbbr": "DAL",
       "position": "SG",
       "stat": "pts",
-      "line": 12.5,
+      "line": 13.5,
       "overPrice": 100,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
@@ -1503,7 +1559,7 @@
       "position": "PF",
       "stat": "reb",
       "line": 5.5,
-      "overPrice": -115,
+      "overPrice": -110,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -1522,34 +1578,6 @@
       "injuryStatus": null
     },
     {
-      "playerId": "4896372",
-      "name": "Walter Clayton Jr.",
-      "teamId": "6",
-      "teamAbbr": "DAL",
-      "opponentId": "7",
-      "opponentAbbr": "DEN",
-      "position": "PG",
-      "stat": "tpm",
-      "line": 1.5,
-      "overPrice": 152,
-      "gameId": "135604",
-      "tipoff": "2026-11-25T03:10:00Z",
-      "l5": {
-        "hits": 4,
-        "n": 5
-      },
-      "l10": {
-        "hits": 5,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 2,
-        "n": 3
-      },
-      "rank": 8,
-      "injuryStatus": null
-    },
-    {
       "playerId": "5142718",
       "name": "AJ Dybantsa",
       "teamId": "27",
@@ -1559,7 +1587,7 @@
       "position": "SF",
       "stat": "pts",
       "line": 16.5,
-      "overPrice": -110,
+      "overPrice": 100,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -1574,7 +1602,63 @@
         "hits": 0,
         "n": 0
       },
-      "rank": 14,
+      "rank": 15,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5160992",
+      "name": "Alex Sarr",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "C",
+      "stat": "ast",
+      "line": 1.5,
+      "overPrice": -115,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 6
+      },
+      "rank": 16,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "6583",
+      "name": "Anthony Davis",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "PF",
+      "stat": "ast",
+      "line": 1.5,
+      "overPrice": -180,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 1
+      },
+      "rank": 19,
       "injuryStatus": null
     },
     {
@@ -1586,8 +1670,8 @@
       "opponentAbbr": "ORL",
       "position": "PG",
       "stat": "pts",
-      "line": 24.5,
-      "overPrice": -105,
+      "line": 25.5,
+      "overPrice": -112,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -1602,7 +1686,7 @@
         "hits": 4,
         "n": 5
       },
-      "rank": 5,
+      "rank": 6,
       "injuryStatus": "Day-To-Day"
     },
     {
@@ -1615,7 +1699,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 4.5,
-      "overPrice": -136,
+      "overPrice": -104,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -1643,7 +1727,7 @@
       "position": "PG",
       "stat": "pts",
       "line": 13.5,
-      "overPrice": -102,
+      "overPrice": -105,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -1658,7 +1742,35 @@
         "hits": 5,
         "n": 7
       },
-      "rank": 6,
+      "rank": 7,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5175647",
+      "name": "Hugo Gonzalez",
+      "teamId": "2",
+      "teamAbbr": "BOS",
+      "opponentId": "27",
+      "opponentAbbr": "WSH",
+      "position": "SG",
+      "stat": "tpm",
+      "line": 0.5,
+      "overPrice": -140,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 3
+      },
+      "rank": 18,
       "injuryStatus": null
     },
     {
@@ -1671,7 +1783,7 @@
       "position": "PF",
       "stat": "pts",
       "line": 10.5,
-      "overPrice": -108,
+      "overPrice": -104,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -1690,6 +1802,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "3908845",
+      "name": "John Collins",
+      "teamId": "8",
+      "teamAbbr": "DET",
+      "opponentId": "19",
+      "opponentAbbr": "ORL",
+      "position": "PF",
+      "stat": "tpm",
+      "line": 1.5,
+      "overPrice": 182,
+      "gameId": "735038",
+      "tipoff": "2026-11-25T00:00:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 2
+      },
+      "rank": 21,
+      "injuryStatus": null
+    },
+    {
       "playerId": "6442",
       "name": "Kyrie Irving",
       "teamId": "6",
@@ -1699,7 +1839,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 4.5,
-      "overPrice": 113,
+      "overPrice": -128,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -1714,7 +1854,7 @@
         "hits": 2,
         "n": 3
       },
-      "rank": 19,
+      "rank": 18,
       "injuryStatus": null
     },
     {
@@ -1727,7 +1867,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": 100,
+      "overPrice": -115,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -1742,7 +1882,7 @@
         "hits": 3,
         "n": 3
       },
-      "rank": 16,
+      "rank": 15,
       "injuryStatus": null
     },
     {
@@ -1770,35 +1910,7 @@
         "hits": 1,
         "n": 4
       },
-      "rank": 6,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "4873153",
-      "name": "Morez Johnson Jr.",
-      "teamId": "6",
-      "teamAbbr": "DAL",
-      "opponentId": "7",
-      "opponentAbbr": "DEN",
-      "position": "PF",
-      "stat": "reb",
-      "line": 4.5,
-      "overPrice": 100,
-      "gameId": "135604",
-      "tipoff": "2026-11-25T03:10:00Z",
-      "l5": {
-        "hits": 3,
-        "n": 5
-      },
-      "l10": {
-        "hits": 5,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 0,
-        "n": 0
-      },
-      "rank": 12,
+      "rank": 7,
       "injuryStatus": null
     },
     {
@@ -1810,7 +1922,7 @@
       "opponentAbbr": "DEN",
       "position": "SF",
       "stat": "pts",
-      "line": 9.5,
+      "line": 10.5,
       "overPrice": 100,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
@@ -1830,34 +1942,6 @@
       "injuryStatus": null
     },
     {
-      "playerId": "4278594",
-      "name": "Naji Marshall",
-      "teamId": "6",
-      "teamAbbr": "DAL",
-      "opponentId": "7",
-      "opponentAbbr": "DEN",
-      "position": "SF",
-      "stat": "reb",
-      "line": 2.5,
-      "overPrice": 100,
-      "gameId": "135604",
-      "tipoff": "2026-11-25T03:10:00Z",
-      "l5": {
-        "hits": 3,
-        "n": 5
-      },
-      "l10": {
-        "hits": 5,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 6,
-        "n": 8
-      },
-      "rank": 2,
-      "injuryStatus": null
-    },
-    {
       "playerId": "4397424",
       "name": "Neemias Queta",
       "teamId": "2",
@@ -1867,7 +1951,7 @@
       "position": "C",
       "stat": "pts",
       "line": 10.5,
-      "overPrice": -120,
+      "overPrice": -124,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -1895,7 +1979,7 @@
       "position": "SF",
       "stat": "pts",
       "line": 18.5,
-      "overPrice": -115,
+      "overPrice": -110,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -1910,7 +1994,35 @@
         "hits": 2,
         "n": 3
       },
-      "rank": 12,
+      "rank": 11,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4251",
+      "name": "Paul George",
+      "teamId": "2",
+      "teamAbbr": "BOS",
+      "opponentId": "27",
+      "opponentAbbr": "WSH",
+      "position": "SF",
+      "stat": "reb",
+      "line": 5.5,
+      "overPrice": 116,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 3
+      },
+      "rank": 28,
       "injuryStatus": null
     },
     {
@@ -1923,7 +2035,7 @@
       "position": "C",
       "stat": "pts",
       "line": 9.5,
-      "overPrice": -115,
+      "overPrice": -120,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -1938,7 +2050,7 @@
         "hits": 0,
         "n": 6
       },
-      "rank": 2,
+      "rank": 1,
       "injuryStatus": null
     },
     {
@@ -1951,7 +2063,7 @@
       "position": "C",
       "stat": "ast",
       "line": 1.5,
-      "overPrice": 108,
+      "overPrice": 105,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -1978,8 +2090,8 @@
       "opponentAbbr": "DEN",
       "position": "SF",
       "stat": "pts",
-      "line": 7.5,
-      "overPrice": 104,
+      "line": 8.5,
+      "overPrice": -110,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -1998,118 +2110,6 @@
       "injuryStatus": null
     },
     {
-      "playerId": "4592427",
-      "name": "Spencer Jones",
-      "teamId": "7",
-      "teamAbbr": "DEN",
-      "opponentId": "6",
-      "opponentAbbr": "DAL",
-      "position": "SF",
-      "stat": "ast",
-      "line": 0.5,
-      "overPrice": 105,
-      "gameId": "135604",
-      "tipoff": "2026-11-25T03:10:00Z",
-      "l5": {
-        "hits": 3,
-        "n": 5
-      },
-      "l10": {
-        "hits": 4,
-        "n": 8
-      },
-      "h2h": {
-        "hits": 2,
-        "n": 4
-      },
-      "rank": 18,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "4395702",
-      "name": "Isaiah Joe",
-      "teamId": "8",
-      "teamAbbr": "DET",
-      "opponentId": "19",
-      "opponentAbbr": "ORL",
-      "position": "SG",
-      "stat": "pts",
-      "line": 9.5,
-      "overPrice": -124,
-      "gameId": "735038",
-      "tipoff": "2026-11-25T00:00:00Z",
-      "l5": {
-        "hits": 3,
-        "n": 5
-      },
-      "l10": {
-        "hits": 3,
-        "n": 6
-      },
-      "h2h": {
-        "hits": 2,
-        "n": 4
-      },
-      "rank": 10,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "5160992",
-      "name": "Alex Sarr",
-      "teamId": "27",
-      "teamAbbr": "WSH",
-      "opponentId": "2",
-      "opponentAbbr": "BOS",
-      "position": "C",
-      "stat": "pts",
-      "line": 10.5,
-      "overPrice": 102,
-      "gameId": "135601",
-      "tipoff": "2026-11-25T01:10:00Z",
-      "l5": {
-        "hits": 2,
-        "n": 5
-      },
-      "l10": {
-        "hits": 5,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 3,
-        "n": 6
-      },
-      "rank": 5,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "6583",
-      "name": "Anthony Davis",
-      "teamId": "27",
-      "teamAbbr": "WSH",
-      "opponentId": "2",
-      "opponentAbbr": "BOS",
-      "position": "PF",
-      "stat": "reb",
-      "line": 10.5,
-      "overPrice": 118,
-      "gameId": "135601",
-      "tipoff": "2026-11-25T01:10:00Z",
-      "l5": {
-        "hits": 2,
-        "n": 5
-      },
-      "l10": {
-        "hits": 5,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 0,
-        "n": 1
-      },
-      "rank": 25,
-      "injuryStatus": null
-    },
-    {
       "playerId": "3138196",
       "name": "Cameron Johnson",
       "teamId": "7",
@@ -2119,7 +2119,7 @@
       "position": "SF",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": 121,
+      "overPrice": -120,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -2135,34 +2135,6 @@
         "n": 4
       },
       "rank": 18,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "5041939",
-      "name": "Cooper Flagg",
-      "teamId": "6",
-      "teamAbbr": "DAL",
-      "opponentId": "7",
-      "opponentAbbr": "DEN",
-      "position": "SF",
-      "stat": "ast",
-      "line": 5.5,
-      "overPrice": 100,
-      "gameId": "135604",
-      "tipoff": "2026-11-25T03:10:00Z",
-      "l5": {
-        "hits": 2,
-        "n": 5
-      },
-      "l10": {
-        "hits": 5,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 2,
-        "n": 4
-      },
-      "rank": 23,
       "injuryStatus": null
     },
     {
@@ -2174,8 +2146,8 @@
       "opponentAbbr": "ORL",
       "position": "PG",
       "stat": "pts",
-      "line": 15.5,
-      "overPrice": -104,
+      "line": 14.5,
+      "overPrice": -120,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -2190,35 +2162,7 @@
         "hits": 1,
         "n": 4
       },
-      "rank": 5,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "3936299",
-      "name": "Jamal Murray",
-      "teamId": "7",
-      "teamAbbr": "DEN",
-      "opponentId": "6",
-      "opponentAbbr": "DAL",
-      "position": "PG",
-      "stat": "pts",
-      "line": 23.5,
-      "overPrice": 104,
-      "gameId": "135604",
-      "tipoff": "2026-11-25T03:10:00Z",
-      "l5": {
-        "hits": 2,
-        "n": 5
-      },
-      "l10": {
-        "hits": 5,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 4,
-        "n": 8
-      },
-      "rank": 11,
+      "rank": 6,
       "injuryStatus": null
     },
     {
@@ -2231,7 +2175,7 @@
       "position": "PF",
       "stat": "ast",
       "line": 0.5,
-      "overPrice": -250,
+      "overPrice": -240,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -2246,7 +2190,7 @@
         "hits": 0,
         "n": 2
       },
-      "rank": 22,
+      "rank": 21,
       "injuryStatus": null
     },
     {
@@ -2259,7 +2203,7 @@
       "position": "SG",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": -165,
+      "overPrice": -145,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -2274,7 +2218,7 @@
         "hits": 3,
         "n": 5
       },
-      "rank": 18,
+      "rank": 19,
       "injuryStatus": null
     },
     {
@@ -2287,7 +2231,7 @@
       "position": "PG",
       "stat": "pts",
       "line": 22.5,
-      "overPrice": 110,
+      "overPrice": -110,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -2306,6 +2250,62 @@
       "injuryStatus": null
     },
     {
+      "playerId": "6442",
+      "name": "Kyrie Irving",
+      "teamId": "6",
+      "teamAbbr": "DAL",
+      "opponentId": "7",
+      "opponentAbbr": "DEN",
+      "position": "PG",
+      "stat": "tpm",
+      "line": 3.5,
+      "overPrice": 133,
+      "gameId": "135604",
+      "tipoff": "2026-11-25T03:10:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 3
+      },
+      "rank": 7,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5174563",
+      "name": "Kyshawn George",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "SG",
+      "stat": "reb",
+      "line": 3.5,
+      "overPrice": -130,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 4
+      },
+      "rank": 2,
+      "injuryStatus": null
+    },
+    {
       "playerId": "5174563",
       "name": "Kyshawn George",
       "teamId": "27",
@@ -2315,7 +2315,7 @@
       "position": "SG",
       "stat": "tpm",
       "line": 2.5,
-      "overPrice": 136,
+      "overPrice": 125,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -2330,35 +2330,7 @@
         "hits": 1,
         "n": 4
       },
-      "rank": 24,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "4873153",
-      "name": "Morez Johnson Jr.",
-      "teamId": "6",
-      "teamAbbr": "DAL",
-      "opponentId": "7",
-      "opponentAbbr": "DEN",
-      "position": "PF",
-      "stat": "pts",
-      "line": 6.5,
-      "overPrice": 104,
-      "gameId": "135604",
-      "tipoff": "2026-11-25T03:10:00Z",
-      "l5": {
-        "hits": 2,
-        "n": 5
-      },
-      "l10": {
-        "hits": 5,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 0,
-        "n": 0
-      },
-      "rank": 21,
+      "rank": 25,
       "injuryStatus": null
     },
     {
@@ -2371,7 +2343,7 @@
       "position": "SF",
       "stat": "ast",
       "line": 2.5,
-      "overPrice": 100,
+      "overPrice": -156,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -2390,62 +2362,6 @@
       "injuryStatus": null
     },
     {
-      "playerId": "4278078",
-      "name": "P.J. Washington",
-      "teamId": "6",
-      "teamAbbr": "DAL",
-      "opponentId": "7",
-      "opponentAbbr": "DEN",
-      "position": "PF",
-      "stat": "pts",
-      "line": 11.5,
-      "overPrice": 105,
-      "gameId": "135604",
-      "tipoff": "2026-11-25T03:10:00Z",
-      "l5": {
-        "hits": 2,
-        "n": 5
-      },
-      "l10": {
-        "hits": 5,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 3,
-        "n": 5
-      },
-      "rank": 21,
-      "injuryStatus": "Day-To-Day"
-    },
-    {
-      "playerId": "4251",
-      "name": "Paul George",
-      "teamId": "2",
-      "teamAbbr": "BOS",
-      "opponentId": "27",
-      "opponentAbbr": "WSH",
-      "position": "SF",
-      "stat": "tpm",
-      "line": 2.5,
-      "overPrice": -115,
-      "gameId": "135601",
-      "tipoff": "2026-11-25T01:10:00Z",
-      "l5": {
-        "hits": 2,
-        "n": 5
-      },
-      "l10": {
-        "hits": 5,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 3,
-        "n": 3
-      },
-      "rank": 2,
-      "injuryStatus": null
-    },
-    {
       "playerId": "4251",
       "name": "Paul George",
       "teamId": "2",
@@ -2455,7 +2371,7 @@
       "position": "SF",
       "stat": "ast",
       "line": 3.5,
-      "overPrice": -130,
+      "overPrice": -105,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -2474,6 +2390,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "4251",
+      "name": "Paul George",
+      "teamId": "2",
+      "teamAbbr": "BOS",
+      "opponentId": "27",
+      "opponentAbbr": "WSH",
+      "position": "SF",
+      "stat": "tpm",
+      "line": 2.5,
+      "overPrice": -125,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 3,
+        "n": 3
+      },
+      "rank": 3,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4066354",
       "name": "Payton Pritchard",
       "teamId": "2",
@@ -2483,7 +2427,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 2.5,
-      "overPrice": -130,
+      "overPrice": -140,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -2502,18 +2446,18 @@
       "injuryStatus": null
     },
     {
-      "playerId": "4702382",
-      "name": "Tristan da Silva",
-      "teamId": "19",
-      "teamAbbr": "ORL",
-      "opponentId": "8",
-      "opponentAbbr": "DET",
-      "position": "SF",
+      "playerId": "4066354",
+      "name": "Payton Pritchard",
+      "teamId": "2",
+      "teamAbbr": "BOS",
+      "opponentId": "27",
+      "opponentAbbr": "WSH",
+      "position": "PG",
       "stat": "tpm",
       "line": 2.5,
-      "overPrice": 120,
-      "gameId": "735038",
-      "tipoff": "2026-11-25T00:00:00Z",
+      "overPrice": 175,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
         "hits": 2,
         "n": 5
@@ -2523,10 +2467,10 @@
         "n": 10
       },
       "h2h": {
-        "hits": 2,
+        "hits": 4,
         "n": 7
       },
-      "rank": 24,
+      "rank": 1,
       "injuryStatus": null
     },
     {
@@ -2539,7 +2483,7 @@
       "position": "SF",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": -120,
+      "overPrice": -110,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -2558,44 +2502,16 @@
       "injuryStatus": null
     },
     {
-      "playerId": "4592427",
-      "name": "Spencer Jones",
-      "teamId": "7",
-      "teamAbbr": "DEN",
-      "opponentId": "6",
-      "opponentAbbr": "DAL",
+      "playerId": "4702382",
+      "name": "Tristan da Silva",
+      "teamId": "19",
+      "teamAbbr": "ORL",
+      "opponentId": "8",
+      "opponentAbbr": "DET",
       "position": "SF",
       "stat": "tpm",
-      "line": 0.5,
-      "overPrice": 107,
-      "gameId": "135604",
-      "tipoff": "2026-11-25T03:10:00Z",
-      "l5": {
-        "hits": 2,
-        "n": 5
-      },
-      "l10": {
-        "hits": 4,
-        "n": 8
-      },
-      "h2h": {
-        "hits": 2,
-        "n": 4
-      },
-      "rank": 21,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "4395702",
-      "name": "Isaiah Joe",
-      "teamId": "8",
-      "teamAbbr": "DET",
-      "opponentId": "19",
-      "opponentAbbr": "ORL",
-      "position": "SG",
-      "stat": "tpm",
-      "line": 1.5,
-      "overPrice": -187,
+      "line": 2.5,
+      "overPrice": 121,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -2603,14 +2519,14 @@
         "n": 5
       },
       "l10": {
-        "hits": 3,
-        "n": 6
+        "hits": 5,
+        "n": 10
       },
       "h2h": {
         "hits": 2,
-        "n": 4
+        "n": 7
       },
-      "rank": 18,
+      "rank": 23,
       "injuryStatus": null
     },
     {
@@ -2623,7 +2539,7 @@
       "position": "SF",
       "stat": "reb",
       "line": 6.5,
-      "overPrice": 122,
+      "overPrice": 110,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -2642,34 +2558,6 @@
       "injuryStatus": null
     },
     {
-      "playerId": "4896372",
-      "name": "Walter Clayton Jr.",
-      "teamId": "6",
-      "teamAbbr": "DAL",
-      "opponentId": "7",
-      "opponentAbbr": "DEN",
-      "position": "PG",
-      "stat": "ast",
-      "line": 3.5,
-      "overPrice": 114,
-      "gameId": "135604",
-      "tipoff": "2026-11-25T03:10:00Z",
-      "l5": {
-        "hits": 1,
-        "n": 5
-      },
-      "l10": {
-        "hits": 5,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 2,
-        "n": 3
-      },
-      "rank": 19,
-      "injuryStatus": null
-    },
-    {
       "playerId": "5160992",
       "name": "Alex Sarr",
       "teamId": "27",
@@ -2679,7 +2567,7 @@
       "position": "C",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 120,
+      "overPrice": 125,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -2694,7 +2582,7 @@
         "hits": 3,
         "n": 6
       },
-      "rank": 23,
+      "rank": 24,
       "injuryStatus": null
     },
     {
@@ -2707,7 +2595,7 @@
       "position": "SF",
       "stat": "ast",
       "line": 4.5,
-      "overPrice": 123,
+      "overPrice": 120,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -2722,22 +2610,22 @@
         "hits": 2,
         "n": 6
       },
-      "rank": 22,
+      "rank": 21,
       "injuryStatus": null
     },
     {
-      "playerId": "4432166",
-      "name": "Cade Cunningham",
-      "teamId": "8",
-      "teamAbbr": "DET",
-      "opponentId": "19",
-      "opponentAbbr": "ORL",
-      "position": "PG",
-      "stat": "ast",
-      "line": 8.5,
+      "playerId": "5104155",
+      "name": "Bilal Coulibaly",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "SG",
+      "stat": "pts",
+      "line": 6.5,
       "overPrice": -105,
-      "gameId": "735038",
-      "tipoff": "2026-11-25T00:00:00Z",
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
         "hits": 3,
         "n": 5
@@ -2747,11 +2635,39 @@
         "n": 10
       },
       "h2h": {
-        "hits": 5,
+        "hits": 3,
         "n": 5
       },
-      "rank": 12,
-      "injuryStatus": "Day-To-Day"
+      "rank": 7,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5104155",
+      "name": "Bilal Coulibaly",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "SG",
+      "stat": "tpm",
+      "line": 0.5,
+      "overPrice": -150,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 3,
+        "n": 5
+      },
+      "rank": 25,
+      "injuryStatus": null
     },
     {
       "playerId": "4431767",
@@ -2763,7 +2679,7 @@
       "position": "SG",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 107,
+      "overPrice": 115,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -2791,7 +2707,7 @@
       "position": "C",
       "stat": "pts",
       "line": 9.5,
-      "overPrice": 100,
+      "overPrice": -104,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -2806,7 +2722,7 @@
         "hits": 3,
         "n": 6
       },
-      "rank": 10,
+      "rank": 12,
       "injuryStatus": null
     },
     {
@@ -2819,7 +2735,7 @@
       "position": "SG",
       "stat": "reb",
       "line": 1.5,
-      "overPrice": -133,
+      "overPrice": -150,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -2834,35 +2750,7 @@
         "hits": 7,
         "n": 7
       },
-      "rank": 18,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "3078576",
-      "name": "Derrick White",
-      "teamId": "2",
-      "teamAbbr": "BOS",
-      "opponentId": "27",
-      "opponentAbbr": "WSH",
-      "position": "PG",
-      "stat": "tpm",
-      "line": 1.5,
-      "overPrice": -175,
-      "gameId": "135601",
-      "tipoff": "2026-11-25T01:10:00Z",
-      "l5": {
-        "hits": 3,
-        "n": 5
-      },
-      "l10": {
-        "hits": 4,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 7,
-        "n": 7
-      },
-      "rank": 1,
+      "rank": 17,
       "injuryStatus": null
     },
     {
@@ -2875,7 +2763,7 @@
       "position": "PF",
       "stat": "reb",
       "line": 7.5,
-      "overPrice": -115,
+      "overPrice": -110,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -2890,35 +2778,7 @@
         "hits": 4,
         "n": 4
       },
-      "rank": 23,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "4873153",
-      "name": "Morez Johnson Jr.",
-      "teamId": "6",
-      "teamAbbr": "DAL",
-      "opponentId": "7",
-      "opponentAbbr": "DEN",
-      "position": "PF",
-      "stat": "ast",
-      "line": 1.5,
-      "overPrice": 135,
-      "gameId": "135604",
-      "tipoff": "2026-11-25T03:10:00Z",
-      "l5": {
-        "hits": 3,
-        "n": 5
-      },
-      "l10": {
-        "hits": 4,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 0,
-        "n": 0
-      },
-      "rank": 9,
+      "rank": 24,
       "injuryStatus": null
     },
     {
@@ -2931,7 +2791,7 @@
       "position": "C",
       "stat": "reb",
       "line": 8.5,
-      "overPrice": 114,
+      "overPrice": -128,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -2957,9 +2817,37 @@
       "opponentId": "6",
       "opponentAbbr": "DAL",
       "position": "C",
+      "stat": "ast",
+      "line": 9.5,
+      "overPrice": -115,
+      "gameId": "135604",
+      "tipoff": "2026-11-25T03:10:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 6,
+        "n": 7
+      },
+      "rank": 17,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "3112335",
+      "name": "Nikola Jokic",
+      "teamId": "7",
+      "teamAbbr": "DEN",
+      "opponentId": "6",
+      "opponentAbbr": "DAL",
+      "position": "C",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 116,
+      "overPrice": 131,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -2978,62 +2866,6 @@
       "injuryStatus": null
     },
     {
-      "playerId": "3112335",
-      "name": "Nikola Jokic",
-      "teamId": "7",
-      "teamAbbr": "DEN",
-      "opponentId": "6",
-      "opponentAbbr": "DAL",
-      "position": "C",
-      "stat": "ast",
-      "line": 9.5,
-      "overPrice": 100,
-      "gameId": "135604",
-      "tipoff": "2026-11-25T03:10:00Z",
-      "l5": {
-        "hits": 3,
-        "n": 5
-      },
-      "l10": {
-        "hits": 4,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 6,
-        "n": 7
-      },
-      "rank": 16,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "4896372",
-      "name": "Walter Clayton Jr.",
-      "teamId": "6",
-      "teamAbbr": "DAL",
-      "opponentId": "7",
-      "opponentAbbr": "DEN",
-      "position": "PG",
-      "stat": "pts",
-      "line": 8.5,
-      "overPrice": 115,
-      "gameId": "135604",
-      "tipoff": "2026-11-25T03:10:00Z",
-      "l5": {
-        "hits": 3,
-        "n": 5
-      },
-      "l10": {
-        "hits": 4,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 1,
-        "n": 3
-      },
-      "rank": 4,
-      "injuryStatus": null
-    },
-    {
       "playerId": "6583",
       "name": "Anthony Davis",
       "teamId": "27",
@@ -3041,9 +2873,9 @@
       "opponentId": "2",
       "opponentAbbr": "BOS",
       "position": "PF",
-      "stat": "ast",
-      "line": 2.5,
-      "overPrice": 158,
+      "stat": "tpm",
+      "line": 0.5,
+      "overPrice": -125,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -3055,10 +2887,10 @@
         "n": 10
       },
       "h2h": {
-        "hits": 1,
+        "hits": 0,
         "n": 1
       },
-      "rank": 19,
+      "rank": 22,
       "injuryStatus": null
     },
     {
@@ -3071,7 +2903,7 @@
       "position": "SF",
       "stat": "pts",
       "line": 12.5,
-      "overPrice": 111,
+      "overPrice": -120,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -3086,7 +2918,7 @@
         "hits": 1,
         "n": 4
       },
-      "rank": 27,
+      "rank": 26,
       "injuryStatus": null
     },
     {
@@ -3097,9 +2929,9 @@
       "opponentId": "7",
       "opponentAbbr": "DEN",
       "position": "SF",
-      "stat": "pts",
-      "line": 22.5,
-      "overPrice": 100,
+      "stat": "ast",
+      "line": 6.5,
+      "overPrice": 105,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -3111,7 +2943,35 @@
         "n": 10
       },
       "h2h": {
-        "hits": 3,
+        "hits": 2,
+        "n": 4
+      },
+      "rank": 23,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5041939",
+      "name": "Cooper Flagg",
+      "teamId": "6",
+      "teamAbbr": "DAL",
+      "opponentId": "7",
+      "opponentAbbr": "DEN",
+      "position": "SF",
+      "stat": "pts",
+      "line": 24.5,
+      "overPrice": -105,
+      "gameId": "135604",
+      "tipoff": "2026-11-25T03:10:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
         "n": 4
       },
       "rank": 30,
@@ -3155,7 +3015,7 @@
       "position": "SG",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": -125,
+      "overPrice": -112,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -3183,7 +3043,7 @@
       "position": "SF",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 130,
+      "overPrice": 140,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -3198,7 +3058,35 @@
         "hits": 3,
         "n": 4
       },
-      "rank": 24,
+      "rank": 23,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5175647",
+      "name": "Hugo Gonzalez",
+      "teamId": "2",
+      "teamAbbr": "BOS",
+      "opponentId": "27",
+      "opponentAbbr": "WSH",
+      "position": "SG",
+      "stat": "pts",
+      "line": 5.5,
+      "overPrice": -105,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 3
+      },
+      "rank": 27,
       "injuryStatus": null
     },
     {
@@ -3211,7 +3099,7 @@
       "position": "PF",
       "stat": "pts",
       "line": 26.5,
-      "overPrice": -115,
+      "overPrice": -110,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -3226,7 +3114,7 @@
         "hits": 1,
         "n": 4
       },
-      "rank": 28,
+      "rank": 29,
       "injuryStatus": null
     },
     {
@@ -3239,7 +3127,7 @@
       "position": "SG",
       "stat": "pts",
       "line": 11.5,
-      "overPrice": -124,
+      "overPrice": -105,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -3254,91 +3142,7 @@
         "hits": 3,
         "n": 5
       },
-      "rank": 10,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "5174563",
-      "name": "Kyshawn George",
-      "teamId": "27",
-      "teamAbbr": "WSH",
-      "opponentId": "2",
-      "opponentAbbr": "BOS",
-      "position": "SG",
-      "stat": "reb",
-      "line": 4.5,
-      "overPrice": 130,
-      "gameId": "135601",
-      "tipoff": "2026-11-25T01:10:00Z",
-      "l5": {
-        "hits": 2,
-        "n": 5
-      },
-      "l10": {
-        "hits": 4,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 0,
-        "n": 4
-      },
-      "rank": 2,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "4873153",
-      "name": "Morez Johnson Jr.",
-      "teamId": "6",
-      "teamAbbr": "DAL",
-      "opponentId": "7",
-      "opponentAbbr": "DEN",
-      "position": "PF",
-      "stat": "tpm",
-      "line": 0.5,
-      "overPrice": 194,
-      "gameId": "135604",
-      "tipoff": "2026-11-25T03:10:00Z",
-      "l5": {
-        "hits": 2,
-        "n": 5
-      },
-      "l10": {
-        "hits": 4,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 0,
-        "n": 0
-      },
-      "rank": 30,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "3112335",
-      "name": "Nikola Jokic",
-      "teamId": "7",
-      "teamAbbr": "DEN",
-      "opponentId": "6",
-      "opponentAbbr": "DAL",
-      "position": "C",
-      "stat": "pts",
-      "line": 26.5,
-      "overPrice": 111,
-      "gameId": "135604",
-      "tipoff": "2026-11-25T03:10:00Z",
-      "l5": {
-        "hits": 2,
-        "n": 5
-      },
-      "l10": {
-        "hits": 4,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 4,
-        "n": 7
-      },
-      "rank": 18,
+      "rank": 11,
       "injuryStatus": null
     },
     {
@@ -3350,8 +3154,8 @@
       "opponentAbbr": "DAL",
       "position": "C",
       "stat": "reb",
-      "line": 12.5,
-      "overPrice": 100,
+      "line": 11.5,
+      "overPrice": -125,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -3368,6 +3172,34 @@
       },
       "rank": 24,
       "injuryStatus": null
+    },
+    {
+      "playerId": "4278078",
+      "name": "P.J. Washington",
+      "teamId": "6",
+      "teamAbbr": "DAL",
+      "opponentId": "7",
+      "opponentAbbr": "DEN",
+      "position": "PF",
+      "stat": "pts",
+      "line": 12.5,
+      "overPrice": 100,
+      "gameId": "135604",
+      "tipoff": "2026-11-25T03:10:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 5
+      },
+      "rank": 24,
+      "injuryStatus": "Day-To-Day"
     },
     {
       "playerId": "4066354",
@@ -3394,35 +3226,7 @@
         "hits": 5,
         "n": 7
       },
-      "rank": 6,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "4277905",
-      "name": "Trae Young",
-      "teamId": "27",
-      "teamAbbr": "WSH",
-      "opponentId": "2",
-      "opponentAbbr": "BOS",
-      "position": "PG",
-      "stat": "ast",
-      "line": 8.5,
-      "overPrice": 115,
-      "gameId": "135601",
-      "tipoff": "2026-11-25T01:10:00Z",
-      "l5": {
-        "hits": 2,
-        "n": 5
-      },
-      "l10": {
-        "hits": 4,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 1,
-        "n": 3
-      },
-      "rank": 8,
+      "rank": 7,
       "injuryStatus": null
     },
     {
@@ -3450,7 +3254,7 @@
         "hits": 3,
         "n": 6
       },
-      "rank": 11,
+      "rank": 13,
       "injuryStatus": null
     },
     {
@@ -3463,7 +3267,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 2.5,
-      "overPrice": 100,
+      "overPrice": 101,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -3491,7 +3295,7 @@
       "position": "PF",
       "stat": "ast",
       "line": 6.5,
-      "overPrice": 112,
+      "overPrice": -106,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -3506,7 +3310,35 @@
         "hits": 2,
         "n": 4
       },
-      "rank": 17,
+      "rank": 18,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5174563",
+      "name": "Kyshawn George",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "SG",
+      "stat": "ast",
+      "line": 4.5,
+      "overPrice": 120,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 1,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 4
+      },
+      "rank": 6,
       "injuryStatus": null
     },
     {
@@ -3519,7 +3351,7 @@
       "position": "PF",
       "stat": "reb",
       "line": 5.5,
-      "overPrice": 133,
+      "overPrice": 105,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -3534,7 +3366,7 @@
         "hits": 4,
         "n": 5
       },
-      "rank": 12,
+      "rank": 11,
       "injuryStatus": "Day-To-Day"
     },
     {
@@ -3547,7 +3379,7 @@
       "position": "PG",
       "stat": "pts",
       "line": 15.5,
-      "overPrice": 100,
+      "overPrice": -101,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -3575,7 +3407,7 @@
       "position": "C",
       "stat": "reb",
       "line": 8.5,
-      "overPrice": 116,
+      "overPrice": 114,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -3590,7 +3422,7 @@
         "hits": 3,
         "n": 6
       },
-      "rank": 20,
+      "rank": 21,
       "injuryStatus": null
     },
     {
@@ -3603,7 +3435,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": -115,
+      "overPrice": -125,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -3631,7 +3463,7 @@
       "position": "PG",
       "stat": "pts",
       "line": 11.5,
-      "overPrice": 100,
+      "overPrice": -102,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -3650,59 +3482,87 @@
       "injuryStatus": null
     },
     {
-      "playerId": "4592427",
-      "name": "Spencer Jones",
-      "teamId": "7",
-      "teamAbbr": "DEN",
-      "opponentId": "6",
-      "opponentAbbr": "DAL",
-      "position": "SF",
+      "playerId": "4395702",
+      "name": "Isaiah Joe",
+      "teamId": "8",
+      "teamAbbr": "DET",
+      "opponentId": "19",
+      "opponentAbbr": "ORL",
+      "position": "SG",
       "stat": "pts",
-      "line": 3.5,
-      "overPrice": -110,
-      "gameId": "135604",
-      "tipoff": "2026-11-25T03:10:00Z",
+      "line": 11.5,
+      "overPrice": -102,
+      "gameId": "735038",
+      "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
         "hits": 2,
         "n": 5
       },
       "l10": {
-        "hits": 3,
-        "n": 8
+        "hits": 2,
+        "n": 6
       },
       "h2h": {
-        "hits": 4,
+        "hits": 2,
         "n": 4
       },
-      "rank": 27,
+      "rank": 11,
       "injuryStatus": null
     },
     {
-      "playerId": "4592427",
-      "name": "Spencer Jones",
-      "teamId": "7",
-      "teamAbbr": "DEN",
-      "opponentId": "6",
-      "opponentAbbr": "DAL",
-      "position": "SF",
-      "stat": "reb",
+      "playerId": "4395702",
+      "name": "Isaiah Joe",
+      "teamId": "8",
+      "teamAbbr": "DET",
+      "opponentId": "19",
+      "opponentAbbr": "ORL",
+      "position": "SG",
+      "stat": "tpm",
       "line": 2.5,
-      "overPrice": 140,
-      "gameId": "135604",
-      "tipoff": "2026-11-25T03:10:00Z",
+      "overPrice": 144,
+      "gameId": "735038",
+      "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
         "hits": 2,
         "n": 5
       },
       "l10": {
-        "hits": 3,
-        "n": 8
+        "hits": 2,
+        "n": 6
       },
       "h2h": {
-        "hits": 3,
+        "hits": 2,
         "n": 4
       },
-      "rank": 18,
+      "rank": 19,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5175647",
+      "name": "Hugo Gonzalez",
+      "teamId": "2",
+      "teamAbbr": "BOS",
+      "opponentId": "27",
+      "opponentAbbr": "WSH",
+      "position": "SG",
+      "stat": "reb",
+      "line": 3.5,
+      "overPrice": -110,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 3,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 3
+      },
+      "rank": 15,
       "injuryStatus": null
     },
     {
@@ -3715,7 +3575,7 @@
       "position": "PF",
       "stat": "pts",
       "line": 13.5,
-      "overPrice": 101,
+      "overPrice": -111,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -3730,7 +3590,35 @@
         "hits": 1,
         "n": 3
       },
-      "rank": 25,
+      "rank": 26,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "3064290",
+      "name": "Aaron Gordon",
+      "teamId": "7",
+      "teamAbbr": "DEN",
+      "opponentId": "6",
+      "opponentAbbr": "DAL",
+      "position": "PF",
+      "stat": "reb",
+      "line": 5.5,
+      "overPrice": 110,
+      "gameId": "135604",
+      "tipoff": "2026-11-25T03:10:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 3,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 3
+      },
+      "rank": 12,
       "injuryStatus": null
     },
     {
@@ -3743,7 +3631,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 2.5,
-      "overPrice": 142,
+      "overPrice": 144,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -3762,6 +3650,34 @@
       "injuryStatus": "Day-To-Day"
     },
     {
+      "playerId": "3138196",
+      "name": "Cameron Johnson",
+      "teamId": "7",
+      "teamAbbr": "DEN",
+      "opponentId": "6",
+      "opponentAbbr": "DAL",
+      "position": "SF",
+      "stat": "ast",
+      "line": 2.5,
+      "overPrice": 120,
+      "gameId": "135604",
+      "tipoff": "2026-11-25T03:10:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 3,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 3,
+        "n": 4
+      },
+      "rank": 18,
+      "injuryStatus": null
+    },
+    {
       "playerId": "3978",
       "name": "DeMar DeRozan",
       "teamId": "7",
@@ -3771,7 +3687,7 @@
       "position": "SG",
       "stat": "pts",
       "line": 10.5,
-      "overPrice": 100,
+      "overPrice": -102,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -3790,6 +3706,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "3078576",
+      "name": "Derrick White",
+      "teamId": "2",
+      "teamAbbr": "BOS",
+      "opponentId": "27",
+      "opponentAbbr": "WSH",
+      "position": "PG",
+      "stat": "tpm",
+      "line": 2.5,
+      "overPrice": 158,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 3,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 5,
+        "n": 7
+      },
+      "rank": 1,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4066372",
       "name": "Kevin Huerter",
       "teamId": "8",
@@ -3799,7 +3743,7 @@
       "position": "SG",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": -105,
+      "overPrice": 114,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -3814,7 +3758,7 @@
         "hits": 3,
         "n": 5
       },
-      "rank": 17,
+      "rank": 16,
       "injuryStatus": null
     },
     {
@@ -3827,7 +3771,7 @@
       "position": "PF",
       "stat": "ast",
       "line": 1.5,
-      "overPrice": 145,
+      "overPrice": 120,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -3842,8 +3786,36 @@
         "hits": 3,
         "n": 5
       },
-      "rank": 9,
+      "rank": 8,
       "injuryStatus": "Day-To-Day"
+    },
+    {
+      "playerId": "5104155",
+      "name": "Bilal Coulibaly",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "SG",
+      "stat": "ast",
+      "line": 1.5,
+      "overPrice": 115,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 1,
+        "n": 5
+      },
+      "l10": {
+        "hits": 3,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 4,
+        "n": 5
+      },
+      "rank": 6,
+      "injuryStatus": null
     },
     {
       "playerId": "3078576",
@@ -3855,7 +3827,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": 120,
+      "overPrice": 125,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -3874,6 +3846,62 @@
       "injuryStatus": null
     },
     {
+      "playerId": "4278594",
+      "name": "Naji Marshall",
+      "teamId": "6",
+      "teamAbbr": "DAL",
+      "opponentId": "7",
+      "opponentAbbr": "DEN",
+      "position": "SF",
+      "stat": "reb",
+      "line": 3.5,
+      "overPrice": 142,
+      "gameId": "135604",
+      "tipoff": "2026-11-25T03:10:00Z",
+      "l5": {
+        "hits": 1,
+        "n": 5
+      },
+      "l10": {
+        "hits": 3,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 6,
+        "n": 8
+      },
+      "rank": 2,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4065804",
+      "name": "Sam Hauser",
+      "teamId": "2",
+      "teamAbbr": "BOS",
+      "opponentId": "27",
+      "opponentAbbr": "WSH",
+      "position": "SF",
+      "stat": "reb",
+      "line": 3.5,
+      "overPrice": 115,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 1,
+        "n": 5
+      },
+      "l10": {
+        "hits": 3,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 3,
+        "n": 6
+      },
+      "rank": 28,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4277905",
       "name": "Trae Young",
       "teamId": "27",
@@ -3883,7 +3911,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 2.5,
-      "overPrice": 115,
+      "overPrice": 142,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -3898,7 +3926,7 @@
         "hits": 2,
         "n": 3
       },
-      "rank": 21,
+      "rank": 22,
       "injuryStatus": null
     },
     {
@@ -3911,7 +3939,7 @@
       "position": "SG",
       "stat": "ast",
       "line": 2.5,
-      "overPrice": 139,
+      "overPrice": 105,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -3954,7 +3982,35 @@
         "hits": 0,
         "n": 0
       },
-      "rank": 14,
+      "rank": 15,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "3064290",
+      "name": "Aaron Gordon",
+      "teamId": "7",
+      "teamAbbr": "DEN",
+      "opponentId": "6",
+      "opponentAbbr": "DAL",
+      "position": "PF",
+      "stat": "ast",
+      "line": 2.5,
+      "overPrice": 148,
+      "gameId": "135604",
+      "tipoff": "2026-11-25T03:10:00Z",
+      "l5": {
+        "hits": 1,
+        "n": 5
+      },
+      "l10": {
+        "hits": 1,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 3
+      },
+      "rank": 17,
       "injuryStatus": null
     },
     {
@@ -3967,7 +4023,7 @@
       "position": "PF",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 129,
+      "overPrice": 134,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -3986,16 +4042,16 @@
       "injuryStatus": null
     },
     {
-      "playerId": "3064290",
-      "name": "Aaron Gordon",
-      "teamId": "7",
-      "teamAbbr": "DEN",
-      "opponentId": "6",
-      "opponentAbbr": "DAL",
-      "position": "PF",
-      "stat": "ast",
-      "line": 2.5,
-      "overPrice": 144,
+      "playerId": "4278049",
+      "name": "Daniel Gafford",
+      "teamId": "6",
+      "teamAbbr": "DAL",
+      "opponentId": "7",
+      "opponentAbbr": "DEN",
+      "position": "C",
+      "stat": "reb",
+      "line": 7.5,
+      "overPrice": 122,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -4008,9 +4064,9 @@
       },
       "h2h": {
         "hits": 1,
-        "n": 3
+        "n": 6
       },
-      "rank": 16,
+      "rank": 13,
       "injuryStatus": null
     },
     {
@@ -4021,9 +4077,9 @@
       "opponentId": "7",
       "opponentAbbr": "DEN",
       "position": "C",
-      "stat": "reb",
-      "line": 6.5,
-      "overPrice": 100,
+      "stat": "tpm",
+      "line": 0.5,
+      "overPrice": 550,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -4035,10 +4091,10 @@
         "n": 10
       },
       "h2h": {
-        "hits": 2,
+        "hits": 0,
         "n": 6
       },
-      "rank": 16,
+      "rank": 22,
       "injuryStatus": null
     },
     {
@@ -4051,7 +4107,7 @@
       "position": "SG",
       "stat": "tpm",
       "line": 0.5,
-      "overPrice": 178,
+      "overPrice": 170,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -4079,7 +4135,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 5.5,
-      "overPrice": 120,
+      "overPrice": 110,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -4094,7 +4150,7 @@
         "hits": 4,
         "n": 5
       },
-      "rank": 18,
+      "rank": 17,
       "injuryStatus": "Day-To-Day"
     },
     {
@@ -7396,6 +7452,314 @@
         4,
         7,
         "122-102"
+      ]
+    ],
+    "4065804": [
+      [
+        "2026-11-23T01:30:00.000+00:00",
+        "9",
+        "GS",
+        0,
+        22,
+        3,
+        1,
+        2,
+        1,
+        1,
+        7,
+        7,
+        0,
+        0,
+        "88-87"
+      ],
+      [
+        "2026-11-22T03:00:00.000+00:00",
+        "23",
+        "SAC",
+        0,
+        31,
+        14,
+        6,
+        2,
+        4,
+        5,
+        13,
+        11,
+        0,
+        0,
+        "97-96"
+      ],
+      [
+        "2026-11-19T02:30:00.000+00:00",
+        "7",
+        "DEN",
+        0,
+        17,
+        9,
+        2,
+        2,
+        3,
+        3,
+        6,
+        6,
+        0,
+        0,
+        "105-101"
+      ],
+      [
+        "2026-11-17T00:00:00.000+00:00",
+        "19",
+        "ORL",
+        1,
+        25,
+        12,
+        1,
+        2,
+        4,
+        4,
+        6,
+        6,
+        0,
+        0,
+        "115-105"
+      ],
+      [
+        "2026-11-15T23:00:00.000+00:00",
+        "6",
+        "DAL",
+        1,
+        11,
+        8,
+        1,
+        0,
+        2,
+        3,
+        4,
+        3,
+        0,
+        0,
+        "131-94"
+      ],
+      [
+        "2026-11-12T00:00:00.000+00:00",
+        "28",
+        "TOR",
+        0,
+        24,
+        8,
+        9,
+        0,
+        2,
+        2,
+        6,
+        4,
+        2,
+        2,
+        "98-93"
+      ],
+      [
+        "2026-11-11T01:00:00.000+00:00",
+        "20",
+        "PHI",
+        0,
+        18,
+        12,
+        4,
+        2,
+        4,
+        4,
+        6,
+        6,
+        0,
+        0,
+        "123-101"
+      ],
+      [
+        "2026-11-09T01:00:00.000+00:00",
+        "15",
+        "MIL",
+        0,
+        23,
+        7,
+        3,
+        1,
+        1,
+        3,
+        5,
+        3,
+        0,
+        0,
+        "117-97"
+      ],
+      [
+        "2026-11-07T00:00:00.000+00:00",
+        "30",
+        "CHA",
+        0,
+        17,
+        9,
+        3,
+        3,
+        3,
+        3,
+        5,
+        5,
+        0,
+        0,
+        "119-80"
+      ],
+      [
+        "2026-11-05T00:30:00.000+00:00",
+        "15",
+        "MIL",
+        1,
+        30,
+        11,
+        2,
+        0,
+        3,
+        4,
+        11,
+        10,
+        0,
+        0,
+        "109-102"
+      ],
+      [
+        "2026-11-03T01:30:00.000+00:00",
+        "10",
+        "HOU",
+        0,
+        19,
+        2,
+        2,
+        1,
+        0,
+        1,
+        6,
+        5,
+        0,
+        0,
+        "109-93"
+      ],
+      [
+        "2026-11-01T20:30:00.000+00:00",
+        "19",
+        "ORL",
+        0,
+        17,
+        3,
+        2,
+        0,
+        1,
+        1,
+        3,
+        3,
+        0,
+        0,
+        "108-97"
+      ],
+      [
+        "2026-03-14T22:00:00.000+00:00",
+        "27",
+        "WSH",
+        1,
+        26,
+        12,
+        6,
+        2,
+        4,
+        4,
+        11,
+        11,
+        0,
+        0,
+        "111-100"
+      ],
+      [
+        "2025-12-05T00:00:00.000+00:00",
+        "27",
+        "WSH",
+        0,
+        21,
+        6,
+        2,
+        3,
+        2,
+        2,
+        6,
+        6,
+        0,
+        0,
+        "146-101"
+      ],
+      [
+        "2025-11-06T00:30:00.000+00:00",
+        "27",
+        "WSH",
+        1,
+        22,
+        3,
+        2,
+        3,
+        1,
+        1,
+        8,
+        6,
+        0,
+        0,
+        "136-107"
+      ],
+      [
+        "2025-04-06T22:00:00.000+00:00",
+        "27",
+        "WSH",
+        1,
+        22,
+        18,
+        8,
+        0,
+        4,
+        7,
+        12,
+        7,
+        0,
+        0,
+        "124-90"
+      ],
+      [
+        "2024-12-15T23:00:00.000+00:00",
+        "27",
+        "WSH",
+        0,
+        28,
+        12,
+        7,
+        1,
+        4,
+        4,
+        10,
+        9,
+        0,
+        0,
+        "112-98"
+      ],
+      [
+        "2024-11-23T00:00:00.000+00:00",
+        "27",
+        "WSH",
+        0,
+        22,
+        13,
+        3,
+        0,
+        3,
+        5,
+        7,
+        5,
+        0,
+        0,
+        "108-96"
       ]
     ],
     "4066320": [
@@ -11678,212 +12042,6 @@
         "111-100"
       ]
     ],
-    "4592427": [
-      [
-        "2026-11-23T00:00:00.000+00:00",
-        "4",
-        "CHI",
-        0,
-        20,
-        0,
-        4,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        "151-145 OT"
-      ],
-      [
-        "2026-11-21T03:00:00.000+00:00",
-        "10",
-        "HOU",
-        1,
-        18,
-        3,
-        1,
-        1,
-        1,
-        1,
-        3,
-        3,
-        0,
-        0,
-        "133-124"
-      ],
-      [
-        "2026-11-19T02:30:00.000+00:00",
-        "2",
-        "BOS",
-        1,
-        17,
-        2,
-        2,
-        0,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        "105-101"
-      ],
-      [
-        "2026-11-17T02:00:00.000+00:00",
-        "21",
-        "PHX",
-        1,
-        21,
-        4,
-        3,
-        3,
-        1,
-        1,
-        3,
-        2,
-        1,
-        2,
-        "117-105"
-      ],
-      [
-        "2026-11-15T00:00:00.000+00:00",
-        "3",
-        "NO",
-        0,
-        12,
-        4,
-        2,
-        1,
-        0,
-        2,
-        3,
-        0,
-        0,
-        0,
-        "116-108"
-      ],
-      [
-        "2026-11-12T01:00:00.000+00:00",
-        "29",
-        "MEM",
-        0,
-        22,
-        3,
-        1,
-        0,
-        1,
-        1,
-        3,
-        3,
-        0,
-        0,
-        "123-118"
-      ],
-      [
-        "2026-11-10T01:30:00.000+00:00",
-        "10",
-        "HOU",
-        0,
-        14,
-        0,
-        0,
-        1,
-        0,
-        0,
-        3,
-        2,
-        0,
-        0,
-        "110-100"
-      ],
-      [
-        "2026-11-07T22:00:00.000+00:00",
-        "11",
-        "IND",
-        1,
-        21,
-        13,
-        6,
-        0,
-        3,
-        5,
-        6,
-        3,
-        0,
-        0,
-        "114-102"
-      ],
-      [
-        "2026-03-26T02:00:00.000+00:00",
-        "6",
-        "DAL",
-        1,
-        20,
-        4,
-        2,
-        0,
-        0,
-        1,
-        2,
-        1,
-        2,
-        4,
-        "142-135"
-      ],
-      [
-        "2026-01-15T02:30:00.000+00:00",
-        "6",
-        "DAL",
-        0,
-        32,
-        10,
-        5,
-        2,
-        2,
-        3,
-        5,
-        4,
-        2,
-        2,
-        "118-109"
-      ],
-      [
-        "2025-12-24T01:00:00.000+00:00",
-        "6",
-        "DAL",
-        0,
-        26,
-        6,
-        4,
-        2,
-        0,
-        3,
-        5,
-        1,
-        0,
-        0,
-        "131-130"
-      ],
-      [
-        "2025-12-02T02:00:00.000+00:00",
-        "6",
-        "DAL",
-        1,
-        39,
-        28,
-        5,
-        0,
-        4,
-        11,
-        15,
-        6,
-        2,
-        2,
-        "131-121"
-      ]
-    ],
     "4684742": [
       [
         "2026-11-22T20:30:00.000+00:00",
@@ -12791,469 +12949,6 @@
         "111-100"
       ]
     ],
-    "4873153": [
-      [
-        "2026-11-23T00:00:00.000+00:00",
-        "26",
-        "UTAH",
-        0,
-        20,
-        7,
-        6,
-        2,
-        1,
-        3,
-        4,
-        1,
-        0,
-        0,
-        "116-114"
-      ],
-      [
-        "2026-11-22T01:00:00.000+00:00",
-        "12",
-        "LAC",
-        1,
-        17,
-        9,
-        7,
-        2,
-        1,
-        4,
-        9,
-        1,
-        0,
-        0,
-        "110-100"
-      ],
-      [
-        "2026-11-19T01:00:00.000+00:00",
-        "9",
-        "GS",
-        1,
-        15,
-        3,
-        1,
-        1,
-        0,
-        1,
-        5,
-        1,
-        1,
-        3,
-        "116-94"
-      ],
-      [
-        "2026-11-15T23:00:00.000+00:00",
-        "2",
-        "BOS",
-        0,
-        26,
-        2,
-        6,
-        4,
-        0,
-        1,
-        10,
-        4,
-        0,
-        0,
-        "131-94"
-      ],
-      [
-        "2026-11-15T00:30:00.000+00:00",
-        "5",
-        "CLE",
-        0,
-        15,
-        4,
-        2,
-        0,
-        0,
-        0,
-        2,
-        0,
-        4,
-        4,
-        "127-117"
-      ],
-      [
-        "2026-11-13T01:00:00.000+00:00",
-        "16",
-        "MIN",
-        0,
-        13,
-        0,
-        2,
-        0,
-        0,
-        0,
-        4,
-        1,
-        0,
-        0,
-        "133-94"
-      ],
-      [
-        "2026-11-09T00:30:00.000+00:00",
-        "17",
-        "BKN",
-        1,
-        19,
-        4,
-        9,
-        1,
-        0,
-        1,
-        7,
-        1,
-        2,
-        2,
-        "130-93"
-      ],
-      [
-        "2026-11-07T01:00:00.000+00:00",
-        "26",
-        "UTAH",
-        1,
-        24,
-        13,
-        17,
-        2,
-        1,
-        5,
-        8,
-        2,
-        2,
-        2,
-        "112-100"
-      ],
-      [
-        "2026-11-05T02:30:00.000+00:00",
-        "24",
-        "SA",
-        0,
-        18,
-        8,
-        3,
-        1,
-        1,
-        2,
-        6,
-        2,
-        3,
-        4,
-        "112-111"
-      ],
-      [
-        "2026-11-03T01:00:00.000+00:00",
-        "23",
-        "SAC",
-        1,
-        17,
-        13,
-        2,
-        1,
-        0,
-        5,
-        5,
-        0,
-        3,
-        6,
-        "115-100"
-      ],
-      [
-        "2026-10-31T00:00:00.000+00:00",
-        "10",
-        "HOU",
-        1,
-        17,
-        2,
-        2,
-        1,
-        0,
-        1,
-        4,
-        1,
-        0,
-        0,
-        "116-111"
-      ],
-      [
-        "2026-10-29T01:30:00.000+00:00",
-        "25",
-        "OKC",
-        1,
-        18,
-        10,
-        6,
-        3,
-        0,
-        4,
-        6,
-        0,
-        2,
-        2,
-        "120-96"
-      ]
-    ],
-    "4896372": [
-      [
-        "2026-11-23T00:00:00.000+00:00",
-        "26",
-        "UTAH",
-        0,
-        21,
-        9,
-        0,
-        3,
-        2,
-        3,
-        7,
-        4,
-        1,
-        1,
-        "116-114"
-      ],
-      [
-        "2026-11-22T01:00:00.000+00:00",
-        "12",
-        "LAC",
-        1,
-        25,
-        16,
-        5,
-        1,
-        2,
-        5,
-        8,
-        3,
-        4,
-        6,
-        "110-100"
-      ],
-      [
-        "2026-11-19T01:00:00.000+00:00",
-        "9",
-        "GS",
-        1,
-        27,
-        8,
-        2,
-        7,
-        2,
-        3,
-        7,
-        5,
-        0,
-        0,
-        "116-94"
-      ],
-      [
-        "2026-11-15T23:00:00.000+00:00",
-        "2",
-        "BOS",
-        0,
-        23,
-        13,
-        4,
-        3,
-        3,
-        4,
-        8,
-        5,
-        2,
-        2,
-        "131-94"
-      ],
-      [
-        "2026-11-15T00:30:00.000+00:00",
-        "5",
-        "CLE",
-        0,
-        13,
-        2,
-        2,
-        2,
-        0,
-        1,
-        5,
-        4,
-        0,
-        0,
-        "127-117"
-      ],
-      [
-        "2026-11-13T01:00:00.000+00:00",
-        "16",
-        "MIN",
-        0,
-        22,
-        5,
-        1,
-        4,
-        0,
-        1,
-        8,
-        5,
-        3,
-        3,
-        "133-94"
-      ],
-      [
-        "2026-11-10T01:00:00.000+00:00",
-        "11",
-        "IND",
-        1,
-        25,
-        6,
-        6,
-        4,
-        1,
-        2,
-        6,
-        4,
-        1,
-        2,
-        "125-122"
-      ],
-      [
-        "2026-11-09T00:30:00.000+00:00",
-        "17",
-        "BKN",
-        1,
-        16,
-        5,
-        4,
-        6,
-        1,
-        2,
-        3,
-        2,
-        0,
-        0,
-        "130-93"
-      ],
-      [
-        "2026-11-07T01:00:00.000+00:00",
-        "26",
-        "UTAH",
-        1,
-        23,
-        12,
-        4,
-        2,
-        1,
-        4,
-        8,
-        5,
-        3,
-        4,
-        "112-100"
-      ],
-      [
-        "2026-11-05T02:30:00.000+00:00",
-        "24",
-        "SA",
-        0,
-        21,
-        8,
-        6,
-        5,
-        2,
-        3,
-        9,
-        5,
-        0,
-        0,
-        "112-111"
-      ],
-      [
-        "2026-11-03T01:00:00.000+00:00",
-        "23",
-        "SAC",
-        1,
-        24,
-        20,
-        1,
-        2,
-        4,
-        6,
-        9,
-        5,
-        4,
-        4,
-        "115-100"
-      ],
-      [
-        "2026-10-31T00:00:00.000+00:00",
-        "10",
-        "HOU",
-        1,
-        9,
-        3,
-        2,
-        1,
-        1,
-        1,
-        4,
-        2,
-        0,
-        0,
-        "116-111"
-      ],
-      [
-        "2026-04-09T01:00:00.000+00:00",
-        "7",
-        "DEN",
-        0,
-        22,
-        15,
-        2,
-        3,
-        2,
-        5,
-        10,
-        5,
-        3,
-        3,
-        "136-119"
-      ],
-      [
-        "2026-03-19T00:30:00.000+00:00",
-        "7",
-        "DEN",
-        1,
-        20,
-        4,
-        2,
-        4,
-        0,
-        1,
-        6,
-        3,
-        2,
-        2,
-        "125-118"
-      ],
-      [
-        "2025-12-23T02:00:00.000+00:00",
-        "7",
-        "DEN",
-        0,
-        17,
-        6,
-        2,
-        4,
-        2,
-        2,
-        7,
-        6,
-        0,
-        0,
-        "135-112"
-      ]
-    ],
     "5041939": [
       [
         "2026-11-23T00:00:00.000+00:00",
@@ -13526,6 +13221,297 @@
         3,
         4,
         "131-121"
+      ]
+    ],
+    "5104155": [
+      [
+        "2026-11-23T00:00:00.000+00:00",
+        "19",
+        "ORL",
+        1,
+        25,
+        12,
+        3,
+        1,
+        4,
+        4,
+        7,
+        6,
+        0,
+        0,
+        "116-96"
+      ],
+      [
+        "2026-11-21T01:00:00.000+00:00",
+        "4",
+        "CHI",
+        0,
+        24,
+        2,
+        5,
+        0,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0,
+        "98-94"
+      ],
+      [
+        "2026-11-19T00:30:00.000+00:00",
+        "28",
+        "TOR",
+        0,
+        26,
+        3,
+        8,
+        2,
+        0,
+        1,
+        3,
+        1,
+        1,
+        2,
+        "103-99"
+      ],
+      [
+        "2026-11-17T00:00:00.000+00:00",
+        "29",
+        "MEM",
+        1,
+        16,
+        11,
+        5,
+        0,
+        1,
+        4,
+        7,
+        2,
+        2,
+        3,
+        "136-120"
+      ],
+      [
+        "2026-11-16T00:00:00.000+00:00",
+        "10",
+        "HOU",
+        1,
+        21,
+        9,
+        2,
+        0,
+        1,
+        2,
+        7,
+        4,
+        4,
+        4,
+        "147-119"
+      ],
+      [
+        "2026-11-13T00:00:00.000+00:00",
+        "8",
+        "DET",
+        1,
+        29,
+        4,
+        7,
+        0,
+        0,
+        2,
+        5,
+        2,
+        0,
+        0,
+        "144-140 2OT"
+      ],
+      [
+        "2026-11-12T00:00:00.000+00:00",
+        "11",
+        "IND",
+        0,
+        25,
+        5,
+        6,
+        2,
+        0,
+        2,
+        5,
+        3,
+        1,
+        2,
+        "114-101"
+      ],
+      [
+        "2026-11-08T01:00:00.000+00:00",
+        "25",
+        "OKC",
+        0,
+        20,
+        0,
+        5,
+        0,
+        0,
+        0,
+        8,
+        4,
+        0,
+        0,
+        "114-75"
+      ],
+      [
+        "2026-11-07T00:00:00.000+00:00",
+        "1",
+        "ATL",
+        0,
+        24,
+        9,
+        5,
+        0,
+        1,
+        3,
+        5,
+        3,
+        2,
+        2,
+        "139-132"
+      ],
+      [
+        "2026-11-05T00:00:00.000+00:00",
+        "1",
+        "ATL",
+        1,
+        23,
+        6,
+        2,
+        2,
+        0,
+        3,
+        5,
+        1,
+        0,
+        0,
+        "120-105"
+      ],
+      [
+        "2026-11-03T00:30:00.000+00:00",
+        "19",
+        "ORL",
+        0,
+        33,
+        7,
+        1,
+        2,
+        0,
+        3,
+        5,
+        2,
+        1,
+        2,
+        "103-94"
+      ],
+      [
+        "2026-10-30T23:00:00.000+00:00",
+        "30",
+        "CHA",
+        1,
+        22,
+        1,
+        5,
+        1,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        "95-79"
+      ],
+      [
+        "2026-03-14T22:00:00.000+00:00",
+        "2",
+        "BOS",
+        0,
+        24,
+        12,
+        4,
+        1,
+        2,
+        4,
+        10,
+        5,
+        2,
+        2,
+        "111-100"
+      ],
+      [
+        "2025-11-06T00:30:00.000+00:00",
+        "2",
+        "BOS",
+        0,
+        16,
+        1,
+        2,
+        3,
+        0,
+        0,
+        5,
+        3,
+        1,
+        2,
+        "136-107"
+      ],
+      [
+        "2024-12-15T23:00:00.000+00:00",
+        "2",
+        "BOS",
+        1,
+        37,
+        19,
+        5,
+        6,
+        3,
+        8,
+        20,
+        8,
+        0,
+        0,
+        "112-98"
+      ],
+      [
+        "2024-11-23T00:00:00.000+00:00",
+        "2",
+        "BOS",
+        1,
+        40,
+        6,
+        7,
+        3,
+        1,
+        2,
+        9,
+        6,
+        1,
+        2,
+        "108-96"
+      ],
+      [
+        "2024-10-24T23:00:00.000+00:00",
+        "2",
+        "BOS",
+        1,
+        30,
+        8,
+        6,
+        6,
+        0,
+        1,
+        2,
+        0,
+        6,
+        8,
+        "122-102"
       ]
     ],
     "5107199": [
@@ -14590,6 +14576,263 @@
         "122-102"
       ]
     ],
+    "5175647": [
+      [
+        "2026-11-23T01:30:00.000+00:00",
+        "9",
+        "GS",
+        0,
+        22,
+        6,
+        2,
+        0,
+        2,
+        2,
+        6,
+        6,
+        0,
+        0,
+        "88-87"
+      ],
+      [
+        "2026-11-22T03:00:00.000+00:00",
+        "23",
+        "SAC",
+        0,
+        17,
+        5,
+        4,
+        1,
+        1,
+        2,
+        4,
+        3,
+        0,
+        0,
+        "97-96"
+      ],
+      [
+        "2026-11-19T02:30:00.000+00:00",
+        "7",
+        "DEN",
+        0,
+        16,
+        2,
+        6,
+        0,
+        0,
+        1,
+        5,
+        3,
+        0,
+        0,
+        "105-101"
+      ],
+      [
+        "2026-11-17T00:00:00.000+00:00",
+        "19",
+        "ORL",
+        1,
+        4,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        "115-105"
+      ],
+      [
+        "2026-11-15T23:00:00.000+00:00",
+        "6",
+        "DAL",
+        1,
+        18,
+        9,
+        5,
+        2,
+        2,
+        3,
+        6,
+        4,
+        1,
+        2,
+        "131-94"
+      ],
+      [
+        "2026-11-12T00:00:00.000+00:00",
+        "28",
+        "TOR",
+        0,
+        8,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        "98-93"
+      ],
+      [
+        "2026-11-11T01:00:00.000+00:00",
+        "20",
+        "PHI",
+        0,
+        19,
+        10,
+        3,
+        2,
+        2,
+        4,
+        6,
+        4,
+        0,
+        0,
+        "123-101"
+      ],
+      [
+        "2026-11-09T01:00:00.000+00:00",
+        "15",
+        "MIL",
+        0,
+        10,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        "117-97"
+      ],
+      [
+        "2026-11-07T00:00:00.000+00:00",
+        "30",
+        "CHA",
+        0,
+        15,
+        8,
+        1,
+        0,
+        1,
+        2,
+        5,
+        4,
+        3,
+        4,
+        "119-80"
+      ],
+      [
+        "2026-11-05T00:30:00.000+00:00",
+        "15",
+        "MIL",
+        1,
+        14,
+        4,
+        2,
+        0,
+        0,
+        1,
+        3,
+        2,
+        2,
+        2,
+        "109-102"
+      ],
+      [
+        "2026-11-03T01:30:00.000+00:00",
+        "10",
+        "HOU",
+        0,
+        16,
+        6,
+        3,
+        0,
+        0,
+        3,
+        6,
+        1,
+        0,
+        0,
+        "109-93"
+      ],
+      [
+        "2026-11-01T20:30:00.000+00:00",
+        "19",
+        "ORL",
+        0,
+        14,
+        7,
+        1,
+        1,
+        1,
+        3,
+        5,
+        3,
+        0,
+        1,
+        "108-97"
+      ],
+      [
+        "2026-03-14T22:00:00.000+00:00",
+        "27",
+        "WSH",
+        1,
+        9,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        "111-100"
+      ],
+      [
+        "2025-12-05T00:00:00.000+00:00",
+        "27",
+        "WSH",
+        0,
+        18,
+        14,
+        5,
+        0,
+        2,
+        6,
+        7,
+        2,
+        0,
+        0,
+        "146-101"
+      ],
+      [
+        "2025-11-06T00:30:00.000+00:00",
+        "27",
+        "WSH",
+        1,
+        17,
+        5,
+        2,
+        1,
+        1,
+        2,
+        4,
+        1,
+        0,
+        0,
+        "136-107"
+      ]
+    ],
     "5211175": [
       [
         "2026-11-23T00:00:00.000+00:00",
@@ -14858,22 +15101,22 @@
           "tpm": 2
         },
         "SG": {
-          "pts": 19,
-          "reb": 22,
-          "ast": 10,
-          "tpm": 21
+          "pts": 20,
+          "reb": 23,
+          "ast": 11,
+          "tpm": 22
         },
         "SF": {
-          "pts": 22,
+          "pts": 21,
           "reb": 3,
-          "ast": 16,
-          "tpm": 20
+          "ast": 15,
+          "tpm": 19
         },
         "PF": {
-          "pts": 17,
+          "pts": 18,
           "reb": 26,
-          "ast": 26,
-          "tpm": 9
+          "ast": 25,
+          "tpm": 10
         },
         "C": {
           "pts": 22,
@@ -14885,126 +15128,126 @@
       "2": {
         "PG": {
           "pts": 1,
-          "reb": 21,
+          "reb": 22,
           "ast": 8,
           "tpm": 5
         },
         "SG": {
-          "pts": 6,
+          "pts": 7,
           "reb": 2,
           "ast": 6,
-          "tpm": 24
+          "tpm": 25
         },
         "SF": {
-          "pts": 14,
+          "pts": 15,
           "reb": 26,
-          "ast": 13,
-          "tpm": 14
+          "ast": 12,
+          "tpm": 15
         },
         "PF": {
-          "pts": 7,
+          "pts": 6,
           "reb": 25,
           "ast": 19,
-          "tpm": 24
+          "tpm": 22
         },
         "C": {
           "pts": 5,
-          "reb": 4,
-          "ast": 15,
-          "tpm": 23
+          "reb": 3,
+          "ast": 16,
+          "tpm": 24
         }
       },
       "3": {
         "PG": {
           "pts": 29,
-          "reb": 1,
+          "reb": 2,
           "ast": 28,
-          "tpm": 26
+          "tpm": 27
         },
         "SG": {
-          "pts": 14,
-          "reb": 16,
-          "ast": 19,
+          "pts": 17,
+          "reb": 13,
+          "ast": 14,
           "tpm": 20
         },
         "SF": {
           "pts": 5,
           "reb": 9,
-          "ast": 15,
+          "ast": 17,
           "tpm": 1
         },
         "PF": {
-          "pts": 18,
+          "pts": 20,
           "reb": 28,
-          "ast": 12,
-          "tpm": 16
+          "ast": 13,
+          "tpm": 17
         },
         "C": {
           "pts": 30,
-          "reb": 21,
-          "ast": 29,
-          "tpm": 28
+          "reb": 20,
+          "ast": 27,
+          "tpm": 27
         }
       },
       "4": {
         "PG": {
-          "pts": 21,
+          "pts": 19,
           "reb": 5,
-          "ast": 21,
+          "ast": 19,
           "tpm": 28
         },
         "SG": {
-          "pts": 29,
-          "reb": 27,
-          "ast": 20,
+          "pts": 30,
+          "reb": 26,
+          "ast": 19,
           "tpm": 4
         },
         "SF": {
-          "pts": 23,
+          "pts": 22,
           "reb": 30,
           "ast": 26,
           "tpm": 8
         },
         "PF": {
           "pts": 22,
-          "reb": 9,
+          "reb": 13,
           "ast": 30,
-          "tpm": 10
+          "tpm": 9
         },
         "C": {
           "pts": 26,
-          "reb": 18,
-          "ast": 5,
-          "tpm": 14
+          "reb": 14,
+          "ast": 3,
+          "tpm": 12
         }
       },
       "5": {
         "PG": {
-          "pts": 19,
+          "pts": 18,
           "reb": 4,
-          "ast": 29,
-          "tpm": 22
+          "ast": 30,
+          "tpm": 19
         },
         "SG": {
-          "pts": 21,
+          "pts": 23,
           "reb": 25,
-          "ast": 7,
-          "tpm": 14
+          "ast": 5,
+          "tpm": 16
         },
         "SF": {
-          "pts": 1,
-          "reb": 14,
-          "ast": 28,
-          "tpm": 4
+          "pts": 4,
+          "reb": 15,
+          "ast": 27,
+          "tpm": 6
         },
         "PF": {
-          "pts": 19,
+          "pts": 23,
           "reb": 8,
           "ast": 11,
-          "tpm": 18
+          "tpm": 23
         },
         "C": {
-          "pts": 25,
+          "pts": 23,
           "reb": 27,
           "ast": 10,
           "tpm": 30
@@ -15019,38 +15262,38 @@
         },
         "SG": {
           "pts": 3,
-          "reb": 18,
+          "reb": 17,
           "ast": 16,
           "tpm": 2
         },
         "SF": {
-          "pts": 27,
+          "pts": 26,
           "reb": 18,
           "ast": 18,
           "tpm": 21
         },
         "PF": {
-          "pts": 25,
-          "reb": 14,
-          "ast": 16,
+          "pts": 26,
+          "reb": 12,
+          "ast": 17,
           "tpm": 28
         },
         "C": {
-          "pts": 18,
+          "pts": 17,
           "reb": 24,
-          "ast": 16,
+          "ast": 17,
           "tpm": 2
         }
       },
       "7": {
         "PG": {
           "pts": 4,
-          "reb": 16,
-          "ast": 19,
-          "tpm": 8
+          "reb": 15,
+          "ast": 18,
+          "tpm": 7
         },
         "SG": {
-          "pts": 18,
+          "pts": 19,
           "reb": 29,
           "ast": 26,
           "tpm": 11
@@ -15062,46 +15305,46 @@
           "tpm": 26
         },
         "PF": {
-          "pts": 21,
-          "reb": 12,
-          "ast": 9,
+          "pts": 24,
+          "reb": 11,
+          "ast": 8,
           "tpm": 30
         },
         "C": {
-          "pts": 10,
-          "reb": 16,
+          "pts": 12,
+          "reb": 13,
           "ast": 26,
-          "tpm": 20
+          "tpm": 22
         }
       },
       "8": {
         "PG": {
           "pts": 10,
-          "reb": 2,
-          "ast": 6,
+          "reb": 1,
+          "ast": 7,
           "tpm": 3
         },
         "SG": {
           "pts": 2,
           "reb": 6,
-          "ast": 9,
+          "ast": 8,
           "tpm": 8
         },
         "SF": {
-          "pts": 26,
+          "pts": 24,
           "reb": 21,
-          "ast": 17,
-          "tpm": 24
+          "ast": 16,
+          "tpm": 23
         },
         "PF": {
-          "pts": 16,
+          "pts": 17,
           "reb": 30,
-          "ast": 15,
+          "ast": 16,
           "tpm": 14
         },
         "C": {
-          "pts": 11,
-          "reb": 20,
+          "pts": 13,
+          "reb": 21,
           "ast": 2,
           "tpm": 1
         }
@@ -15109,15 +15352,15 @@
       "9": {
         "PG": {
           "pts": 13,
-          "reb": 29,
+          "reb": 28,
           "ast": 25,
-          "tpm": 18
+          "tpm": 17
         },
         "SG": {
           "pts": 5,
           "reb": 9,
           "ast": 27,
-          "tpm": 6
+          "tpm": 5
         },
         "SF": {
           "pts": 28,
@@ -15126,271 +15369,271 @@
           "tpm": 27
         },
         "PF": {
-          "pts": 13,
-          "reb": 2,
-          "ast": 13,
-          "tpm": 17
+          "pts": 12,
+          "reb": 3,
+          "ast": 12,
+          "tpm": 16
         },
         "C": {
-          "pts": 9,
-          "reb": 14,
+          "pts": 10,
+          "reb": 10,
           "ast": 13,
-          "tpm": 4
+          "tpm": 3
         }
       },
       "10": {
         "PG": {
-          "pts": 14,
+          "pts": 16,
           "reb": 3,
-          "ast": 9,
-          "tpm": 20
+          "ast": 10,
+          "tpm": 21
         },
         "SG": {
-          "pts": 23,
-          "reb": 10,
-          "ast": 4,
-          "tpm": 15
+          "pts": 14,
+          "reb": 8,
+          "ast": 3,
+          "tpm": 14
         },
         "SF": {
-          "pts": 20,
-          "reb": 6,
+          "pts": 19,
+          "reb": 4,
           "ast": 14,
-          "tpm": 15
+          "tpm": 12
         },
         "PF": {
-          "pts": 5,
-          "reb": 17,
+          "pts": 7,
+          "reb": 16,
           "ast": 24,
           "tpm": 4
         },
         "C": {
-          "pts": 12,
-          "reb": 6,
+          "pts": 8,
+          "reb": 5,
           "ast": 12,
           "tpm": 7
         }
       },
       "11": {
         "PG": {
-          "pts": 23,
-          "reb": 9,
-          "ast": 10,
+          "pts": 25,
+          "reb": 16,
+          "ast": 9,
           "tpm": 30
         },
         "SG": {
-          "pts": 11,
-          "reb": 21,
-          "ast": 25,
+          "pts": 10,
+          "reb": 22,
+          "ast": 20,
           "tpm": 3
         },
         "SF": {
-          "pts": 18,
-          "reb": 23,
+          "pts": 16,
+          "reb": 20,
           "ast": 2,
-          "tpm": 10
+          "tpm": 11
         },
         "PF": {
-          "pts": 12,
-          "reb": 20,
+          "pts": 13,
+          "reb": 21,
           "ast": 29,
-          "tpm": 23
+          "tpm": 24
         },
         "C": {
-          "pts": 23,
+          "pts": 24,
           "reb": 28,
-          "ast": 19,
+          "ast": 20,
           "tpm": 29
         }
       },
       "12": {
         "PG": {
           "pts": 28,
-          "reb": 14,
+          "reb": 12,
           "ast": 11,
-          "tpm": 21
+          "tpm": 18
         },
         "SG": {
-          "pts": 15,
-          "reb": 19,
+          "pts": 18,
+          "reb": 18,
           "ast": 30,
-          "tpm": 19
+          "tpm": 17
         },
         "SF": {
-          "pts": 11,
-          "reb": 10,
-          "ast": 19,
-          "tpm": 17
+          "pts": 14,
+          "reb": 12,
+          "ast": 20,
+          "tpm": 20
         },
         "PF": {
           "pts": 9,
-          "reb": 15,
-          "ast": 8,
-          "tpm": 8
+          "reb": 14,
+          "ast": 9,
+          "tpm": 11
         },
         "C": {
           "pts": 21,
           "reb": 23,
-          "ast": 23,
-          "tpm": 3
+          "ast": 25,
+          "tpm": 4
         }
       },
       "13": {
         "PG": {
-          "pts": 24,
+          "pts": 23,
           "reb": 6,
           "ast": 23,
-          "tpm": 27
+          "tpm": 26
         },
         "SG": {
-          "pts": 20,
-          "reb": 12,
-          "ast": 23,
-          "tpm": 28
+          "pts": 15,
+          "reb": 14,
+          "ast": 25,
+          "tpm": 24
         },
         "SF": {
-          "pts": 4,
+          "pts": 3,
           "reb": 24,
-          "ast": 21,
-          "tpm": 11
+          "ast": 19,
+          "tpm": 9
         },
         "PF": {
           "pts": 27,
           "reb": 1,
-          "ast": 3,
+          "ast": 2,
           "tpm": 27
         },
         "C": {
           "pts": 4,
-          "reb": 17,
-          "ast": 4,
-          "tpm": 11
+          "reb": 19,
+          "ast": 7,
+          "tpm": 10
         }
       },
       "14": {
         "PG": {
           "pts": 30,
-          "reb": 25,
+          "reb": 26,
           "ast": 15,
           "tpm": 29
         },
         "SG": {
-          "pts": 30,
+          "pts": 28,
           "reb": 11,
-          "ast": 22,
-          "tpm": 27
+          "ast": 23,
+          "tpm": 28
         },
         "SF": {
-          "pts": 7,
+          "pts": 6,
           "reb": 27,
           "ast": 30,
-          "tpm": 7
+          "tpm": 5
         },
         "PF": {
-          "pts": 10,
-          "reb": 16,
+          "pts": 8,
+          "reb": 18,
           "ast": 23,
-          "tpm": 21
+          "tpm": 20
         },
         "C": {
           "pts": 6,
-          "reb": 15,
+          "reb": 12,
           "ast": 11,
-          "tpm": 12
+          "tpm": 11
         }
       },
       "15": {
         "PG": {
-          "pts": 16,
-          "reb": 12,
+          "pts": 14,
+          "reb": 10,
           "ast": 20,
-          "tpm": 19
-        },
-        "SG": {
-          "pts": 27,
-          "reb": 26,
-          "ast": 11,
           "tpm": 23
         },
+        "SG": {
+          "pts": 26,
+          "reb": 27,
+          "ast": 9,
+          "tpm": 21
+        },
         "SF": {
-          "pts": 25,
+          "pts": 29,
           "reb": 13,
-          "ast": 20,
+          "ast": 22,
           "tpm": 28
         },
         "PF": {
-          "pts": 23,
+          "pts": 21,
           "reb": 27,
           "ast": 27,
-          "tpm": 20
+          "tpm": 18
         },
         "C": {
-          "pts": 24,
+          "pts": 25,
           "reb": 29,
-          "ast": 14,
-          "tpm": 21
+          "ast": 15,
+          "tpm": 20
         }
       },
       "16": {
         "PG": {
           "pts": 15,
-          "reb": 28,
+          "reb": 27,
           "ast": 4,
-          "tpm": 9
+          "tpm": 13
         },
         "SG": {
           "pts": 9,
           "reb": 30,
           "ast": 24,
-          "tpm": 16
+          "tpm": 15
         },
         "SF": {
-          "pts": 9,
-          "reb": 5,
-          "ast": 5,
-          "tpm": 3
-        },
-        "PF": {
-          "pts": 1,
+          "pts": 8,
           "reb": 6,
-          "ast": 2,
+          "ast": 8,
           "tpm": 2
         },
+        "PF": {
+          "pts": 2,
+          "reb": 5,
+          "ast": 3,
+          "tpm": 3
+        },
         "C": {
-          "pts": 15,
-          "reb": 7,
-          "ast": 18,
-          "tpm": 15
+          "pts": 14,
+          "reb": 6,
+          "ast": 22,
+          "tpm": 18
         }
       },
       "17": {
         "PG": {
-          "pts": 7,
-          "reb": 26,
+          "pts": 8,
+          "reb": 25,
           "ast": 17,
-          "tpm": 6
+          "tpm": 10
         },
         "SG": {
-          "pts": 26,
-          "reb": 5,
-          "ast": 14,
+          "pts": 29,
+          "reb": 4,
+          "ast": 21,
           "tpm": 30
         },
         "SF": {
-          "pts": 13,
-          "reb": 17,
-          "ast": 25,
-          "tpm": 16
+          "pts": 18,
+          "reb": 22,
+          "ast": 28,
+          "tpm": 18
         },
         "PF": {
-          "pts": 29,
-          "reb": 24,
-          "ast": 25,
-          "tpm": 26
+          "pts": 28,
+          "reb": 23,
+          "ast": 22,
+          "tpm": 25
         },
         "C": {
-          "pts": 20,
+          "pts": 19,
           "reb": 2,
-          "ast": 3,
+          "ast": 5,
           "tpm": 13
         }
       },
@@ -15399,60 +15642,60 @@
           "pts": 2,
           "reb": 24,
           "ast": 14,
-          "tpm": 7
+          "tpm": 6
         },
         "SG": {
-          "pts": 7,
+          "pts": 8,
           "reb": 1,
           "ast": 1,
           "tpm": 12
         },
         "SF": {
-          "pts": 16,
-          "reb": 22,
+          "pts": 17,
+          "reb": 23,
           "ast": 9,
-          "tpm": 23
+          "tpm": 22
         },
         "PF": {
           "pts": 11,
-          "reb": 10,
+          "reb": 9,
           "ast": 20,
-          "tpm": 6
+          "tpm": 5
         },
         "C": {
           "pts": 3,
-          "reb": 5,
-          "ast": 8,
-          "tpm": 24
+          "reb": 4,
+          "ast": 9,
+          "tpm": 25
         }
       },
       "19": {
         "PG": {
-          "pts": 5,
-          "reb": 18,
+          "pts": 6,
+          "reb": 17,
           "ast": 12,
           "tpm": 15
         },
         "SG": {
-          "pts": 10,
-          "reb": 17,
+          "pts": 11,
+          "reb": 16,
           "ast": 2,
-          "tpm": 18
+          "tpm": 19
         },
         "SF": {
-          "pts": 24,
+          "pts": 23,
           "reb": 1,
-          "ast": 22,
+          "ast": 21,
           "tpm": 30
         },
         "PF": {
           "pts": 30,
           "reb": 22,
-          "ast": 22,
-          "tpm": 22
+          "ast": 21,
+          "tpm": 21
         },
         "C": {
-          "pts": 2,
+          "pts": 1,
           "reb": 8,
           "ast": 30,
           "tpm": 5
@@ -15460,7 +15703,7 @@
       },
       "20": {
         "PG": {
-          "pts": 8,
+          "pts": 9,
           "reb": 30,
           "ast": 24,
           "tpm": 4
@@ -15468,302 +15711,302 @@
         "SG": {
           "pts": 25,
           "reb": 20,
-          "ast": 8,
-          "tpm": 22
+          "ast": 10,
+          "tpm": 23
         },
         "SF": {
-          "pts": 15,
-          "reb": 20,
-          "ast": 4,
-          "tpm": 9
+          "pts": 13,
+          "reb": 19,
+          "ast": 5,
+          "tpm": 16
         },
         "PF": {
-          "pts": 26,
-          "reb": 21,
-          "ast": 7,
-          "tpm": 7
+          "pts": 25,
+          "reb": 20,
+          "ast": 6,
+          "tpm": 6
         },
         "C": {
-          "pts": 8,
-          "reb": 10,
-          "ast": 27,
-          "tpm": 27
+          "pts": 9,
+          "reb": 17,
+          "ast": 29,
+          "tpm": 28
         }
       },
       "21": {
         "PG": {
-          "pts": 27,
-          "reb": 27,
+          "pts": 24,
+          "reb": 29,
           "ast": 2,
-          "tpm": 25
+          "tpm": 24
         },
         "SG": {
           "pts": 24,
           "reb": 3,
-          "ast": 18,
+          "ast": 22,
           "tpm": 29
         },
         "SF": {
-          "pts": 10,
+          "pts": 9,
           "reb": 25,
-          "ast": 27,
-          "tpm": 13
+          "ast": 25,
+          "tpm": 10
         },
         "PF": {
           "pts": 3,
-          "reb": 3,
-          "ast": 18,
-          "tpm": 15
+          "reb": 2,
+          "ast": 14,
+          "tpm": 13
         },
         "C": {
           "pts": 29,
           "reb": 30,
-          "ast": 17,
+          "ast": 14,
           "tpm": 6
         }
       },
       "22": {
         "PG": {
-          "pts": 26,
+          "pts": 27,
           "reb": 8,
           "ast": 1,
           "tpm": 11
         },
         "SG": {
-          "pts": 8,
+          "pts": 4,
           "reb": 7,
           "ast": 15,
-          "tpm": 13
+          "tpm": 6
         },
         "SF": {
-          "pts": 6,
-          "reb": 12,
-          "ast": 3,
-          "tpm": 5
+          "pts": 10,
+          "reb": 11,
+          "ast": 4,
+          "tpm": 4
         },
         "PF": {
-          "pts": 2,
-          "reb": 11,
-          "ast": 14,
-          "tpm": 13
+          "pts": 1,
+          "reb": 10,
+          "ast": 15,
+          "tpm": 15
         },
         "C": {
           "pts": 28,
-          "reb": 19,
-          "ast": 25,
-          "tpm": 22
+          "reb": 16,
+          "ast": 23,
+          "tpm": 19
         }
       },
       "23": {
         "PG": {
-          "pts": 20,
-          "reb": 19,
-          "ast": 18,
-          "tpm": 10
-        },
-        "SG": {
-          "pts": 17,
+          "pts": 21,
           "reb": 23,
           "ast": 21,
-          "tpm": 10
+          "tpm": 12
+        },
+        "SG": {
+          "pts": 16,
+          "reb": 24,
+          "ast": 17,
+          "tpm": 13
         },
         "SF": {
-          "pts": 19,
+          "pts": 20,
           "reb": 16,
           "ast": 29,
-          "tpm": 22
+          "tpm": 25
         },
         "PF": {
-          "pts": 20,
+          "pts": 19,
           "reb": 4,
           "ast": 10,
-          "tpm": 25
+          "tpm": 26
         },
         "C": {
           "pts": 27,
-          "reb": 13,
+          "reb": 18,
           "ast": 1,
-          "tpm": 17
+          "tpm": 15
         }
       },
       "24": {
         "PG": {
-          "pts": 18,
-          "reb": 22,
-          "ast": 7,
-          "tpm": 13
+          "pts": 17,
+          "reb": 19,
+          "ast": 6,
+          "tpm": 8
         },
         "SG": {
           "pts": 1,
           "reb": 28,
-          "ast": 17,
-          "tpm": 5
+          "ast": 18,
+          "tpm": 9
         },
         "SF": {
-          "pts": 3,
-          "reb": 8,
-          "ast": 6,
-          "tpm": 12
+          "pts": 1,
+          "reb": 5,
+          "ast": 7,
+          "tpm": 13
         },
         "PF": {
-          "pts": 6,
+          "pts": 5,
           "reb": 19,
-          "ast": 6,
-          "tpm": 3
+          "ast": 7,
+          "tpm": 2
         },
         "C": {
-          "pts": 19,
-          "reb": 3,
-          "ast": 20,
-          "tpm": 25
+          "pts": 20,
+          "reb": 7,
+          "ast": 21,
+          "tpm": 23
         }
       },
       "25": {
         "PG": {
-          "pts": 9,
-          "reb": 23,
+          "pts": 5,
+          "reb": 21,
           "ast": 3,
-          "tpm": 23
+          "tpm": 20
         },
         "SG": {
-          "pts": 16,
-          "reb": 13,
-          "ast": 29,
-          "tpm": 25
+          "pts": 13,
+          "reb": 10,
+          "ast": 28,
+          "tpm": 26
         },
         "SF": {
-          "pts": 21,
-          "reb": 4,
+          "pts": 25,
+          "reb": 8,
           "ast": 1,
           "tpm": 29
         },
         "PF": {
-          "pts": 8,
+          "pts": 10,
           "reb": 29,
-          "ast": 21,
+          "ast": 26,
           "tpm": 19
         },
         "C": {
           "pts": 16,
-          "reb": 11,
-          "ast": 21,
-          "tpm": 19
+          "reb": 15,
+          "ast": 18,
+          "tpm": 17
         }
       },
       "26": {
         "PG": {
-          "pts": 25,
-          "reb": 15,
+          "pts": 26,
+          "reb": 14,
           "ast": 5,
-          "tpm": 17
+          "tpm": 16
         },
         "SG": {
           "pts": 22,
-          "reb": 24,
-          "ast": 28,
+          "reb": 21,
+          "ast": 29,
           "tpm": 7
         },
         "SF": {
-          "pts": 8,
-          "reb": 11,
-          "ast": 8,
-          "tpm": 6
+          "pts": 7,
+          "reb": 10,
+          "ast": 6,
+          "tpm": 7
         },
         "PF": {
           "pts": 15,
-          "reb": 13,
+          "reb": 17,
           "ast": 1,
           "tpm": 12
         },
         "C": {
-          "pts": 17,
-          "reb": 12,
-          "ast": 6,
-          "tpm": 18
+          "pts": 15,
+          "reb": 11,
+          "ast": 4,
+          "tpm": 16
         }
       },
       "27": {
         "PG": {
-          "pts": 6,
+          "pts": 7,
           "reb": 13,
-          "ast": 30,
+          "ast": 29,
           "tpm": 1
         },
         "SG": {
-          "pts": 28,
+          "pts": 27,
           "reb": 15,
-          "ast": 13,
-          "tpm": 17
+          "ast": 12,
+          "tpm": 18
         },
         "SF": {
-          "pts": 12,
+          "pts": 11,
           "reb": 28,
           "ast": 24,
-          "tpm": 2
+          "tpm": 3
         },
         "PF": {
-          "pts": 28,
-          "reb": 23,
-          "ast": 17,
+          "pts": 29,
+          "reb": 24,
+          "ast": 18,
           "tpm": 29
         },
         "C": {
           "pts": 7,
           "reb": 26,
-          "ast": 7,
-          "tpm": 10
+          "ast": 8,
+          "tpm": 9
         }
       },
       "28": {
         "PG": {
           "pts": 12,
-          "reb": 10,
+          "reb": 9,
           "ast": 22,
-          "tpm": 12
+          "tpm": 9
         },
         "SG": {
           "pts": 12,
-          "reb": 14,
-          "ast": 12,
-          "tpm": 9
+          "reb": 19,
+          "ast": 13,
+          "tpm": 10
         },
         "SF": {
-          "pts": 17,
+          "pts": 12,
           "reb": 7,
           "ast": 10,
-          "tpm": 19
+          "tpm": 14
         },
         "PF": {
           "pts": 14,
-          "reb": 5,
+          "reb": 6,
           "ast": 5,
-          "tpm": 5
+          "tpm": 8
         },
         "C": {
-          "pts": 14,
+          "pts": 18,
           "reb": 22,
-          "ast": 9,
-          "tpm": 9
+          "ast": 6,
+          "tpm": 21
         }
       },
       "29": {
         "PG": {
-          "pts": 17,
+          "pts": 20,
           "reb": 7,
           "ast": 16,
-          "tpm": 16
+          "tpm": 22
         },
         "SG": {
-          "pts": 4,
-          "reb": 4,
-          "ast": 3,
+          "pts": 6,
+          "reb": 5,
+          "ast": 4,
           "tpm": 1
         },
         "SF": {
-          "pts": 29,
-          "reb": 15,
-          "ast": 12,
-          "tpm": 25
+          "pts": 27,
+          "reb": 14,
+          "ast": 13,
+          "tpm": 24
         },
         "PF": {
           "pts": 4,
@@ -15772,41 +16015,41 @@
           "tpm": 1
         },
         "C": {
-          "pts": 13,
+          "pts": 11,
           "reb": 9,
           "ast": 24,
-          "tpm": 16
+          "tpm": 14
         }
       },
       "30": {
         "PG": {
           "pts": 22,
-          "reb": 17,
+          "reb": 18,
           "ast": 13,
-          "tpm": 24
+          "tpm": 25
         },
         "SG": {
-          "pts": 13,
-          "reb": 8,
-          "ast": 5,
-          "tpm": 26
+          "pts": 21,
+          "reb": 12,
+          "ast": 7,
+          "tpm": 27
         },
         "SF": {
           "pts": 2,
-          "reb": 19,
-          "ast": 7,
-          "tpm": 18
+          "reb": 17,
+          "ast": 3,
+          "tpm": 17
         },
         "PF": {
-          "pts": 24,
-          "reb": 18,
+          "pts": 16,
+          "reb": 15,
           "ast": 28,
-          "tpm": 11
+          "tpm": 7
         },
         "C": {
-          "pts": 1,
+          "pts": 2,
           "reb": 1,
-          "ast": 22,
+          "ast": 19,
           "tpm": 26
         }
       }
@@ -15878,98 +16121,98 @@
       },
       "3": {
         "PG": {
-          "pts": 31.52,
-          "reb": 4.24,
-          "ast": 9.81,
-          "tpm": 4.07
+          "pts": 30.82,
+          "reb": 4.35,
+          "ast": 9.53,
+          "tpm": 4.04
         },
         "SG": {
-          "pts": 22.91,
-          "reb": 6.35,
-          "ast": 5.02,
-          "tpm": 3.43
+          "pts": 23.14,
+          "reb": 6.22,
+          "ast": 4.86,
+          "tpm": 3.4
         },
         "SF": {
-          "pts": 18.15,
-          "reb": 7.46,
-          "ast": 4.19,
-          "tpm": 1.9
+          "pts": 18.29,
+          "reb": 7.48,
+          "ast": 4.36,
+          "tpm": 1.97
         },
         "PF": {
-          "pts": 23.06,
-          "reb": 11.73,
-          "ast": 4.15,
-          "tpm": 2.46
+          "pts": 22.94,
+          "reb": 11.84,
+          "ast": 4.24,
+          "tpm": 2.47
         },
         "C": {
-          "pts": 25.72,
-          "reb": 15.33,
-          "ast": 5.5,
-          "tpm": 1.6
+          "pts": 25.08,
+          "reb": 15.02,
+          "ast": 5.22,
+          "tpm": 1.5
         }
       },
       "4": {
         "PG": {
-          "pts": 27.36,
-          "reb": 5.27,
-          "ast": 8.99,
-          "tpm": 4.4
+          "pts": 26.88,
+          "reb": 5.36,
+          "ast": 8.76,
+          "tpm": 4.26
         },
         "SG": {
-          "pts": 25.47,
-          "reb": 7.33,
-          "ast": 5.05,
-          "tpm": 2.87
+          "pts": 25.64,
+          "reb": 7.19,
+          "ast": 5.03,
+          "tpm": 2.76
         },
         "SF": {
-          "pts": 21.95,
-          "reb": 9.97,
-          "ast": 4.98,
-          "tpm": 2.39
+          "pts": 21.98,
+          "reb": 9.83,
+          "ast": 4.94,
+          "tpm": 2.44
         },
         "PF": {
-          "pts": 23.75,
-          "reb": 9.34,
-          "ast": 5.75,
-          "tpm": 2.16
+          "pts": 23.15,
+          "reb": 9.89,
+          "ast": 5.7,
+          "tpm": 2.09
         },
         "C": {
-          "pts": 24.17,
-          "reb": 14.95,
-          "ast": 3.82,
-          "tpm": 1.2
+          "pts": 24.01,
+          "reb": 14.59,
+          "ast": 3.63,
+          "tpm": 1.14
         }
       },
       "5": {
         "PG": {
-          "pts": 27.17,
-          "reb": 5.23,
-          "ast": 10.36,
-          "tpm": 3.8
+          "pts": 26.6,
+          "reb": 5.25,
+          "ast": 10.83,
+          "tpm": 3.61
         },
         "SG": {
-          "pts": 23.49,
-          "reb": 7.14,
-          "ast": 4.08,
-          "tpm": 3.1
+          "pts": 24.11,
+          "reb": 7.1,
+          "ast": 4,
+          "tpm": 3.32
         },
         "SF": {
-          "pts": 17.63,
-          "reb": 8.02,
-          "ast": 5.15,
-          "tpm": 2.16
+          "pts": 17.92,
+          "reb": 8.11,
+          "ast": 4.99,
+          "tpm": 2.32
         },
         "PF": {
-          "pts": 23.43,
-          "reb": 9.26,
-          "ast": 4.06,
-          "tpm": 2.57
+          "pts": 23.48,
+          "reb": 9.34,
+          "ast": 4.11,
+          "tpm": 2.7
         },
         "C": {
-          "pts": 24.09,
-          "reb": 16.59,
-          "ast": 4.13,
-          "tpm": 1.98
+          "pts": 23.58,
+          "reb": 16.27,
+          "ast": 4.12,
+          "tpm": 1.91
         }
       },
       "6": {
@@ -16102,130 +16345,130 @@
       },
       "10": {
         "PG": {
-          "pts": 25.74,
-          "reb": 4.47,
-          "ast": 7.67,
-          "tpm": 3.77
+          "pts": 25.97,
+          "reb": 4.5,
+          "ast": 7.82,
+          "tpm": 3.74
         },
         "SG": {
-          "pts": 23.54,
-          "reb": 6.16,
-          "ast": 3.91,
-          "tpm": 3.2
+          "pts": 22.91,
+          "reb": 6.05,
+          "ast": 3.95,
+          "tpm": 3.17
         },
         "SF": {
-          "pts": 21.34,
-          "reb": 7,
-          "ast": 4.1,
-          "tpm": 2.65
+          "pts": 21.35,
+          "reb": 6.96,
+          "ast": 4.16,
+          "tpm": 2.56
         },
         "PF": {
-          "pts": 19.57,
-          "reb": 10.13,
+          "pts": 19.96,
+          "reb": 9.95,
           "ast": 4.83,
-          "tpm": 1.86
+          "tpm": 1.91
         },
         "C": {
-          "pts": 20.36,
-          "reb": 12.76,
-          "ast": 4.18,
+          "pts": 19.77,
+          "reb": 12.66,
+          "ast": 4.17,
           "tpm": 0.97
         }
       },
       "11": {
         "PG": {
-          "pts": 28.29,
-          "reb": 5.62,
-          "ast": 7.68,
-          "tpm": 4.99
+          "pts": 28.83,
+          "reb": 6.04,
+          "ast": 7.73,
+          "tpm": 4.94
         },
         "SG": {
-          "pts": 21.94,
-          "reb": 6.86,
-          "ast": 5.36,
-          "tpm": 2.85
+          "pts": 21.44,
+          "reb": 6.88,
+          "ast": 5.05,
+          "tpm": 2.71
         },
         "SF": {
-          "pts": 20.97,
-          "reb": 8.49,
-          "ast": 3.35,
-          "tpm": 2.54
+          "pts": 20.79,
+          "reb": 8.37,
+          "ast": 3.38,
+          "tpm": 2.55
         },
         "PF": {
-          "pts": 21.39,
-          "reb": 10.33,
-          "ast": 5.72,
-          "tpm": 2.63
+          "pts": 21.62,
+          "reb": 10.38,
+          "ast": 5.61,
+          "tpm": 2.75
         },
         "C": {
-          "pts": 23.61,
-          "reb": 16.7,
-          "ast": 4.53,
-          "tpm": 1.65
+          "pts": 23.83,
+          "reb": 16.6,
+          "ast": 4.54,
+          "tpm": 1.58
         }
       },
       "12": {
         "PG": {
-          "pts": 31.23,
-          "reb": 5.84,
+          "pts": 29.2,
+          "reb": 5.79,
           "ast": 7.84,
-          "tpm": 3.78
+          "tpm": 3.61
         },
         "SG": {
-          "pts": 22.94,
+          "pts": 23.15,
           "reb": 6.49,
-          "ast": 6.23,
-          "tpm": 3.42
+          "ast": 6.34,
+          "tpm": 3.34
         },
         "SF": {
-          "pts": 19.15,
-          "reb": 7.47,
-          "ast": 4.42,
-          "tpm": 2.68
+          "pts": 20.45,
+          "reb": 7.73,
+          "ast": 4.49,
+          "tpm": 2.83
         },
         "PF": {
-          "pts": 20.59,
-          "reb": 9.92,
-          "ast": 3.78,
-          "tpm": 2.09
+          "pts": 20.69,
+          "reb": 9.9,
+          "ast": 3.91,
+          "tpm": 2.14
         },
         "C": {
-          "pts": 22.83,
-          "reb": 15.65,
-          "ast": 4.84,
-          "tpm": 0.8
+          "pts": 22.96,
+          "reb": 15.55,
+          "ast": 5.01,
+          "tpm": 0.82
         }
       },
       "13": {
         "PG": {
-          "pts": 28.42,
-          "reb": 5.38,
-          "ast": 9.34,
-          "tpm": 4.12
+          "pts": 27.79,
+          "reb": 5.4,
+          "ast": 8.98,
+          "tpm": 4
         },
         "SG": {
-          "pts": 23.23,
-          "reb": 6.19,
-          "ast": 5.3,
-          "tpm": 3.7
+          "pts": 22.96,
+          "reb": 6.23,
+          "ast": 5.33,
+          "tpm": 3.57
         },
         "SF": {
-          "pts": 18.14,
-          "reb": 8.63,
-          "ast": 4.58,
-          "tpm": 2.55
+          "pts": 17.83,
+          "reb": 8.51,
+          "ast": 4.47,
+          "tpm": 2.47
         },
         "PF": {
-          "pts": 25.14,
-          "reb": 8.15,
-          "ast": 3.32,
-          "tpm": 3.02
+          "pts": 25.19,
+          "reb": 8.11,
+          "ast": 3.23,
+          "tpm": 2.94
         },
         "C": {
-          "pts": 17.61,
-          "reb": 14.7,
-          "ast": 3.82,
-          "tpm": 1.05
+          "pts": 18.05,
+          "reb": 14.92,
+          "ast": 3.93,
+          "tpm": 1.04
         }
       },
       "14": {
@@ -16262,98 +16505,98 @@
       },
       "15": {
         "PG": {
-          "pts": 25.98,
-          "reb": 5.71,
-          "ast": 8.78,
-          "tpm": 3.75
+          "pts": 25.61,
+          "reb": 5.62,
+          "ast": 8.85,
+          "tpm": 3.78
         },
         "SG": {
-          "pts": 25.17,
-          "reb": 7.15,
-          "ast": 4.39,
-          "tpm": 3.49
+          "pts": 24.77,
+          "reb": 7.23,
+          "ast": 4.29,
+          "tpm": 3.43
         },
         "SF": {
-          "pts": 22.36,
-          "reb": 7.91,
-          "ast": 4.49,
-          "tpm": 3.29
+          "pts": 23.55,
+          "reb": 7.83,
+          "ast": 4.68,
+          "tpm": 3.38
         },
         "PF": {
-          "pts": 23.76,
-          "reb": 11.55,
-          "ast": 5.27,
-          "tpm": 2.6
+          "pts": 22.98,
+          "reb": 11.49,
+          "ast": 4.99,
+          "tpm": 2.55
         },
         "C": {
-          "pts": 23.93,
-          "reb": 16.94,
-          "ast": 4.38,
-          "tpm": 1.37
+          "pts": 23.86,
+          "reb": 16.97,
+          "ast": 4.39,
+          "tpm": 1.31
         }
       },
       "16": {
         "PG": {
-          "pts": 25.84,
-          "reb": 6.51,
-          "ast": 7.13,
-          "tpm": 3.17
+          "pts": 25.72,
+          "reb": 6.54,
+          "ast": 7.28,
+          "tpm": 3.3
         },
         "SG": {
-          "pts": 21.48,
-          "reb": 7.73,
-          "ast": 5.34,
-          "tpm": 3.21
+          "pts": 21.36,
+          "reb": 7.63,
+          "ast": 5.3,
+          "tpm": 3.32
         },
         "SF": {
-          "pts": 18.85,
-          "reb": 7,
-          "ast": 3.53,
-          "tpm": 2.15
+          "pts": 18.68,
+          "reb": 7.06,
+          "ast": 3.58,
+          "tpm": 2.05
         },
         "PF": {
-          "pts": 16.79,
-          "reb": 9.21,
-          "ast": 3.19,
-          "tpm": 1.62
+          "pts": 18,
+          "reb": 8.88,
+          "ast": 3.25,
+          "tpm": 1.8
         },
         "C": {
-          "pts": 20.85,
-          "reb": 13.13,
-          "ast": 4.5,
-          "tpm": 1.22
+          "pts": 20.81,
+          "reb": 12.75,
+          "ast": 4.76,
+          "tpm": 1.28
         }
       },
       "17": {
         "PG": {
-          "pts": 22.7,
-          "reb": 6.47,
-          "ast": 8.63,
-          "tpm": 2.94
+          "pts": 23.3,
+          "reb": 6.34,
+          "ast": 8.69,
+          "tpm": 3.14
         },
         "SG": {
-          "pts": 24.89,
-          "reb": 5.67,
-          "ast": 4.83,
-          "tpm": 4.32
+          "pts": 25.62,
+          "reb": 5.6,
+          "ast": 5.08,
+          "tpm": 4.34
         },
         "SF": {
-          "pts": 19.88,
-          "reb": 8.18,
-          "ast": 4.95,
-          "tpm": 2.65
+          "pts": 21.24,
+          "reb": 8.46,
+          "ast": 5.12,
+          "tpm": 2.8
         },
         "PF": {
-          "pts": 26.73,
-          "reb": 10.83,
-          "ast": 4.88,
-          "tpm": 2.97
+          "pts": 25.84,
+          "reb": 10.65,
+          "ast": 4.8,
+          "tpm": 2.78
         },
         "C": {
-          "pts": 22.69,
-          "reb": 11.17,
-          "ast": 3.75,
-          "tpm": 1.19
+          "pts": 22.24,
+          "reb": 11.16,
+          "ast": 3.82,
+          "tpm": 1.14
         }
       },
       "18": {
@@ -16422,226 +16665,226 @@
       },
       "20": {
         "PG": {
-          "pts": 22.72,
-          "reb": 6.93,
-          "ast": 9.36,
-          "tpm": 2.65
+          "pts": 23.46,
+          "reb": 6.73,
+          "ast": 9.2,
+          "tpm": 2.84
         },
         "SG": {
-          "pts": 23.68,
-          "reb": 6.85,
-          "ast": 4.1,
-          "tpm": 3.45
+          "pts": 24.44,
+          "reb": 6.77,
+          "ast": 4.33,
+          "tpm": 3.57
         },
         "SF": {
-          "pts": 20.72,
-          "reb": 8.37,
-          "ast": 3.43,
-          "tpm": 2.53
+          "pts": 20.41,
+          "reb": 8.33,
+          "ast": 3.48,
+          "tpm": 2.64
         },
         "PF": {
-          "pts": 24.42,
-          "reb": 10.37,
-          "ast": 3.62,
+          "pts": 24.02,
+          "reb": 10.3,
+          "ast": 3.52,
           "tpm": 2.06
         },
         "C": {
-          "pts": 19.85,
-          "reb": 14.03,
-          "ast": 5.23,
-          "tpm": 1.59
+          "pts": 19.81,
+          "reb": 14.72,
+          "ast": 5.28,
+          "tpm": 1.53
         }
       },
       "21": {
         "PG": {
-          "pts": 29.83,
-          "reb": 6.49,
-          "ast": 6.49,
-          "tpm": 4.04
+          "pts": 28.72,
+          "reb": 6.59,
+          "ast": 6.85,
+          "tpm": 3.83
         },
         "SG": {
-          "pts": 23.66,
-          "reb": 5.64,
-          "ast": 4.96,
-          "tpm": 3.74
+          "pts": 24.31,
+          "reb": 5.49,
+          "ast": 5.11,
+          "tpm": 3.91
         },
         "SF": {
-          "pts": 19.06,
-          "reb": 8.67,
-          "ast": 5.07,
-          "tpm": 2.59
+          "pts": 19.07,
+          "reb": 8.64,
+          "ast": 4.91,
+          "tpm": 2.54
         },
         "PF": {
-          "pts": 17.87,
-          "reb": 8.35,
-          "ast": 4.55,
-          "tpm": 2.34
+          "pts": 18.53,
+          "reb": 8.27,
+          "ast": 4.29,
+          "tpm": 2.24
         },
         "C": {
-          "pts": 25.01,
-          "reb": 17.09,
-          "ast": 4.47,
-          "tpm": 0.95
+          "pts": 24.5,
+          "reb": 17.2,
+          "ast": 4.33,
+          "tpm": 0.89
         }
       },
       "22": {
         "PG": {
-          "pts": 29.09,
-          "reb": 5.57,
-          "ast": 5.51,
-          "tpm": 3.18
+          "pts": 29.16,
+          "reb": 5.49,
+          "ast": 5.61,
+          "tpm": 3.15
         },
         "SG": {
-          "pts": 21.44,
-          "reb": 5.8,
-          "ast": 4.89,
-          "tpm": 3.1
+          "pts": 20.74,
+          "reb": 5.87,
+          "ast": 4.92,
+          "tpm": 2.93
         },
         "SF": {
-          "pts": 18.35,
-          "reb": 7.84,
-          "ast": 3.36,
-          "tpm": 2.17
+          "pts": 19.19,
+          "reb": 7.69,
+          "ast": 3.47,
+          "tpm": 2.2
         },
         "PF": {
-          "pts": 17.34,
-          "reb": 9.56,
-          "ast": 4.36,
-          "tpm": 2.27
+          "pts": 17.56,
+          "reb": 9.37,
+          "ast": 4.35,
+          "tpm": 2.34
         },
         "C": {
-          "pts": 24.52,
-          "reb": 15,
-          "ast": 4.95,
-          "tpm": 1.39
+          "pts": 24.44,
+          "reb": 14.72,
+          "ast": 4.78,
+          "tpm": 1.3
         }
       },
       "23": {
         "PG": {
-          "pts": 27.26,
-          "reb": 6.07,
-          "ast": 8.74,
-          "tpm": 3.18
+          "pts": 27.24,
+          "reb": 6.27,
+          "ast": 8.9,
+          "tpm": 3.21
         },
         "SG": {
-          "pts": 23.02,
-          "reb": 6.9,
-          "ast": 5.06,
-          "tpm": 3.05
+          "pts": 23.01,
+          "reb": 6.96,
+          "ast": 4.97,
+          "tpm": 3.16
         },
         "SF": {
-          "pts": 21.14,
-          "reb": 8.16,
-          "ast": 5.18,
-          "tpm": 2.91
+          "pts": 21.73,
+          "reb": 8.22,
+          "ast": 5.28,
+          "tpm": 3.05
         },
         "PF": {
-          "pts": 23.46,
-          "reb": 8.69,
-          "ast": 4.06,
-          "tpm": 2.87
+          "pts": 22.85,
+          "reb": 8.57,
+          "ast": 4.1,
+          "tpm": 2.79
         },
         "C": {
-          "pts": 24.22,
-          "reb": 14.4,
-          "ast": 2.58,
-          "tpm": 1.25
+          "pts": 24.43,
+          "reb": 14.74,
+          "ast": 2.69,
+          "tpm": 1.17
         }
       },
       "24": {
         "PG": {
-          "pts": 26.8,
-          "reb": 6.27,
-          "ast": 7.55,
-          "tpm": 3.25
+          "pts": 26.35,
+          "reb": 6.07,
+          "ast": 7.46,
+          "tpm": 3.12
         },
         "SG": {
-          "pts": 18.33,
-          "reb": 7.36,
-          "ast": 4.95,
-          "tpm": 2.91
+          "pts": 18.8,
+          "reb": 7.39,
+          "ast": 5.02,
+          "tpm": 3.01
         },
         "SF": {
-          "pts": 17.79,
-          "reb": 7.15,
-          "ast": 3.54,
-          "tpm": 2.56
+          "pts": 17.64,
+          "reb": 6.98,
+          "ast": 3.55,
+          "tpm": 2.57
         },
         "PF": {
-          "pts": 19.7,
-          "reb": 10.31,
-          "ast": 3.46,
-          "tpm": 1.73
+          "pts": 19.65,
+          "reb": 10.23,
+          "ast": 3.79,
+          "tpm": 1.7
         },
         "C": {
-          "pts": 22.6,
-          "reb": 12.24,
-          "ast": 4.56,
-          "tpm": 1.49
+          "pts": 22.88,
+          "reb": 12.78,
+          "ast": 4.74,
+          "tpm": 1.4
         }
       },
       "25": {
         "PG": {
-          "pts": 22.83,
-          "reb": 6.29,
-          "ast": 7.03,
-          "tpm": 3.82
+          "pts": 22.52,
+          "reb": 6.25,
+          "ast": 7,
+          "tpm": 3.74
         },
         "SG": {
-          "pts": 22.98,
-          "reb": 6.24,
-          "ast": 5.81,
-          "tpm": 3.64
+          "pts": 22.81,
+          "reb": 6.09,
+          "ast": 5.88,
+          "tpm": 3.59
         },
         "SF": {
-          "pts": 21.78,
-          "reb": 6.95,
-          "ast": 3.18,
-          "tpm": 3.45
+          "pts": 22.49,
+          "reb": 7.31,
+          "ast": 3.22,
+          "tpm": 3.63
         },
         "PF": {
-          "pts": 20.54,
-          "reb": 12.34,
-          "ast": 4.64,
-          "tpm": 2.6
+          "pts": 21.06,
+          "reb": 12.36,
+          "ast": 4.92,
+          "tpm": 2.57
         },
         "C": {
-          "pts": 21.21,
-          "reb": 14.12,
-          "ast": 4.56,
-          "tpm": 1.3
+          "pts": 21.4,
+          "reb": 14.63,
+          "ast": 4.46,
+          "tpm": 1.25
         }
       },
       "26": {
         "PG": {
-          "pts": 28.55,
+          "pts": 29.01,
           "reb": 5.93,
-          "ast": 7.29,
-          "tpm": 3.39
+          "ast": 7.45,
+          "tpm": 3.42
         },
         "SG": {
-          "pts": 23.5,
-          "reb": 7.01,
-          "ast": 5.78,
-          "tpm": 2.94
+          "pts": 23.45,
+          "reb": 6.8,
+          "ast": 6,
+          "tpm": 2.95
         },
         "SF": {
-          "pts": 18.4,
-          "reb": 7.52,
-          "ast": 3.68,
-          "tpm": 2.24
+          "pts": 18.68,
+          "reb": 7.56,
+          "ast": 3.5,
+          "tpm": 2.33
         },
         "PF": {
-          "pts": 22.57,
-          "reb": 9.81,
-          "ast": 2.84,
-          "tpm": 2.25
+          "pts": 22.04,
+          "reb": 9.96,
+          "ast": 2.81,
+          "tpm": 2.16
         },
         "C": {
-          "pts": 21.47,
-          "reb": 14.4,
-          "ast": 3.98,
-          "tpm": 1.28
+          "pts": 21.1,
+          "reb": 14.48,
+          "ast": 3.8,
+          "tpm": 1.22
         }
       },
       "27": {
@@ -16678,98 +16921,98 @@
       },
       "28": {
         "PG": {
-          "pts": 25.07,
-          "reb": 5.69,
-          "ast": 9.05,
-          "tpm": 3.22
+          "pts": 24.72,
+          "reb": 5.59,
+          "ast": 8.97,
+          "tpm": 3.13
         },
         "SG": {
-          "pts": 22.22,
-          "reb": 6.32,
-          "ast": 4.48,
-          "tpm": 3.05
+          "pts": 22.53,
+          "reb": 6.54,
+          "ast": 4.81,
+          "tpm": 3.03
         },
         "SF": {
-          "pts": 20.87,
-          "reb": 7.12,
-          "ast": 3.93,
-          "tpm": 2.7
+          "pts": 20.22,
+          "reb": 7.16,
+          "ast": 3.87,
+          "tpm": 2.59
         },
         "PF": {
-          "pts": 21.61,
-          "reb": 9.14,
-          "ast": 3.45,
-          "tpm": 2.04
+          "pts": 21.84,
+          "reb": 9.08,
+          "ast": 3.49,
+          "tpm": 2.08
         },
         "C": {
-          "pts": 20.75,
-          "reb": 15.48,
-          "ast": 4.11,
-          "tpm": 0.99
+          "pts": 21.71,
+          "reb": 15.29,
+          "ast": 3.87,
+          "tpm": 1.33
         }
       },
       "29": {
         "PG": {
-          "pts": 26.01,
-          "reb": 5.47,
-          "ast": 8.53,
-          "tpm": 3.35
+          "pts": 26.96,
+          "reb": 5.41,
+          "ast": 8.28,
+          "tpm": 3.75
         },
         "SG": {
-          "pts": 20.51,
-          "reb": 5.67,
-          "ast": 3.89,
-          "tpm": 2.31
+          "pts": 20.76,
+          "reb": 5.62,
+          "ast": 4,
+          "tpm": 2.42
         },
         "SF": {
-          "pts": 23.98,
-          "reb": 8.08,
-          "ast": 4.07,
-          "tpm": 3.08
+          "pts": 23.13,
+          "reb": 8.02,
+          "ast": 4.11,
+          "tpm": 3.02
         },
         "PF": {
-          "pts": 19.35,
-          "reb": 9.25,
-          "ast": 3.4,
-          "tpm": 1.54
+          "pts": 19.52,
+          "reb": 9.28,
+          "ast": 3.39,
+          "tpm": 1.6
         },
         "C": {
-          "pts": 20.65,
-          "reb": 13.63,
-          "ast": 4.88,
-          "tpm": 1.23
+          "pts": 20.08,
+          "reb": 13.6,
+          "ast": 4.79,
+          "tpm": 1.16
         }
       },
       "30": {
         "PG": {
-          "pts": 27.39,
-          "reb": 5.99,
-          "ast": 8.05,
-          "tpm": 3.82
+          "pts": 27.64,
+          "reb": 6.05,
+          "ast": 8.04,
+          "tpm": 3.99
         },
         "SG": {
-          "pts": 22.33,
-          "reb": 5.98,
-          "ast": 3.91,
-          "tpm": 3.69
+          "pts": 23.2,
+          "reb": 6.18,
+          "ast": 4.12,
+          "tpm": 3.64
         },
         "SF": {
-          "pts": 17.78,
-          "reb": 8.32,
-          "ast": 3.55,
-          "tpm": 2.68
+          "pts": 17.82,
+          "reb": 8.22,
+          "ast": 3.46,
+          "tpm": 2.74
         },
         "PF": {
-          "pts": 23.85,
-          "reb": 10.3,
-          "ast": 5.4,
-          "tpm": 2.16
+          "pts": 22.62,
+          "reb": 9.91,
+          "ast": 4.99,
+          "tpm": 2.07
         },
         "C": {
-          "pts": 16.51,
-          "reb": 10.27,
-          "ast": 4.8,
-          "tpm": 1.51
+          "pts": 16.74,
+          "reb": 10.66,
+          "ast": 4.51,
+          "tpm": 1.47
         }
       }
     }
