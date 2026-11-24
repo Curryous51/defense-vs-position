@@ -5,8 +5,13 @@
  *  - PropLine (key required): consensus over/under lines for points, rebounds,
  *    assists and threes on tonight's slate. One bulk call covers every game.
  *  - ESPN public API: team rosters, per-player game logs, injury report.
- *  - nbadepthcharts.com: starter/2nd/3rd-string order for the whole league.
+ *  - nbadepthcharts.com and ESPN's club depth charts: the lineups teams have
+ *    actually been running, in PG/SG/SF/PF/C order.
  *  - Sleeper player list: PG/SG/SF/PF/C eligibility (ESPN only exposes G/F/C).
+ *
+ * A player's position follows his recent lineup slot first, with ESPN's coarse
+ * G/F/C role deciding between the multi-position slots a chart lists for him;
+ * stale season-long listings are only the last resort.
  *
  * L5 and L10 are over-rates against today's line; H2H is the same against the
  * opponent this player faces tonight. Pushes are dropped from the denominator.
@@ -22,6 +27,8 @@ import type { BuiltSnapshot, Position, StatKey } from "./nbaBuilder";
 const ESPN = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba";
 const ESPN_WEB =
   "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba";
+const ESPN_CORE =
+  "https://sports.core.api.espn.com/v2/sports/basketball/leagues/nba";
 const PROPS = "https://api.prop-line.com/v1/sports/basketball_nba/odds";
 const DEPTH_URL = "https://www.nbadepthcharts.com/";
 
@@ -236,6 +243,65 @@ function parseDepthCharts(html: string): Map<string, Map<string, DepthEntry>> {
     byTeam.set(normalizeName(teamName), players);
   }
   return byTeam;
+}
+
+/**
+ * ESPN's club depth chart for one team: a ranked list of athletes under each
+ * PG/SG/SF/PF/C slot, which tracks the lineups that team has been using.
+ */
+async function fetchDepthChart(
+  teamId: string,
+  seasonYear: number,
+): Promise<Map<string, Array<{ position: Position; rank: number }>>> {
+  const json = await getJson<{
+    items?: Array<{
+      positions?: Record<
+        string,
+        {
+          position?: { abbreviation?: string };
+          athletes?: Array<{ athlete?: { $ref?: string }; rank?: number }>;
+        }
+      >;
+    }>;
+  }>(`${ESPN_CORE}/seasons/${seasonYear}/teams/${teamId}/depthcharts`, 2);
+
+  const byAthlete = new Map<string, Array<{ position: Position; rank: number }>>();
+  for (const slot of Object.values(json.items?.[0]?.positions ?? {})) {
+    const label = (slot.position?.abbreviation ?? "").toUpperCase();
+    if (!(POSITIONS as string[]).includes(label)) continue;
+    for (const entry of slot.athletes ?? []) {
+      const id = entry.athlete?.$ref?.match(/\/athletes\/(\d+)/)?.[1];
+      if (!id) continue;
+      const list = byAthlete.get(id) ?? [];
+      list.push({ position: label as Position, rank: entry.rank ?? 99 });
+      byAthlete.set(id, list);
+    }
+  }
+  return byAthlete;
+}
+
+/**
+ * Whether a specific slot fits ESPN's coarse role for the player. Rosters use
+ * G/F/C, sometimes with a second role ("F-C"), so any listed role may match.
+ */
+function fitsRole(position: Position, coarse: string): boolean {
+  return coarse
+    .toUpperCase()
+    .split("-")
+    .some((role) =>
+      role === "G"
+        ? position === "PG" || position === "SG"
+        : role === "F"
+          ? position === "SF" || position === "PF"
+          : role === "C"
+            ? position === "C"
+            : false,
+    );
+}
+
+/** First candidate that fits the player's coarse role, else the first one. */
+function pickSlot(slots: Position[], coarse: string): Position | undefined {
+  return slots.find((slot) => fitsRole(slot, coarse)) ?? slots[0];
 }
 
 interface EspnRoster {
