@@ -97,7 +97,14 @@ export function PlayerHistoryChart({
   }
 
   const values = games.map((game) => game[stat]);
-  const peak = Math.max(line, ...values, 1) * 1.18;
+  // A readable y-axis per market: points in fives, assists and rebounds in
+  // twos, threes in ones. Bars and the line are then just value / axisMax of
+  // the plot height, so a bar under the line is always drawn under it.
+  const step = stat === "pts" ? 5 : stat === "tpm" ? 1 : 2;
+  const top = Math.max(line, ...values, 1);
+  const axisMax = Math.max(step, Math.ceil((top * 1.05) / step) * step);
+  const ticks: number[] = [];
+  for (let tick = 0; tick <= axisMax; tick += step) ticks.push(tick);
   const statLabel = CATEGORY_LABELS[stat].toLowerCase();
   const activeGame = active === null ? null : games[active];
   const activeScore = activeGame ? scoreParts(activeGame.score) : null;
@@ -134,15 +141,41 @@ export function PlayerHistoryChart({
        * is always drawn under the line. Dates and logos live below it for that
        * reason — inside the column they ate the height the bars were sized to.
        */}
-      <div
-        className="relative flex items-end gap-1.5 sm:gap-2"
-        style={{ height: PLOT_HEIGHT }}
-      >
-        {/* the line */}
+      <div className="flex gap-2">
+        {/* y-axis: one label per tick, offset by the same value scale */}
+        <div className="relative w-7 shrink-0" style={{ height: PLOT_HEIGHT }}>
+          {ticks.map((tick) => (
+            <span
+              key={tick}
+              className="absolute right-0 text-[9px] tabular-nums text-muted-foreground"
+              style={{
+                bottom: (tick / axisMax) * PLOT_HEIGHT,
+                transform: "translateY(50%)",
+              }}
+            >
+              {tick}
+            </span>
+          ))}
+        </div>
+
         <div
-          className="pointer-events-none absolute inset-x-0 z-10 border-t border-dashed border-foreground/45"
-          style={{ bottom: (line / peak) * PLOT_HEIGHT }}
+          className="relative flex flex-1 items-end gap-1.5 sm:gap-2"
+          style={{ height: PLOT_HEIGHT }}
         >
+          {ticks
+            .filter((tick) => tick > 0)
+            .map((tick) => (
+              <div
+                key={`grid-${tick}`}
+                className="pointer-events-none absolute inset-x-0 border-t border-border/60"
+                style={{ bottom: (tick / axisMax) * PLOT_HEIGHT }}
+              />
+            ))}
+          {/* the line */}
+          <div
+            className="pointer-events-none absolute inset-x-0 z-10 border-t border-dashed border-foreground/45"
+            style={{ bottom: (line / axisMax) * PLOT_HEIGHT }}
+          >
           <span className="absolute -top-2 right-0 bg-background pl-1.5 text-[10px] font-medium tabular-nums text-foreground">
             {line}
           </span>
@@ -153,7 +186,7 @@ export function PlayerHistoryChart({
           const tone =
             value > line ? "favourable" : value < line ? "tough" : "push";
           const isActive = active === index;
-          const height = Math.max((value / peak) * PLOT_HEIGHT, 2);
+          const height = Math.max((value / axisMax) * PLOT_HEIGHT, 2);
           return (
             <button
               key={`${game.date}-${game.opponentId}`}
@@ -223,42 +256,47 @@ export function PlayerHistoryChart({
             />
           </button>
         ) : null}
+        </div>
       </div>
 
-      <div className="mt-2 flex gap-1.5 sm:gap-2">
-        {games.map((game) => (
-          <div
-            key={`label-${game.date}-${game.opponentId}`}
-            className="flex flex-1 flex-col items-center gap-1"
-          >
-            <img
-              src={LOGO(game.opponentAbbr)}
-              alt=""
-              className="size-4 opacity-80"
-              onError={(event) => {
-                event.currentTarget.style.visibility = "hidden";
-              }}
-            />
-            <span className="text-[9px] uppercase tracking-[0.06em] text-muted-foreground">
-              {dayLabel(game.date)}
-            </span>
-          </div>
-        ))}
-        {tonight ? (
-          <div className="flex flex-1 flex-col items-center gap-1">
-            <img
-              src={LOGO(tonight.opponentAbbr)}
-              alt=""
-              className="size-4 opacity-60"
-              onError={(event) => {
-                event.currentTarget.style.visibility = "hidden";
-              }}
-            />
-            <span className="text-[9px] uppercase tracking-[0.06em] text-muted-foreground">
-              Next
-            </span>
-          </div>
-        ) : null}
+      {/* Dates and logos, aligned with the bars above (same gutter + gaps). */}
+      <div className="mt-2 flex gap-2">
+        <div className="w-7 shrink-0" />
+        <div className="flex flex-1 gap-1.5 sm:gap-2">
+          {games.map((game) => (
+            <div
+              key={`label-${game.date}-${game.opponentId}`}
+              className="flex flex-1 flex-col items-center gap-1"
+            >
+              <img
+                src={LOGO(game.opponentAbbr)}
+                alt=""
+                className="size-4 opacity-80"
+                onError={(event) => {
+                  event.currentTarget.style.visibility = "hidden";
+                }}
+              />
+              <span className="text-[9px] uppercase tracking-[0.06em] text-muted-foreground">
+                {dayLabel(game.date)}
+              </span>
+            </div>
+          ))}
+          {tonight ? (
+            <div className="flex flex-1 flex-col items-center gap-1">
+              <img
+                src={LOGO(tonight.opponentAbbr)}
+                alt=""
+                className="size-4 opacity-60"
+                onError={(event) => {
+                  event.currentTarget.style.visibility = "hidden";
+                }}
+              />
+              <span className="text-[9px] uppercase tracking-[0.06em] text-muted-foreground">
+                Next
+              </span>
+            </div>
+          ) : null}
+        </div>
       </div>
 
       {activeGame ? (
