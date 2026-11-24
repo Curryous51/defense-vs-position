@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generatedAt": "2026-11-24T05:56:07.621Z",
+    "generatedAt": "2026-11-24T06:22:50.934Z",
     "season": "2026-27",
     "slateDate": "2026-11-24",
     "games": 3,
-    "props": 129,
+    "props": 147,
     "source": "PropLine · ESPN",
     "throughDate": "2026-11-24T03:00Z"
   },
@@ -19,7 +19,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 4.5,
-      "overPrice": -136,
+      "overPrice": -132,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -35,6 +35,34 @@
         "n": 5
       },
       "rank": 6,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "6583",
+      "name": "Anthony Davis",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "PF",
+      "stat": "pts",
+      "line": 21.5,
+      "overPrice": -115,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 4,
+        "n": 5
+      },
+      "l10": {
+        "hits": 8,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 1
+      },
+      "rank": 7,
       "injuryStatus": null
     },
     {
@@ -103,7 +131,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 3.5,
-      "overPrice": -166,
+      "overPrice": -150,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -119,34 +147,6 @@
         "n": 7
       },
       "rank": 30,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "4896372",
-      "name": "Walter Clayton Jr.",
-      "teamId": "6",
-      "teamAbbr": "DAL",
-      "opponentId": "7",
-      "opponentAbbr": "DEN",
-      "position": "PG",
-      "stat": "reb",
-      "line": 1.5,
-      "overPrice": -189,
-      "gameId": "135604",
-      "tipoff": "2026-11-25T03:10:00Z",
-      "l5": {
-        "hits": 4,
-        "n": 5
-      },
-      "l10": {
-        "hits": 8,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 3,
-        "n": 3
-      },
-      "rank": 16,
       "injuryStatus": null
     },
     {
@@ -187,7 +187,7 @@
       "position": "SG",
       "stat": "ast",
       "line": 2.5,
-      "overPrice": -138,
+      "overPrice": -140,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -206,6 +206,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "5142718",
+      "name": "AJ Dybantsa",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "SF",
+      "stat": "reb",
+      "line": 6.5,
+      "overPrice": -110,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 4,
+        "n": 5
+      },
+      "l10": {
+        "hits": 7,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 0
+      },
+      "rank": 26,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4712849",
       "name": "Anthony Black",
       "teamId": "19",
@@ -215,7 +243,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 100,
+      "overPrice": 105,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -232,34 +260,6 @@
       },
       "rank": 3,
       "injuryStatus": null
-    },
-    {
-      "playerId": "4432166",
-      "name": "Cade Cunningham",
-      "teamId": "8",
-      "teamAbbr": "DET",
-      "opponentId": "19",
-      "opponentAbbr": "ORL",
-      "position": "PG",
-      "stat": "reb",
-      "line": 4.5,
-      "overPrice": -162,
-      "gameId": "735038",
-      "tipoff": "2026-11-25T00:00:00Z",
-      "l5": {
-        "hits": 4,
-        "n": 5
-      },
-      "l10": {
-        "hits": 7,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 5,
-        "n": 5
-      },
-      "rank": 18,
-      "injuryStatus": "Day-To-Day"
     },
     {
       "playerId": "5107199",
@@ -355,7 +355,7 @@
       "position": "PF",
       "stat": "tpm",
       "line": 2.5,
-      "overPrice": -148,
+      "overPrice": -140,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -383,7 +383,7 @@
       "position": "PF",
       "stat": "tpm",
       "line": 0.5,
-      "overPrice": -243,
+      "overPrice": -240,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -402,18 +402,18 @@
       "injuryStatus": null
     },
     {
-      "playerId": "3112335",
-      "name": "Nikola Jokic",
-      "teamId": "7",
-      "teamAbbr": "DEN",
-      "opponentId": "6",
-      "opponentAbbr": "DAL",
-      "position": "C",
-      "stat": "pts",
-      "line": 25.5,
-      "overPrice": 100,
-      "gameId": "135604",
-      "tipoff": "2026-11-25T03:10:00Z",
+      "playerId": "5174563",
+      "name": "Kyshawn George",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "SG",
+      "stat": "ast",
+      "line": 3.5,
+      "overPrice": -136,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
         "hits": 4,
         "n": 5
@@ -423,10 +423,10 @@
         "n": 10
       },
       "h2h": {
-        "hits": 4,
-        "n": 7
+        "hits": 0,
+        "n": 4
       },
-      "rank": 18,
+      "rank": 6,
       "injuryStatus": null
     },
     {
@@ -439,7 +439,7 @@
       "position": "SF",
       "stat": "reb",
       "line": 4.5,
-      "overPrice": -140,
+      "overPrice": -150,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -635,7 +635,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": -194,
+      "overPrice": -175,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -651,6 +651,62 @@
         "n": 7
       },
       "rank": 1,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4277905",
+      "name": "Trae Young",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "PG",
+      "stat": "tpm",
+      "line": 1.5,
+      "overPrice": -194,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 7,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 3
+      },
+      "rank": 5,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5160992",
+      "name": "Alex Sarr",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "C",
+      "stat": "reb",
+      "line": 6.5,
+      "overPrice": 116,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 7,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 6
+      },
+      "rank": 4,
       "injuryStatus": null
     },
     {
@@ -691,7 +747,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 4.5,
-      "overPrice": 122,
+      "overPrice": 120,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -803,7 +859,7 @@
       "position": "C",
       "stat": "ast",
       "line": 1.5,
-      "overPrice": -115,
+      "overPrice": -118,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -906,6 +962,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "5142718",
+      "name": "AJ Dybantsa",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "SF",
+      "stat": "ast",
+      "line": 2.5,
+      "overPrice": -112,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 0
+      },
+      "rank": 13,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4684742",
       "name": "Ausar Thompson",
       "teamId": "8",
@@ -999,7 +1083,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 4.5,
-      "overPrice": -120,
+      "overPrice": -122,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -1027,7 +1111,7 @@
       "position": "SG",
       "stat": "pts",
       "line": 17.5,
-      "overPrice": -110,
+      "overPrice": -114,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -1195,7 +1279,7 @@
       "position": "PG",
       "stat": "pts",
       "line": 14.5,
-      "overPrice": -102,
+      "overPrice": -104,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -1239,6 +1323,34 @@
         "n": 4
       },
       "rank": 21,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4896372",
+      "name": "Walter Clayton Jr.",
+      "teamId": "6",
+      "teamAbbr": "DAL",
+      "opponentId": "7",
+      "opponentAbbr": "DEN",
+      "position": "PG",
+      "stat": "reb",
+      "line": 2.5,
+      "overPrice": 148,
+      "gameId": "135604",
+      "tipoff": "2026-11-25T03:10:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 6,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 3
+      },
+      "rank": 16,
       "injuryStatus": null
     },
     {
@@ -1438,6 +1550,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "5142718",
+      "name": "AJ Dybantsa",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "SF",
+      "stat": "pts",
+      "line": 16.5,
+      "overPrice": -110,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 0
+      },
+      "rank": 14,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4432166",
       "name": "Cade Cunningham",
       "teamId": "8",
@@ -1475,7 +1615,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 4.5,
-      "overPrice": -132,
+      "overPrice": -136,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -1503,7 +1643,7 @@
       "position": "PG",
       "stat": "pts",
       "line": 13.5,
-      "overPrice": -108,
+      "overPrice": -102,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -1606,6 +1746,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "5174563",
+      "name": "Kyshawn George",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "SG",
+      "stat": "pts",
+      "line": 14.5,
+      "overPrice": -115,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 4
+      },
+      "rank": 6,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4873153",
       "name": "Morez Johnson Jr.",
       "teamId": "6",
@@ -1699,7 +1867,7 @@
       "position": "C",
       "stat": "pts",
       "line": 10.5,
-      "overPrice": -130,
+      "overPrice": -120,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -1727,7 +1895,7 @@
       "position": "SF",
       "stat": "pts",
       "line": 18.5,
-      "overPrice": -118,
+      "overPrice": -115,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -1839,7 +2007,7 @@
       "position": "SF",
       "stat": "ast",
       "line": 0.5,
-      "overPrice": 102,
+      "overPrice": 105,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -1883,6 +2051,62 @@
         "n": 4
       },
       "rank": 10,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5160992",
+      "name": "Alex Sarr",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "C",
+      "stat": "pts",
+      "line": 10.5,
+      "overPrice": 102,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 3,
+        "n": 6
+      },
+      "rank": 5,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "6583",
+      "name": "Anthony Davis",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "PF",
+      "stat": "reb",
+      "line": 10.5,
+      "overPrice": 118,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 1
+      },
+      "rank": 25,
       "injuryStatus": null
     },
     {
@@ -2082,6 +2306,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "5174563",
+      "name": "Kyshawn George",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "SG",
+      "stat": "tpm",
+      "line": 2.5,
+      "overPrice": 136,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 4
+      },
+      "rank": 24,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4873153",
       "name": "Morez Johnson Jr.",
       "teamId": "6",
@@ -2173,37 +2425,9 @@
       "opponentId": "27",
       "opponentAbbr": "WSH",
       "position": "SF",
-      "stat": "ast",
-      "line": 3.5,
-      "overPrice": -140,
-      "gameId": "135601",
-      "tipoff": "2026-11-25T01:10:00Z",
-      "l5": {
-        "hits": 2,
-        "n": 5
-      },
-      "l10": {
-        "hits": 5,
-        "n": 10
-      },
-      "h2h": {
-        "hits": 2,
-        "n": 3
-      },
-      "rank": 24,
-      "injuryStatus": null
-    },
-    {
-      "playerId": "4251",
-      "name": "Paul George",
-      "teamId": "2",
-      "teamAbbr": "BOS",
-      "opponentId": "27",
-      "opponentAbbr": "WSH",
-      "position": "SF",
       "stat": "tpm",
       "line": 2.5,
-      "overPrice": -132,
+      "overPrice": -115,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -2222,6 +2446,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "4251",
+      "name": "Paul George",
+      "teamId": "2",
+      "teamAbbr": "BOS",
+      "opponentId": "27",
+      "opponentAbbr": "WSH",
+      "position": "SF",
+      "stat": "ast",
+      "line": 3.5,
+      "overPrice": -130,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 3
+      },
+      "rank": 24,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4066354",
       "name": "Payton Pritchard",
       "teamId": "2",
@@ -2231,7 +2483,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 2.5,
-      "overPrice": -136,
+      "overPrice": -130,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -2259,7 +2511,7 @@
       "position": "SF",
       "stat": "tpm",
       "line": 2.5,
-      "overPrice": 117,
+      "overPrice": 120,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -2418,6 +2670,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "5160992",
+      "name": "Alex Sarr",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "C",
+      "stat": "tpm",
+      "line": 1.5,
+      "overPrice": 120,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 3,
+        "n": 6
+      },
+      "rank": 23,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4684742",
       "name": "Ausar Thompson",
       "teamId": "8",
@@ -2483,7 +2763,7 @@
       "position": "SG",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 108,
+      "overPrice": 107,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -2567,7 +2847,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": -192,
+      "overPrice": -175,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -2595,7 +2875,7 @@
       "position": "PF",
       "stat": "reb",
       "line": 7.5,
-      "overPrice": -125,
+      "overPrice": -115,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -2623,7 +2903,7 @@
       "position": "PF",
       "stat": "ast",
       "line": 1.5,
-      "overPrice": 132,
+      "overPrice": 135,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -2651,7 +2931,7 @@
       "position": "C",
       "stat": "reb",
       "line": 8.5,
-      "overPrice": 112,
+      "overPrice": 114,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -2754,6 +3034,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "6583",
+      "name": "Anthony Davis",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "PF",
+      "stat": "ast",
+      "line": 2.5,
+      "overPrice": 158,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 1
+      },
+      "rank": 19,
+      "injuryStatus": null
+    },
+    {
       "playerId": "3138196",
       "name": "Cameron Johnson",
       "teamId": "7",
@@ -2763,7 +3071,7 @@
       "position": "SF",
       "stat": "pts",
       "line": 12.5,
-      "overPrice": 112,
+      "overPrice": 111,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -2847,7 +3155,7 @@
       "position": "SG",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": -130,
+      "overPrice": -125,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -2875,7 +3183,7 @@
       "position": "SF",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 129,
+      "overPrice": 130,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -2903,7 +3211,7 @@
       "position": "PF",
       "stat": "pts",
       "line": 26.5,
-      "overPrice": -125,
+      "overPrice": -115,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -2950,6 +3258,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "5174563",
+      "name": "Kyshawn George",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "SG",
+      "stat": "reb",
+      "line": 4.5,
+      "overPrice": 130,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 4
+      },
+      "rank": 2,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4873153",
       "name": "Morez Johnson Jr.",
       "teamId": "6",
@@ -2975,6 +3311,34 @@
         "n": 0
       },
       "rank": 30,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "3112335",
+      "name": "Nikola Jokic",
+      "teamId": "7",
+      "teamAbbr": "DEN",
+      "opponentId": "6",
+      "opponentAbbr": "DAL",
+      "position": "C",
+      "stat": "pts",
+      "line": 26.5,
+      "overPrice": 111,
+      "gameId": "135604",
+      "tipoff": "2026-11-25T03:10:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 4,
+        "n": 7
+      },
+      "rank": 18,
       "injuryStatus": null
     },
     {
@@ -3015,7 +3379,7 @@
       "position": "PG",
       "stat": "pts",
       "line": 12.5,
-      "overPrice": -130,
+      "overPrice": -125,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -3031,6 +3395,34 @@
         "n": 7
       },
       "rank": 6,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4277905",
+      "name": "Trae Young",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "PG",
+      "stat": "ast",
+      "line": 8.5,
+      "overPrice": 115,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 3
+      },
+      "rank": 8,
       "injuryStatus": null
     },
     {
@@ -3099,7 +3491,7 @@
       "position": "PF",
       "stat": "ast",
       "line": 6.5,
-      "overPrice": 108,
+      "overPrice": 112,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -3144,6 +3536,34 @@
       },
       "rank": 12,
       "injuryStatus": "Day-To-Day"
+    },
+    {
+      "playerId": "4277905",
+      "name": "Trae Young",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "PG",
+      "stat": "pts",
+      "line": 15.5,
+      "overPrice": 100,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 1,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 1,
+        "n": 3
+      },
+      "rank": 1,
+      "injuryStatus": null
     },
     {
       "playerId": "4277847",
@@ -3407,7 +3827,7 @@
       "position": "PF",
       "stat": "ast",
       "line": 1.5,
-      "overPrice": 142,
+      "overPrice": 145,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -3435,7 +3855,7 @@
       "position": "PG",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": 116,
+      "overPrice": 120,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -3451,6 +3871,34 @@
         "n": 7
       },
       "rank": 13,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4277905",
+      "name": "Trae Young",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "PG",
+      "stat": "reb",
+      "line": 2.5,
+      "overPrice": 115,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 1,
+        "n": 5
+      },
+      "l10": {
+        "hits": 3,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 2,
+        "n": 3
+      },
+      "rank": 21,
       "injuryStatus": null
     },
     {
@@ -3479,6 +3927,34 @@
         "n": 7
       },
       "rank": 16,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "5142718",
+      "name": "AJ Dybantsa",
+      "teamId": "27",
+      "teamAbbr": "WSH",
+      "opponentId": "2",
+      "opponentAbbr": "BOS",
+      "position": "SF",
+      "stat": "tpm",
+      "line": 1.5,
+      "overPrice": 120,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 2,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 0,
+        "n": 0
+      },
+      "rank": 14,
       "injuryStatus": null
     },
     {
@@ -3592,6 +4068,34 @@
       },
       "rank": 2,
       "injuryStatus": null
+    },
+    {
+      "playerId": "4432166",
+      "name": "Cade Cunningham",
+      "teamId": "8",
+      "teamAbbr": "DET",
+      "opponentId": "19",
+      "opponentAbbr": "ORL",
+      "position": "PG",
+      "stat": "reb",
+      "line": 5.5,
+      "overPrice": 120,
+      "gameId": "735038",
+      "tipoff": "2026-11-25T00:00:00Z",
+      "l5": {
+        "hits": 0,
+        "n": 5
+      },
+      "l10": {
+        "hits": 1,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 4,
+        "n": 5
+      },
+      "rank": 18,
+      "injuryStatus": "Day-To-Day"
     },
     {
       "playerId": "4684742",
@@ -4443,6 +4947,229 @@
         3,
         3,
         "122-120"
+      ]
+    ],
+    "6583": [
+      [
+        "2026-11-23T00:00:00.000+00:00",
+        "19",
+        "ORL",
+        1,
+        33,
+        22,
+        7,
+        1,
+        2,
+        8,
+        13,
+        5,
+        4,
+        4,
+        "116-96"
+      ],
+      [
+        "2026-11-21T01:00:00.000+00:00",
+        "4",
+        "CHI",
+        0,
+        34,
+        36,
+        11,
+        3,
+        0,
+        16,
+        26,
+        0,
+        4,
+        9,
+        "98-94"
+      ],
+      [
+        "2026-11-19T00:30:00.000+00:00",
+        "28",
+        "TOR",
+        0,
+        34,
+        25,
+        14,
+        2,
+        2,
+        9,
+        16,
+        3,
+        5,
+        7,
+        "103-99"
+      ],
+      [
+        "2026-11-17T00:00:00.000+00:00",
+        "29",
+        "MEM",
+        1,
+        35,
+        23,
+        4,
+        0,
+        0,
+        8,
+        15,
+        1,
+        7,
+        8,
+        "136-120"
+      ],
+      [
+        "2026-11-16T00:00:00.000+00:00",
+        "10",
+        "HOU",
+        1,
+        31,
+        14,
+        8,
+        5,
+        0,
+        4,
+        11,
+        0,
+        6,
+        6,
+        "147-119"
+      ],
+      [
+        "2026-11-13T00:00:00.000+00:00",
+        "8",
+        "DET",
+        1,
+        44,
+        30,
+        15,
+        4,
+        0,
+        13,
+        21,
+        1,
+        4,
+        4,
+        "144-140 2OT"
+      ],
+      [
+        "2026-11-12T00:00:00.000+00:00",
+        "11",
+        "IND",
+        0,
+        34,
+        21,
+        13,
+        0,
+        0,
+        7,
+        20,
+        3,
+        7,
+        9,
+        "114-101"
+      ],
+      [
+        "2026-11-10T00:00:00.000+00:00",
+        "8",
+        "DET",
+        0,
+        34,
+        44,
+        13,
+        1,
+        2,
+        16,
+        21,
+        4,
+        10,
+        11,
+        "122-111"
+      ],
+      [
+        "2026-11-05T00:00:00.000+00:00",
+        "1",
+        "ATL",
+        1,
+        30,
+        26,
+        10,
+        3,
+        0,
+        12,
+        19,
+        1,
+        2,
+        2,
+        "120-105"
+      ],
+      [
+        "2026-11-03T00:30:00.000+00:00",
+        "19",
+        "ORL",
+        0,
+        34,
+        27,
+        9,
+        1,
+        1,
+        12,
+        17,
+        1,
+        2,
+        2,
+        "103-94"
+      ],
+      [
+        "2026-10-30T23:00:00.000+00:00",
+        "30",
+        "CHA",
+        1,
+        34,
+        25,
+        13,
+        1,
+        0,
+        8,
+        17,
+        1,
+        9,
+        10,
+        "95-79"
+      ],
+      [
+        "2026-10-28T23:00:00.000+00:00",
+        "5",
+        "CLE",
+        0,
+        34,
+        18,
+        5,
+        3,
+        2,
+        8,
+        18,
+        5,
+        0,
+        0,
+        "121-111"
+      ],
+      [
+        "2025-01-24T03:00:00.000+00:00",
+        "2",
+        "BOS",
+        1,
+        31,
+        24,
+        8,
+        3,
+        0,
+        9,
+        18,
+        1,
+        6,
+        6,
+        "117-96"
       ]
     ],
     "3064290": [
@@ -7884,6 +8611,263 @@
         1,
         2,
         "105-96"
+      ]
+    ],
+    "4277905": [
+      [
+        "2026-11-23T00:00:00.000+00:00",
+        "19",
+        "ORL",
+        1,
+        28,
+        11,
+        4,
+        11,
+        3,
+        3,
+        10,
+        7,
+        2,
+        2,
+        "116-96"
+      ],
+      [
+        "2026-11-21T01:00:00.000+00:00",
+        "4",
+        "CHI",
+        0,
+        35,
+        16,
+        2,
+        5,
+        4,
+        4,
+        13,
+        8,
+        4,
+        4,
+        "98-94"
+      ],
+      [
+        "2026-11-19T00:30:00.000+00:00",
+        "28",
+        "TOR",
+        0,
+        32,
+        11,
+        1,
+        8,
+        1,
+        2,
+        9,
+        4,
+        6,
+        7,
+        "103-99"
+      ],
+      [
+        "2026-11-17T00:00:00.000+00:00",
+        "29",
+        "MEM",
+        1,
+        33,
+        13,
+        2,
+        12,
+        2,
+        3,
+        10,
+        6,
+        5,
+        6,
+        "136-120"
+      ],
+      [
+        "2026-11-16T00:00:00.000+00:00",
+        "10",
+        "HOU",
+        1,
+        26,
+        0,
+        1,
+        8,
+        0,
+        0,
+        5,
+        3,
+        0,
+        0,
+        "147-119"
+      ],
+      [
+        "2026-11-13T00:00:00.000+00:00",
+        "8",
+        "DET",
+        1,
+        45,
+        37,
+        2,
+        14,
+        4,
+        8,
+        23,
+        8,
+        17,
+        17,
+        "144-140 2OT"
+      ],
+      [
+        "2026-11-12T00:00:00.000+00:00",
+        "11",
+        "IND",
+        0,
+        34,
+        15,
+        3,
+        4,
+        3,
+        5,
+        10,
+        8,
+        2,
+        2,
+        "114-101"
+      ],
+      [
+        "2026-11-10T00:00:00.000+00:00",
+        "8",
+        "DET",
+        0,
+        38,
+        20,
+        1,
+        7,
+        3,
+        6,
+        17,
+        10,
+        5,
+        9,
+        "122-111"
+      ],
+      [
+        "2026-11-08T01:00:00.000+00:00",
+        "25",
+        "OKC",
+        0,
+        28,
+        4,
+        5,
+        3,
+        0,
+        1,
+        6,
+        1,
+        2,
+        3,
+        "114-75"
+      ],
+      [
+        "2026-11-07T00:00:00.000+00:00",
+        "1",
+        "ATL",
+        0,
+        37,
+        23,
+        2,
+        10,
+        3,
+        7,
+        16,
+        8,
+        6,
+        6,
+        "139-132"
+      ],
+      [
+        "2026-11-05T00:00:00.000+00:00",
+        "1",
+        "ATL",
+        1,
+        34,
+        18,
+        2,
+        6,
+        2,
+        6,
+        12,
+        6,
+        4,
+        4,
+        "120-105"
+      ],
+      [
+        "2026-11-03T00:30:00.000+00:00",
+        "19",
+        "ORL",
+        0,
+        34,
+        15,
+        3,
+        9,
+        2,
+        5,
+        12,
+        6,
+        3,
+        5,
+        "103-94"
+      ],
+      [
+        "2026-03-14T22:00:00.000+00:00",
+        "2",
+        "BOS",
+        0,
+        24,
+        11,
+        4,
+        6,
+        0,
+        5,
+        10,
+        2,
+        1,
+        2,
+        "111-100"
+      ],
+      [
+        "2025-01-19T00:00:00.000+00:00",
+        "2",
+        "BOS",
+        0,
+        39,
+        28,
+        4,
+        11,
+        3,
+        10,
+        23,
+        10,
+        5,
+        5,
+        "119-115 OT"
+      ],
+      [
+        "2024-11-05T00:45:00.000+00:00",
+        "2",
+        "BOS",
+        1,
+        23,
+        2,
+        0,
+        6,
+        0,
+        1,
+        10,
+        6,
+        0,
+        0,
+        "123-93"
       ]
     ],
     "4278049": [
@@ -12816,6 +13800,794 @@
         0,
         0,
         "135-116"
+      ]
+    ],
+    "5142718": [
+      [
+        "2026-11-23T00:00:00.000+00:00",
+        "19",
+        "ORL",
+        1,
+        33,
+        16,
+        8,
+        6,
+        0,
+        4,
+        10,
+        0,
+        8,
+        11,
+        "116-96"
+      ],
+      [
+        "2026-11-21T01:00:00.000+00:00",
+        "4",
+        "CHI",
+        0,
+        37,
+        20,
+        10,
+        6,
+        2,
+        9,
+        18,
+        4,
+        0,
+        0,
+        "98-94"
+      ],
+      [
+        "2026-11-19T00:30:00.000+00:00",
+        "28",
+        "TOR",
+        0,
+        38,
+        23,
+        12,
+        2,
+        0,
+        9,
+        17,
+        3,
+        5,
+        6,
+        "103-99"
+      ],
+      [
+        "2026-11-17T00:00:00.000+00:00",
+        "29",
+        "MEM",
+        1,
+        32,
+        21,
+        5,
+        3,
+        1,
+        7,
+        16,
+        7,
+        6,
+        8,
+        "136-120"
+      ],
+      [
+        "2026-11-16T00:00:00.000+00:00",
+        "10",
+        "HOU",
+        1,
+        30,
+        16,
+        7,
+        1,
+        2,
+        6,
+        18,
+        7,
+        2,
+        4,
+        "147-119"
+      ],
+      [
+        "2026-11-13T00:00:00.000+00:00",
+        "8",
+        "DET",
+        1,
+        44,
+        5,
+        8,
+        4,
+        1,
+        2,
+        10,
+        4,
+        0,
+        0,
+        "144-140 2OT"
+      ],
+      [
+        "2026-11-12T00:00:00.000+00:00",
+        "11",
+        "IND",
+        0,
+        34,
+        13,
+        4,
+        2,
+        0,
+        6,
+        15,
+        4,
+        1,
+        4,
+        "114-101"
+      ],
+      [
+        "2026-11-10T00:00:00.000+00:00",
+        "8",
+        "DET",
+        0,
+        37,
+        21,
+        8,
+        1,
+        1,
+        8,
+        17,
+        4,
+        4,
+        6,
+        "122-111"
+      ],
+      [
+        "2026-11-08T01:00:00.000+00:00",
+        "25",
+        "OKC",
+        0,
+        31,
+        19,
+        6,
+        3,
+        1,
+        7,
+        15,
+        5,
+        4,
+        6,
+        "114-75"
+      ],
+      [
+        "2026-11-07T00:00:00.000+00:00",
+        "1",
+        "ATL",
+        0,
+        36,
+        11,
+        9,
+        3,
+        1,
+        3,
+        13,
+        1,
+        4,
+        4,
+        "139-132"
+      ],
+      [
+        "2026-11-05T00:00:00.000+00:00",
+        "1",
+        "ATL",
+        1,
+        32,
+        9,
+        6,
+        3,
+        0,
+        4,
+        12,
+        1,
+        1,
+        4,
+        "120-105"
+      ],
+      [
+        "2026-11-03T00:30:00.000+00:00",
+        "19",
+        "ORL",
+        0,
+        33,
+        21,
+        5,
+        2,
+        1,
+        7,
+        17,
+        4,
+        6,
+        6,
+        "103-94"
+      ]
+    ],
+    "5160992": [
+      [
+        "2026-11-23T00:00:00.000+00:00",
+        "19",
+        "ORL",
+        1,
+        26,
+        10,
+        9,
+        2,
+        2,
+        3,
+        5,
+        3,
+        2,
+        2,
+        "116-96"
+      ],
+      [
+        "2026-11-21T01:00:00.000+00:00",
+        "4",
+        "CHI",
+        0,
+        20,
+        3,
+        3,
+        0,
+        1,
+        1,
+        3,
+        2,
+        0,
+        0,
+        "98-94"
+      ],
+      [
+        "2026-11-19T00:30:00.000+00:00",
+        "28",
+        "TOR",
+        0,
+        22,
+        13,
+        2,
+        3,
+        3,
+        5,
+        6,
+        4,
+        0,
+        1,
+        "103-99"
+      ],
+      [
+        "2026-11-17T00:00:00.000+00:00",
+        "29",
+        "MEM",
+        1,
+        31,
+        6,
+        4,
+        1,
+        1,
+        2,
+        9,
+        5,
+        1,
+        2,
+        "136-120"
+      ],
+      [
+        "2026-11-16T00:00:00.000+00:00",
+        "10",
+        "HOU",
+        1,
+        27,
+        25,
+        9,
+        2,
+        3,
+        9,
+        13,
+        6,
+        4,
+        8,
+        "147-119"
+      ],
+      [
+        "2026-11-13T00:00:00.000+00:00",
+        "8",
+        "DET",
+        1,
+        44,
+        30,
+        9,
+        2,
+        4,
+        12,
+        14,
+        6,
+        2,
+        4,
+        "144-140 2OT"
+      ],
+      [
+        "2026-11-12T00:00:00.000+00:00",
+        "11",
+        "IND",
+        0,
+        25,
+        5,
+        8,
+        0,
+        1,
+        2,
+        6,
+        3,
+        0,
+        0,
+        "114-101"
+      ],
+      [
+        "2026-11-10T00:00:00.000+00:00",
+        "8",
+        "DET",
+        0,
+        25,
+        4,
+        8,
+        0,
+        0,
+        2,
+        5,
+        2,
+        0,
+        0,
+        "122-111"
+      ],
+      [
+        "2026-11-08T01:00:00.000+00:00",
+        "25",
+        "OKC",
+        0,
+        28,
+        15,
+        14,
+        1,
+        1,
+        7,
+        17,
+        9,
+        0,
+        0,
+        "114-75"
+      ],
+      [
+        "2026-11-07T00:00:00.000+00:00",
+        "1",
+        "ATL",
+        0,
+        30,
+        13,
+        8,
+        3,
+        1,
+        5,
+        10,
+        2,
+        2,
+        2,
+        "139-132"
+      ],
+      [
+        "2026-11-05T00:00:00.000+00:00",
+        "1",
+        "ATL",
+        1,
+        23,
+        11,
+        9,
+        1,
+        0,
+        3,
+        6,
+        2,
+        5,
+        6,
+        "120-105"
+      ],
+      [
+        "2026-10-30T23:00:00.000+00:00",
+        "30",
+        "CHA",
+        1,
+        29,
+        3,
+        8,
+        0,
+        1,
+        1,
+        5,
+        3,
+        0,
+        0,
+        "95-79"
+      ],
+      [
+        "2026-03-14T22:00:00.000+00:00",
+        "2",
+        "BOS",
+        0,
+        22,
+        4,
+        5,
+        0,
+        1,
+        1,
+        9,
+        5,
+        1,
+        2,
+        "111-100"
+      ],
+      [
+        "2025-11-06T00:30:00.000+00:00",
+        "2",
+        "BOS",
+        0,
+        29,
+        31,
+        8,
+        2,
+        4,
+        12,
+        20,
+        5,
+        3,
+        4,
+        "136-107"
+      ],
+      [
+        "2025-04-06T22:00:00.000+00:00",
+        "2",
+        "BOS",
+        0,
+        32,
+        16,
+        4,
+        2,
+        2,
+        7,
+        17,
+        9,
+        0,
+        0,
+        "124-90"
+      ],
+      [
+        "2024-12-15T23:00:00.000+00:00",
+        "2",
+        "BOS",
+        1,
+        28,
+        14,
+        6,
+        1,
+        2,
+        6,
+        18,
+        6,
+        0,
+        0,
+        "112-98"
+      ],
+      [
+        "2024-11-23T00:00:00.000+00:00",
+        "2",
+        "BOS",
+        1,
+        28,
+        6,
+        9,
+        1,
+        0,
+        3,
+        9,
+        2,
+        0,
+        0,
+        "108-96"
+      ],
+      [
+        "2024-10-24T23:00:00.000+00:00",
+        "2",
+        "BOS",
+        1,
+        22,
+        2,
+        5,
+        1,
+        0,
+        1,
+        7,
+        5,
+        0,
+        0,
+        "122-102"
+      ]
+    ],
+    "5174563": [
+      [
+        "2026-11-23T00:00:00.000+00:00",
+        "19",
+        "ORL",
+        1,
+        36,
+        24,
+        3,
+        4,
+        6,
+        9,
+        17,
+        11,
+        0,
+        1,
+        "116-96"
+      ],
+      [
+        "2026-11-21T01:00:00.000+00:00",
+        "4",
+        "CHI",
+        0,
+        35,
+        11,
+        7,
+        5,
+        1,
+        5,
+        17,
+        8,
+        0,
+        0,
+        "98-94"
+      ],
+      [
+        "2026-11-19T00:30:00.000+00:00",
+        "28",
+        "TOR",
+        0,
+        40,
+        20,
+        2,
+        4,
+        4,
+        7,
+        16,
+        9,
+        2,
+        2,
+        "103-99"
+      ],
+      [
+        "2026-11-17T00:00:00.000+00:00",
+        "29",
+        "MEM",
+        1,
+        38,
+        18,
+        6,
+        1,
+        2,
+        7,
+        10,
+        3,
+        2,
+        2,
+        "136-120"
+      ],
+      [
+        "2026-11-16T00:00:00.000+00:00",
+        "10",
+        "HOU",
+        1,
+        30,
+        11,
+        2,
+        4,
+        1,
+        4,
+        13,
+        4,
+        2,
+        4,
+        "147-119"
+      ],
+      [
+        "2026-11-13T00:00:00.000+00:00",
+        "8",
+        "DET",
+        1,
+        26,
+        14,
+        1,
+        5,
+        3,
+        5,
+        7,
+        3,
+        1,
+        2,
+        "144-140 2OT"
+      ],
+      [
+        "2026-11-12T00:00:00.000+00:00",
+        "11",
+        "IND",
+        0,
+        39,
+        25,
+        9,
+        3,
+        5,
+        9,
+        20,
+        8,
+        2,
+        2,
+        "114-101"
+      ],
+      [
+        "2026-11-10T00:00:00.000+00:00",
+        "8",
+        "DET",
+        0,
+        35,
+        12,
+        3,
+        2,
+        2,
+        5,
+        12,
+        6,
+        0,
+        0,
+        "122-111"
+      ],
+      [
+        "2026-11-08T01:00:00.000+00:00",
+        "25",
+        "OKC",
+        0,
+        30,
+        14,
+        7,
+        6,
+        2,
+        5,
+        16,
+        8,
+        2,
+        2,
+        "114-75"
+      ],
+      [
+        "2026-11-07T00:00:00.000+00:00",
+        "1",
+        "ATL",
+        0,
+        39,
+        33,
+        4,
+        8,
+        5,
+        10,
+        19,
+        7,
+        8,
+        10,
+        "139-132"
+      ],
+      [
+        "2026-11-05T00:00:00.000+00:00",
+        "1",
+        "ATL",
+        1,
+        35,
+        25,
+        4,
+        7,
+        3,
+        10,
+        14,
+        7,
+        2,
+        3,
+        "120-105"
+      ],
+      [
+        "2026-11-03T00:30:00.000+00:00",
+        "19",
+        "ORL",
+        0,
+        37,
+        22,
+        4,
+        5,
+        4,
+        9,
+        15,
+        8,
+        0,
+        1,
+        "103-94"
+      ],
+      [
+        "2025-12-05T00:00:00.000+00:00",
+        "2",
+        "BOS",
+        1,
+        28,
+        15,
+        3,
+        1,
+        3,
+        5,
+        7,
+        4,
+        2,
+        2,
+        "146-101"
+      ],
+      [
+        "2025-11-06T00:30:00.000+00:00",
+        "2",
+        "BOS",
+        0,
+        28,
+        9,
+        2,
+        3,
+        0,
+        3,
+        9,
+        3,
+        3,
+        5,
+        "136-107"
+      ],
+      [
+        "2024-11-23T00:00:00.000+00:00",
+        "2",
+        "BOS",
+        1,
+        19,
+        3,
+        3,
+        0,
+        1,
+        1,
+        4,
+        4,
+        0,
+        0,
+        "108-96"
+      ],
+      [
+        "2024-10-24T23:00:00.000+00:00",
+        "2",
+        "BOS",
+        1,
+        20,
+        4,
+        3,
+        2,
+        0,
+        2,
+        6,
+        4,
+        0,
+        0,
+        "122-102"
       ]
     ],
     "5211175": [
