@@ -658,6 +658,8 @@ export async function buildHitRateBoard(
     snapshot.teams.map((team) => [normalizeName(team.name), team.id]),
   );
   const slateTeamIds = new Set(games.flatMap((game) => [game.home, game.away]));
+  const seasonEnd = snapshot.meta.season.split("-")[1] ?? "27";
+  const currentSeason = 2000 + Number(seasonEnd.slice(-2));
 
   log(`Slate: ${games.length} games, ${slateTeamIds.size} teams`);
 
@@ -710,6 +712,21 @@ export async function buildHitRateBoard(
   } catch (err) {
     log(`depth charts failed: ${(err as Error).message}`);
   }
+
+  // ESPN's own depth charts carry the same PG/SG/SF/PF/C slots, so a player
+  // missing from one list still gets a lineup-based position from the other.
+  const espnDepth = new Map<
+    string,
+    Map<string, Array<{ position: Position; rank: number }>>
+  >();
+  await mapLimit([...slateTeamIds], 6, async (teamId) => {
+    try {
+      espnDepth.set(teamId, await fetchDepthChart(teamId, currentSeason));
+    } catch (err) {
+      log(`ESPN depth chart failed for ${teamId}: ${(err as Error).message}`);
+    }
+  });
+  log(`ESPN depth charts: ${espnDepth.size} teams`);
 
   let eligibilityByName = new Map<string, string[]>();
   try {
@@ -785,8 +802,6 @@ export async function buildHitRateBoard(
   log(`Matched ${matched.length} props to ESPN players (${unmatched} unmatched)`);
 
   const playerIds = [...new Set(matched.map((row) => row.player.id))];
-  const seasonEnd = snapshot.meta.season.split("-")[1] ?? "27";
-  const currentSeason = 2000 + Number(seasonEnd.slice(-2));
   const seasons = Array.from(
     { length: H2H_SEASONS },
     (_, index) => currentSeason - index,
@@ -847,9 +862,22 @@ export async function buildHitRateBoard(
 
     const depthEntry = depth.get(normalizeName(team.name))?.get(normalizeName(player.name));
     const eligibility = eligibilityByName.get(normalizeName(player.name)) ?? [];
-    const position = (eligibility[0] ??
-      depthEntry?.positions[0] ??
-      (player.coarse === "C" ? "C" : player.coarse === "G" ? "SG" : "SF")) as Position;
+    // Recent lineups first: the chart slot a team has been using for this
+    // player, narrowed to the slots that match his coarse G/F/C role, then the
+    // season-long eligibility lists as a fallback.
+    const chartSlots = (espnDepth.get(teamId)?.get(player.id) ?? [])
+      .sort((a, b) => a.rank - b.rank)
+      .map((entry) => entry.position);
+    const position =
+      pickSlot(depthEntry?.positions ?? [], player.coarse) ??
+      pickSlot(chartSlots, player.coarse) ??
+      pickSlot(
+        eligibility.filter((slot): slot is Position =>
+          POSITIONS.includes(slot as Position),
+        ),
+        player.coarse,
+      ) ??
+      (player.coarse === "C" ? "C" : player.coarse === "G" ? "SG" : "SF");
 
     const rank = opponent.season[position]?.ranks?.[line.stat];
     if (typeof rank !== "number") continue;
