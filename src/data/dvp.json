@@ -2,7 +2,7 @@
   "meta": {
     "season": "2026-27",
     "source": "FantasyPros defense vs position",
-    "generatedAt": "2026-11-24T05:48:05.705Z",
+    "generatedAt": "2026-11-24T05:56:05.489Z",
     "gamesSampled": 258,
     "throughDate": "2026-11-24T03:00Z"
   },
@@ -1763,7 +1763,7 @@
       "location": "Sacramento",
       "nickname": "Kings",
       "name": "Sacramento Kings",
-      "games": 16,
+      "games": 17,
       "season": {
         "PG": {
           "pts": 27.26,
@@ -1833,7 +1833,7 @@
       "location": "San Antonio",
       "nickname": "Spurs",
       "name": "San Antonio Spurs",
-      "games": 17,
+      "games": 18,
       "season": {
         "PG": {
           "pts": 26.8,

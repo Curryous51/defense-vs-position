@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generatedAt": "2026-11-24T05:48:07.010Z",
+    "generatedAt": "2026-11-24T05:56:07.621Z",
     "season": "2026-27",
     "slateDate": "2026-11-24",
     "games": 3,
-    "props": 125,
+    "props": 129,
     "source": "PropLine · ESPN",
     "throughDate": "2026-11-24T03:00Z"
   },
@@ -91,6 +91,34 @@
         "n": 8
       },
       "rank": 20,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4066354",
+      "name": "Payton Pritchard",
+      "teamId": "2",
+      "teamAbbr": "BOS",
+      "opponentId": "27",
+      "opponentAbbr": "WSH",
+      "position": "PG",
+      "stat": "ast",
+      "line": 3.5,
+      "overPrice": -166,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 4,
+        "n": 5
+      },
+      "l10": {
+        "hits": 8,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 6,
+        "n": 7
+      },
+      "rank": 30,
       "injuryStatus": null
     },
     {
@@ -187,7 +215,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 105,
+      "overPrice": 100,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -271,7 +299,7 @@
       "position": "SF",
       "stat": "reb",
       "line": 6.5,
-      "overPrice": 115,
+      "overPrice": 114,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -355,7 +383,7 @@
       "position": "PF",
       "stat": "tpm",
       "line": 0.5,
-      "overPrice": -240,
+      "overPrice": -243,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -579,7 +607,7 @@
       "position": "C",
       "stat": "reb",
       "line": 6.5,
-      "overPrice": -145,
+      "overPrice": -148,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -595,6 +623,34 @@
         "n": 6
       },
       "rank": 8,
+      "injuryStatus": null
+    },
+    {
+      "playerId": "4066354",
+      "name": "Payton Pritchard",
+      "teamId": "2",
+      "teamAbbr": "BOS",
+      "opponentId": "27",
+      "opponentAbbr": "WSH",
+      "position": "PG",
+      "stat": "tpm",
+      "line": 1.5,
+      "overPrice": -194,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 3,
+        "n": 5
+      },
+      "l10": {
+        "hits": 7,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 5,
+        "n": 7
+      },
+      "rank": 1,
       "injuryStatus": null
     },
     {
@@ -691,7 +747,7 @@
       "position": "SG",
       "stat": "reb",
       "line": 4.5,
-      "overPrice": 124,
+      "overPrice": 125,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -943,7 +999,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 4.5,
-      "overPrice": -125,
+      "overPrice": -120,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -1223,7 +1279,7 @@
       "position": "SG",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": 125,
+      "overPrice": 126,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -1363,7 +1419,7 @@
       "position": "PG",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 157,
+      "overPrice": 152,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -1503,7 +1559,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 4.5,
-      "overPrice": 112,
+      "overPrice": 113,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -1643,7 +1699,7 @@
       "position": "C",
       "stat": "pts",
       "line": 10.5,
-      "overPrice": -120,
+      "overPrice": -130,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -1699,7 +1755,7 @@
       "position": "C",
       "stat": "pts",
       "line": 9.5,
-      "overPrice": -120,
+      "overPrice": -115,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -1839,7 +1895,7 @@
       "position": "SF",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": 119,
+      "overPrice": 121,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -1923,7 +1979,7 @@
       "position": "PG",
       "stat": "pts",
       "line": 23.5,
-      "overPrice": 103,
+      "overPrice": 104,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -2035,7 +2091,7 @@
       "position": "PF",
       "stat": "pts",
       "line": 6.5,
-      "overPrice": 103,
+      "overPrice": 104,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -2091,7 +2147,7 @@
       "position": "PF",
       "stat": "pts",
       "line": 11.5,
-      "overPrice": 104,
+      "overPrice": 105,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -2166,6 +2222,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "4066354",
+      "name": "Payton Pritchard",
+      "teamId": "2",
+      "teamAbbr": "BOS",
+      "opponentId": "27",
+      "opponentAbbr": "WSH",
+      "position": "PG",
+      "stat": "reb",
+      "line": 2.5,
+      "overPrice": -136,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 5,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 4,
+        "n": 7
+      },
+      "rank": 13,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4702382",
       "name": "Tristan da Silva",
       "teamId": "19",
@@ -2203,7 +2287,7 @@
       "position": "SF",
       "stat": "reb",
       "line": 3.5,
-      "overPrice": -125,
+      "overPrice": -120,
       "gameId": "735038",
       "tipoff": "2026-11-25T00:00:00Z",
       "l5": {
@@ -2231,7 +2315,7 @@
       "position": "SF",
       "stat": "tpm",
       "line": 0.5,
-      "overPrice": 106,
+      "overPrice": 107,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -2287,7 +2371,7 @@
       "position": "SF",
       "stat": "reb",
       "line": 6.5,
-      "overPrice": 121,
+      "overPrice": 122,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -2315,7 +2399,7 @@
       "position": "PG",
       "stat": "ast",
       "line": 3.5,
-      "overPrice": 111,
+      "overPrice": 114,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -2399,7 +2483,7 @@
       "position": "SG",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 107,
+      "overPrice": 108,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -2567,7 +2651,7 @@
       "position": "C",
       "stat": "reb",
       "line": 8.5,
-      "overPrice": 114,
+      "overPrice": 112,
       "gameId": "135601",
       "tipoff": "2026-11-25T01:10:00Z",
       "l5": {
@@ -2595,7 +2679,7 @@
       "position": "C",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 120,
+      "overPrice": 116,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -2651,7 +2735,7 @@
       "position": "PG",
       "stat": "pts",
       "line": 8.5,
-      "overPrice": 116,
+      "overPrice": 115,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -2679,7 +2763,7 @@
       "position": "SF",
       "stat": "pts",
       "line": 12.5,
-      "overPrice": 114,
+      "overPrice": 112,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -2922,6 +3006,34 @@
       "injuryStatus": null
     },
     {
+      "playerId": "4066354",
+      "name": "Payton Pritchard",
+      "teamId": "2",
+      "teamAbbr": "BOS",
+      "opponentId": "27",
+      "opponentAbbr": "WSH",
+      "position": "PG",
+      "stat": "pts",
+      "line": 12.5,
+      "overPrice": -130,
+      "gameId": "135601",
+      "tipoff": "2026-11-25T01:10:00Z",
+      "l5": {
+        "hits": 2,
+        "n": 5
+      },
+      "l10": {
+        "hits": 4,
+        "n": 10
+      },
+      "h2h": {
+        "hits": 5,
+        "n": 7
+      },
+      "rank": 6,
+      "injuryStatus": null
+    },
+    {
       "playerId": "4277847",
       "name": "Wendell Carter Jr.",
       "teamId": "19",
@@ -3015,7 +3127,7 @@
       "position": "PF",
       "stat": "reb",
       "line": 5.5,
-      "overPrice": 132,
+      "overPrice": 133,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -3183,7 +3295,7 @@
       "position": "PF",
       "stat": "pts",
       "line": 13.5,
-      "overPrice": 100,
+      "overPrice": 101,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -3379,7 +3491,7 @@
       "position": "PF",
       "stat": "tpm",
       "line": 1.5,
-      "overPrice": 127,
+      "overPrice": 129,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -3463,7 +3575,7 @@
       "position": "SG",
       "stat": "tpm",
       "line": 0.5,
-      "overPrice": 173,
+      "overPrice": 178,
       "gameId": "135604",
       "tipoff": "2026-11-25T03:10:00Z",
       "l5": {
@@ -6865,6 +6977,314 @@
         0,
         0,
         "131-111"
+      ]
+    ],
+    "4066354": [
+      [
+        "2026-11-23T01:30:00.000+00:00",
+        "9",
+        "GS",
+        0,
+        28,
+        5,
+        1,
+        4,
+        1,
+        2,
+        8,
+        4,
+        0,
+        0,
+        "88-87"
+      ],
+      [
+        "2026-11-22T03:00:00.000+00:00",
+        "23",
+        "SAC",
+        0,
+        34,
+        9,
+        6,
+        8,
+        0,
+        4,
+        17,
+        8,
+        1,
+        2,
+        "97-96"
+      ],
+      [
+        "2026-11-19T02:30:00.000+00:00",
+        "7",
+        "DEN",
+        0,
+        30,
+        15,
+        1,
+        2,
+        3,
+        6,
+        11,
+        6,
+        0,
+        0,
+        "105-101"
+      ],
+      [
+        "2026-11-17T00:00:00.000+00:00",
+        "19",
+        "ORL",
+        1,
+        32,
+        21,
+        4,
+        5,
+        4,
+        7,
+        16,
+        11,
+        3,
+        3,
+        "115-105"
+      ],
+      [
+        "2026-11-15T23:00:00.000+00:00",
+        "6",
+        "DAL",
+        1,
+        19,
+        10,
+        1,
+        6,
+        2,
+        4,
+        9,
+        6,
+        0,
+        0,
+        "131-94"
+      ],
+      [
+        "2026-11-12T00:00:00.000+00:00",
+        "28",
+        "TOR",
+        0,
+        31,
+        14,
+        1,
+        1,
+        2,
+        5,
+        13,
+        7,
+        2,
+        2,
+        "98-93"
+      ],
+      [
+        "2026-11-11T01:00:00.000+00:00",
+        "20",
+        "PHI",
+        0,
+        30,
+        18,
+        6,
+        5,
+        4,
+        7,
+        15,
+        8,
+        0,
+        0,
+        "123-101"
+      ],
+      [
+        "2026-11-09T01:00:00.000+00:00",
+        "15",
+        "MIL",
+        0,
+        29,
+        12,
+        5,
+        4,
+        4,
+        4,
+        12,
+        11,
+        0,
+        0,
+        "117-97"
+      ],
+      [
+        "2026-11-07T00:00:00.000+00:00",
+        "30",
+        "CHA",
+        0,
+        23,
+        12,
+        6,
+        5,
+        4,
+        4,
+        10,
+        6,
+        0,
+        0,
+        "119-80"
+      ],
+      [
+        "2026-11-05T00:30:00.000+00:00",
+        "15",
+        "MIL",
+        1,
+        18,
+        10,
+        1,
+        5,
+        0,
+        4,
+        7,
+        0,
+        2,
+        2,
+        "109-102"
+      ],
+      [
+        "2026-11-03T01:30:00.000+00:00",
+        "10",
+        "HOU",
+        0,
+        30,
+        4,
+        3,
+        3,
+        0,
+        0,
+        7,
+        5,
+        4,
+        6,
+        "109-93"
+      ],
+      [
+        "2026-11-01T20:30:00.000+00:00",
+        "19",
+        "ORL",
+        0,
+        27,
+        7,
+        7,
+        3,
+        0,
+        3,
+        11,
+        7,
+        1,
+        1,
+        "108-97"
+      ],
+      [
+        "2026-03-14T22:00:00.000+00:00",
+        "27",
+        "WSH",
+        1,
+        30,
+        4,
+        4,
+        4,
+        0,
+        2,
+        11,
+        4,
+        0,
+        0,
+        "111-100"
+      ],
+      [
+        "2025-12-05T00:00:00.000+00:00",
+        "27",
+        "WSH",
+        0,
+        32,
+        20,
+        6,
+        8,
+        3,
+        8,
+        21,
+        9,
+        1,
+        1,
+        "146-101"
+      ],
+      [
+        "2025-11-06T00:30:00.000+00:00",
+        "27",
+        "WSH",
+        1,
+        24,
+        18,
+        2,
+        5,
+        2,
+        7,
+        12,
+        6,
+        2,
+        2,
+        "136-107"
+      ],
+      [
+        "2025-04-06T22:00:00.000+00:00",
+        "27",
+        "WSH",
+        1,
+        30,
+        20,
+        6,
+        7,
+        4,
+        8,
+        18,
+        11,
+        0,
+        0,
+        "124-90"
+      ],
+      [
+        "2024-12-15T23:00:00.000+00:00",
+        "27",
+        "WSH",
+        0,
+        37,
+        15,
+        11,
+        6,
+        5,
+        5,
+        12,
+        10,
+        0,
+        0,
+        "112-98"
+      ],
+      [
+        "2024-11-23T00:00:00.000+00:00",
+        "27",
+        "WSH",
+        0,
+        23,
+        9,
+        2,
+        4,
+        1,
+        3,
+        6,
+        3,
+        2,
+        3,
+        "108-96"
       ]
     ],
     "4066372": [
