@@ -18,6 +18,97 @@ import { Link, useParams } from "react-router";
 
 type Window = "l5" | "l10" | "h2h";
 
+/**
+ * Chart filters. Every field is optional: an empty box means no bound, so the
+ * minimum alone or the maximum alone both work.
+ */
+interface ChartFilters {
+  minutesMin: string;
+  minutesMax: string;
+  fgaMin: string;
+  fgaMax: string;
+  tpaMin: string;
+  tpaMax: string;
+  rankMin: string;
+  rankMax: string;
+  /** Only games against defenses ranked within three of tonight's opponent. */
+  similar: boolean;
+}
+
+const NO_FILTERS: ChartFilters = {
+  minutesMin: "",
+  minutesMax: "",
+  fgaMin: "",
+  fgaMax: "",
+  tpaMin: "",
+  tpaMax: "",
+  rankMin: "",
+  rankMax: "",
+  similar: false,
+};
+
+function bound(value: string, fallback: number): number {
+  const trimmed = value.trim();
+  if (!trimmed) return fallback;
+  const parsed = Number(trimmed);
+  return Number.isFinite(parsed) ? parsed : fallback;
+}
+
+/** Empty min/max mean unbounded; a missing rank only passes an unbounded range. */
+function inRange(value: number | null, min: string, max: string): boolean {
+  if (value === null) return min.trim() === "" && max.trim() === "";
+  return value >= bound(min, -Infinity) && value <= bound(max, Infinity);
+}
+
+function filtersActive(filters: ChartFilters): boolean {
+  return Object.entries(filters).some(([key, value]) =>
+    key === "similar" ? value === true : String(value).trim() !== "",
+  );
+}
+
+function RangeField({
+  label,
+  min,
+  max,
+  onMin,
+  onMax,
+  hint,
+}: {
+  label: string;
+  min: string;
+  max: string;
+  onMin: (value: string) => void;
+  onMax: (value: string) => void;
+  hint: string;
+}) {
+  const input =
+    "h-7 w-12 rounded-[3px] border border-border bg-transparent px-1.5 text-[11px] tabular-nums outline-none placeholder:text-muted-foreground/70 focus:border-foreground/40";
+  return (
+    <label className="flex items-center gap-1.5">
+      <span className="text-[9px] uppercase tracking-[0.14em] text-muted-foreground">
+        {label}
+      </span>
+      <input
+        value={min}
+        onChange={(event) => onMin(event.target.value)}
+        inputMode="decimal"
+        placeholder={hint}
+        aria-label={`${label} minimum`}
+        className={input}
+      />
+      <span className="text-[9px] text-muted-foreground">–</span>
+      <input
+        value={max}
+        onChange={(event) => onMax(event.target.value)}
+        inputMode="decimal"
+        placeholder={hint}
+        aria-label={`${label} maximum`}
+        className={input}
+      />
+    </label>
+  );
+}
+
 const WINDOWS: Array<{ key: Window; label: string }> = [
   { key: "l5", label: "Last 5" },
   { key: "l10", label: "Last 10" },
@@ -76,6 +167,7 @@ export default function PlayerProfile() {
   const tracking = useTracking();
   const [picked, setPicked] = useState<StatKey | null>(null);
   const [window, setWindow] = useState<Window>("l10");
+  const [filters, setFilters] = useState<ChartFilters>(NO_FILTERS);
 
   const rows = useMemo(
     () =>
@@ -98,13 +190,32 @@ export default function PlayerProfile() {
     playerId ? board.history?.[playerId] : undefined,
   );
 
-  const shown = useMemo(() => {
+  const windowed = useMemo(() => {
     const ordered = [...games].sort((a, b) => a.date.localeCompare(b.date));
     if (window === "h2h") {
       return ordered.filter((game) => game.opponentId === row?.opponentId);
     }
     return ordered.slice(-(window === "l5" ? 5 : 10));
   }, [games, row?.opponentId, window]);
+
+  const shown = useMemo(() => {
+    /** Today's rank for the defense this game was played against. */
+    const rankOf = (opponentId: string): number | null =>
+      (row ? board.context?.ranks[opponentId]?.[row.position]?.[row.stat] : null) ??
+      null;
+    return windowed.filter((game) => {
+      if (!inRange(game.minutes, filters.minutesMin, filters.minutesMax)) return false;
+      if (!inRange(game.fga, filters.fgaMin, filters.fgaMax)) return false;
+      if (!inRange(game.tpa, filters.tpaMin, filters.tpaMax)) return false;
+      const rank = rankOf(game.opponentId);
+      if (!inRange(rank, filters.rankMin, filters.rankMax)) return false;
+      if (filters.similar) {
+        if (rank === null || !row) return false;
+        if (Math.abs(rank - row.rank) > 3) return false;
+      }
+      return true;
+    });
+  }, [windowed, filters, row, board.context]);
 
   const line = row?.line ?? 0;
   const tonight = row
@@ -239,8 +350,76 @@ export default function PlayerProfile() {
               </div>
 
               <span className="ml-auto text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
-                {shown.length} games
+                {shown.length}
+                {filtersActive(filters) ? ` of ${windowed.length}` : ""} games
               </span>
+            </div>
+
+            <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 border border-border px-3 py-2.5">
+              <span className="text-[9px] uppercase tracking-[0.14em] text-muted-foreground">
+                Plot filters
+              </span>
+              <RangeField
+                label="Minutes"
+                min={filters.minutesMin}
+                max={filters.minutesMax}
+                onMin={(minutesMin) => setFilters((current) => ({ ...current, minutesMin }))}
+                onMax={(minutesMax) => setFilters((current) => ({ ...current, minutesMax }))}
+                hint="any"
+              />
+              <RangeField
+                label="FGA"
+                min={filters.fgaMin}
+                max={filters.fgaMax}
+                onMin={(fgaMin) => setFilters((current) => ({ ...current, fgaMin }))}
+                onMax={(fgaMax) => setFilters((current) => ({ ...current, fgaMax }))}
+                hint="any"
+              />
+              <RangeField
+                label="3PA"
+                min={filters.tpaMin}
+                max={filters.tpaMax}
+                onMin={(tpaMin) => setFilters((current) => ({ ...current, tpaMin }))}
+                onMax={(tpaMax) => setFilters((current) => ({ ...current, tpaMax }))}
+                hint="any"
+              />
+              <RangeField
+                label="Matchup rank"
+                min={filters.rankMin}
+                max={filters.rankMax}
+                onMin={(rankMin) => setFilters((current) => ({ ...current, rankMin }))}
+                onMax={(rankMax) => setFilters((current) => ({ ...current, rankMax }))}
+                hint="1-30"
+              />
+              <button
+                type="button"
+                onClick={() =>
+                  setFilters((current) => ({ ...current, similar: !current.similar }))
+                }
+                disabled={window === "h2h"}
+                title={
+                  window === "h2h"
+                    ? "Every game here is already against tonight's opponent"
+                    : `Only defenses ranked ${Math.max(1, row.rank - 3)}-${Math.min(30, row.rank + 3)}`
+                }
+                className={cn(
+                  "h-7 rounded-[3px] border px-2 text-[9px] uppercase tracking-[0.12em] transition-colors disabled:opacity-40",
+                  filters.similar
+                    ? "border-foreground bg-foreground text-background"
+                    : "border-border text-muted-foreground hover:text-foreground",
+                )}
+              >
+                Similar matchups ±3
+              </button>
+              {filtersActive(filters) ? (
+                <button
+                  type="button"
+                  onClick={() => setFilters(NO_FILTERS)}
+                  className="text-[9px] uppercase tracking-[0.14em] text-muted-foreground underline-offset-2 hover:text-foreground hover:underline"
+                >
+                  Clear
+                </button>
+              ) : null}
             </div>
 
             <div className="mt-4 grid grid-cols-1 gap-2 sm:grid-cols-3">
@@ -316,7 +495,10 @@ export default function PlayerProfile() {
             </div>
 
             <div className="mt-5 border-t border-border pt-4 text-[10px] leading-5 text-muted-foreground">
-              Bars are coloured against the current line: green over, red under.
+              Plot filters narrow the bars only; the hit rates above stay the
+              full samples. Similar matchups keeps games against defenses
+              ranked within three of tonight's opponent for this position and
+              stat. Bars are coloured against the current line: green over, red under.
               Hover or tap a bar for the box score, the opponent's
               defense-vs-position rank for this stat, and what that defense
               allows. Where tracking data is available, assists and rebounds
