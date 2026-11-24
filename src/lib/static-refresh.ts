@@ -107,20 +107,30 @@ async function diagnose(token: string): Promise<string> {
 
 /**
  * Reads the committed board. With a token it goes through the API (never
- * cached); without one it falls back to the raw file, which the CDN may serve
- * a few minutes old.
+ * cached); without one it reads the raw file, which the CDN may serve a few
+ * minutes old.
+ *
+ * A token that has expired, lost repo access or never had Contents read must
+ * not pin the page to the bundled snapshot, so any failure there falls through
+ * to the public file.
  */
 export async function fetchBoard(token: string | null = storedToken()): Promise<HitRateBoard> {
   const bust = Date.now();
-  const response = token
-    ? await fetch(
+  if (token) {
+    try {
+      const authed = await fetch(
         `https://api.github.com/repos/${REPO}/contents/${BOARD_PATH}?ref=${BRANCH}&t=${bust}`,
         { headers: headers(token, "application/vnd.github.raw+json"), cache: "no-store" },
-      )
-    : await fetch(
-        `https://raw.githubusercontent.com/${REPO}/${BRANCH}/${BOARD_PATH}?t=${bust}`,
-        { cache: "no-store" },
       );
+      if (authed.ok) return (await authed.json()) as HitRateBoard;
+    } catch {
+      // Fall through to the public file.
+    }
+  }
+  const response = await fetch(
+    `https://raw.githubusercontent.com/${REPO}/${BRANCH}/${BOARD_PATH}?t=${bust}`,
+    { cache: "no-store" },
+  );
   if (!response.ok) throw new Error(describe(response.status, await detail(response)));
   return (await response.json()) as HitRateBoard;
 }

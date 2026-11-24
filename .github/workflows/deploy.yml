@@ -3,6 +3,12 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # The data refresh commits with the workflow token, and GitHub never starts a
+  # push workflow from those, so the bundle would keep shipping yesterday's
+  # snapshot. Redeploy when that refresh finishes instead.
+  workflow_run:
+    workflows: ["Refresh board data"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -18,6 +24,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # A failed data refresh should not publish a bundle built from half a file.
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     steps:
       - uses: actions/checkout@v4
 

@@ -202,11 +202,19 @@ const H2H_SEASONS = 3;
 interface DepthEntry {
   positions: Position[];
   depth: number;
+  /**
+   * The chart's position row for this player. One row per position, so the
+   * first column of a row is that team's starter at that position.
+   */
+  slot?: Position;
 }
 
+/** Position rows run center first, then out to the point guard. */
+const DEPTH_SLOTS: Position[] = ["C", "PF", "SF", "SG", "PG"];
+
 /**
- * The depth page renders every team as a `team-card` with four columns of
- * rows. Column order is Starters, 2nd string, 3rd string, Other.
+ * The depth page renders every team as a `team-card`: five position rows, each
+ * with four columns (Starters, 2nd string, 3rd string, Other).
  */
 function parseDepthCharts(html: string): Map<string, Map<string, DepthEntry>> {
   const byTeam = new Map<string, Map<string, DepthEntry>>();
@@ -222,23 +230,26 @@ function parseDepthCharts(html: string): Map<string, Map<string, DepthEntry>> {
       .trim();
     if (!teamName) continue;
     const players = new Map<string, DepthEntry>();
-    for (const row of chunk.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/g)) {
-      let column = 0;
-      for (const match of row[1].matchAll(group)) {
+    let slotIndex = 0;
+    for (const line of chunk.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/g)) {
+      const cells = [...line[1].matchAll(group)];
+      // Header rows carry no player cells and do not advance the slots.
+      if (!cells.length) continue;
+      const slot = DEPTH_SLOTS[slotIndex];
+      slotIndex += 1;
+      cells.forEach((match, column) => {
         const name = match[2].replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
         const positions = match[1]
           .split("/")
           .map((p) => p.trim().toUpperCase())
           .filter((p): p is Position => POSITIONS.includes(p as Position));
-        if (name && name !== "--") {
-          const key = normalizeName(name);
-          const existing = players.get(key);
-          if (!existing || column < existing.depth) {
-            players.set(key, { positions, depth: column });
-          }
+        if (!name || name === "--") return;
+        const key = normalizeName(name);
+        const existing = players.get(key);
+        if (!existing || column < existing.depth) {
+          players.set(key, { positions, depth: column, slot });
         }
-        column += 1;
-      }
+      });
     }
     byTeam.set(normalizeName(teamName), players);
   }
@@ -548,8 +559,20 @@ export function packPlayerGames(
     .filter((entry) => entry.opponentId === options.opponentId)
     .slice(0, 8);
 
-  return [...recent, ...vsOpponent]
-    .sort((a, b) => b.date.localeCompare(a.date))
+  // A game can be both recent and one of the head-to-head meetings, so the two
+  // lists have to be merged on the game, not concatenated.
+  const seen = new Set<string>();
+  const merged: GameLog[] = [];
+  for (const entry of [...recent, ...vsOpponent].sort((a, b) =>
+    b.date.localeCompare(a.date),
+  )) {
+    const key = `${entry.date}|${entry.opponentId}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    merged.push(entry);
+  }
+
+  return merged
     .slice(0, 18)
     .map((entry): GameLine => [
       entry.date,
@@ -862,13 +885,17 @@ export async function buildHitRateBoard(
 
     const depthEntry = depth.get(normalizeName(team.name))?.get(normalizeName(player.name));
     const eligibility = eligibilityByName.get(normalizeName(player.name)) ?? [];
-    // Recent lineups first: the chart slot a team has been using for this
-    // player, narrowed to the slots that match his coarse G/F/C role, then the
-    // season-long eligibility lists as a fallback.
+    // Starters come straight off the lineup chart's position row, so a starting
+    // five always reads one player per position in the order the team runs it.
+    // Bench players fall back to their listed slots, narrowed to ESPN's G/F/C
+    // role, then to the season-long eligibility lists.
     const chartSlots = (espnDepth.get(teamId)?.get(player.id) ?? [])
       .sort((a, b) => a.rank - b.rank)
       .map((entry) => entry.position);
+    const starterSlot =
+      depthEntry?.depth === 0 ? depthEntry.slot : undefined;
     const position =
+      starterSlot ??
       pickSlot(depthEntry?.positions ?? [], player.coarse) ??
       pickSlot(chartSlots, player.coarse) ??
       pickSlot(
