@@ -12,6 +12,13 @@ import { useState } from "react";
 const LOGO = (abbr: string) =>
   `https://a.espncdn.com/i/teamlogos/nba/500/${abbr.toLowerCase()}.png`;
 
+/**
+ * Height of the plotting box in pixels. Bars, the value labels and the line all
+ * get their offset from this one number, so nothing is sized as a percentage of
+ * a box that also holds other content.
+ */
+const PLOT_HEIGHT = 208;
+
 /** Game dates read as IST, matching the rest of the app. */
 function dayLabel(iso: string): string {
   return new Intl.DateTimeFormat("en-US", {
@@ -90,7 +97,14 @@ export function PlayerHistoryChart({
   }
 
   const values = games.map((game) => game[stat]);
-  const peak = Math.max(line, ...values, 1) * 1.18;
+  // A readable y-axis per market: points in fives, assists and rebounds in
+  // twos, threes in ones. Bars and the line are then just value / axisMax of
+  // the plot height, so a bar under the line is always drawn under it.
+  const step = stat === "pts" ? 5 : stat === "tpm" ? 1 : 2;
+  const top = Math.max(line, ...values, 1);
+  const axisMax = Math.max(step, Math.ceil((top * 1.05) / step) * step);
+  const ticks: number[] = [];
+  for (let tick = 0; tick <= axisMax; tick += step) ticks.push(tick);
   const statLabel = CATEGORY_LABELS[stat].toLowerCase();
   const activeGame = active === null ? null : games[active];
   const activeScore = activeGame ? scoreParts(activeGame.score) : null;
@@ -121,12 +135,47 @@ export function PlayerHistoryChart({
 
   return (
     <div className="relative">
-      <div className="relative flex h-60 items-end gap-1.5 sm:gap-2">
-        {/* the line */}
+      {/*
+       * Everything numeric is measured against this box alone: bar heights are a
+       * share of it and the line sits at its own share, so a bar under the line
+       * is always drawn under the line. Dates and logos live below it for that
+       * reason — inside the column they ate the height the bars were sized to.
+       */}
+      <div className="flex gap-2">
+        {/* y-axis: one label per tick, offset by the same value scale */}
+        <div className="relative w-7 shrink-0" style={{ height: PLOT_HEIGHT }}>
+          {ticks.map((tick) => (
+            <span
+              key={tick}
+              className="absolute right-0 text-[9px] tabular-nums text-muted-foreground"
+              style={{
+                bottom: (tick / axisMax) * PLOT_HEIGHT,
+                transform: "translateY(50%)",
+              }}
+            >
+              {tick}
+            </span>
+          ))}
+        </div>
+
         <div
-          className="pointer-events-none absolute inset-x-0 border-t border-dashed border-foreground/45"
-          style={{ bottom: `${(line / peak) * 100}%` }}
+          className="relative flex flex-1 items-end gap-1.5 sm:gap-2"
+          style={{ height: PLOT_HEIGHT }}
         >
+          {ticks
+            .filter((tick) => tick > 0)
+            .map((tick) => (
+              <div
+                key={`grid-${tick}`}
+                className="pointer-events-none absolute inset-x-0 border-t border-border/60"
+                style={{ bottom: (tick / axisMax) * PLOT_HEIGHT }}
+              />
+            ))}
+          {/* the line */}
+          <div
+            className="pointer-events-none absolute inset-x-0 z-10 border-t border-dashed border-foreground/45"
+            style={{ bottom: (line / axisMax) * PLOT_HEIGHT }}
+          >
           <span className="absolute -top-2 right-0 bg-background pl-1.5 text-[10px] font-medium tabular-nums text-foreground">
             {line}
           </span>
@@ -137,6 +186,7 @@ export function PlayerHistoryChart({
           const tone =
             value > line ? "favourable" : value < line ? "tough" : "push";
           const isActive = active === index;
+          const height = Math.max((value / axisMax) * PLOT_HEIGHT, 2);
           return (
             <button
               key={`${game.date}-${game.opponentId}`}
@@ -147,17 +197,18 @@ export function PlayerHistoryChart({
               onBlur={() => setHover(null)}
               onClick={() => setPinned((current) => (current === index ? null : index))}
               aria-label={`${fullDayLabel(game.date)} ${game.home ? "vs" : "at"} ${game.opponentAbbr}: ${value} ${statLabel} against a line of ${line}`}
-              className="group relative flex h-full flex-1 cursor-pointer flex-col items-center justify-end outline-none"
+              className="group relative flex h-full flex-1 cursor-pointer items-end justify-center outline-none"
             >
               <span
                 className={cn(
-                  "mb-1 text-[10px] font-medium tabular-nums transition-colors",
+                  "pointer-events-none absolute left-1/2 -translate-x-1/2 text-[10px] font-medium tabular-nums transition-colors",
                   tone === "favourable"
                     ? "text-match-favorable-strong"
                     : tone === "tough"
                       ? "text-match-tough-strong"
                       : "text-muted-foreground",
                 )}
+                style={{ bottom: height + 4 }}
               >
                 {value}
               </span>
@@ -171,21 +222,8 @@ export function PlayerHistoryChart({
                       : "bg-muted-foreground/40",
                   isActive ? "opacity-100" : "opacity-90 group-hover:opacity-100",
                 )}
-                style={{ height: `${Math.max((value / peak) * 100, 2)}%` }}
+                style={{ height }}
               />
-              <span className="mt-2 flex flex-col items-center gap-1">
-                <img
-                  src={LOGO(game.opponentAbbr)}
-                  alt=""
-                  className="size-4 opacity-80"
-                  onError={(event) => {
-                    event.currentTarget.style.visibility = "hidden";
-                  }}
-                />
-                <span className="text-[9px] uppercase tracking-[0.06em] text-muted-foreground">
-                  {dayLabel(game.date)}
-                </span>
-              </span>
             </button>
           );
         })}
@@ -205,17 +243,46 @@ export function PlayerHistoryChart({
             }
             aria-label={`Tonight against ${tonight.opponentAbbr}: rank ${tonight.rank}, no game yet`}
             className={cn(
-              "relative flex h-full flex-1 flex-col items-center justify-end outline-none transition-opacity",
+              "relative flex h-full flex-1 items-end outline-none transition-opacity",
               isNext ? "opacity-100" : "opacity-60 hover:opacity-90",
             )}
           >
             <span
               className={cn(
-                "h-full w-full border-x border-t border-dashed",
+                "w-full border-x border-t border-dashed",
                 isNext ? "border-foreground/40 bg-accent/40" : "border-border",
               )}
+              style={{ height: PLOT_HEIGHT }}
             />
-            <span className="mt-2 flex flex-col items-center gap-1">
+          </button>
+        ) : null}
+        </div>
+      </div>
+
+      {/* Dates and logos, aligned with the bars above (same gutter + gaps). */}
+      <div className="mt-2 flex gap-2">
+        <div className="w-7 shrink-0" />
+        <div className="flex flex-1 gap-1.5 sm:gap-2">
+          {games.map((game) => (
+            <div
+              key={`label-${game.date}-${game.opponentId}`}
+              className="flex flex-1 flex-col items-center gap-1"
+            >
+              <img
+                src={LOGO(game.opponentAbbr)}
+                alt=""
+                className="size-4 opacity-80"
+                onError={(event) => {
+                  event.currentTarget.style.visibility = "hidden";
+                }}
+              />
+              <span className="text-[9px] uppercase tracking-[0.06em] text-muted-foreground">
+                {dayLabel(game.date)}
+              </span>
+            </div>
+          ))}
+          {tonight ? (
+            <div className="flex flex-1 flex-col items-center gap-1">
               <img
                 src={LOGO(tonight.opponentAbbr)}
                 alt=""
@@ -227,9 +294,9 @@ export function PlayerHistoryChart({
               <span className="text-[9px] uppercase tracking-[0.06em] text-muted-foreground">
                 Next
               </span>
-            </span>
-          </button>
-        ) : null}
+            </div>
+          ) : null}
+        </div>
       </div>
 
       {activeGame ? (
