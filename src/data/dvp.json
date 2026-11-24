@@ -2,9 +2,9 @@
   "meta": {
     "season": "2026-27",
     "source": "FantasyPros defense vs position",
-    "generatedAt": "2026-11-23T16:16:34.605Z",
-    "gamesSampled": 248,
-    "throughDate": "2026-11-23T01:30Z"
+    "generatedAt": "2026-11-24T04:47:47.025Z",
+    "gamesSampled": 256,
+    "throughDate": "2026-11-24T01:30Z"
   },
   "teams": [
     {
@@ -153,7 +153,7 @@
       "location": "Brooklyn",
       "nickname": "Nets",
       "name": "Brooklyn Nets",
-      "games": 15,
+      "games": 16,
       "season": {
         "PG": {
           "pts": 22.7,
@@ -223,7 +223,7 @@
       "location": "Charlotte",
       "nickname": "Hornets",
       "name": "Charlotte Hornets",
-      "games": 15,
+      "games": 16,
       "season": {
         "PG": {
           "pts": 27.39,
@@ -293,7 +293,7 @@
       "location": "Chicago",
       "nickname": "Bulls",
       "name": "Chicago Bulls",
-      "games": 16,
+      "games": 17,
       "season": {
         "PG": {
           "pts": 27.36,
@@ -363,7 +363,7 @@
       "location": "Cleveland",
       "nickname": "Cavaliers",
       "name": "Cleveland Cavaliers",
-      "games": 17,
+      "games": 18,
       "season": {
         "PG": {
           "pts": 27.17,
@@ -783,7 +783,7 @@
       "location": "Indiana",
       "nickname": "Pacers",
       "name": "Indiana Pacers",
-      "games": 17,
+      "games": 18,
       "season": {
         "PG": {
           "pts": 28.29,
@@ -993,7 +993,7 @@
       "location": "Memphis",
       "nickname": "Grizzlies",
       "name": "Memphis Grizzlies",
-      "games": 17,
+      "games": 18,
       "season": {
         "PG": {
           "pts": 26.01,
@@ -1133,7 +1133,7 @@
       "location": "Milwaukee",
       "nickname": "Bucks",
       "name": "Milwaukee Bucks",
-      "games": 17,
+      "games": 18,
       "season": {
         "PG": {
           "pts": 25.98,
@@ -1203,7 +1203,7 @@
       "location": "Minnesota",
       "nickname": "Timberwolves",
       "name": "Minnesota Timberwolves",
-      "games": 17,
+      "games": 18,
       "season": {
         "PG": {
           "pts": 25.84,
@@ -1413,7 +1413,7 @@
       "location": "Oklahoma City",
       "nickname": "Thunder",
       "name": "Oklahoma City Thunder",
-      "games": 17,
+      "games": 18,
       "season": {
         "PG": {
           "pts": 22.83,
@@ -1553,7 +1553,7 @@
       "location": "Philadelphia",
       "nickname": "76ers",
       "name": "Philadelphia 76ers",
-      "games": 17,
+      "games": 18,
       "season": {
         "PG": {
           "pts": 22.72,
@@ -1693,7 +1693,7 @@
       "location": "Portland",
       "nickname": "Trail Blazers",
       "name": "Portland Trail Blazers",
-      "games": 16,
+      "games": 17,
       "season": {
         "PG": {
           "pts": 29.09,
@@ -1903,7 +1903,7 @@
       "location": "Toronto",
       "nickname": "Raptors",
       "name": "Toronto Raptors",
-      "games": 16,
+      "games": 17,
       "season": {
         "PG": {
           "pts": 25.07,
@@ -2284,13 +2284,13 @@
           "PG",
           "SG"
         ],
-        "games": 18,
-        "starts": 18,
-        "mpg": 30.3,
-        "pts": 16.7,
-        "reb": 4.9,
-        "ast": 5.3,
-        "tpm": 1.3
+        "games": 19,
+        "starts": 19,
+        "mpg": 30.8,
+        "pts": 16.2,
+        "reb": 5.1,
+        "ast": 5.6,
+        "tpm": 1.2
       },
       {
         "slot": "SG",
@@ -2300,12 +2300,12 @@
           "SF",
           "SG"
         ],
-        "games": 18,
-        "starts": 12,
-        "mpg": 24.9,
+        "games": 19,
+        "starts": 13,
+        "mpg": 24.7,
         "pts": 6.6,
         "reb": 2.7,
-        "ast": 1.6,
+        "ast": 1.7,
         "tpm": 1.1
       },
       {
@@ -2316,13 +2316,13 @@
           "SF",
           "SG"
         ],
-        "games": 10,
-        "starts": 9,
-        "mpg": 32.4,
-        "pts": 15.7,
-        "reb": 4.7,
-        "ast": 3.3,
-        "tpm": 2.3
+        "games": 11,
+        "starts": 10,
+        "mpg": 32.6,
+        "pts": 15.1,
+        "reb": 5.1,
+        "ast": 3.2,
+        "tpm": 2.2
       },
       {
         "slot": "PF",
@@ -2332,29 +2332,28 @@
           "PF",
           "SF"
         ],
-        "games": 16,
-        "starts": 16,
-        "mpg": 32.4,
-        "pts": 21.7,
+        "games": 17,
+        "starts": 17,
+        "mpg": 32.9,
+        "pts": 21.9,
         "reb": 5.4,
-        "ast": 2.8,
+        "ast": 2.6,
         "tpm": 0.4
       },
       {
         "slot": "C",
-        "id": "4997538",
-        "name": "Karlo Matkovic",
+        "id": "5061589",
+        "name": "Yves Missi",
         "positions": [
-          "C",
-          "PF"
+          "C"
         ],
-        "games": 17,
+        "games": 8,
         "starts": 8,
-        "mpg": 17.2,
-        "pts": 6.2,
-        "reb": 3.6,
-        "ast": 0.8,
-        "tpm": 1.1
+        "mpg": 22.6,
+        "pts": 6.1,
+        "reb": 8.9,
+        "ast": 1.3,
+        "tpm": 0
       }
     ],
     "4": [
@@ -2366,13 +2365,13 @@
           "PG",
           "SG"
         ],
-        "games": 16,
-        "starts": 16,
-        "mpg": 28.6,
-        "pts": 10.8,
-        "reb": 6.4,
-        "ast": 9.3,
-        "tpm": 1.2
+        "games": 17,
+        "starts": 17,
+        "mpg": 28.2,
+        "pts": 10.4,
+        "reb": 6.1,
+        "ast": 9.4,
+        "tpm": 1.1
       },
       {
         "slot": "SG",
@@ -2398,13 +2397,13 @@
           "PF",
           "SF"
         ],
-        "games": 16,
-        "starts": 16,
-        "mpg": 27.9,
+        "games": 17,
+        "starts": 17,
+        "mpg": 27.8,
         "pts": 15.1,
         "reb": 4.8,
-        "ast": 2,
-        "tpm": 2.1
+        "ast": 1.9,
+        "tpm": 2.2
       },
       {
         "slot": "PF",
@@ -2430,12 +2429,12 @@
           "C",
           "PF"
         ],
-        "games": 14,
-        "starts": 14,
+        "games": 15,
+        "starts": 15,
         "mpg": 25.3,
-        "pts": 14.3,
-        "reb": 7.6,
-        "ast": 2.1,
+        "pts": 14.1,
+        "reb": 7.5,
+        "ast": 2.2,
         "tpm": 2.1
       }
     ],
@@ -2447,12 +2446,12 @@
         "positions": [
           "PG"
         ],
-        "games": 16,
-        "starts": 16,
-        "mpg": 33.5,
-        "pts": 18.4,
-        "reb": 4.8,
-        "ast": 6.3,
+        "games": 17,
+        "starts": 17,
+        "mpg": 33.7,
+        "pts": 18.5,
+        "reb": 4.9,
+        "ast": 6.2,
         "tpm": 2.9
       },
       {
@@ -2463,13 +2462,13 @@
           "PG",
           "SG"
         ],
-        "games": 16,
-        "starts": 16,
-        "mpg": 32.9,
-        "pts": 24.5,
-        "reb": 4.7,
+        "games": 17,
+        "starts": 17,
+        "mpg": 33.2,
+        "pts": 24.7,
+        "reb": 4.6,
         "ast": 5.2,
-        "tpm": 2.7
+        "tpm": 2.6
       },
       {
         "slot": "SF",
@@ -2479,13 +2478,13 @@
           "PF",
           "SF"
         ],
-        "games": 13,
-        "starts": 13,
-        "mpg": 27.6,
-        "pts": 11,
-        "reb": 4.5,
-        "ast": 2.5,
-        "tpm": 1.2
+        "games": 14,
+        "starts": 14,
+        "mpg": 27.7,
+        "pts": 10.8,
+        "reb": 4.9,
+        "ast": 2.6,
+        "tpm": 1.1
       },
       {
         "slot": "PF",
@@ -2510,12 +2509,12 @@
         "positions": [
           "C"
         ],
-        "games": 14,
-        "starts": 14,
-        "mpg": 26.8,
-        "pts": 12.6,
-        "reb": 8.7,
-        "ast": 1.9,
+        "games": 15,
+        "starts": 15,
+        "mpg": 26.9,
+        "pts": 12.8,
+        "reb": 8.4,
+        "ast": 1.7,
         "tpm": 0.2
       }
     ],
@@ -2853,13 +2852,13 @@
         "positions": [
           "PG"
         ],
-        "games": 14,
-        "starts": 14,
+        "games": 15,
+        "starts": 15,
         "mpg": 30.1,
-        "pts": 14.4,
-        "reb": 2.9,
-        "ast": 5.7,
-        "tpm": 2.9
+        "pts": 13.9,
+        "reb": 2.8,
+        "ast": 5.6,
+        "tpm": 2.8
       },
       {
         "slot": "SG",
@@ -2870,13 +2869,13 @@
           "SF",
           "SG"
         ],
-        "games": 16,
-        "starts": 16,
-        "mpg": 32.7,
-        "pts": 16.1,
-        "reb": 7.1,
-        "ast": 3.1,
-        "tpm": 0.3
+        "games": 17,
+        "starts": 17,
+        "mpg": 32.4,
+        "pts": 16.4,
+        "reb": 6.9,
+        "ast": 3.2,
+        "tpm": 0.4
       },
       {
         "slot": "SF",
@@ -2886,13 +2885,13 @@
           "PF",
           "SF"
         ],
-        "games": 17,
-        "starts": 17,
+        "games": 18,
+        "starts": 18,
         "mpg": 33.6,
-        "pts": 21,
-        "reb": 5.2,
+        "pts": 21.6,
+        "reb": 5.4,
         "ast": 3.8,
-        "tpm": 1.5
+        "tpm": 1.7
       },
       {
         "slot": "PF",
@@ -2902,13 +2901,13 @@
           "C",
           "PF"
         ],
-        "games": 17,
-        "starts": 17,
-        "mpg": 33.2,
-        "pts": 15.6,
+        "games": 18,
+        "starts": 18,
+        "mpg": 32.9,
+        "pts": 15.5,
         "reb": 6.2,
         "ast": 2.2,
-        "tpm": 2.4
+        "tpm": 2.3
       },
       {
         "slot": "C",
@@ -2918,11 +2917,11 @@
           "C",
           "PF"
         ],
-        "games": 15,
-        "starts": 15,
-        "mpg": 33,
-        "pts": 22.1,
-        "reb": 9.3,
+        "games": 16,
+        "starts": 16,
+        "mpg": 32.9,
+        "pts": 21.9,
+        "reb": 9.2,
         "ast": 7,
         "tpm": 1
       }
@@ -2936,12 +2935,12 @@
           "PG",
           "SG"
         ],
-        "games": 13,
-        "starts": 13,
-        "mpg": 32.7,
-        "pts": 16.2,
+        "games": 14,
+        "starts": 14,
+        "mpg": 33.1,
+        "pts": 16.1,
         "reb": 2.3,
-        "ast": 7.7,
+        "ast": 7.6,
         "tpm": 2.3
       },
       {
@@ -2968,13 +2967,13 @@
           "PF",
           "SF"
         ],
-        "games": 15,
-        "starts": 11,
-        "mpg": 24.5,
-        "pts": 11.8,
+        "games": 16,
+        "starts": 12,
+        "mpg": 24.8,
+        "pts": 12.3,
         "reb": 3.4,
         "ast": 1.1,
-        "tpm": 1.1
+        "tpm": 1.3
       },
       {
         "slot": "PF",
@@ -2984,12 +2983,12 @@
           "C",
           "PF"
         ],
-        "games": 16,
-        "starts": 16,
-        "mpg": 32.3,
-        "pts": 23.1,
-        "reb": 6.1,
-        "ast": 3.6,
+        "games": 17,
+        "starts": 17,
+        "mpg": 32.5,
+        "pts": 22.9,
+        "reb": 6.2,
+        "ast": 3.7,
         "tpm": 1.8
       },
       {
@@ -2999,11 +2998,11 @@
         "positions": [
           "C"
         ],
-        "games": 12,
-        "starts": 12,
-        "mpg": 24.3,
-        "pts": 10.8,
-        "reb": 8.6,
+        "games": 13,
+        "starts": 13,
+        "mpg": 24.5,
+        "pts": 11,
+        "reb": 9.1,
         "ast": 1.8,
         "tpm": 0
       }
@@ -3016,13 +3015,13 @@
         "positions": [
           "PG"
         ],
-        "games": 15,
-        "starts": 15,
+        "games": 16,
+        "starts": 16,
         "mpg": 33.1,
-        "pts": 20.9,
+        "pts": 21.3,
         "reb": 2.1,
-        "ast": 6.5,
-        "tpm": 2.5
+        "ast": 6.6,
+        "tpm": 2.6
       },
       {
         "slot": "SG",
@@ -3032,11 +3031,11 @@
           "PG",
           "SG"
         ],
-        "games": 15,
+        "games": 16,
         "starts": 13,
-        "mpg": 26,
-        "pts": 7,
-        "reb": 3.8,
+        "mpg": 25.8,
+        "pts": 7.1,
+        "reb": 3.9,
         "ast": 4.1,
         "tpm": 0.8
       },
@@ -3048,13 +3047,13 @@
           "PF",
           "SF"
         ],
-        "games": 14,
-        "starts": 14,
-        "mpg": 28.5,
-        "pts": 10.3,
+        "games": 15,
+        "starts": 15,
+        "mpg": 28.1,
+        "pts": 10.1,
         "reb": 4.5,
-        "ast": 1.2,
-        "tpm": 1.8
+        "ast": 1.3,
+        "tpm": 1.7
       },
       {
         "slot": "PF",
@@ -3064,12 +3063,12 @@
           "PF",
           "SF"
         ],
-        "games": 13,
-        "starts": 13,
+        "games": 14,
+        "starts": 14,
         "mpg": 29.1,
-        "pts": 14,
-        "reb": 6.2,
-        "ast": 1.5,
+        "pts": 14.4,
+        "reb": 5.9,
+        "ast": 1.6,
         "tpm": 2.2
       },
       {
@@ -3079,12 +3078,12 @@
         "positions": [
           "C"
         ],
-        "games": 15,
-        "starts": 9,
-        "mpg": 24.6,
-        "pts": 15.7,
-        "reb": 5.3,
-        "ast": 1.9,
+        "games": 16,
+        "starts": 10,
+        "mpg": 24.4,
+        "pts": 14.9,
+        "reb": 5.2,
+        "ast": 1.8,
         "tpm": 1.8
       }
     ],
@@ -3260,12 +3259,12 @@
           "PG",
           "SG"
         ],
-        "games": 16,
-        "starts": 16,
-        "mpg": 30.7,
-        "pts": 21.3,
-        "reb": 4.4,
-        "ast": 4.3,
+        "games": 17,
+        "starts": 17,
+        "mpg": 31.1,
+        "pts": 21.9,
+        "reb": 4.5,
+        "ast": 4.5,
         "tpm": 2.9
       },
       {
@@ -3276,12 +3275,12 @@
           "PG",
           "SG"
         ],
-        "games": 17,
+        "games": 18,
         "starts": 10,
-        "mpg": 22.7,
-        "pts": 11.3,
-        "reb": 5.5,
-        "ast": 2.4,
+        "mpg": 23.1,
+        "pts": 11.4,
+        "reb": 5.7,
+        "ast": 2.5,
         "tpm": 1.2
       },
       {
@@ -3292,12 +3291,12 @@
           "PF",
           "SF"
         ],
-        "games": 16,
-        "starts": 16,
-        "mpg": 27.5,
-        "pts": 12.3,
-        "reb": 5.3,
-        "ast": 2.3,
+        "games": 17,
+        "starts": 17,
+        "mpg": 27.8,
+        "pts": 12.6,
+        "reb": 5.2,
+        "ast": 2.4,
         "tpm": 1.7
       },
       {
@@ -3309,12 +3308,12 @@
           "SF",
           "SG"
         ],
-        "games": 17,
-        "starts": 12,
-        "mpg": 27.1,
-        "pts": 14.6,
+        "games": 18,
+        "starts": 13,
+        "mpg": 27,
+        "pts": 14,
         "reb": 4.8,
-        "ast": 2.9,
+        "ast": 2.8,
         "tpm": 1.8
       },
       {
@@ -3324,13 +3323,13 @@
         "positions": [
           "C"
         ],
-        "games": 15,
-        "starts": 15,
-        "mpg": 26.6,
-        "pts": 7,
-        "reb": 6,
-        "ast": 2.9,
-        "tpm": 1.3
+        "games": 16,
+        "starts": 16,
+        "mpg": 26.7,
+        "pts": 8.3,
+        "reb": 6.3,
+        "ast": 2.8,
+        "tpm": 1.5
       }
     ],
     "16": [
@@ -3341,13 +3340,13 @@
         "positions": [
           "PG"
         ],
-        "games": 17,
-        "starts": 17,
-        "mpg": 28.4,
+        "games": 18,
+        "starts": 18,
+        "mpg": 28.5,
         "pts": 17.2,
-        "reb": 4.4,
-        "ast": 5.8,
-        "tpm": 3.3
+        "reb": 4.2,
+        "ast": 5.6,
+        "tpm": 3.2
       },
       {
         "slot": "SG",
@@ -3357,13 +3356,13 @@
           "PG",
           "SG"
         ],
-        "games": 17,
-        "starts": 13,
-        "mpg": 31.8,
-        "pts": 17.9,
-        "reb": 4.4,
-        "ast": 3.4,
-        "tpm": 2.1
+        "games": 18,
+        "starts": 14,
+        "mpg": 31.7,
+        "pts": 18.2,
+        "reb": 4.3,
+        "ast": 3.5,
+        "tpm": 2.2
       },
       {
         "slot": "SF",
@@ -3373,13 +3372,13 @@
           "PF",
           "SF"
         ],
-        "games": 17,
-        "starts": 17,
+        "games": 18,
+        "starts": 18,
         "mpg": 34,
-        "pts": 17.5,
-        "reb": 5.9,
-        "ast": 3.6,
-        "tpm": 1.5
+        "pts": 18.4,
+        "reb": 6.2,
+        "ast": 3.7,
+        "tpm": 1.6
       },
       {
         "slot": "PF",
@@ -3389,10 +3388,10 @@
           "PF",
           "SF"
         ],
-        "games": 16,
-        "starts": 16,
-        "mpg": 31.1,
-        "pts": 13.3,
+        "games": 17,
+        "starts": 17,
+        "mpg": 30.8,
+        "pts": 13.4,
         "reb": 5.4,
         "ast": 2.8,
         "tpm": 1.6
@@ -3404,12 +3403,12 @@
         "positions": [
           "C"
         ],
-        "games": 16,
-        "starts": 16,
-        "mpg": 29.4,
+        "games": 17,
+        "starts": 17,
+        "mpg": 29.3,
         "pts": 7.6,
-        "reb": 10.9,
-        "ast": 1.6,
+        "reb": 10.6,
+        "ast": 1.7,
         "tpm": 0
       }
     ],
@@ -3437,12 +3436,12 @@
           "PG",
           "SG"
         ],
-        "games": 9,
+        "games": 10,
         "starts": 8,
-        "mpg": 23.9,
-        "pts": 11.2,
-        "reb": 2.3,
-        "ast": 2.7,
+        "mpg": 24,
+        "pts": 11.1,
+        "reb": 2.4,
+        "ast": 2.8,
         "tpm": 2
       },
       {
@@ -3454,13 +3453,13 @@
           "SF",
           "SG"
         ],
-        "games": 14,
-        "starts": 14,
-        "mpg": 32.8,
-        "pts": 20.2,
-        "reb": 6.9,
+        "games": 15,
+        "starts": 15,
+        "mpg": 32.7,
+        "pts": 19.6,
+        "reb": 6.8,
         "ast": 1.6,
-        "tpm": 3.2
+        "tpm": 3
       },
       {
         "slot": "PF",
@@ -3470,11 +3469,11 @@
           "C",
           "PF"
         ],
-        "games": 15,
-        "starts": 15,
-        "mpg": 32.9,
-        "pts": 21.1,
-        "reb": 6,
+        "games": 16,
+        "starts": 16,
+        "mpg": 33.1,
+        "pts": 21.6,
+        "reb": 5.9,
         "ast": 4.7,
         "tpm": 1.6
       },
@@ -3485,12 +3484,12 @@
         "positions": [
           "C"
         ],
-        "games": 15,
-        "starts": 15,
-        "mpg": 23.8,
-        "pts": 9,
-        "reb": 7.4,
-        "ast": 3.9,
+        "games": 16,
+        "starts": 16,
+        "mpg": 23.9,
+        "pts": 8.8,
+        "reb": 7.3,
+        "ast": 4.1,
         "tpm": 0.3
       }
     ],
@@ -3666,13 +3665,13 @@
         "positions": [
           "PG"
         ],
-        "games": 16,
-        "starts": 16,
+        "games": 17,
+        "starts": 17,
         "mpg": 36.1,
-        "pts": 25.9,
-        "reb": 3.3,
-        "ast": 5.7,
-        "tpm": 2.6
+        "pts": 25.7,
+        "reb": 3.2,
+        "ast": 5.6,
+        "tpm": 2.5
       },
       {
         "slot": "SG",
@@ -3682,12 +3681,12 @@
           "PG",
           "SG"
         ],
-        "games": 16,
-        "starts": 16,
+        "games": 17,
+        "starts": 17,
         "mpg": 34.3,
-        "pts": 13.8,
-        "reb": 6.3,
-        "ast": 4,
+        "pts": 13.6,
+        "reb": 6.4,
+        "ast": 4.2,
         "tpm": 1.6
       },
       {
@@ -3699,11 +3698,11 @@
           "SF",
           "SG"
         ],
-        "games": 14,
-        "starts": 14,
-        "mpg": 34.7,
-        "pts": 22.6,
-        "reb": 6.6,
+        "games": 15,
+        "starts": 15,
+        "mpg": 34.3,
+        "pts": 22.4,
+        "reb": 6.3,
         "ast": 3.6,
         "tpm": 1.9
       },
@@ -3716,13 +3715,13 @@
           "PG",
           "SF"
         ],
-        "games": 13,
-        "starts": 13,
-        "mpg": 32.6,
-        "pts": 16.1,
-        "reb": 6.8,
-        "ast": 6.8,
-        "tpm": 0.8
+        "games": 14,
+        "starts": 14,
+        "mpg": 32.4,
+        "pts": 16.6,
+        "reb": 6.7,
+        "ast": 6.5,
+        "tpm": 1
       },
       {
         "slot": "C",
@@ -3749,12 +3748,12 @@
           "PG",
           "SG"
         ],
-        "games": 15,
-        "starts": 15,
-        "mpg": 33.9,
-        "pts": 24.7,
-        "reb": 2.7,
-        "ast": 5.3,
+        "games": 16,
+        "starts": 16,
+        "mpg": 34.4,
+        "pts": 24.5,
+        "reb": 2.8,
+        "ast": 5.4,
         "tpm": 1.9
       },
       {
@@ -3766,12 +3765,12 @@
           "SF",
           "SG"
         ],
-        "games": 15,
-        "starts": 15,
-        "mpg": 28.9,
-        "pts": 15.1,
-        "reb": 3.6,
-        "ast": 2.3,
+        "games": 16,
+        "starts": 16,
+        "mpg": 29.2,
+        "pts": 15.2,
+        "reb": 3.7,
+        "ast": 2.6,
         "tpm": 2.1
       },
       {
@@ -3782,13 +3781,13 @@
           "SF",
           "SG"
         ],
-        "games": 15,
-        "starts": 15,
-        "mpg": 26.8,
-        "pts": 12.5,
-        "reb": 3.7,
-        "ast": 3.2,
-        "tpm": 1.2
+        "games": 16,
+        "starts": 16,
+        "mpg": 27.4,
+        "pts": 13.3,
+        "reb": 3.6,
+        "ast": 3,
+        "tpm": 1.3
       },
       {
         "slot": "PF",
@@ -3798,12 +3797,12 @@
           "PF",
           "SF"
         ],
-        "games": 15,
-        "starts": 15,
-        "mpg": 29,
+        "games": 16,
+        "starts": 16,
+        "mpg": 29.4,
         "pts": 14.8,
-        "reb": 7.1,
-        "ast": 3.2,
+        "reb": 7.3,
+        "ast": 3.3,
         "tpm": 1.7
       },
       {
@@ -3813,12 +3812,12 @@
         "positions": [
           "C"
         ],
-        "games": 13,
-        "starts": 9,
-        "mpg": 22.9,
-        "pts": 5.8,
-        "reb": 5.4,
-        "ast": 3.3,
+        "games": 14,
+        "starts": 10,
+        "mpg": 23.4,
+        "pts": 5.9,
+        "reb": 5.3,
+        "ast": 3.1,
         "tpm": 0
       }
     ],
@@ -3831,13 +3830,13 @@
           "PG",
           "SG"
         ],
-        "games": 16,
-        "starts": 16,
+        "games": 17,
+        "starts": 17,
         "mpg": 29.8,
-        "pts": 20.6,
+        "pts": 20.4,
         "reb": 3.2,
-        "ast": 4,
-        "tpm": 3.1
+        "ast": 4.1,
+        "tpm": 3
       },
       {
         "slot": "SG",
@@ -3848,13 +3847,13 @@
           "SF",
           "SG"
         ],
-        "games": 16,
-        "starts": 16,
-        "mpg": 30,
-        "pts": 12.2,
-        "reb": 3.7,
-        "ast": 1.4,
-        "tpm": 2.6
+        "games": 17,
+        "starts": 17,
+        "mpg": 29.9,
+        "pts": 11.8,
+        "reb": 3.8,
+        "ast": 1.5,
+        "tpm": 2.5
       },
       {
         "slot": "SF",
@@ -3865,13 +3864,13 @@
           "SF",
           "SG"
         ],
-        "games": 14,
-        "starts": 14,
-        "mpg": 32.8,
-        "pts": 23.9,
-        "reb": 6.4,
-        "ast": 6,
-        "tpm": 2.1
+        "games": 15,
+        "starts": 15,
+        "mpg": 32.6,
+        "pts": 24.3,
+        "reb": 6.2,
+        "ast": 6.1,
+        "tpm": 2.3
       },
       {
         "slot": "PF",
@@ -3882,12 +3881,12 @@
           "PF",
           "SG"
         ],
-        "games": 16,
-        "starts": 7,
+        "games": 17,
+        "starts": 8,
         "mpg": 24.5,
-        "pts": 8.1,
+        "pts": 7.9,
         "reb": 3.7,
-        "ast": 1.9,
+        "ast": 1.8,
         "tpm": 1.4
       },
       {
@@ -3897,12 +3896,12 @@
         "positions": [
           "C"
         ],
-        "games": 16,
-        "starts": 16,
-        "mpg": 26.1,
-        "pts": 11.4,
-        "reb": 10.9,
-        "ast": 1.9,
+        "games": 17,
+        "starts": 17,
+        "mpg": 26.2,
+        "pts": 11.6,
+        "reb": 11.3,
+        "ast": 2.1,
         "tpm": 1
       }
     ],
@@ -4079,13 +4078,13 @@
         "positions": [
           "PG"
         ],
-        "games": 16,
-        "starts": 16,
-        "mpg": 33.5,
-        "pts": 31.7,
+        "games": 17,
+        "starts": 17,
+        "mpg": 33.8,
+        "pts": 32.1,
         "reb": 4.1,
-        "ast": 4.5,
-        "tpm": 2.4
+        "ast": 4.6,
+        "tpm": 2.5
       },
       {
         "slot": "SG",
@@ -4095,13 +4094,13 @@
           "PG",
           "SG"
         ],
-        "games": 17,
-        "starts": 11,
-        "mpg": 27.5,
-        "pts": 14.3,
-        "reb": 3.3,
-        "ast": 1.8,
-        "tpm": 2.4
+        "games": 18,
+        "starts": 12,
+        "mpg": 27.9,
+        "pts": 14.2,
+        "reb": 3.4,
+        "ast": 1.7,
+        "tpm": 2.3
       },
       {
         "slot": "SF",
@@ -4112,10 +4111,10 @@
           "SF",
           "SG"
         ],
-        "games": 15,
-        "starts": 12,
-        "mpg": 27.6,
-        "pts": 17,
+        "games": 16,
+        "starts": 13,
+        "mpg": 28.1,
+        "pts": 16.7,
         "reb": 3.6,
         "ast": 3.6,
         "tpm": 0.9
@@ -4128,13 +4127,13 @@
           "C",
           "PF"
         ],
-        "games": 17,
+        "games": 18,
         "starts": 11,
-        "mpg": 21.2,
-        "pts": 7.5,
-        "reb": 3.6,
+        "mpg": 21.4,
+        "pts": 8.2,
+        "reb": 3.9,
         "ast": 1.6,
-        "tpm": 1.3
+        "tpm": 1.4
       },
       {
         "slot": "C",
@@ -4143,12 +4142,12 @@
         "positions": [
           "C"
         ],
-        "games": 17,
-        "starts": 17,
-        "mpg": 25.1,
-        "pts": 7.8,
+        "games": 18,
+        "starts": 18,
+        "mpg": 25.3,
+        "pts": 8.4,
         "reb": 10.6,
-        "ast": 3.9,
+        "ast": 3.8,
         "tpm": 0
       }
     ],
@@ -4324,16 +4323,32 @@
           "PG",
           "SG"
         ],
-        "games": 14,
-        "starts": 14,
+        "games": 15,
+        "starts": 15,
         "mpg": 32.1,
-        "pts": 17.8,
+        "pts": 17.5,
         "reb": 3.5,
         "ast": 6,
         "tpm": 2.6
       },
       {
         "slot": "SG",
+        "id": "4684272",
+        "name": "Ja'Kobe Walter",
+        "positions": [
+          "SF",
+          "SG"
+        ],
+        "games": 17,
+        "starts": 15,
+        "mpg": 31.7,
+        "pts": 12.1,
+        "reb": 4.1,
+        "ast": 2.2,
+        "tpm": 2.5
+      },
+      {
+        "slot": "SF",
         "id": "4395625",
         "name": "RJ Barrett",
         "positions": [
@@ -4350,22 +4365,6 @@
         "tpm": 1.5
       },
       {
-        "slot": "SF",
-        "id": "4684272",
-        "name": "Ja'Kobe Walter",
-        "positions": [
-          "SF",
-          "SG"
-        ],
-        "games": 16,
-        "starts": 14,
-        "mpg": 31.4,
-        "pts": 11.9,
-        "reb": 3.9,
-        "ast": 2.2,
-        "tpm": 2.5
-      },
-      {
         "slot": "PF",
         "id": "4433134",
         "name": "Scottie Barnes",
@@ -4373,13 +4372,13 @@
           "PF",
           "SF"
         ],
-        "games": 11,
-        "starts": 11,
-        "mpg": 34,
-        "pts": 24.3,
-        "reb": 7.2,
-        "ast": 4.7,
-        "tpm": 0.8
+        "games": 12,
+        "starts": 12,
+        "mpg": 34.3,
+        "pts": 24.8,
+        "reb": 7,
+        "ast": 5,
+        "tpm": 0.9
       },
       {
         "slot": "C",
@@ -4388,12 +4387,12 @@
         "positions": [
           "C"
         ],
-        "games": 14,
-        "starts": 11,
-        "mpg": 23.9,
-        "pts": 8.2,
-        "reb": 6.8,
-        "ast": 1.7,
+        "games": 15,
+        "starts": 12,
+        "mpg": 24.2,
+        "pts": 8.7,
+        "reb": 7,
+        "ast": 1.8,
         "tpm": 0
       }
     ],
@@ -4406,13 +4405,13 @@
           "PG",
           "SG"
         ],
-        "games": 12,
-        "starts": 12,
-        "mpg": 30.3,
-        "pts": 24.8,
-        "reb": 3.4,
-        "ast": 5.3,
-        "tpm": 2.6
+        "games": 13,
+        "starts": 13,
+        "mpg": 30.2,
+        "pts": 25.1,
+        "reb": 3.5,
+        "ast": 5.2,
+        "tpm": 2.9
       },
       {
         "slot": "SG",
@@ -4422,12 +4421,12 @@
           "SF",
           "SG"
         ],
-        "games": 17,
-        "starts": 17,
-        "mpg": 26.7,
-        "pts": 11.2,
+        "games": 18,
+        "starts": 18,
+        "mpg": 26.3,
+        "pts": 11.1,
         "reb": 3.1,
-        "ast": 1.3,
+        "ast": 1.2,
         "tpm": 2
       },
       {
@@ -4438,13 +4437,13 @@
           "SF",
           "SG"
         ],
-        "games": 16,
-        "starts": 16,
-        "mpg": 28.8,
-        "pts": 15.3,
-        "reb": 8,
+        "games": 17,
+        "starts": 17,
+        "mpg": 28.9,
+        "pts": 15.4,
+        "reb": 8.1,
         "ast": 3.4,
-        "tpm": 2.6
+        "tpm": 2.5
       },
       {
         "slot": "PF",
@@ -4469,12 +4468,12 @@
         "positions": [
           "C"
         ],
-        "games": 13,
-        "starts": 13,
-        "mpg": 21,
-        "pts": 9.1,
-        "reb": 7,
-        "ast": 0.8,
+        "games": 14,
+        "starts": 14,
+        "mpg": 21.1,
+        "pts": 9,
+        "reb": 7.3,
+        "ast": 0.9,
         "tpm": 0.1
       }
     ],
@@ -4487,13 +4486,13 @@
           "PG",
           "SG"
         ],
-        "games": 8,
-        "starts": 8,
-        "mpg": 20.3,
-        "pts": 12.5,
+        "games": 9,
+        "starts": 9,
+        "mpg": 21.1,
+        "pts": 13.4,
         "reb": 2.3,
-        "ast": 4,
-        "tpm": 1
+        "ast": 3.8,
+        "tpm": 1.4
       },
       {
         "slot": "SG",
@@ -4504,13 +4503,13 @@
           "SF",
           "SG"
         ],
-        "games": 13,
-        "starts": 13,
-        "mpg": 30.7,
-        "pts": 19.8,
-        "reb": 4.8,
-        "ast": 2.5,
-        "tpm": 2.9
+        "games": 14,
+        "starts": 14,
+        "mpg": 31,
+        "pts": 19.9,
+        "reb": 4.6,
+        "ast": 2.7,
+        "tpm": 3
       },
       {
         "slot": "SF",
@@ -4520,12 +4519,12 @@
           "SF",
           "SG"
         ],
-        "games": 15,
-        "starts": 12,
+        "games": 16,
+        "starts": 13,
         "mpg": 27.4,
         "pts": 5.8,
         "reb": 3.8,
-        "ast": 3,
+        "ast": 3.1,
         "tpm": 1.1
       },
       {
@@ -4536,11 +4535,11 @@
           "C",
           "PF"
         ],
-        "games": 15,
-        "starts": 15,
-        "mpg": 31.1,
-        "pts": 17.3,
-        "reb": 8.5,
+        "games": 16,
+        "starts": 16,
+        "mpg": 31.6,
+        "pts": 17.7,
+        "reb": 8.3,
         "ast": 2.4,
         "tpm": 2.5
       },
@@ -4551,12 +4550,12 @@
         "positions": [
           "C"
         ],
-        "games": 13,
-        "starts": 13,
-        "mpg": 29.6,
+        "games": 14,
+        "starts": 14,
+        "mpg": 30,
         "pts": 9.6,
         "reb": 10.6,
-        "ast": 2,
+        "ast": 2.1,
         "tpm": 0
       }
     ]
@@ -4594,54 +4593,6 @@
     }
   },
   "matchups": [
-    {
-      "id": "401910036",
-      "date": "2026-11-24T00:00Z",
-      "home": "30",
-      "away": "29"
-    },
-    {
-      "id": "401910037",
-      "date": "2026-11-24T00:00Z",
-      "home": "20",
-      "away": "22"
-    },
-    {
-      "id": "401910040",
-      "date": "2026-11-24T00:30Z",
-      "home": "16",
-      "away": "17"
-    },
-    {
-      "id": "401910038",
-      "date": "2026-11-24T00:30Z",
-      "home": "11",
-      "away": "25"
-    },
-    {
-      "id": "401910039",
-      "date": "2026-11-24T00:30Z",
-      "home": "28",
-      "away": "15"
-    },
-    {
-      "id": "401910041",
-      "date": "2026-11-24T01:00Z",
-      "home": "4",
-      "away": "5"
-    },
-    {
-      "id": "401910042",
-      "date": "2026-11-24T01:00Z",
-      "home": "3",
-      "away": "21"
-    },
-    {
-      "id": "401910043",
-      "date": "2026-11-24T01:30Z",
-      "home": "10",
-      "away": "12"
-    },
     {
       "id": "401910044",
       "date": "2026-11-24T03:00Z",
@@ -5313,6 +5264,54 @@
       "date": "2026-12-18T02:00Z",
       "home": "7",
       "away": "1"
+    },
+    {
+      "id": "401910133",
+      "date": "2026-12-19T00:00Z",
+      "home": "30",
+      "away": "25"
+    },
+    {
+      "id": "401910134",
+      "date": "2026-12-19T00:00Z",
+      "home": "14",
+      "away": "12"
+    },
+    {
+      "id": "401910135",
+      "date": "2026-12-19T00:00Z",
+      "home": "27",
+      "away": "18"
+    },
+    {
+      "id": "401910136",
+      "date": "2026-12-19T00:30Z",
+      "home": "2",
+      "away": "26"
+    },
+    {
+      "id": "401910137",
+      "date": "2026-12-19T00:30Z",
+      "home": "17",
+      "away": "19"
+    },
+    {
+      "id": "401910138",
+      "date": "2026-12-19T00:30Z",
+      "home": "8",
+      "away": "5"
+    },
+    {
+      "id": "401910139",
+      "date": "2026-12-19T00:30Z",
+      "home": "28",
+      "away": "9"
+    },
+    {
+      "id": "401910144",
+      "date": "2026-12-19T01:00Z",
+      "home": "24",
+      "away": "4"
     }
   ]
 }
