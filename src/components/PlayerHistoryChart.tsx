@@ -12,6 +12,13 @@ import { useState } from "react";
 const LOGO = (abbr: string) =>
   `https://a.espncdn.com/i/teamlogos/nba/500/${abbr.toLowerCase()}.png`;
 
+/**
+ * Height of the plotting box in pixels. Bars, the value labels and the line all
+ * get their offset from this one number, so nothing is sized as a percentage of
+ * a box that also holds other content.
+ */
+const PLOT_HEIGHT = 208;
+
 /** Game dates read as IST, matching the rest of the app. */
 function dayLabel(iso: string): string {
   return new Intl.DateTimeFormat("en-US", {
@@ -127,11 +134,14 @@ export function PlayerHistoryChart({
        * is always drawn under the line. Dates and logos live below it for that
        * reason — inside the column they ate the height the bars were sized to.
        */}
-      <div className="relative flex h-52 items-end gap-1.5 sm:gap-2">
+      <div
+        className="relative flex items-end gap-1.5 sm:gap-2"
+        style={{ height: PLOT_HEIGHT }}
+      >
         {/* the line */}
         <div
           className="pointer-events-none absolute inset-x-0 z-10 border-t border-dashed border-foreground/45"
-          style={{ bottom: `${(line / peak) * 100}%` }}
+          style={{ bottom: (line / peak) * PLOT_HEIGHT }}
         >
           <span className="absolute -top-2 right-0 bg-background pl-1.5 text-[10px] font-medium tabular-nums text-foreground">
             {line}
@@ -143,7 +153,7 @@ export function PlayerHistoryChart({
           const tone =
             value > line ? "favourable" : value < line ? "tough" : "push";
           const isActive = active === index;
-          const height = Math.max((value / peak) * 100, 2);
+          const height = Math.max((value / peak) * PLOT_HEIGHT, 2);
           return (
             <button
               key={`${game.date}-${game.opponentId}`}
@@ -165,7 +175,7 @@ export function PlayerHistoryChart({
                       ? "text-match-tough-strong"
                       : "text-muted-foreground",
                 )}
-                style={{ bottom: `calc(${height}% + 4px)` }}
+                style={{ bottom: height + 4 }}
               >
                 {value}
               </span>
@@ -179,7 +189,7 @@ export function PlayerHistoryChart({
                       : "bg-muted-foreground/40",
                   isActive ? "opacity-100" : "opacity-90 group-hover:opacity-100",
                 )}
-                style={{ height: `${height}%` }}
+                style={{ height }}
               />
             </button>
           );
@@ -206,9 +216,10 @@ export function PlayerHistoryChart({
           >
             <span
               className={cn(
-                "h-full w-full border-x border-t border-dashed",
+                "w-full border-x border-t border-dashed",
                 isNext ? "border-foreground/40 bg-accent/40" : "border-border",
               )}
+              style={{ height: PLOT_HEIGHT }}
             />
           </button>
         ) : null}
