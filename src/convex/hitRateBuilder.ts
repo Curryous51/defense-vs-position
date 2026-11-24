@@ -41,6 +41,13 @@ const MARKET_STAT: Record<string, StatKey> = {
 };
 /** Four major books keeps the response small; the line is a consensus anyway. */
 const BOOKS = "draftkings,fanduel,betmgm,caesars,espnbet,fanatics";
+const PROP_MARKETS =
+  "player_points,player_rebounds,player_assists,player_threes";
+
+/** Identifies a game whatever order the books list its teams in. */
+function gamePair(a: string, b: string): string {
+  return [a, b].sort((left, right) => left.localeCompare(right)).join("|");
+}
 
 async function getJson<T>(url: string, attempts = 3): Promise<T> {
   for (let i = 0; i < attempts; i++) {
@@ -687,20 +694,95 @@ export async function buildHitRateBoard(
   log(`Slate: ${games.length} games, ${slateTeamIds.size} teams`);
 
   log("Fetching prop lines (PropLine)");
-  const propsUrl = `${PROPS}?markets=player_points,player_rebounds,player_assists,player_threes&bookmakers=${BOOKS}&apiKey=${apiKey}`;
+  const propsUrl = `${PROPS}?markets=${PROP_MARKETS}&bookmakers=${BOOKS}&apiKey=${apiKey}`;
   const propEvents = await getJson<PropEvent[] | { data?: PropEvent[] }>(propsUrl);
   const events = Array.isArray(propEvents) ? propEvents : propEvents.data ?? [];
-  const slateEvents = events.filter((event) => {
-    const home = teamIdByName.get(normalizeName(event.home_team ?? ""));
-    const away = teamIdByName.get(normalizeName(event.away_team ?? ""));
-    // A game leaves the board at tip-off, so a refresh never resurrects one.
+
+  const eventTeams = (event: PropEvent) => ({
+    home: teamIdByName.get(normalizeName(event.home_team ?? "")),
+    away: teamIdByName.get(normalizeName(event.away_team ?? "")),
+  });
+  // A game leaves the board at tip-off, so a refresh never resurrects one.
+  const onSlate = (event: PropEvent): boolean => {
+    const { home, away } = eventTeams(event);
+    if (!home || !away) return false;
     if (!event.commence_time) return false;
     if (new Date(event.commence_time).getTime() <= now) return false;
-    return Boolean(home && away && slateTeamIds.has(home) && slateTeamIds.has(away));
-  });
+    return slateTeamIds.has(home) && slateTeamIds.has(away);
+  };
+  const slateEvents = events.filter(onSlate);
   log(`PropLine: ${events.length} events, ${slateEvents.length} on this slate`);
 
-  const lines = consensusLines(slateEvents, teamIdByName);
+  /** Books with actual markets, per game. */
+  const booksFor = (list: PropEvent[]) => {
+    const map = new Map<string, Set<string>>();
+    for (const event of list) {
+      const { home, away } = eventTeams(event);
+      if (!home || !away) continue;
+      const key = gamePair(home, away);
+      const books = map.get(key) ?? new Set<string>();
+      for (const book of event.bookmakers ?? []) {
+        if (book.key && (book.markets?.length ?? 0) > 0) books.add(book.key);
+      }
+      map.set(key, books);
+    }
+    return map;
+  };
+  let coverage = booksFor(slateEvents);
+  const unquoted = () =>
+    games.filter(
+      (game) => !coverage.get(gamePair(game.home, game.away))?.size,
+    );
+
+  // The big US books post props late, and a game none of them quote yet is
+  // dropped from the reply entirely while offshore and exchange books already
+  // have it. Those games get a second, unfiltered pull (`bookmakers` omitted
+  // returns every book) so the board shows the whole slate.
+  const missing = unquoted();
+  const extraEvents: PropEvent[] = [];
+  if (missing.length) {
+    const labels = missing.map((game) => {
+      const home = teamById.get(game.home)?.abbr ?? game.home;
+      const away = teamById.get(game.away)?.abbr ?? game.away;
+      return `${away} @ ${home}`;
+    });
+    log(`No lines from ${BOOKS} for ${labels.join(", ")} — asking every book`);
+    try {
+      const wide = await getJson<PropEvent[] | { data?: PropEvent[] }>(
+        `${PROPS}?markets=${PROP_MARKETS}&apiKey=${apiKey}`,
+      );
+      const wideEvents = Array.isArray(wide) ? wide : wide.data ?? [];
+      const wanted = new Set(missing.map((game) => gamePair(game.home, game.away)));
+      for (const event of wideEvents) {
+        const { home, away } = eventTeams(event);
+        if (!home || !away) continue;
+        const key = gamePair(home, away);
+        // Only games still short of lines, and only from this slate.
+        if (!wanted.has(key) || !onSlate(event)) continue;
+        const books = booksFor([event]).get(key);
+        if (!books?.size) continue;
+        extraEvents.push(event);
+        wanted.delete(key);
+      }
+      coverage = booksFor([...slateEvents, ...extraEvents]);
+      log(
+        `Every-book request: ${wideEvents.length} events, ${extraEvents.length} of ${missing.length} games recovered`,
+      );
+    } catch (err) {
+      log(`Every-book request failed: ${(err as Error).message}`);
+    }
+  }
+
+  // Says, per game, which books actually had lines — so an empty game is
+  // obvious in the run log instead of just missing from the board.
+  for (const game of games) {
+    const home = teamById.get(game.home)?.abbr ?? game.home;
+    const away = teamById.get(game.away)?.abbr ?? game.away;
+    const books = [...(coverage.get(gamePair(game.home, game.away)) ?? [])];
+    log(`Lines ${away} @ ${home}: ${books.length ? books.join(", ") : "no book quoted it"}`);
+  }
+
+  const lines = consensusLines([...slateEvents, ...extraEvents], teamIdByName);
   log(`Consensus lines: ${lines.length} player/stat props`);
 
   log("Fetching rosters and depth charts");
