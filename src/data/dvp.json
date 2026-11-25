@@ -2,9 +2,9 @@
   "meta": {
     "season": "2026-27",
     "source": "FantasyPros defense vs position",
-    "generatedAt": "2026-11-25T05:15:22.219Z",
-    "gamesSampled": 260,
-    "throughDate": "2026-11-25T01:00Z"
+    "generatedAt": "2026-11-25T08:01:17.268Z",
+    "gamesSampled": 261,
+    "throughDate": "2026-11-25T03:00Z"
   },
   "teams": [
     {
@@ -433,7 +433,7 @@
       "location": "Dallas",
       "nickname": "Mavericks",
       "name": "Dallas Mavericks",
-      "games": 17,
+      "games": 18,
       "season": {
         "PG": {
           "pts": 23.66,
@@ -503,7 +503,7 @@
       "location": "Denver",
       "nickname": "Nuggets",
       "name": "Denver Nuggets",
-      "games": 15,
+      "games": 16,
       "season": {
         "PG": {
           "pts": 21.98,
@@ -2528,12 +2528,12 @@
           "SF",
           "SG"
         ],
-        "games": 16,
-        "starts": 16,
-        "mpg": 33.4,
+        "games": 17,
+        "starts": 17,
+        "mpg": 33.3,
         "pts": 24.3,
         "reb": 6.3,
-        "ast": 6.4,
+        "ast": 6.7,
         "tpm": 1.6
       },
       {
@@ -2544,13 +2544,13 @@
           "PG",
           "SG"
         ],
-        "games": 14,
-        "starts": 14,
-        "mpg": 30.7,
-        "pts": 22,
-        "reb": 3.6,
-        "ast": 4.6,
-        "tpm": 3.4
+        "games": 15,
+        "starts": 15,
+        "mpg": 30.9,
+        "pts": 21.3,
+        "reb": 3.7,
+        "ast": 4.7,
+        "tpm": 3.2
       },
       {
         "slot": "SF",
@@ -2561,13 +2561,13 @@
           "PF",
           "SF"
         ],
-        "games": 15,
+        "games": 16,
         "starts": 15,
-        "mpg": 30.9,
+        "mpg": 30.6,
         "pts": 14,
-        "reb": 6.7,
+        "reb": 6.6,
         "ast": 1.3,
-        "tpm": 2.3
+        "tpm": 2.2
       },
       {
         "slot": "PF",
@@ -2577,13 +2577,13 @@
           "PF",
           "SF"
         ],
-        "games": 13,
-        "starts": 10,
-        "mpg": 22,
-        "pts": 6.2,
-        "reb": 3.5,
-        "ast": 2.5,
-        "tpm": 1.2
+        "games": 14,
+        "starts": 11,
+        "mpg": 22.6,
+        "pts": 6.6,
+        "reb": 3.6,
+        "ast": 2.6,
+        "tpm": 1.4
       },
       {
         "slot": "C",
@@ -2592,10 +2592,10 @@
         "positions": [
           "C"
         ],
-        "games": 17,
-        "starts": 17,
-        "mpg": 22.2,
-        "pts": 8.7,
+        "games": 18,
+        "starts": 18,
+        "mpg": 22.5,
+        "pts": 8.9,
         "reb": 5.4,
         "ast": 2.1,
         "tpm": 0.1
@@ -2609,12 +2609,12 @@
         "positions": [
           "PG"
         ],
-        "games": 15,
-        "starts": 15,
-        "mpg": 37,
-        "pts": 26.2,
-        "reb": 5,
-        "ast": 5.9,
+        "games": 16,
+        "starts": 16,
+        "mpg": 36.9,
+        "pts": 25.8,
+        "reb": 4.8,
+        "ast": 5.7,
         "tpm": 3.3
       },
       {
@@ -2625,13 +2625,13 @@
           "SF",
           "SG"
         ],
-        "games": 15,
-        "starts": 15,
-        "mpg": 33.9,
-        "pts": 13.7,
-        "reb": 4.6,
-        "ast": 2.5,
-        "tpm": 1.7
+        "games": 16,
+        "starts": 16,
+        "mpg": 33.6,
+        "pts": 13.8,
+        "reb": 4.4,
+        "ast": 2.6,
+        "tpm": 1.8
       },
       {
         "slot": "SF",
@@ -2642,13 +2642,13 @@
           "SF",
           "SG"
         ],
-        "games": 12,
-        "starts": 12,
-        "mpg": 29,
-        "pts": 12.4,
-        "reb": 3.5,
-        "ast": 2.3,
-        "tpm": 1.9
+        "games": 13,
+        "starts": 13,
+        "mpg": 29.4,
+        "pts": 12.8,
+        "reb": 3.6,
+        "ast": 2.4,
+        "tpm": 2.1
       },
       {
         "slot": "PF",
@@ -2658,13 +2658,13 @@
           "C",
           "PF"
         ],
-        "games": 15,
-        "starts": 15,
-        "mpg": 29.5,
-        "pts": 12.1,
-        "reb": 5,
-        "ast": 2.1,
-        "tpm": 1.1
+        "games": 16,
+        "starts": 16,
+        "mpg": 29.1,
+        "pts": 11.4,
+        "reb": 4.9,
+        "ast": 2.2,
+        "tpm": 1
       },
       {
         "slot": "C",
@@ -2673,12 +2673,12 @@
         "positions": [
           "C"
         ],
-        "games": 15,
-        "starts": 15,
-        "mpg": 37.1,
-        "pts": 25.1,
+        "games": 16,
+        "starts": 16,
+        "mpg": 36.9,
+        "pts": 24.6,
         "reb": 10.9,
-        "ast": 9.2,
+        "ast": 8.9,
         "tpm": 1.3
       }
     ],
@@ -4594,12 +4594,6 @@
   },
   "matchups": [
     {
-      "id": "401909316",
-      "date": "2026-11-25T03:00Z",
-      "home": "7",
-      "away": "6"
-    },
-    {
       "id": "401909317",
       "date": "2026-11-25T22:00Z",
       "home": "20",
@@ -5312,6 +5306,12 @@
       "date": "2026-12-19T01:00Z",
       "home": "3",
       "away": "23"
+    },
+    {
+      "id": "401910145",
+      "date": "2026-12-19T23:00Z",
+      "home": "30",
+      "away": "22"
     }
   ]
 }
