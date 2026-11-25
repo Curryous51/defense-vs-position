@@ -115,18 +115,47 @@ export default function Easiest() {
             </p>
           </div>
 
-          {/* Position tab strip */}
-          <div
-            className="mt-6 border border-border/70 bg-muted/40 p-1 rounded-xl"
-          >
-            <div className="flex gap-1">
-              {tabs.map((tab) => tabButton(tab))}
+          {/* Position tab strip — horizontal PG / SG / SF / PF / C + All */}
+          <div className="mt-7 flex flex-wrap items-center gap-3">
+            <span className="text-[11px] uppercase tracking-[0.16em] text-muted-foreground">
+              Position
+            </span>
+            <div className="flex flex-wrap items-center gap-2">
+              {tabs.map((tab) => (
+                <button
+                  key={tab.key}
+                  type="button"
+                  onClick={() => setTab(tab.key)}
+                  title={tab.label}
+                  className={`inline-flex min-w-[2.75rem] items-center gap-1 rounded-[6px] px-3 py-1.5 text-[12px] font-medium tracking-[0.06em] transition-colors border ${
+                    tab.key === tab
+                      ? "border-foreground/30 bg-muted text-foreground"
+                      : "border-transparent text-muted-foreground hover:border-foreground/25 hover:text-foreground"
+                  }`}
+                >
+                  {tab.short === "ALL" ? (
+                    <span className="flex flex-col leading-none">
+                      <span className="text-[13px] leading-none">ALL</span>
+                      <span className="text-[8px] opacity-70 uppercase tracking-[0.14em]">
+                        all
+                      </span>
+                    </span>
+                  ) : (
+                    <span className="flex flex-col leading-none">
+                      <span className="text-[13px] leading-none">{tab.short}</span>
+                      <span className="text-[8px] opacity-70 uppercase tracking-[0.14em]">
+                        {tab.short[0]}
+                      </span>
+                    </span>
+                  )}
+                </button>
+              ))}
             </div>
           </div>
 
-          {/* Top 5 by position — collapsible on mobile, desktop grid for "all" */}
+          {/* Top 5 by position — one card per position, always stacked */}
           <section className="mt-6 border-t border-border pt-7">
-            <div className="flex flex-wrap items-baseline justify-between gap-3">
+            <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
               <h2 className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
                 Top 5 by position
               </h2>
@@ -139,21 +168,18 @@ export default function Easiest() {
               offense can face on this slate.
             </p>
 
-            <div
-              className="mt-5 grid gap-8 sm:grid-cols-1 xl:grid-cols-2"
-              style={{ gridTemplateColumns: tab === "all" ? "repeat(2, minmax(0, 1fr))" : "1fr" }}
-            >
+            <div className="mt-5 flex flex-col gap-6">
               {shown(tab).map((position) => (
-                <div key={position} className="group/pos">
-                  <div className="flex items-baseline justify-between gap-4 border-b border-border pb-2">
-                    <h3 className="text-[12px] font-medium">
+                <div key={position}>
+                  <div className="flex items-baseline justify-between gap-4 border-b border-border pb-3">
+                    <h3 className="text-[13px] font-medium">
                       <span className="text-foreground">{position}</span>
                       <span className="mx-2 text-muted-foreground/50">/</span>
-                      <span className="text-foreground font-medium">
+                      <span className="text-foreground/85">
                         {POSITION_NAMES[position]}
                       </span>
                     </h3>
-                    <span className="shrink-0 text-[9px] uppercase tracking-[0.14em] text-muted-foreground">
+                    <span className="shrink-0 text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
                       Top 5 per category
                     </span>
                   </div>
